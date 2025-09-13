@@ -42,7 +42,7 @@ export default function Header1({ variant }: any) {
           <div className="cs_main_header_in">
             <div className="cs_main_header_left">
             <Link className="cs_site_branding" href="/">
-            <Image src="/assets/images/creative-agency/logo/sd-curto.svg" alt="img" width={70} height={70}   />
+            <Image src="/assets/images/creative-agency/logo/sd-curto.svg" alt="img" width={85} height={85}   />
               </Link>
               </div>
               <div className="cs_main_header_center">
@@ -66,8 +66,8 @@ export default function Header1({ variant }: any) {
                 <div className="main-button">
                 <Link href="/contact" className="theme-btn style-one">
                     <span className="text-flip">
-                        <span className="text">LETS TALK</span>
-                        <span className="text">LETS TALK</span>
+                        <span className="text">AGENDAR AVALIAÇÃO GRATUITA</span>
+                        <span className="text">AGENDAR AVALIAÇÃO GRATUITA</span>
                     </span>
                 </Link>                  
 

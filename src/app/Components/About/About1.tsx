@@ -11,39 +11,29 @@ const About1 = () => {
                     
                     <div className="agk-content-box style-one mb-50 pf_fadeup">
                         <div className="section-title mb-20">
-                            <span className="sub-title">About us</span>
-                            <h2>Strategic growth powered 
-                            by Agenko Agency!</h2>
+                            <span className="sub-title">Sobre</span>
+                            <h2>Te Ajudo a Transformar Sua Beleza e Autoestima</h2>
                         </div>
-                        <p>At Agenko Agency, we specialize in delivering strategic growth solutions tailored to elevate your business to new heights. By combining innovative strategies, data-driven insights, and creative expertise, we help companies unlock their full.</p>
-                    <p>Our dedicated team works closely with clients to understand their unique goals, crafting customized plans that drive measurable results.</p>
+                        <p style={{textAlign: 'justify'}}>Acredito que a verdadeira beleza está em realçar quem você já é. Como especialista em harmonização orofacial em Goiânia, minha missão é ir além dos procedimentos: eu busco o equilíbrio perfeito entre estética e função para revelar a sua melhor versão. Vamos juntas encontrar a harmonia que seu rosto e sorriso merecem?</p>
+                        <p style={{textAlign: 'justify'}}>Com mais de 15 anos de experiência e mais de 1000 faces transformadas, desenvolvi um olhar clínico apurado para criar resultados que respeitam sua identidade. Aqui, cada detalhe é planejado para proporcionar uma beleza natural, sem exageros, elevando não apenas seus traços, mas principalmente sua autoestima e confiança.</p>
                     <div className="agk-button mb-30">
                         <Link href="/about" className="theme-btn style-one">
                             <span className="text-flip">
-                                <span className="text">LEARN MORE</span>
-                                <span className="text">LEARN MORE</span>
+                                <span className="text">SAIBA MAIS</span>
+                                <span className="text">SAIBA MAIS</span>
                             </span>
                         </Link>
                     </div>
                     <ul>
                         <li>
-                            
                             <div className="agenko-counter-box style-one">
                                 <div className="content">
-                                    <h2 className="mb-10"><span className="count">240</span>+</h2>
-                                    <p>Projects success rate 99%</p>
+                                    <h2 className="mb-10"><span className="count">1000</span>+</h2>
+                                    <p>Faces Transformadas</p>
                                 </div>
                             </div>
                         </li>
-                        <li>
-                            
-                            <div className="agenko-counter-box style-one">
-                                <div className="content">
-                                    <h2 className="mb-10"><span className="count">23</span>+</h2>
-                                    <p>Award for digital innovation</p>
-                                </div>
-                            </div>
-                        </li>
+
                     </ul>
                     </div>
                 </div>
@@ -51,11 +41,11 @@ const About1 = () => {
                     
                     <div className="agk-image-box style-one mb-50 pf_fadeup">
                         <div className="agk-image">
-                        <Image src="/assets/images/digital-agency/about/about1.jpg" alt="img" width={440} height={532}   />
+                        <Image src="/assets/images/digital-agency/about/fiel-beleza.webp" alt="img" width={440} height={532}   />
                         </div>
                         <div className="agenko-experince-box style-one">
-                            <h2><span>24</span>+</h2>
-                            <p>Years On The Market</p>
+                            <h2><span>15</span>+</h2>
+                            <p>Anos de Experiência</p>
                         </div>
                     </div>
                 </div>

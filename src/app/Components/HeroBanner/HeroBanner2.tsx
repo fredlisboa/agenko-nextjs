@@ -15,22 +15,22 @@ const HeroBanner2 = () => {
                     <div className="col-lg-12">
                         <div className="hero-content">
                             <h1>
-                                <span className="text-anm">Harmonização  em</span>
+                                <span className="text-anm">Harmonização Orofacial em</span>
                                 <span className="text-anm">Goiânia-GO</span>
                             </h1>
                             <div className="pro">HOF</div>
-                            <div className="text-box pf_fadeup">
-                                <p>A <span>Digital Modern Agency</span> specializing in innovative web app design branding, and marketing solutions to elevate your business.</p>
-                                <div className="hero-button">
-                                    <Link href="/about" className="theme-btn style-one">
-                                        <span className="text-flip">
-                                            <span className="text">LEARN MORE</span>
-                                            <span className="text">LEARN MORE</span>
-                                        </span>
-                                    </Link>
-                                </div>
-                            </div>
                         </div>
+                    </div>
+                </div>
+                <div className="text-box pf_fadeup" style={{marginTop: '-50px', marginBottom: '50px'}}>
+                <p style={{textAlign: 'justify'}}><span>Dra Gabriella Lisboa</span> é especialista em equilibrar a relação estética e funcional da face e sorriso, realçar traços naturais — sem cirurgia, gerenciar o envelhecimento e corrigir assimetrias.</p>
+                    <div className="hero-button" style={{marginTop: '25px'}}>
+                        <Link href="/about" className="theme-btn style-one">
+                            <span className="text-flip">
+                                <span className="text">SAIBA MAIS</span>
+                                <span className="text">SAIBA MAIS</span>
+                            </span>
+                        </Link>
                     </div>
                 </div>
                 <div className="row">
