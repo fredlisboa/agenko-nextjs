@@ -42,7 +42,7 @@ Version: 1.0
 /* Base CSS */
 
 :root {
-  --primary-color: #9CFE4F;
+  --primary-color: #ffa8ee;
   --heading-color: #1A1A1A;
   --primary-black-color: #0E0F11;
   --white-color: #ffffff;
@@ -4740,7 +4740,7 @@ label {
   width: 760px;
   height: 760px;
   border-radius: 50%;
-  background: rgba(156, 254, 79, 0.6);
+  background: rgb(255, 123, 229);
   -webkit-filter: blur(200px);
           filter: blur(200px);
 }
@@ -4768,7 +4768,7 @@ label {
   width: 660px;
   height: 660px;
   border-radius: 50%;
-  background: #8778F5;
+  background: #ffa8ee;
   -webkit-filter: blur(150px);
           filter: blur(150px);
 }
@@ -4798,7 +4798,7 @@ label {
   width: 760px;
   height: 760px;
   border-radius: 50%;
-  background: rgba(156, 254, 79, 0.6);
+  background: rgb(255, 123, 229);
   -webkit-filter: blur(200px);
           filter: blur(200px);
 }
@@ -6770,7 +6770,7 @@ label {
     width: 230px;
     background-color:#fff;
     position: absolute;
-    border-top: 2px solid #9cfe4f;
+    border-top: 2px solid #ffa8ee;
     -webkit-box-shadow: 0px 1px 2px 0px rgba(2, 0, 181, 0.1);
     box-shadow: 0px 1px 2px 0px rgba(2, 0, 181, 0.1);
     padding: 10px 0;
@@ -6838,10 +6838,10 @@ label {
   background-color: #2b00a5;
 }
 .header_sticky_style1.cs-gescout_sticky{
-  background-color: #6a47ed;
+  background-color: #111111;
 }
 .header_sticky_style1.cs_site_header.header_style_2.cs_style_1 .container::before {
-  background-color: #6a47ed;
+  background-color: #111111;
 }
 .header_sticky_style1.cs-gescout_sticky .cs_nav .cs_nav_list>li>a{
   color: #fff;
@@ -7277,7 +7277,7 @@ label {
   padding-right: 15px;
 }
 .circle-border-area{
-  border: 4px solid #6a47ed;
+  border: 4px solid #FFFFFF;
   border-radius: 50px;
 }
 @media (min-width: 1400px) {

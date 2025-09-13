@@ -40,7 +40,7 @@ const HeroBanner2 = () => {
                                 
                                 <Link href="/service/service-details" className="agenko-iconic-box style-one">
                                     <div className="icon">
-                                    <i className="bi bi-browser-edge"></i>
+                                        <Image src="/assets/images/icons/design_icon1.svg" alt="Website Design Icon" width={150} height={150} />
                                     </div>
                                     <div className="content">
                                         <h4 className="title">Website Design Service</h4>
@@ -51,7 +51,7 @@ const HeroBanner2 = () => {
                                 
                                 <Link href="/service/service-details" className="agenko-iconic-box style-one">
                                     <div className="icon">
-                                    <i className="bi bi-code-square"></i>
+                                        <Image src="/assets/images/icons/development_icon.svg" alt="Web Development Icon" width={40} height={40} />
                                     </div>
                                     <div className="content">
                                         <h4 className="title">Web Development Service</h4>
@@ -62,7 +62,7 @@ const HeroBanner2 = () => {
                                 
                                 <Link href="/service/service-details" className="agenko-iconic-box style-one">
                                     <div className="icon">
-                                    <i className="bi bi-lightbulb"></i>
+                                        <Image src="/assets/images/icons/strategy_icon.svg" alt="Brand Strategy Icon" width={40} height={40} />
                                     </div>
                                     <div className="content">
                                         <h4 className="title">Brand Strategy Solutions</h4>
@@ -73,7 +73,7 @@ const HeroBanner2 = () => {
                                
                                 <Link href="/service/service-details" className="agenko-iconic-box style-one">
                                     <div className="icon">
-                                    <i className="bi bi-megaphone"></i>
+                                        <Image src="/assets/images/icons/marketing_icon.svg" alt="Digital Marketing Icon" width={40} height={40} />
                                     </div>
                                     <div className="content">
                                         <h4 className="title">Digital Marketing Solution</h4>
