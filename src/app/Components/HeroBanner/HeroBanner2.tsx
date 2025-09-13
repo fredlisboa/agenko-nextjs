@@ -15,10 +15,10 @@ const HeroBanner2 = () => {
                     <div className="col-lg-12">
                         <div className="hero-content">
                             <h1>
-                                <span className="text-anm">Digital Modern</span>
-                                <span className="text-anm">Agency</span>
+                                <span className="text-anm">Harmonização  em</span>
+                                <span className="text-anm">Goiânia-GO</span>
                             </h1>
-                            <div className="pro">Pro</div>
+                            <div className="pro">HOF</div>
                             <div className="text-box pf_fadeup">
                                 <p>A <span>Digital Modern Agency</span> specializing in innovative web app design branding, and marketing solutions to elevate your business.</p>
                                 <div className="hero-button">
@@ -40,10 +40,10 @@ const HeroBanner2 = () => {
                                 
                                 <Link href="/service/service-details" className="agenko-iconic-box style-one">
                                     <div className="icon">
-                                        <Image src="/assets/images/icons/design_icon1.svg" alt="Website Design Icon" width={150} height={150} />
+                                        <Image src="/assets/images/icons/lipo-papada.svg" alt="Lipo de Papada Icon" width={40} height={40} />
                                     </div>
                                     <div className="content">
-                                        <h4 className="title">Website Design Service</h4>
+                                        <h4 className="title">Lipo de Papada</h4>
                                     </div>
                                 </Link>
                             </li>
@@ -51,10 +51,10 @@ const HeroBanner2 = () => {
                                 
                                 <Link href="/service/service-details" className="agenko-iconic-box style-one">
                                     <div className="icon">
-                                        <Image src="/assets/images/icons/development_icon.svg" alt="Web Development Icon" width={40} height={40} />
+                                        <Image src="/assets/images/icons/rinomodelacao.svg" alt="Rinomodelação Icon" width={40} height={40} />
                                     </div>
                                     <div className="content">
-                                        <h4 className="title">Web Development Service</h4>
+                                        <h4 className="title">Rinomodelação</h4>
                                     </div>
                                 </Link>
                             </li>
@@ -62,10 +62,10 @@ const HeroBanner2 = () => {
                                 
                                 <Link href="/service/service-details" className="agenko-iconic-box style-one">
                                     <div className="icon">
-                                        <Image src="/assets/images/icons/strategy_icon.svg" alt="Brand Strategy Icon" width={40} height={40} />
+                                        <Image src="/assets/images/icons/soft-lift.svg" alt="Lifting Facial Não Cirúrgico Icon" width={40} height={40} />
                                     </div>
                                     <div className="content">
-                                        <h4 className="title">Brand Strategy Solutions</h4>
+                                        <h4 className="title">Lifting Facial Não Cirúrgico</h4>
                                     </div>
                                 </Link>
                             </li>
@@ -73,19 +73,30 @@ const HeroBanner2 = () => {
                                
                                 <Link href="/service/service-details" className="agenko-iconic-box style-one">
                                     <div className="icon">
-                                        <Image src="/assets/images/icons/marketing_icon.svg" alt="Digital Marketing Icon" width={40} height={40} />
+                                        <Image src="/assets/images/icons/preenchimento-facial.svg" alt="Prenchimento Facial Icon" width={40} height={40} />
                                     </div>
                                     <div className="content">
-                                        <h4 className="title">Digital Marketing Solution</h4>
+                                        <h4 className="title">Preenchimento Facial</h4>
                                     </div>
                                 </Link>
                             </li>
+                            <li>
+                               
+                               <Link href="/service/service-details" className="agenko-iconic-box style-one">
+                                   <div className="icon">
+                                       <Image src="/assets/images/icons/fios-pdo.svg" alt="Fios de Sustentação Icon" width={60} height={60} />
+                                   </div>
+                                   <div className="content">
+                                       <h4 className="title">Fios de Sustentação PDO</h4>
+                                   </div>
+                               </Link>
+                           </li>
                         </ul>
                     </div>
                     <div className="col-lg-8">
                         
                         <div className="hero-image style-one pf_fadeup">
-                            <img src="/assets/images/digital-agency/hero/hero-img1.jpg" alt="Hero Image" />
+                            <img src="/assets/images/digital-agency/hero/hero-img1.webp" alt="Hero Image" />
                         </div>
                     </div>
                 </div>

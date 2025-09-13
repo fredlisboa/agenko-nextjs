@@ -119,7 +119,7 @@ const HeroBanner2 = ()=>{
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     className: "text-anm",
-                                                    children: "Digital Modern"
+                                                    children: "Harmonização  em"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/HeroBanner/HeroBanner2.tsx",
                                                     lineNumber: 18,
@@ -127,7 +127,7 @@ const HeroBanner2 = ()=>{
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     className: "text-anm",
-                                                    children: "Agency"
+                                                    children: "Goiânia-GO"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/HeroBanner/HeroBanner2.tsx",
                                                     lineNumber: 19,
@@ -141,7 +141,7 @@ const HeroBanner2 = ()=>{
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "pro",
-                                            children: "Pro"
+                                            children: "HOF"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/Components/HeroBanner/HeroBanner2.tsx",
                                             lineNumber: 21,
@@ -245,10 +245,10 @@ const HeroBanner2 = ()=>{
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             className: "icon",
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                                                src: "/assets/images/icons/design_icon1.svg",
-                                                                alt: "Website Design Icon",
-                                                                width: 150,
-                                                                height: 150
+                                                                src: "/assets/images/icons/lipo-papada.svg",
+                                                                alt: "Lipo de Papada Icon",
+                                                                width: 40,
+                                                                height: 40
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/HeroBanner/HeroBanner2.tsx",
                                                                 lineNumber: 43,
@@ -263,7 +263,7 @@ const HeroBanner2 = ()=>{
                                                             className: "content",
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
                                                                 className: "title",
-                                                                children: "Website Design Service"
+                                                                children: "Lipo de Papada"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/HeroBanner/HeroBanner2.tsx",
                                                                 lineNumber: 46,
@@ -293,8 +293,8 @@ const HeroBanner2 = ()=>{
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             className: "icon",
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                                                src: "/assets/images/icons/development_icon.svg",
-                                                                alt: "Web Development Icon",
+                                                                src: "/assets/images/icons/rinomodelacao.svg",
+                                                                alt: "Rinomodelação Icon",
                                                                 width: 40,
                                                                 height: 40
                                                             }, void 0, false, {
@@ -311,7 +311,7 @@ const HeroBanner2 = ()=>{
                                                             className: "content",
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
                                                                 className: "title",
-                                                                children: "Web Development Service"
+                                                                children: "Rinomodelação"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/HeroBanner/HeroBanner2.tsx",
                                                                 lineNumber: 57,
@@ -341,8 +341,8 @@ const HeroBanner2 = ()=>{
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             className: "icon",
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                                                src: "/assets/images/icons/strategy_icon.svg",
-                                                                alt: "Brand Strategy Icon",
+                                                                src: "/assets/images/icons/soft-lift.svg",
+                                                                alt: "Lifting Facial Não Cirúrgico Icon",
                                                                 width: 40,
                                                                 height: 40
                                                             }, void 0, false, {
@@ -359,7 +359,7 @@ const HeroBanner2 = ()=>{
                                                             className: "content",
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
                                                                 className: "title",
-                                                                children: "Brand Strategy Solutions"
+                                                                children: "Lifting Facial Não Cirúrgico"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/HeroBanner/HeroBanner2.tsx",
                                                                 lineNumber: 68,
@@ -389,8 +389,8 @@ const HeroBanner2 = ()=>{
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             className: "icon",
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                                                src: "/assets/images/icons/marketing_icon.svg",
-                                                                alt: "Digital Marketing Icon",
+                                                                src: "/assets/images/icons/preenchimento-facial.svg",
+                                                                alt: "Prenchimento Facial Icon",
                                                                 width: 40,
                                                                 height: 40
                                                             }, void 0, false, {
@@ -407,7 +407,7 @@ const HeroBanner2 = ()=>{
                                                             className: "content",
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
                                                                 className: "title",
-                                                                children: "Digital Marketing Solution"
+                                                                children: "Preenchimento Facial"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/HeroBanner/HeroBanner2.tsx",
                                                                 lineNumber: 79,
@@ -428,6 +428,54 @@ const HeroBanner2 = ()=>{
                                                 fileName: "[project]/src/app/Components/HeroBanner/HeroBanner2.tsx",
                                                 lineNumber: 72,
                                                 columnNumber: 29
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                                    href: "/service/service-details",
+                                                    className: "agenko-iconic-box style-one",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "icon",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                                                src: "/assets/images/icons/fios-pdo.svg",
+                                                                alt: "Fios de Sustentação Icon",
+                                                                width: 60,
+                                                                height: 60
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/app/Components/HeroBanner/HeroBanner2.tsx",
+                                                                lineNumber: 87,
+                                                                columnNumber: 40
+                                                            }, ("TURBOPACK compile-time value", void 0))
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/Components/HeroBanner/HeroBanner2.tsx",
+                                                            lineNumber: 86,
+                                                            columnNumber: 36
+                                                        }, ("TURBOPACK compile-time value", void 0)),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "content",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                                                className: "title",
+                                                                children: "Fios de Sustentação PDO"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/app/Components/HeroBanner/HeroBanner2.tsx",
+                                                                lineNumber: 90,
+                                                                columnNumber: 40
+                                                            }, ("TURBOPACK compile-time value", void 0))
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/Components/HeroBanner/HeroBanner2.tsx",
+                                                            lineNumber: 89,
+                                                            columnNumber: 36
+                                                        }, ("TURBOPACK compile-time value", void 0))
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/app/Components/HeroBanner/HeroBanner2.tsx",
+                                                    lineNumber: 85,
+                                                    columnNumber: 32
+                                                }, ("TURBOPACK compile-time value", void 0))
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/Components/HeroBanner/HeroBanner2.tsx",
+                                                lineNumber: 83,
+                                                columnNumber: 29
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
@@ -445,21 +493,21 @@ const HeroBanner2 = ()=>{
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "hero-image style-one pf_fadeup",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                            src: "/assets/images/digital-agency/hero/hero-img1.jpg",
+                                            src: "/assets/images/digital-agency/hero/hero-img1.webp",
                                             alt: "Hero Image"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/Components/HeroBanner/HeroBanner2.tsx",
-                                            lineNumber: 88,
+                                            lineNumber: 99,
                                             columnNumber: 29
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Components/HeroBanner/HeroBanner2.tsx",
-                                        lineNumber: 87,
+                                        lineNumber: 98,
                                         columnNumber: 25
                                     }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/Components/HeroBanner/HeroBanner2.tsx",
-                                    lineNumber: 85,
+                                    lineNumber: 96,
                                     columnNumber: 21
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
