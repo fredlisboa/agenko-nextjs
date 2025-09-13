@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Source_Sans_3, Roboto } from "next/font/google";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -39,6 +40,7 @@ export default function RootLayout({ children } : any ) {
       <body className={`${source_sans.variable} ${roboto.variable}`}>
         {children}
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
