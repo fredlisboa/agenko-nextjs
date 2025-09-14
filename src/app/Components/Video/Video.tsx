@@ -48,7 +48,9 @@ const Video = () => {
             </div>
             <style jsx>{`
                 .sd-lab-autoplay-video-container {
+                    max-width: 420px;
                     width: 100%;
+                    margin: 40px auto;
                     position: relative;
                     background: #000;
                     border-radius: 20px;
