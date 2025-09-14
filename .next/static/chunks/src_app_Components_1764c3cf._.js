@@ -139,14 +139,14 @@ const WhoWeAre = ()=>{
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "sub-title",
-                                                children: "What We Are"
+                                                children: "Nosso Compromisso"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
                                                 lineNumber: 29,
                                                 columnNumber: 45
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                                children: "Your Trusted Agency for Digital Success"
+                                                children: "Sua Especialista em Beleza Natural e Resultados de Excelência"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
                                                 lineNumber: 30,
@@ -170,7 +170,7 @@ const WhoWeAre = ()=>{
                                                         lineNumber: 33,
                                                         columnNumber: 49
                                                     }, ("TURBOPACK compile-time value", void 0)),
-                                                    "Passionate Problem-Solvers For Your Business"
+                                                    "Planejamento Individualizado que Respeita Sua Identidade"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
@@ -186,7 +186,7 @@ const WhoWeAre = ()=>{
                                                         lineNumber: 34,
                                                         columnNumber: 49
                                                     }, ("TURBOPACK compile-time value", void 0)),
-                                                    "Business & Financial Creative Innovators"
+                                                    "Técnicas Avançadas para Resultados Elegantes e Naturais"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
@@ -202,7 +202,7 @@ const WhoWeAre = ()=>{
                                                         lineNumber: 35,
                                                         columnNumber: 49
                                                     }, ("TURBOPACK compile-time value", void 0)),
-                                                    "Provide National Trusted Client-Centered"
+                                                    "Atendimento Exclusivo e Focado em Sua Segurança"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
@@ -218,7 +218,7 @@ const WhoWeAre = ()=>{
                                                         lineNumber: 36,
                                                         columnNumber: 49
                                                     }, ("TURBOPACK compile-time value", void 0)),
-                                                    "Perfect & Modern Work Results-Driven"
+                                                    "Produtos Premium para Maior Durabilidade e Confiança"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
@@ -234,7 +234,7 @@ const WhoWeAre = ()=>{
                                                         lineNumber: 37,
                                                         columnNumber: 49
                                                     }, ("TURBOPACK compile-time value", void 0)),
-                                                    "National Client Meet & Collaborative Partners"
+                                                    "Acompanhamento Pós-Procedimento para Sua Tranquilidade"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
@@ -257,7 +257,7 @@ const WhoWeAre = ()=>{
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         className: "text",
-                                                        children: "LEARN MORE"
+                                                        children: "SAIBA MAIS"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
                                                         lineNumber: 42,
@@ -265,7 +265,7 @@ const WhoWeAre = ()=>{
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         className: "text",
-                                                        children: "LEARN MORE"
+                                                        children: "SAIBA MAIS"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
                                                         lineNumber: 43,
@@ -373,7 +373,7 @@ const WhoWeAre = ()=>{
                         className: "big-text text-center mt-80 pt-70",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                             className: "text-anm-two",
-                            children: "DIGITAL MODERN AGENCY"
+                            children: "HARMONONIZAÇÃO OROFACIAL"
                         }, void 0, false, {
                             fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
                             lineNumber: 66,

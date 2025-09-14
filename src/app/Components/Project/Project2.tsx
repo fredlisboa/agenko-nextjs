@@ -11,13 +11,13 @@ const Project2 = () => {
       ]; 
 
     return (
-        <section className="agk-project pt-130 pb-80">
+        <section className="agk-project pt-80 pb-80">
         <div className="container">
             <div className="row align-items-center">
                 <div className="col-lg-7">
                     
                     <div className="section-title mb-60 pf_fadeup">
-                        <span className="sub-title">Our Work</span>
+                        <span className="sub-title">Casos</span>
                         <h2>Building Tomorrow Digital 
                             Experiences Today</h2>
                     </div>
@@ -26,8 +26,8 @@ const Project2 = () => {
                     <div className="agk-button mb-60 float-lg-end pf_fadeup">
                         <Link href="/project" className="theme-btn style-one">
                             <span className="text-flip">
-                                <span className="text">View All Work</span>
-                                <span className="text">View All Work</span>
+                                <span className="text">SAIBA MAIS</span>
+                                <span className="text">SAIBA MAIS</span>
                             </span>
                         </Link>
                     </div>

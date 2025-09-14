@@ -1,6 +1,5 @@
 {
-  "/(defaultLayout)/about/page": "app/(defaultLayout)/about/page.js",
   "/(defaultLayout)/page": "app/(defaultLayout)/page.js",
-  "/(defaultLayout)/project/project-details/page": "app/(defaultLayout)/project/project-details/page.js",
+  "/(defaultLayout)/service/service-details/page": "app/(defaultLayout)/service/service-details/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js"
 }
