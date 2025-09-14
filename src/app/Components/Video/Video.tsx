@@ -50,6 +50,7 @@ const Video = () => {
                 .sd-lab-autoplay-video-container {
                     max-width: 420px;
                     width: 100%;
+                    height: 100%;
                     margin: auto;
                     position: relative;
                     background: #000;
@@ -58,9 +59,9 @@ const Video = () => {
                     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
                 }
                 .sd-lab-autoplay-video-container .video-player-target {
+                    position: relative;
                     width: 100%;
                     padding-top: 177.78%; /* 9:16 Aspect Ratio */
-                    height: 100%;
                 }
                 .sd-lab-autoplay-video-container iframe {
                     position: absolute;
