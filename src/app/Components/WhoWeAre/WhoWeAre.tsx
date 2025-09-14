@@ -8,7 +8,7 @@ const WhoWeAre = () => {
     return (
         <section className="agk-who-we gray-dark pt-130 pb-70">
             <div className="container">
-                <div className="row">
+                <div className="row align-items-center">
                     <div className="col-xl-5">
                         <div className="agk-content-box mb-50 pf_fadeup">
                             <div className="section-title mb-30">
