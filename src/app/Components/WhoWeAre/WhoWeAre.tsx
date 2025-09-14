@@ -3,7 +3,7 @@ import React from 'react';
 import Link from 'next/link';
 
 const WhoWeAre = () => {
-    const videoId = "25853f14-6a54-41a3-b376-fda329bc5bb9";
+    const videoId = "deebdac7-b772-4257-a5d1-be929df1306c";
     const videoUrl = `https://iframe.mediadelivery.net/embed/149294/${videoId}?autoplay=true&muted=true&loop=true&controls=false&background=1`;
 
     return (
