@@ -55,11 +55,11 @@ const Video = () => {
                     background: #000;
                     border-radius: 20px;
                     overflow: hidden;
-                    aspect-ratio: 9 / 16;
                     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
                 }
                 .sd-lab-autoplay-video-container .video-player-target {
                     width: 100%;
+                    padding-top: 177.78%; /* 9:16 Aspect Ratio */
                     height: 100%;
                 }
                 .sd-lab-autoplay-video-container iframe {

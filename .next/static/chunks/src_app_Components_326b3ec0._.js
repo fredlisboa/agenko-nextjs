@@ -54,11 +54,11 @@ const Video = ()=>{
     }["Video.useEffect"], []);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         id: "autoplay-video-1",
-        className: "jsx-cdbaa07392b5fdad" + " " + "sd-lab-autoplay-video-container",
+        className: "jsx-b819beeeedcc3eb8" + " " + "sd-lab-autoplay-video-container",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 "data-video-id": "25853f14-6a54-41a3-b376-fda329bc5bb9",
-                className: "jsx-cdbaa07392b5fdad" + " " + "video-player-target",
+                className: "jsx-b819beeeedcc3eb8" + " " + "video-player-target",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                     src: "https://laboratorio.studiodental.dental/wp-content/uploads/2025/09/0901.webp",
                     alt: "Fluxo Digital SD-Lab",
@@ -71,7 +71,7 @@ const Video = ()=>{
                         top: 0,
                         left: 0
                     },
-                    className: "jsx-cdbaa07392b5fdad"
+                    className: "jsx-b819beeeedcc3eb8"
                 }, void 0, false, {
                     fileName: "[project]/src/app/Components/Video/Video.tsx",
                     lineNumber: 43,
@@ -83,8 +83,8 @@ const Video = ()=>{
                 columnNumber: 13
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                id: "cdbaa07392b5fdad",
-                children: ".sd-lab-autoplay-video-container.jsx-cdbaa07392b5fdad{aspect-ratio:9/16;background:#000;border-radius:20px;width:100%;max-width:420px;margin:auto;position:relative;overflow:hidden;box-shadow:0 12px 40px rgba(0,0,0,.3)}.sd-lab-autoplay-video-container.jsx-cdbaa07392b5fdad .video-player-target.jsx-cdbaa07392b5fdad{width:100%;height:100%}.sd-lab-autoplay-video-container.jsx-cdbaa07392b5fdad iframe.jsx-cdbaa07392b5fdad{border-radius:inherit;opacity:0;border:none;width:100%;height:100%;transition:opacity .5s ease-in-out;position:absolute;top:0;left:0}.sd-lab-autoplay-video-container.jsx-cdbaa07392b5fdad iframe.loaded.jsx-cdbaa07392b5fdad{opacity:1}"
+                id: "b819beeeedcc3eb8",
+                children: ".sd-lab-autoplay-video-container.jsx-b819beeeedcc3eb8{background:#000;border-radius:20px;width:100%;max-width:420px;margin:auto;position:relative;overflow:hidden;box-shadow:0 12px 40px rgba(0,0,0,.3)}.sd-lab-autoplay-video-container.jsx-b819beeeedcc3eb8 .video-player-target.jsx-b819beeeedcc3eb8{width:100%;height:100%;padding-top:177.78%}.sd-lab-autoplay-video-container.jsx-b819beeeedcc3eb8 iframe.jsx-b819beeeedcc3eb8{border-radius:inherit;opacity:0;border:none;width:100%;height:100%;transition:opacity .5s ease-in-out;position:absolute;top:0;left:0}.sd-lab-autoplay-video-container.jsx-b819beeeedcc3eb8 iframe.loaded.jsx-b819beeeedcc3eb8{opacity:1}"
             }, void 0, false, void 0, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
