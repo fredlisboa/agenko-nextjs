@@ -15,29 +15,29 @@ const Video = ()=>{
     const videoId = "25853f14-6a54-41a3-b376-fda329bc5bb9";
     const videoUrl = `https://iframe.mediadelivery.net/embed/149294/${videoId}?autoplay=true&muted=true&loop=true&controls=false&background=1`;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "jsx-588c57758881d651" + " " + "sd-lab-autoplay-video-container",
+        className: "jsx-8473cf9c6aa3ec27" + " " + "sd-lab-autoplay-video-container",
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("iframe", {
-                src: videoUrl,
-                loading: "lazy",
-                style: {
-                    border: 'none',
-                    position: 'absolute',
-                    top: 0,
-                    height: '100%',
-                    width: '100%'
-                },
-                allow: "autoplay; encrypted-media; picture-in-picture",
-                allowFullScreen: true,
-                className: "jsx-588c57758881d651"
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "jsx-8473cf9c6aa3ec27" + " " + "aspect-ratio-box",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("iframe", {
+                    src: videoUrl,
+                    loading: "lazy",
+                    allow: "autoplay; encrypted-media; picture-in-picture",
+                    allowFullScreen: true,
+                    className: "jsx-8473cf9c6aa3ec27"
+                }, void 0, false, {
+                    fileName: "[project]/src/app/Components/Video/Video.tsx",
+                    lineNumber: 11,
+                    columnNumber: 17
+                }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/src/app/Components/Video/Video.tsx",
                 lineNumber: 10,
                 columnNumber: 13
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                id: "588c57758881d651",
-                children: ".sd-lab-autoplay-video-container.jsx-588c57758881d651{aspect-ratio:9/16;background:#000;border-radius:20px;width:100%;max-width:420px;margin:auto;position:relative;overflow:hidden;box-shadow:0 12px 40px #0000004d}"
+                id: "8473cf9c6aa3ec27",
+                children: ".sd-lab-autoplay-video-container.jsx-8473cf9c6aa3ec27{background:#000;border-radius:20px;width:100%;max-width:420px;margin:auto;overflow:hidden;box-shadow:0 12px 40px #0000004d}.aspect-ratio-box.jsx-8473cf9c6aa3ec27{width:100%;padding-top:177.78%;position:relative}.aspect-ratio-box.jsx-8473cf9c6aa3ec27 iframe.jsx-8473cf9c6aa3ec27{border:none;width:100%;height:100%;position:absolute;top:0;left:0}"
             }, void 0, false, void 0, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {

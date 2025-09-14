@@ -7,24 +7,36 @@ const Video = () => {
 
     return (
         <div className="sd-lab-autoplay-video-container">
-            <iframe
-                src={videoUrl}
-                loading="lazy"
-                style={{ border: 'none', position: 'absolute', top: 0, height: '100%', width: '100%' }}
-                allow="autoplay; encrypted-media; picture-in-picture"
-                allowFullScreen
-            ></iframe>
+            <div className="aspect-ratio-box">
+                <iframe
+                    src={videoUrl}
+                    loading="lazy"
+                    allow="autoplay; encrypted-media; picture-in-picture"
+                    allowFullScreen
+                ></iframe>
+            </div>
             <style jsx>{`
                 .sd-lab-autoplay-video-container {
-                    position: relative;
                     max-width: 420px;
                     width: 100%;
                     margin: auto;
                     border-radius: 20px;
                     overflow: hidden;
                     box-shadow: 0 12px 40px rgba(0,0,0,0.3);
-                    aspect-ratio: 9 / 16;
                     background: #000;
+                }
+                .aspect-ratio-box {
+                    position: relative;
+                    width: 100%;
+                    padding-top: 177.78%; /* 9:16 Aspect Ratio */
+                }
+                .aspect-ratio-box iframe {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border: none;
                 }
             `}</style>
         </div>
