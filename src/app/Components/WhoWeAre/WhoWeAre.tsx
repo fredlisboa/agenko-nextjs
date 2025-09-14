@@ -1,14 +1,15 @@
 'use client'
 import React from 'react';
 import Link from 'next/link';
-import Video from '../Video/Video';
 
 const WhoWeAre = () => {
+    const videoId = "25853f14-6a54-41a3-b376-fda329bc5bb9";
+    const videoUrl = `https://iframe.mediadelivery.net/embed/149294/${videoId}?autoplay=true&muted=true&loop=true&controls=false&background=1`;
 
     return (
         <section className="agk-who-we gray-dark pt-130 pb-70">
             <div className="container">
-                <div className="row align-items-center">
+                <div className="row">
                     <div className="col-xl-5">
                         <div className="agk-content-box mb-50 pf_fadeup">
                             <div className="section-title mb-30">
@@ -33,8 +34,37 @@ const WhoWeAre = () => {
                         </div>
                     </div>
                     <div className="col-xl-7">
-                        <div className="mb-50 pf_fadeup">
-                            <Video />
+                        {/* Simplified Video Embed Directly Here */}
+                        <div style={{
+                            maxWidth: '420px',
+                            width: '100%',
+                            margin: 'auto',
+                            borderRadius: '20px',
+                            overflow: 'hidden',
+                            boxShadow: '0 12px 40px rgba(0,0,0,0.3)',
+                            background: '#000',
+                        }}>
+                            <div style={{
+                                position: 'relative',
+                                width: '100%',
+                                paddingTop: '177.78%', // 9:16 Aspect Ratio
+                            }}>
+                                <iframe
+                                    src={videoUrl}
+                                    loading="lazy"
+                                    style={{
+                                        position: 'absolute',
+                                        top: 0,
+                                        left: 0,
+                                        width: '100%',
+                                        height: '100%',
+                                        border: 0,
+                                        display: 'block', // Final override attempt
+                                    }}
+                                    allow="autoplay; encrypted-media; picture-in-picture"
+                                    allowFullScreen
+                                ></iframe>
+                            </div>
                         </div>
                     </div>
                 </div>

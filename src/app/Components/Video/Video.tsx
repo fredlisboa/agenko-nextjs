@@ -9,6 +9,7 @@ const Video = () => {
         <div className="sd-lab-autoplay-video-container">
             <div className="aspect-ratio-box">
                 <iframe
+                    className="video-iframe"
                     src={videoUrl}
                     loading="lazy"
                     allow="autoplay; encrypted-media; picture-in-picture"
@@ -30,13 +31,14 @@ const Video = () => {
                     width: 100%;
                     padding-top: 177.78%; /* 9:16 Aspect Ratio */
                 }
-                .aspect-ratio-box iframe {
+                .video-iframe {
                     position: absolute;
                     top: 0;
                     left: 0;
                     width: 100%;
                     height: 100%;
                     border: none;
+                    display: block !important; /* This is the critical fix */
                 }
             `}</style>
         </div>

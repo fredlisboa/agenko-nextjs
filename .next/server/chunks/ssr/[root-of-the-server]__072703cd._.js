@@ -1523,14 +1523,14 @@ const Process2 = ()=>{
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: "sub-title",
-                                        children: "Work Process"
+                                        children: "Nossa Jornada"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Components/Process/Process2.tsx",
                                         lineNumber: 11,
                                         columnNumber: 41
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                        children: "How We Deliver Outstanding High Productivity Results"
+                                        children: "Como Transformamos a Sua Beleza com Segurança e Previsibilidade."
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Components/Process/Process2.tsx",
                                         lineNumber: 12,
@@ -1552,20 +1552,20 @@ const Process2 = ()=>{
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "text-box mb-55 pf_fadeup",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    children: "Creating cutting-edge digital experience that innovation and functionality to meet the evolving tomorrow’s businesses and users"
+                                    children: "Da primeira conversa ao resultado final, nosso processo é desenhado para garantir sua tranquilidade, conforto e, acima de tudo, um resultado que celebre sua beleza natural."
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/Components/Process/Process2.tsx",
-                                    lineNumber: 19,
+                                    lineNumber: 18,
                                     columnNumber: 41
                                 }, ("TURBOPACK compile-time value", void 0))
                             }, void 0, false, {
                                 fileName: "[project]/src/app/Components/Process/Process2.tsx",
-                                lineNumber: 18,
+                                lineNumber: 17,
                                 columnNumber: 37
                             }, ("TURBOPACK compile-time value", void 0))
                         }, void 0, false, {
                             fileName: "[project]/src/app/Components/Process/Process2.tsx",
-                            lineNumber: 16,
+                            lineNumber: 15,
                             columnNumber: 33
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
@@ -1585,15 +1585,15 @@ const Process2 = ()=>{
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "icon",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                            className: "bi bi-binoculars"
+                                            className: "bi bi-calendar-date"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/Components/Process/Process2.tsx",
-                                            lineNumber: 28,
+                                            lineNumber: 27,
                                             columnNumber: 41
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Components/Process/Process2.tsx",
-                                        lineNumber: 27,
+                                        lineNumber: 26,
                                         columnNumber: 41
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1601,42 +1601,42 @@ const Process2 = ()=>{
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
                                                 className: "title",
-                                                children: "Research & Planning"
+                                                children: "Avaliação Personalizada e Gratuita"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/Components/Process/Process2.tsx",
+                                                lineNumber: 30,
+                                                columnNumber: 45
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                children: "Tudo começa com uma conversa. Nesta etapa, entendemos seus desejos, avaliamos seus traços e criamos um plano de tratamento 100% personalizado e sem compromisso."
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/Process/Process2.tsx",
                                                 lineNumber: 31,
                                                 columnNumber: 45
                                             }, ("TURBOPACK compile-time value", void 0)),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                children: "Creating cutting-edge digital pro experience that innovation"
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "step",
+                                                children: "Passo-01"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/Process/Process2.tsx",
                                                 lineNumber: 32,
-                                                columnNumber: 45
-                                            }, ("TURBOPACK compile-time value", void 0)),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "step",
-                                                children: "Step-01"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/app/Components/Process/Process2.tsx",
-                                                lineNumber: 33,
                                                 columnNumber: 45
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/Components/Process/Process2.tsx",
-                                        lineNumber: 30,
+                                        lineNumber: 29,
                                         columnNumber: 41
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/Components/Process/Process2.tsx",
-                                lineNumber: 26,
+                                lineNumber: 25,
                                 columnNumber: 37
                             }, ("TURBOPACK compile-time value", void 0))
                         }, void 0, false, {
                             fileName: "[project]/src/app/Components/Process/Process2.tsx",
-                            lineNumber: 24,
+                            lineNumber: 23,
                             columnNumber: 33
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1647,15 +1647,15 @@ const Process2 = ()=>{
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "icon",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                            className: "bi bi-binoculars"
+                                            className: "bi bi-camera2"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/Components/Process/Process2.tsx",
-                                            lineNumber: 41,
+                                            lineNumber: 40,
                                             columnNumber: 41
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Components/Process/Process2.tsx",
-                                        lineNumber: 40,
+                                        lineNumber: 39,
                                         columnNumber: 41
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1663,42 +1663,42 @@ const Process2 = ()=>{
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
                                                 className: "title",
-                                                children: "Concept & Design"
+                                                children: "Planejamento Digital e Alinhamento"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/Components/Process/Process2.tsx",
+                                                lineNumber: 43,
+                                                columnNumber: 45
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                children: "Utilizando tecnologia de ponta, planejamos cada detalhe do procedimento. Apresentamos uma prévia dos resultados para garantir que o plano esteja perfeitamente alinhado com suas expectativas."
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/Process/Process2.tsx",
                                                 lineNumber: 44,
                                                 columnNumber: 45
                                             }, ("TURBOPACK compile-time value", void 0)),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                children: "Innovative concepts and designs tailored for functional."
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "step",
+                                                children: "Passo-02"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/Process/Process2.tsx",
                                                 lineNumber: 45,
-                                                columnNumber: 45
-                                            }, ("TURBOPACK compile-time value", void 0)),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "step",
-                                                children: "Step-02"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/app/Components/Process/Process2.tsx",
-                                                lineNumber: 46,
                                                 columnNumber: 45
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/Components/Process/Process2.tsx",
-                                        lineNumber: 43,
+                                        lineNumber: 42,
                                         columnNumber: 41
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/Components/Process/Process2.tsx",
-                                lineNumber: 39,
+                                lineNumber: 38,
                                 columnNumber: 37
                             }, ("TURBOPACK compile-time value", void 0))
                         }, void 0, false, {
                             fileName: "[project]/src/app/Components/Process/Process2.tsx",
-                            lineNumber: 37,
+                            lineNumber: 36,
                             columnNumber: 33
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1709,15 +1709,15 @@ const Process2 = ()=>{
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "icon",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                            className: "bi bi-binoculars"
+                                            className: "bi bi-person-fill-check"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/Components/Process/Process2.tsx",
-                                            lineNumber: 54,
+                                            lineNumber: 53,
                                             columnNumber: 41
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Components/Process/Process2.tsx",
-                                        lineNumber: 53,
+                                        lineNumber: 52,
                                         columnNumber: 41
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1725,42 +1725,42 @@ const Process2 = ()=>{
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
                                                 className: "title",
-                                                children: "Testing & Quality"
+                                                children: "Execução Precisa e Confortável"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/Components/Process/Process2.tsx",
+                                                lineNumber: 56,
+                                                columnNumber: 45
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                children: "Com técnica apurada e os melhores produtos do mercado, realizamos o procedimento de forma segura e minimamente invasiva, sempre priorizando seu conforto e bem-estar durante todo o processo."
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/Process/Process2.tsx",
                                                 lineNumber: 57,
                                                 columnNumber: 45
                                             }, ("TURBOPACK compile-time value", void 0)),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                children: "Comprehensive testing ensures exceptional quality."
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "step",
+                                                children: "Passo-03"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/Process/Process2.tsx",
                                                 lineNumber: 58,
-                                                columnNumber: 45
-                                            }, ("TURBOPACK compile-time value", void 0)),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "step",
-                                                children: "Step-03"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/app/Components/Process/Process2.tsx",
-                                                lineNumber: 59,
                                                 columnNumber: 45
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/Components/Process/Process2.tsx",
-                                        lineNumber: 56,
+                                        lineNumber: 55,
                                         columnNumber: 41
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/Components/Process/Process2.tsx",
-                                lineNumber: 52,
+                                lineNumber: 51,
                                 columnNumber: 37
                             }, ("TURBOPACK compile-time value", void 0))
                         }, void 0, false, {
                             fileName: "[project]/src/app/Components/Process/Process2.tsx",
-                            lineNumber: 50,
+                            lineNumber: 49,
                             columnNumber: 33
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1771,15 +1771,15 @@ const Process2 = ()=>{
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "icon",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                            className: "bi bi-binoculars"
+                                            className: "bi bi-whatsapp"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/Components/Process/Process2.tsx",
-                                            lineNumber: 67,
+                                            lineNumber: 66,
                                             columnNumber: 41
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Components/Process/Process2.tsx",
-                                        lineNumber: 66,
+                                        lineNumber: 65,
                                         columnNumber: 41
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1787,48 +1787,48 @@ const Process2 = ()=>{
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
                                                 className: "title",
-                                                children: "Help & Support"
+                                                children: "Acompanhamento e Resultados"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/Components/Process/Process2.tsx",
+                                                lineNumber: 69,
+                                                columnNumber: 45
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                children: "Sua jornada não termina aqui. Realizamos o acompanhamento pós-procedimento para garantir uma recuperação tranquila e a durabilidade dos seus resultados, celebrando juntas sua nova fase de autoestima."
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/Process/Process2.tsx",
                                                 lineNumber: 70,
                                                 columnNumber: 45
                                             }, ("TURBOPACK compile-time value", void 0)),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                children: "Dedicated help and support for seamless customer."
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "step",
+                                                children: "Passo-04"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/Process/Process2.tsx",
                                                 lineNumber: 71,
-                                                columnNumber: 45
-                                            }, ("TURBOPACK compile-time value", void 0)),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "step",
-                                                children: "Step-04"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/app/Components/Process/Process2.tsx",
-                                                lineNumber: 72,
                                                 columnNumber: 45
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/Components/Process/Process2.tsx",
-                                        lineNumber: 69,
+                                        lineNumber: 68,
                                         columnNumber: 41
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/Components/Process/Process2.tsx",
-                                lineNumber: 65,
+                                lineNumber: 64,
                                 columnNumber: 37
                             }, ("TURBOPACK compile-time value", void 0))
                         }, void 0, false, {
                             fileName: "[project]/src/app/Components/Process/Process2.tsx",
-                            lineNumber: 63,
+                            lineNumber: 62,
                             columnNumber: 33
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/Components/Process/Process2.tsx",
-                    lineNumber: 23,
+                    lineNumber: 22,
                     columnNumber: 29
                 }, ("TURBOPACK compile-time value", void 0))
             ]

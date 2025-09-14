@@ -1,53 +1,4 @@
 module.exports = [
-"[project]/src/app/Components/Video/Video.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {
-"use strict";
-
-__turbopack_context__.s([
-    "default",
-    ()=>__TURBOPACK__default__export__
-]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/styled-jsx/style.js [app-ssr] (ecmascript)");
-'use client';
-;
-;
-const Video = ()=>{
-    const videoId = "25853f14-6a54-41a3-b376-fda329bc5bb9";
-    const videoUrl = `https://iframe.mediadelivery.net/embed/149294/${videoId}?autoplay=true&muted=true&loop=true&controls=false&background=1`;
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "jsx-50c05617211b9f5f" + " " + "sd-lab-autoplay-video-container",
-        children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "jsx-50c05617211b9f5f" + " " + "aspect-ratio-box",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("iframe", {
-                    src: videoUrl,
-                    loading: "lazy",
-                    allow: "autoplay; encrypted-media; picture-in-picture",
-                    allowFullScreen: true,
-                    className: "jsx-50c05617211b9f5f" + " " + "video-iframe"
-                }, void 0, false, {
-                    fileName: "[project]/src/app/Components/Video/Video.tsx",
-                    lineNumber: 11,
-                    columnNumber: 17
-                }, ("TURBOPACK compile-time value", void 0))
-            }, void 0, false, {
-                fileName: "[project]/src/app/Components/Video/Video.tsx",
-                lineNumber: 10,
-                columnNumber: 13
-            }, ("TURBOPACK compile-time value", void 0)),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                id: "50c05617211b9f5f",
-                children: ".sd-lab-autoplay-video-container.jsx-50c05617211b9f5f{background:#000;border-radius:20px;width:100%;max-width:420px;margin:auto;overflow:hidden;box-shadow:0 12px 40px #0000004d}.aspect-ratio-box.jsx-50c05617211b9f5f{width:100%;padding-top:177.78%;position:relative}.video-iframe.jsx-50c05617211b9f5f{border:none;width:100%;height:100%;position:absolute;top:0;left:0;display:block!important}"
-            }, void 0, false, void 0, ("TURBOPACK compile-time value", void 0))
-        ]
-    }, void 0, true, {
-        fileName: "[project]/src/app/Components/Video/Video.tsx",
-        lineNumber: 9,
-        columnNumber: 9
-    }, ("TURBOPACK compile-time value", void 0));
-};
-const __TURBOPACK__default__export__ = Video;
-}),
 "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -57,12 +8,12 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$Components$2f$Video$2f$Video$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/Components/Video/Video.tsx [app-ssr] (ecmascript)");
 'use client';
 ;
 ;
-;
 const WhoWeAre = ()=>{
+    const videoId = "25853f14-6a54-41a3-b376-fda329bc5bb9";
+    const videoUrl = `https://iframe.mediadelivery.net/embed/149294/${videoId}?autoplay=true&muted=true&loop=true&controls=false&background=1`;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         className: "agk-who-we gray-dark pt-130 pb-70",
         children: [
@@ -84,20 +35,20 @@ const WhoWeAre = ()=>{
                                                 children: "Nosso Compromisso"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
-                                                lineNumber: 15,
+                                                lineNumber: 16,
                                                 columnNumber: 33
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                                 children: "Sua Especialista em Beleza Natural e Resultados de Excelência"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
-                                                lineNumber: 16,
+                                                lineNumber: 17,
                                                 columnNumber: 33
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
-                                        lineNumber: 14,
+                                        lineNumber: 15,
                                         columnNumber: 29
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -109,26 +60,10 @@ const WhoWeAre = ()=>{
                                                         className: "bi bi-check2-circle"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
-                                                        lineNumber: 19,
-                                                        columnNumber: 37
-                                                    }, ("TURBOPACK compile-time value", void 0)),
-                                                    "Planejamento Individualizado que Respeita Sua Identidade"
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
-                                                lineNumber: 19,
-                                                columnNumber: 33
-                                            }, ("TURBOPACK compile-time value", void 0)),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                        className: "bi bi-check2-circle"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
                                                         lineNumber: 20,
                                                         columnNumber: 37
                                                     }, ("TURBOPACK compile-time value", void 0)),
-                                                    "Técnicas Avançadas para Resultados Elegantes e Naturais"
+                                                    "Planejamento Individualizado que Respeita Sua Identidade"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
@@ -144,7 +79,7 @@ const WhoWeAre = ()=>{
                                                         lineNumber: 21,
                                                         columnNumber: 37
                                                     }, ("TURBOPACK compile-time value", void 0)),
-                                                    "Atendimento Exclusivo e Focado em Sua Segurança"
+                                                    "Técnicas Avançadas para Resultados Elegantes e Naturais"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
@@ -160,7 +95,7 @@ const WhoWeAre = ()=>{
                                                         lineNumber: 22,
                                                         columnNumber: 37
                                                     }, ("TURBOPACK compile-time value", void 0)),
-                                                    "Produtos Premium para Maior Durabilidade e Confiança"
+                                                    "Atendimento Exclusivo e Focado em Sua Segurança"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
@@ -176,17 +111,33 @@ const WhoWeAre = ()=>{
                                                         lineNumber: 23,
                                                         columnNumber: 37
                                                     }, ("TURBOPACK compile-time value", void 0)),
-                                                    "Acompanhamento Pós-Procedimento para Sua Tranquilidade"
+                                                    "Produtos Premium para Maior Durabilidade e Confiança"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
                                                 lineNumber: 23,
                                                 columnNumber: 33
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                        className: "bi bi-check2-circle"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
+                                                        lineNumber: 24,
+                                                        columnNumber: 37
+                                                    }, ("TURBOPACK compile-time value", void 0)),
+                                                    "Acompanhamento Pós-Procedimento para Sua Tranquilidade"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
+                                                lineNumber: 24,
+                                                columnNumber: 33
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
-                                        lineNumber: 18,
+                                        lineNumber: 19,
                                         columnNumber: 29
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -202,7 +153,7 @@ const WhoWeAre = ()=>{
                                                         children: "SAIBA MAIS"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
-                                                        lineNumber: 28,
+                                                        lineNumber: 29,
                                                         columnNumber: 41
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -210,57 +161,97 @@ const WhoWeAre = ()=>{
                                                         children: "SAIBA MAIS"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
-                                                        lineNumber: 29,
+                                                        lineNumber: 30,
                                                         columnNumber: 41
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
-                                                lineNumber: 27,
+                                                lineNumber: 28,
                                                 columnNumber: 37
                                             }, ("TURBOPACK compile-time value", void 0))
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
-                                            lineNumber: 26,
+                                            lineNumber: 27,
                                             columnNumber: 33
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
-                                        lineNumber: 25,
+                                        lineNumber: 26,
                                         columnNumber: 29
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
-                                lineNumber: 13,
+                                lineNumber: 14,
                                 columnNumber: 25
                             }, ("TURBOPACK compile-time value", void 0))
                         }, void 0, false, {
                             fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
-                            lineNumber: 12,
+                            lineNumber: 13,
                             columnNumber: 21
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "col-xl-7",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$Components$2f$Video$2f$Video$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                style: {
+                                    maxWidth: '420px',
+                                    width: '100%',
+                                    margin: 'auto',
+                                    borderRadius: '20px',
+                                    overflow: 'hidden',
+                                    boxShadow: '0 12px 40px rgba(0,0,0,0.3)',
+                                    background: '#000'
+                                },
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    style: {
+                                        position: 'relative',
+                                        width: '100%',
+                                        paddingTop: '177.78%'
+                                    },
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("iframe", {
+                                        src: videoUrl,
+                                        loading: "lazy",
+                                        style: {
+                                            position: 'absolute',
+                                            top: 0,
+                                            left: 0,
+                                            width: '100%',
+                                            height: '100%',
+                                            border: 0,
+                                            display: 'block'
+                                        },
+                                        allow: "autoplay; encrypted-media; picture-in-picture",
+                                        allowFullScreen: true
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
+                                        lineNumber: 52,
+                                        columnNumber: 33
+                                    }, ("TURBOPACK compile-time value", void 0))
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
+                                    lineNumber: 47,
+                                    columnNumber: 29
+                                }, ("TURBOPACK compile-time value", void 0))
+                            }, void 0, false, {
                                 fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
-                                lineNumber: 36,
+                                lineNumber: 38,
                                 columnNumber: 25
                             }, ("TURBOPACK compile-time value", void 0))
                         }, void 0, false, {
                             fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
-                            lineNumber: 35,
+                            lineNumber: 36,
                             columnNumber: 21
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
-                    lineNumber: 11,
+                    lineNumber: 12,
                     columnNumber: 17
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
-                lineNumber: 10,
+                lineNumber: 11,
                 columnNumber: 13
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -274,28 +265,28 @@ const WhoWeAre = ()=>{
                             children: "HARMONONIZAÇÃO OROFACIAL"
                         }, void 0, false, {
                             fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
-                            lineNumber: 43,
+                            lineNumber: 75,
                             columnNumber: 25
                         }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
-                        lineNumber: 42,
+                        lineNumber: 74,
                         columnNumber: 21
                     }, ("TURBOPACK compile-time value", void 0))
                 }, void 0, false, {
                     fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
-                    lineNumber: 41,
+                    lineNumber: 73,
                     columnNumber: 17
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
-                lineNumber: 40,
+                lineNumber: 72,
                 columnNumber: 13
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
-        lineNumber: 9,
+        lineNumber: 10,
         columnNumber: 9
     }, ("TURBOPACK compile-time value", void 0));
 };
@@ -1248,4 +1239,4 @@ const __TURBOPACK__default__export__ = Blog2;
 }),
 ];
 
-//# sourceMappingURL=src_app_Components_96ff53d1._.js.map
+//# sourceMappingURL=src_app_Components_4439d54b._.js.map
