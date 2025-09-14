@@ -50,7 +50,6 @@ const Video = () => {
                 .sd-lab-autoplay-video-container {
                     max-width: 420px;
                     width: 100%;
-                    height: 100%;
                     margin: auto;
                     position: relative;
                     background: #000;
