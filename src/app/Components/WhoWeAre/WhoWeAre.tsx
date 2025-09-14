@@ -33,7 +33,7 @@ const WhoWeAre = () => {
                         </div>
                     </div>
                     <div className="col-xl-7">
-                        <div className="agk-play-image-box mb-50 pf_fadeup">
+                        <div className="mb-50 pf_fadeup">
                             <Video />
                         </div>
                     </div>

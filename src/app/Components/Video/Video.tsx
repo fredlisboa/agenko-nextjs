@@ -1,4 +1,4 @@
-"use client"
+'use client'
 import React, { useEffect } from 'react';
 
 const Video = () => {
@@ -48,9 +48,9 @@ const Video = () => {
             </div>
             <style jsx>{`
                 .sd-lab-autoplay-video-container {
-                    max-width: 420px;
+                    max-width: 520px;
                     width: 100%;
-                    margin: 40px auto;
+                    margin: auto;
                     position: relative;
                     background: #000;
                     border-radius: 20px;
