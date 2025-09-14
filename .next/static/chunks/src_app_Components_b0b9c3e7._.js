@@ -39,7 +39,7 @@ const WhoWeAre = ()=>{
                                                 columnNumber: 33
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                                children: "Sua Especialista em Beleza Natural e Resultados de Excelência"
+                                                children: "Sua Especialista em Beleza Natural e Resultados de Excelência;"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
                                                 lineNumber: 17,
@@ -63,7 +63,7 @@ const WhoWeAre = ()=>{
                                                         lineNumber: 20,
                                                         columnNumber: 37
                                                     }, ("TURBOPACK compile-time value", void 0)),
-                                                    "Planejamento Individualizado que Respeita Sua Identidade"
+                                                    "Planejamento Individualizado que Respeita Sua Identidade;"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
@@ -79,7 +79,7 @@ const WhoWeAre = ()=>{
                                                         lineNumber: 21,
                                                         columnNumber: 37
                                                     }, ("TURBOPACK compile-time value", void 0)),
-                                                    "Técnicas Avançadas para Resultados Elegantes e Naturais"
+                                                    "Técnicas Avançadas para Resultados Elegantes e Naturais;"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
@@ -95,7 +95,7 @@ const WhoWeAre = ()=>{
                                                         lineNumber: 22,
                                                         columnNumber: 37
                                                     }, ("TURBOPACK compile-time value", void 0)),
-                                                    "Atendimento Exclusivo e Focado em Sua Segurança"
+                                                    "Atendimento Exclusivo e Focado em Sua Segurança;"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
@@ -111,7 +111,7 @@ const WhoWeAre = ()=>{
                                                         lineNumber: 23,
                                                         columnNumber: 37
                                                     }, ("TURBOPACK compile-time value", void 0)),
-                                                    "Produtos Premium para Maior Durabilidade e Confiança"
+                                                    "Produtos Premium para Maior Durabilidade e Confiança;"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
@@ -127,7 +127,7 @@ const WhoWeAre = ()=>{
                                                         lineNumber: 24,
                                                         columnNumber: 37
                                                     }, ("TURBOPACK compile-time value", void 0)),
-                                                    "Acompanhamento Pós-Procedimento para Sua Tranquilidade"
+                                                    "Acompanhamento Pós-Procedimento para Sua Tranquilidade;"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
