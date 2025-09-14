@@ -32,7 +32,7 @@ const Video = ()=>{
                         return;
                     }
                     const iframe = document.createElement('iframe');
-                    iframe.src = "https://iframe.mediadelivery.net/embed/149294/".concat(videoId, "?autoplay=true&muted=true&loop=true&controls=false&responsive=true&aspectRatio=9:16");
+                    iframe.src = "https://iframe.mediadelivery.net/embed/149294/".concat(videoId, "?autoplay=true&muted=true&loop=true&controls=false&background=1");
                     iframe.allow = "autoplay; encrypted-media; picture-in-picture";
                     iframe.allowFullscreen = true;
                     target.appendChild(iframe);
