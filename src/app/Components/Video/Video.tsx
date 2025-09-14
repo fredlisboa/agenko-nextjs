@@ -20,7 +20,7 @@ const Video = () => {
             }
 
             const iframe = document.createElement('iframe');
-            iframe.src = `https://iframe.mediadelivery.net/embed/149294/${videoId}?autoplay=true&muted=true&loop=true&controls=false&background=1`;
+            iframe.src = `https://iframe.mediadelivery.net/embed/149294/${videoId}?autoplay=true&muted=true&loop=true&controls=false&responsive=true&aspectRatio=9:16`;
             iframe.allow = "autoplay; encrypted-media; picture-in-picture";
             iframe.allowFullscreen = true;
             target.appendChild(iframe);
@@ -48,7 +48,7 @@ const Video = () => {
             </div>
             <style jsx>{`
                 .sd-lab-autoplay-video-container {
-                    max-width: 520px;
+                    max-width: 420px;
                     width: 100%;
                     margin: auto;
                     position: relative;
