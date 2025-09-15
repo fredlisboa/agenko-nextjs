@@ -20,7 +20,7 @@ const Team2 = () => {
       ];
 
     return (
-        <section className="agk-team pt-80">
+        <section className="agk-team gray-dark pt-80">
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-lg-12">

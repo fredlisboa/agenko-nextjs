@@ -1163,7 +1163,9 @@ const Testimonial2 = ()=>{
                                         height: 509,
                                         style: {
                                             borderRadius: '10px',
-                                            overflow: 'hidden'
+                                            overflow: 'hidden',
+                                            width: '100%',
+                                            height: 'auto'
                                         }
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Components/Testimonial/Testimonial2.tsx",
@@ -1211,11 +1213,249 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
 }),
-"[project]/src/app/Components/Faq/Faq1.tsx [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/src/app/Components/Faq/Faq1.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
 
-const e = new Error("Could not parse module '[project]/src/app/Components/Faq/Faq1.tsx'\n\nUnterminated string constant");
-e.code = 'MODULE_UNPARSABLE';
-throw e;
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
+'use client';
+;
+const Faq1 = ()=>{
+    _s();
+    const faqContent = [
+        {
+            title: 'O resultado da harmonização orofacial vai ficar artificial?',
+            content: 'De forma alguma. Nossa filosofia é <b>realçar</b> a beleza que já <b>existe</b>, não transformar. Cada planejamento é 100% individualizado para respeitar seus traços e proporções. Buscamos resultados elegantes e naturais, que aumentam sua autoestima sem que ninguém precise saber que você fez um procedimento.'
+        },
+        {
+            title: 'Os procedimentos doem? Como é a recuperação?',
+            content: 'Priorizamos o seu conforto. Utilizamos anestésicos tópicos e locais de alta eficácia para garantir que o procedimento seja o mais tranquilo possível. A recuperação varia para cada tratamento, mas a maioria permite o retorno às atividades normais quase que <b>imediatamente</b>, com orientações simples para o pós-procedimento.'
+        },
+        {
+            title: 'Qual a durabilidade dos resultados?',
+            content: 'A durabilidade varia conforme o tratamento. Preenchimentos com ácido hialurônico duram em média de 12 a 24 meses. Técnicas combinadas, como o Soft Lift, promovem um <b>efeito lifting de longa duração</b>, pois além de preencher, estimulam o colágeno natural do seu corpo. Durante sua avaliação gratuita, detalhamos a expectativa de durabilidade para cada etapa do seu plano personalizado.'
+        },
+        {
+            title: 'Quanto custa a Harmonização Orofacial em Goiânia?',
+            content: 'O investimento é totalmente <b>personalizado</b>, pois depende dos procedimentos ideais para você. Por isso, a avaliação inicial é fundamental e gratuita. Nela, criamos seu plano de tratamento e apresentamos um orçamento detalhado, com diversas opções de pagamento e parcelamento acessíveis para viabilizar seu sonho.'
+        },
+        {
+            title: 'Quais produtos vocês utilizam? São seguros?',
+            content: 'Sim, sua segurança é inegociável. Trabalhamos exclusivamente com as marcas líderes do mercado, como Galderma (fabricante do Restylane® e Sculptra®) e I-THREAD® para fios de PDO. Todos os nossos produtos são aprovados pela ANVISA, garantindo a máxima quality, segurança e resultados eficazes para o seu tratamento.'
+        },
+        {
+            title: 'Em quanto tempo eu vejo os resultados?',
+            content: 'Alguns procedimentos, como o preenchimento, oferecem <b>resultados imediatos</b>. Outros, como os bioestimuladores de colágeno e a lipo de papada, apresentam resultados progressivos, com a melhora contínua da pele e do contorno nas semanas e meses seguintes. Explicamos todo o cronograma durante a sua avaliação.'
+        },
+        {
+            title: 'Qual o diferencial da Dra. Gabriella em relação a outros profissionais?',
+            content: 'Nosso principal diferencial é a busca pelo equilíbrio e naturalidade. Em vez de seguir padrões, a Dra. Gabriella realiza uma análise facial detalhada para criar um plano que respeita sua identidade e realça seus pontos fortes. Combinamos um olhar artístico apurado com <b>mais de 15 anos de experiência técnica</b> para entregar resultados que geram elogios, não perguntas.'
+        },
+        {
+            title: 'Preciso me afastar do trabalho ou de minhas atividades após os procedimentos?',
+            content: 'A grande maioria dos nossos procedimentos de harmonização orofacial permite um retorno imediato às suas atividades diárias. Pode ocorrer um leve inchaço ou vermelhidão no local, que geralmente desaparece rapidamente e pode ser disfarçado com maquiagem. Todas as orientações detalhadas são fornecidas para garantir que sua recuperação seja o mais tranquila e <b>discreta</b> possível.'
+        },
+        {
+            title: 'Harmonização Orofacial é a mesma coisa que aplicação de "botox"?',
+            content: 'Não, são coisas diferentes, mas que se complementam maravilhosamente! A toxina botulínica (popularmente conhecida como Botox®) trata rugas de expressão ao relaxar a musculatura. Já a <b>Harmonização Orofacial</b> é um conjunto de procedimentos (como preenchimentos e bioestimuladores) que visa <b>restaurar volumes</b>, definir contornos e <b>melhorar a qualidade da pele</b>. Na sua avaliação, podemos definir qual a melhor combinação para você.'
+        },
+        {
+            title: 'Sou de outra cidade. Como funciona o atendimento?',
+            content: 'Atendemos pacientes de todo o Brasil (<b>e mundo</b>)! Podemos iniciar com uma pré-avaliação online para entender seus objetivos e alinhar as expectativas. A partir daí, planejamos seu tratamento para ser realizado de forma otimizada em sua vinda a Goiânia, concentrando os procedimentos e retornos para se adequar à sua agenda. Entre em <b><a href="/contact">contato</a></b> e saiba mais sobre nosso protocolo para pacientes de fora.'
+        }
+    ];
+    const accordionContentRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const [openItemIndex, setOpenItemIndex] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(-1);
+    const [firstItemOpen, setFirstItemOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
+    const handleItemClick = (index)=>{
+        if (index === openItemIndex) {
+            setOpenItemIndex(-1);
+        } else {
+            setOpenItemIndex(index);
+        }
+    };
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "Faq1.useEffect": ()=>{
+            if (firstItemOpen) {
+                setOpenItemIndex(0);
+                setFirstItemOpen(false);
+            }
+        }
+    }["Faq1.useEffect"], [
+        firstItemOpen
+    ]);
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+        className: "agk-faq gray-dark pt-80 pb-50",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "container",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "row",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "col-lg-7",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "section-title mb-50 pf_fadeup",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "sub-title",
+                                        children: "Perguntas & Respostas"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
+                                        lineNumber: 44,
+                                        columnNumber: 41
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                        children: "Dúvidas Frequentes? Nós Esclarecemos."
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
+                                        lineNumber: 45,
+                                        columnNumber: 41
+                                    }, ("TURBOPACK compile-time value", void 0))
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
+                                lineNumber: 43,
+                                columnNumber: 37
+                            }, ("TURBOPACK compile-time value", void 0))
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
+                            lineNumber: 41,
+                            columnNumber: 33
+                        }, ("TURBOPACK compile-time value", void 0)),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "col-lg-5",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "faq-big-text",
+                                children: "Faq’s"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
+                                lineNumber: 50,
+                                columnNumber: 37
+                            }, ("TURBOPACK compile-time value", void 0))
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
+                            lineNumber: 48,
+                            columnNumber: 33
+                        }, ("TURBOPACK compile-time value", void 0))
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
+                    lineNumber: 40,
+                    columnNumber: 29
+                }, ("TURBOPACK compile-time value", void 0)),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "row",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "col-xl-12",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "agk-content-box pt-5 mb-30",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "agk-accordion",
+                                id: "accordionOne",
+                                children: faqContent.map((item, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "agenko-accordion-item mb-20 pf_fadeup ".concat(index === openItemIndex ? "active" : ""),
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                onClick: ()=>handleItemClick(index),
+                                                className: "accordion-header",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h6", {
+                                                    className: "accordion-title",
+                                                    "data-bs-toggle": "collapse",
+                                                    "data-bs-target": "#collapse1",
+                                                    "aria-expanded": "true",
+                                                    children: item.title
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
+                                                    lineNumber: 61,
+                                                    columnNumber: 53
+                                                }, ("TURBOPACK compile-time value", void 0))
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
+                                                lineNumber: 60,
+                                                columnNumber: 49
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                ref: accordionContentRef,
+                                                id: "collapse1",
+                                                className: "accordion-collapse accordion-content",
+                                                "data-bs-parent": "#accordionOne",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "accordion-content",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                        style: {
+                                                            textAlign: 'justify'
+                                                        },
+                                                        dangerouslySetInnerHTML: {
+                                                            __html: item.content
+                                                        }
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
+                                                        lineNumber: 67,
+                                                        columnNumber: 57
+                                                    }, ("TURBOPACK compile-time value", void 0))
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
+                                                    lineNumber: 66,
+                                                    columnNumber: 53
+                                                }, ("TURBOPACK compile-time value", void 0))
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
+                                                lineNumber: 65,
+                                                columnNumber: 49
+                                            }, ("TURBOPACK compile-time value", void 0))
+                                        ]
+                                    }, index, true, {
+                                        fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
+                                        lineNumber: 59,
+                                        columnNumber: 45
+                                    }, ("TURBOPACK compile-time value", void 0)))
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
+                                lineNumber: 57,
+                                columnNumber: 41
+                            }, ("TURBOPACK compile-time value", void 0))
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
+                            lineNumber: 55,
+                            columnNumber: 37
+                        }, ("TURBOPACK compile-time value", void 0))
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
+                        lineNumber: 54,
+                        columnNumber: 33
+                    }, ("TURBOPACK compile-time value", void 0))
+                }, void 0, false, {
+                    fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
+                    lineNumber: 53,
+                    columnNumber: 29
+                }, ("TURBOPACK compile-time value", void 0))
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
+            lineNumber: 39,
+            columnNumber: 25
+        }, ("TURBOPACK compile-time value", void 0))
+    }, void 0, false, {
+        fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
+        lineNumber: 38,
+        columnNumber: 1
+    }, ("TURBOPACK compile-time value", void 0));
+};
+_s(Faq1, "XOxXqNg+2n5fvrU0l10/flZQoHQ=");
+_c = Faq1;
+const __TURBOPACK__default__export__ = Faq1;
+var _c;
+__turbopack_context__.k.register(_c, "Faq1");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
 }),
 ]);
 

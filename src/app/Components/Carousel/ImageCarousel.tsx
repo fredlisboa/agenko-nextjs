@@ -27,7 +27,7 @@ const ImageCarousel = () => {
   }, [images.length]);
 
   return (
-    <div style={{ width: '550px', height: '555px', position: 'relative', overflow: 'hidden', borderRadius: '10px' }}>
+    <div className="image-carousel-container">
       <AnimatePresence>
         <motion.div
           key={currentImageIndex}
@@ -41,7 +41,7 @@ const ImageCarousel = () => {
             src={images[currentImageIndex]}
             alt="Carousel Image"
             fill
-            style={{ objectFit: "cover" }}
+            style={{ objectFit: "contain" }}
           />
         </motion.div>
       </AnimatePresence>

@@ -1,7 +1,5 @@
-"use client"
-import Image from 'next/image';
+'use client'
 import React, { useEffect, useRef, useState } from 'react';
-import ImageCarousel from './ImageCarousel';
 
 const Faq1 = () => {
 
@@ -37,7 +35,7 @@ const Faq1 = () => {
       }, [firstItemOpen]);
 
     return (
-<section className="agk-faq gray-dark pt-80 pb-50">
+<section className="agk-faq pt-80 pb-50">
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7">
@@ -53,16 +51,8 @@ const Faq1 = () => {
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="col-xl-6">
-                                    
-                                    <div className="agk-image-box pt-200 mb-50 pf_fadeup">
-                                        <div className="agk-image">
-                                        <ImageCarousel />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-xl-6">
-                                    <div className="agk-content-box mb-30">
+                                <div className="col-xl-12">
+                                    <div className="agk-content-box pt-5 mb-30">
                                        
                                         <div className="agk-accordion" id="accordionOne">
                                         {faqContent.map((item, index) => (

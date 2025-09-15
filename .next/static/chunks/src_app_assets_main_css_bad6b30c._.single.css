@@ -5828,6 +5828,13 @@ label {
   line-height: 200px;
 }
 
+@media (max-width: 767px) {
+  .faq-big-text {
+    font-size: 80px;
+    line-height: 1;
+  }
+}
+
 .agk-team .container-fluid {
   padding-left: 70px;
   padding-right: 70px;

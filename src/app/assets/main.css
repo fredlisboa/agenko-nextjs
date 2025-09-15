@@ -5463,6 +5463,13 @@ Version: 1.0
     line-height: 200px; /* 100% */
     text-transform: uppercase;
   }
+
+  @media (max-width: 767px) {
+    .faq-big-text {
+      font-size: 80px;
+      line-height: 1;
+    }
+  } 
   
   .agk-team .container-fluid {
     padding-left: 70px;
