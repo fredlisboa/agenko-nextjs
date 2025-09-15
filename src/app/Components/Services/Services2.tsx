@@ -9,7 +9,7 @@ const Services2 = () => {
                                 <div className="col-lg-7">
                                     
                                     <div className="section-title mb-65 pf_fadeup">
-                                        <span className="sub-title">Nossas Especialidades</span>
+                                        <span className="sub-title">Nossa Especialidade</span>
                                         <h2>Harmonização Orofacial em Goiânia: Beleza e Cuidado em Cada Detalhe.</h2>
                                     </div>
                                 </div>

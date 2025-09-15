@@ -55,14 +55,6 @@ const Testimonial2 = () => {
                         </div>
                     </div>
                     <div className="row align-items-center">
-                        <div className="col-lg-5">
-                            
-                            <div className="agk-image-box mb-50 pf_fadeup">
-                                <div className="agk-image">
-                                <Image src="/assets/images/digital-agency/testimonial/bocao.webp" className="animated-image" alt="img" width={524} height={509} style={{ borderRadius: '10px', overflow: 'hidden' }} />
-                                </div>
-                            </div>
-                        </div>
                         <div className="col-lg-7">
                             <div className="testimonial-wrapper mb-50 pf_fadeup">
                                 
@@ -96,6 +88,14 @@ const Testimonial2 = () => {
                                     </Slider>                                    
 
 
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-5">
+                            
+                            <div className="agk-image-box mb-50 pf_fadeup">
+                                <div className="agk-image">
+                                <Image src="/assets/images/digital-agency/testimonial/bocao.webp" className="animated-image" alt="img" width={524} height={509} style={{ borderRadius: '10px', overflow: 'hidden' }} />
                                 </div>
                             </div>
                         </div>

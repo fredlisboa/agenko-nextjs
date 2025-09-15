@@ -22,20 +22,20 @@ export default function Nav({ setMobileToggle }) {
         Sobre
         </Link>
       </li>
+      <li>
+        <Link href="#who-we-are" onClick={() => setMobileToggle(false)}>
+        Compromisso
+        </Link>
+      </li>
       <li className='menu-item-has-children'>
         <Link href="#" >
-        Nosso(a)
+        Nossa
         </Link>
           <DropDown>
             <ul>
               <li>
                 <Link href="#services" onClick={() => setMobileToggle(false)}>
                 Especialidade
-                </Link>
-              </li>
-              <li>
-                <Link href="#who-we-are" onClick={() => setMobileToggle(false)}>
-                Compromisso
                 </Link>
               </li>
               <li>
