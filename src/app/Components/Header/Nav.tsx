@@ -18,28 +18,28 @@ export default function Nav({ setMobileToggle }) {
         <Link href="#hero" onClick={handleScroll}>Início</Link>
       </li>
       <li>
-        <Link href="/contact" onClick={() => setMobileToggle(false)}>
+        <Link href="#about" onClick={() => setMobileToggle(false)}>
         Sobre
         </Link>
       </li>
       <li className='menu-item-has-children'>
-        <Link href="/contact" >
+        <Link href="#" >
         Nosso(a)
         </Link>
           <DropDown>
             <ul>
               <li>
-                <Link href="/" onClick={() => setMobileToggle(false)}>
+                <Link href="#services" onClick={() => setMobileToggle(false)}>
                 Especialidade
                 </Link>
               </li>
               <li>
-                <Link href="/home2" onClick={() => setMobileToggle(false)}>
+                <Link href="#who-we-are" onClick={() => setMobileToggle(false)}>
                 Compromisso
                 </Link>
               </li>
               <li>
-                <Link href="/home3" onClick={() => setMobileToggle(false)}>
+                <Link href="#process" onClick={() => setMobileToggle(false)}>
                 Jornada
                 </Link>
               </li>            
@@ -47,7 +47,7 @@ export default function Nav({ setMobileToggle }) {
           </DropDown>
       </li>   
       <li>
-        <Link href="/blog" onClick={() => setMobileToggle(false)}>
+        <Link href="#blog" onClick={() => setMobileToggle(false)}>
           Blog
         </Link>
       </li>

@@ -1,8 +1,19 @@
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
 const HeroBanner2 = () => {
+    const handleScroll = (e) => {
+        e.preventDefault();
+        const href = e.currentTarget.getAttribute('href');
+        const targetId = href.substring(1);
+        const elem = document.getElementById(targetId);
+        elem?.scrollIntoView({
+          behavior: "smooth",
+        });
+      };
+
     return (
         <section id="hero" className="agk-hero">
         <div className="hero-wrapper-two">
@@ -25,7 +36,7 @@ const HeroBanner2 = () => {
                 <div className="text-box pf_fadeup" style={{marginTop: '-50px', marginBottom: '50px'}}>
                 <p style={{textAlign: 'justify'}}><span>Dra Gabriella Lisboa</span> é especialista em equilibrar a relação estética e funcional da face e sorriso, realçar traços naturais — sem cirurgia, gerenciar o envelhecimento e corrigir assimetrias.</p>
                     <div className="hero-button" style={{marginTop: '25px'}}>
-                        <Link href="/about" className="theme-btn style-one">
+                        <Link href="/contact" className="theme-btn style-one">
                             <span className="text-flip">
                                 <span className="text">SAIBA MAIS</span>
                                 <span className="text">SAIBA MAIS</span>
@@ -38,7 +49,7 @@ const HeroBanner2 = () => {
                         <ul className="service-list pf_fadeup">
                             <li>
                                 
-                                <Link href="/service/service-details" className="agenko-iconic-box style-one">
+                                <Link href="#lipo-de-papada" onClick={handleScroll} className="agenko-iconic-box style-one">
                                     <div className="icon">
                                         <Image src="/assets/images/icons/lipo-papada.svg" alt="Lipo de Papada Icon" width={40} height={40} />
                                     </div>
@@ -49,7 +60,7 @@ const HeroBanner2 = () => {
                             </li>
                             <li>
                                 
-                                <Link href="/service/service-details" className="agenko-iconic-box style-one">
+                                <Link href="#rinomodelacao" onClick={handleScroll} className="agenko-iconic-box style-one">
                                     <div className="icon">
                                         <Image src="/assets/images/icons/rinomodelacao.svg" alt="Rinomodelação Icon" width={40} height={40} />
                                     </div>
@@ -60,7 +71,7 @@ const HeroBanner2 = () => {
                             </li>
                             <li>
                                 
-                                <Link href="/service/service-details" className="agenko-iconic-box style-one">
+                                <Link href="#lifting-facial" onClick={handleScroll} className="agenko-iconic-box style-one">
                                     <div className="icon">
                                         <Image src="/assets/images/icons/soft-lift.svg" alt="Lifting Facial Não Cirúrgico Icon" width={40} height={40} />
                                     </div>
@@ -71,7 +82,7 @@ const HeroBanner2 = () => {
                             </li>
                             <li>
                                
-                                <Link href="/service/service-details" className="agenko-iconic-box style-one">
+                                <Link href="#preenchimento-facial" onClick={handleScroll} className="agenko-iconic-box style-one">
                                     <div className="icon">
                                         <Image src="/assets/images/icons/preenchimento-facial.svg" alt="Prenchimento Facial Icon" width={40} height={40} />
                                     </div>
@@ -82,7 +93,7 @@ const HeroBanner2 = () => {
                             </li>
                             <li>
                                
-                               <Link href="/service/service-details" className="agenko-iconic-box style-one">
+                               <Link href="#fios-de-sustentacao" onClick={handleScroll} className="agenko-iconic-box style-one">
                                    <div className="icon">
                                        <Image src="/assets/images/icons/fios-pdo.svg" alt="Fios de Sustentação Icon" width={60} height={60} />
                                    </div>

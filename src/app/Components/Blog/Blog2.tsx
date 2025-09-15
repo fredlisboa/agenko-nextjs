@@ -16,7 +16,7 @@ const Blog2 = () => {
     }, []);
 
     return (
-        <section className="agk-blogs gray-dark pt-80 pb-90">
+        <section id="blog" className="agk-blogs gray-dark pt-80 pb-90">
         <div className="container">
             <div className="row">
                 <div className="col-lg-6">

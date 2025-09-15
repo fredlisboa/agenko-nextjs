@@ -12,7 +12,7 @@ const Team1 = () => {
       ];
 
     return (
-            <section className="agk-team pt-130 pb-80">
+            <section id="team" className="agk-team pt-130 pb-80">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-7">

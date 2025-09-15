@@ -4,7 +4,7 @@ import React from 'react';
 
 const About1 = () => {
     return (
-        <section className="agk-about pt-80 pb-80">
+        <section id="about" className="agk-about pt-80 pb-80">
         <div className="container">
             <div className="row">
                 <div className="col-xl-7">
@@ -17,7 +17,7 @@ const About1 = () => {
                         <p style={{textAlign: 'justify'}}>Acredito que a verdadeira beleza está em realçar quem você já é. Como especialista em <b>Harmonização Orofacial</b> em Goiânia, minha missão é ir além dos procedimentos: eu busco o equilíbrio perfeito entre estética e função para revelar a sua melhor versão. Vamos juntas encontrar a harmonia que seu rosto e sorriso merecem?</p>
                         <p style={{textAlign: 'justify'}}>Com mais de 15 anos de experiência e mais de 1000 faces transformadas, desenvolvi um olhar clínico apurado para criar resultados que respeitam sua identidade. Aqui, cada <b>detalhe</b> é planejado para proporcionar uma beleza natural, sem exageros, elevando não apenas seus traços, mas principalmente sua <b>autoestima</b> e confiança.</p>
                     <div className="agk-button mb-30">
-                        <Link href="/about" className="theme-btn style-one">
+                        <Link href="/contact" className="theme-btn style-one">
                             <span className="text-flip">
                                 <span className="text">SAIBA MAIS</span>
                                 <span className="text">SAIBA MAIS</span>
