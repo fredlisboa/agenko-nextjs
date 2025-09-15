@@ -2,13 +2,13 @@ import React from 'react';
 import HeroBanner2 from '../Components/HeroBanner/HeroBanner2';
 import About1 from '../Components/About/About1';
 import Services2 from '../Components/Services/Services2';
-import Project2 from '../Components/Project/Project2';
+// import Project2 from '../Components/Project/Project2';
 import WhoWeAre from '../Components/WhoWeAre/WhoWeAre';
 import Process2 from '../Components/Process/Process2';
 import Testimonial2 from '../Components/Testimonial/Testimonial2';
 import Faq1 from '../Components/Faq/Faq1';
 import Team2 from '../Components/Team/Team2';
-import Brand2 from '../Components/Brand/Brand2';
+// import Brand2 from '../Components/Brand/Brand2';
 import Blog2 from '../Components/Blog/Blog2';
 
 const page = () => {

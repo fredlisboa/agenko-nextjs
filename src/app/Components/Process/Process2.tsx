@@ -29,7 +29,7 @@ const Process2 = () => {
                                         <div className="content">
                                             <h4 className="title">Avaliação Personalizada e Gratuita</h4>
                                             <p style={{textAlign: 'justify'}}>Tudo começa com uma conversa. Nesta etapa, entendemos seus desejos, avaliamos seus traços e criamos um plano de tratamento <span>100% personalizado e sem compromisso.</span></p>
-                                            <div className="step">Passo-01</div>
+                                            <div className="step"><b>Passo-01</b></div>
                                         </div>
                                     </div>
                                 </div>
@@ -42,7 +42,7 @@ const Process2 = () => {
                                         <div className="content">
                                             <h4 className="title">Planejamento Digital e Alinhamento</h4>
                                             <p style={{textAlign: 'justify'}}>Utilizando tecnologia de ponta, planejamos cada detalhe do procedimento. Apresentamos uma prévia dos resultados para garantir que o plano esteja perfeitamente alinhado com suas <span>expectativas.</span></p>
-                                            <div className="step">Passo-02</div>
+                                            <div className="step"><b>Passo-02</b></div>
                                         </div>
                                     </div>
                                 </div>
@@ -55,7 +55,7 @@ const Process2 = () => {
                                         <div className="content">
                                             <h4 className="title">Execução Precisa e Confortável</h4>
                                             <p style={{textAlign: 'justify'}}>Com técnica apurada e os melhores produtos do mercado, realizamos o procedimento de forma segura e <span>minimamente invasiva</span>, sempre priorizando seu conforto e bem-estar durante todo o processo.</p>
-                                            <div className="step">Passo-03</div>
+                                            <div className="step"><b>Passo-03</b></div>
                                         </div>
                                     </div>
                                 </div>
@@ -68,7 +68,7 @@ const Process2 = () => {
                                         <div className="content">
                                             <h4 className="title">Acompanhamento e Resultados</h4>
                                             <p style={{textAlign: 'justify'}}>Sua jornada não termina aqui. Realizamos o acompanhamento pós-procedimento para garantir uma <span>recuperação tranquila</span> e a durabilidade dos seus resultados, celebrando juntas sua nova fase de autoestima.</p>
-                                            <div className="step">Passo-04</div>
+                                            <div className="step"><b>Passo-04</b></div>
                                         </div>
                                     </div>
                                 </div>

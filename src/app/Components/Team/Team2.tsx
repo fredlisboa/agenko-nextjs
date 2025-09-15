@@ -26,7 +26,7 @@ const Team2 = () => {
                     <div className="col-lg-12">
                         <div className="section-title text-center mb-50 pf_zoomIn">
                             <span className="sub-title">Instagram & Google</span>
-                            <h2>Minha História, Nossos Resultados e Sua Confiança.</h2>
+                            <h2>Nossa História, Nossos Resultados e Sua Confiança.</h2>
                             <h3>⭐️ 5 Estrelas no Google & Instagram</h3>
                         </div>
                     </div>

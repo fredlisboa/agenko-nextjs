@@ -322,7 +322,7 @@ const Testimonial2 = ()=>{
         arrows: false,
         swipeToSlide: true,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 8000,
         responsive: [
             {
                 breakpoint: 1399,
@@ -346,14 +346,19 @@ const Testimonial2 = ()=>{
     };
     const testimonialContent = [
         {
-            subtitle: 'CEO & Founder',
-            title: 'Ms. Alex Mika',
-            content: 'Binorly Agency completely transformed our online presence! Their exceptional website development expertise went beyond expectations, creating a visually stunning and user-friendly website.'
+            subtitle: 'Relato de um paciente no <a href="https://share.google/pcuCYJHPmM1pRPwpc" target="_blank" rel="noopener noreferrer"><b>Google</b></a>',
+            title: 'Eduardo Henrique Alves',
+            content: 'Ótimo, o atendimento é excelente. Realmente tratam o paciente com muito carinho e sabem o que é melhor pra ele(a)! Extremamente profissionais que fazem eu ter um ótimo sorriso! Obrigado'
         },
         {
-            subtitle: 'CEO & Founder',
-            title: 'Ms. Alex Mika',
-            content: 'Binorly Agency completely transformed our online presence! Their exceptional website development expertise went beyond expectations, creating a visually stunning and user-friendly website.'
+            subtitle: 'Relato de um paciente no <a href="https://share.google/pcuCYJHPmM1pRPwpc" target="_blank" rel="noopener noreferrer"><b>Google</b></a>',
+            title: 'Sara Miranda',
+            content: 'O Segredo da felicidade no trabalho reside em uma palavra: excelência e todos vocês fazem com excelência mesmo, muito amor e principalmente se preocupando com os pacientes!! Os melhores, super indico 😍😍😍'
+        },
+        {
+            subtitle: 'Relato de um paciente no <a href="https://share.google/pcuCYJHPmM1pRPwpc" target="_blank" rel="noopener noreferrer"><b>Google</b></a>',
+            title: 'Ana Clara Salgado',
+            content: 'Atendimento de qualidade e precisão. Tudo de primeiro mundo! Lugar lindo, limpo, aconchegante. Profissionais especialistas, resultados impressionantes. Parabéns a toda equipe. ❤️'
         }
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -370,33 +375,33 @@ const Testimonial2 = ()=>{
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "sub-title",
-                                    children: "Testimonials"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/app/Components/Testimonial/Testimonial2.tsx",
-                                    lineNumber: 51,
-                                    columnNumber: 33
-                                }, ("TURBOPACK compile-time value", void 0)),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                    children: "Success Stories From Around the Globe"
+                                    children: "Depoimentos"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/Components/Testimonial/Testimonial2.tsx",
                                     lineNumber: 52,
+                                    columnNumber: 33
+                                }, ("TURBOPACK compile-time value", void 0)),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                    children: "Transformações que Cruzam Fronteiras"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/Components/Testimonial/Testimonial2.tsx",
+                                    lineNumber: 53,
                                     columnNumber: 33
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/Components/Testimonial/Testimonial2.tsx",
-                            lineNumber: 50,
+                            lineNumber: 51,
                             columnNumber: 29
                         }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/src/app/Components/Testimonial/Testimonial2.tsx",
-                        lineNumber: 48,
+                        lineNumber: 49,
                         columnNumber: 25
                     }, ("TURBOPACK compile-time value", void 0))
                 }, void 0, false, {
                     fileName: "[project]/src/app/Components/Testimonial/Testimonial2.tsx",
-                    lineNumber: 47,
+                    lineNumber: 48,
                     columnNumber: 21
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -409,29 +414,33 @@ const Testimonial2 = ()=>{
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "agk-image",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                        src: "/assets/images/digital-agency/testimonial/testimonial_img1.jpg",
+                                        src: "/assets/images/digital-agency/testimonial/bocao.webp",
                                         className: "animated-image",
                                         alt: "img",
                                         width: 524,
-                                        height: 509
+                                        height: 509,
+                                        style: {
+                                            borderRadius: '10px',
+                                            overflow: 'hidden'
+                                        }
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Components/Testimonial/Testimonial2.tsx",
-                                        lineNumber: 61,
+                                        lineNumber: 62,
                                         columnNumber: 33
                                     }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/Components/Testimonial/Testimonial2.tsx",
-                                    lineNumber: 60,
+                                    lineNumber: 61,
                                     columnNumber: 33
                                 }, ("TURBOPACK compile-time value", void 0))
                             }, void 0, false, {
                                 fileName: "[project]/src/app/Components/Testimonial/Testimonial2.tsx",
-                                lineNumber: 59,
+                                lineNumber: 60,
                                 columnNumber: 29
                             }, ("TURBOPACK compile-time value", void 0))
                         }, void 0, false, {
                             fileName: "[project]/src/app/Components/Testimonial/Testimonial2.tsx",
-                            lineNumber: 57,
+                            lineNumber: 58,
                             columnNumber: 25
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -455,26 +464,13 @@ const Testimonial2 = ()=>{
                                                                         className: "bi bi-star-fill"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/Components/Testimonial/Testimonial2.tsx",
-                                                                        lineNumber: 74,
+                                                                        lineNumber: 75,
                                                                         columnNumber: 49
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/Testimonial/Testimonial2.tsx",
-                                                                    lineNumber: 74,
-                                                                    columnNumber: 45
-                                                                }, ("TURBOPACK compile-time value", void 0)),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                                        className: "bi bi-star-fill"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/app/Components/Testimonial/Testimonial2.tsx",
-                                                                        lineNumber: 75,
-                                                                        columnNumber: 53
-                                                                    }, ("TURBOPACK compile-time value", void 0))
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/app/Components/Testimonial/Testimonial2.tsx",
                                                                     lineNumber: 75,
-                                                                    columnNumber: 49
+                                                                    columnNumber: 45
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
@@ -514,18 +510,31 @@ const Testimonial2 = ()=>{
                                                                     fileName: "[project]/src/app/Components/Testimonial/Testimonial2.tsx",
                                                                     lineNumber: 78,
                                                                     columnNumber: 49
+                                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                                        className: "bi bi-star-fill"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/app/Components/Testimonial/Testimonial2.tsx",
+                                                                        lineNumber: 79,
+                                                                        columnNumber: 53
+                                                                    }, ("TURBOPACK compile-time value", void 0))
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/app/Components/Testimonial/Testimonial2.tsx",
+                                                                    lineNumber: 79,
+                                                                    columnNumber: 49
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/Components/Testimonial/Testimonial2.tsx",
-                                                            lineNumber: 73,
+                                                            lineNumber: 74,
                                                             columnNumber: 45
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                             children: item.content
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/Components/Testimonial/Testimonial2.tsx",
-                                                            lineNumber: 80,
+                                                            lineNumber: 81,
                                                             columnNumber: 45
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -540,25 +549,27 @@ const Testimonial2 = ()=>{
                                                                                 children: item.title
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/Components/Testimonial/Testimonial2.tsx",
-                                                                                lineNumber: 84,
+                                                                                lineNumber: 85,
                                                                                 columnNumber: 57
                                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
-                                                                                children: item.subtitle
+                                                                                dangerouslySetInnerHTML: {
+                                                                                    __html: item.subtitle
+                                                                                }
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/Components/Testimonial/Testimonial2.tsx",
-                                                                                lineNumber: 85,
+                                                                                lineNumber: 86,
                                                                                 columnNumber: 57
                                                                             }, ("TURBOPACK compile-time value", void 0))
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/app/Components/Testimonial/Testimonial2.tsx",
-                                                                        lineNumber: 83,
+                                                                        lineNumber: 84,
                                                                         columnNumber: 53
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/Testimonial/Testimonial2.tsx",
-                                                                    lineNumber: 82,
+                                                                    lineNumber: 83,
                                                                     columnNumber: 49
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -567,66 +578,66 @@ const Testimonial2 = ()=>{
                                                                         className: "bi bi-chat-square-quote-fill"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/Components/Testimonial/Testimonial2.tsx",
-                                                                        lineNumber: 89,
+                                                                        lineNumber: 90,
                                                                         columnNumber: 49
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/Testimonial/Testimonial2.tsx",
-                                                                    lineNumber: 88,
+                                                                    lineNumber: 89,
                                                                     columnNumber: 49
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/Components/Testimonial/Testimonial2.tsx",
-                                                            lineNumber: 81,
+                                                            lineNumber: 82,
                                                             columnNumber: 45
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/Components/Testimonial/Testimonial2.tsx",
-                                                    lineNumber: 72,
+                                                    lineNumber: 73,
                                                     columnNumber: 41
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             }, i, false, {
                                                 fileName: "[project]/src/app/Components/Testimonial/Testimonial2.tsx",
-                                                lineNumber: 71,
+                                                lineNumber: 72,
                                                 columnNumber: 37
                                             }, ("TURBOPACK compile-time value", void 0)))
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Components/Testimonial/Testimonial2.tsx",
-                                        lineNumber: 69,
+                                        lineNumber: 70,
                                         columnNumber: 33
                                     }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/Components/Testimonial/Testimonial2.tsx",
-                                    lineNumber: 68,
+                                    lineNumber: 69,
                                     columnNumber: 33
                                 }, ("TURBOPACK compile-time value", void 0))
                             }, void 0, false, {
                                 fileName: "[project]/src/app/Components/Testimonial/Testimonial2.tsx",
-                                lineNumber: 66,
+                                lineNumber: 67,
                                 columnNumber: 29
                             }, ("TURBOPACK compile-time value", void 0))
                         }, void 0, false, {
                             fileName: "[project]/src/app/Components/Testimonial/Testimonial2.tsx",
-                            lineNumber: 65,
+                            lineNumber: 66,
                             columnNumber: 25
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/Components/Testimonial/Testimonial2.tsx",
-                    lineNumber: 56,
+                    lineNumber: 57,
                     columnNumber: 21
                 }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/Components/Testimonial/Testimonial2.tsx",
-            lineNumber: 46,
+            lineNumber: 47,
             columnNumber: 17
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/src/app/Components/Testimonial/Testimonial2.tsx",
-        lineNumber: 45,
+        lineNumber: 46,
         columnNumber: 13
     }, ("TURBOPACK compile-time value", void 0));
 };
@@ -786,15 +797,15 @@ const Faq1 = ()=>{
                                 className: "agk-image-box mb-50 pf_fadeup",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "agk-image",
-                                    style: {
-                                        borderRadius: '10px',
-                                        overflow: 'hidden'
-                                    },
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                         src: "/assets/images/digital-agency/faq/tata-antes-depois.webp",
                                         alt: "img",
                                         width: 550,
-                                        height: 555
+                                        height: 555,
+                                        style: {
+                                            borderRadius: '10px',
+                                            overflow: 'hidden'
+                                        }
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Components/Faq/Faq1.tsx",
                                         lineNumber: 59,

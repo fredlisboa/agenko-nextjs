@@ -55,8 +55,8 @@ const Faq1 = () => {
                                 <div className="col-xl-6">
                                     
                                     <div className="agk-image-box mb-50 pf_fadeup">
-                                        <div className="agk-image" style={{ borderRadius: '10px', overflow: 'hidden' }}>
-                                        <Image src="/assets/images/digital-agency/faq/tata-antes-depois.webp" alt="img" width={550} height={555}   />
+                                        <div className="agk-image">
+                                        <Image src="/assets/images/digital-agency/faq/tata-antes-depois.webp" alt="img" width={550} height={555} style={{ borderRadius: '10px', overflow: 'hidden' }}   />
                                         </div>
                                     </div>
                                 </div>

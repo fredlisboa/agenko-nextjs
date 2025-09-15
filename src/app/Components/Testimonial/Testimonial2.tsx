@@ -14,7 +14,7 @@ const Testimonial2 = () => {
         arrows: false,
         swipeToSlide: true,
         autoplay: true,
-        autoplaySpeed: 2000,        
+        autoplaySpeed: 8000,        
         responsive: [
           {
             breakpoint: 1399,
@@ -37,8 +37,9 @@ const Testimonial2 = () => {
       };  
 
     const testimonialContent = [
-        {subtitle:'CEO & Founder', title:'Ms. Alex Mika', content:'Binorly Agency completely transformed our online presence! Their exceptional website development expertise went beyond expectations, creating a visually stunning and user-friendly website.'},
-        {subtitle:'CEO & Founder', title:'Ms. Alex Mika', content:'Binorly Agency completely transformed our online presence! Their exceptional website development expertise went beyond expectations, creating a visually stunning and user-friendly website.'},
+        {subtitle:'Relato de um paciente no <a href="https://share.google/pcuCYJHPmM1pRPwpc" target="_blank" rel="noopener noreferrer"><b>Google</b></a>', title:'Eduardo Henrique Alves', content:'Ótimo, o atendimento é excelente. Realmente tratam o paciente com muito carinho e sabem o que é melhor pra ele(a)! Extremamente profissionais que fazem eu ter um ótimo sorriso! Obrigado'},
+        {subtitle:'Relato de um paciente no <a href="https://share.google/pcuCYJHPmM1pRPwpc" target="_blank" rel="noopener noreferrer"><b>Google</b></a>', title:'Sara Miranda', content:'O Segredo da felicidade no trabalho reside em uma palavra: excelência e todos vocês fazem com excelência mesmo, muito amor e principalmente se preocupando com os pacientes!! Os melhores, super indico 😍😍😍'},
+        {subtitle:'Relato de um paciente no <a href="https://share.google/pcuCYJHPmM1pRPwpc" target="_blank" rel="noopener noreferrer"><b>Google</b></a>', title:'Ana Clara Salgado', content:'Atendimento de qualidade e precisão. Tudo de primeiro mundo! Lugar lindo, limpo, aconchegante. Profissionais especialistas, resultados impressionantes. Parabéns a toda equipe. ❤️'}
       ]; 
 
     return (
@@ -48,8 +49,8 @@ const Testimonial2 = () => {
                         <div className="col-lg-12">
                             
                             <div className="section-title text-center mb-50 pf_fadeup">
-                                <span className="sub-title">Testimonials</span>
-                                <h2>Success Stories From Around the Globe</h2>
+                                <span className="sub-title">Depoimentos</span>
+                                <h2>Transformações que Cruzam Fronteiras</h2>
                             </div>
                         </div>
                     </div>
@@ -58,7 +59,7 @@ const Testimonial2 = () => {
                             
                             <div className="agk-image-box mb-50 pf_fadeup">
                                 <div className="agk-image">
-                                <Image src="/assets/images/digital-agency/testimonial/testimonial_img1.jpg" className="animated-image" alt="img" width={524} height={509}   />
+                                <Image src="/assets/images/digital-agency/testimonial/bocao.webp" className="animated-image" alt="img" width={524} height={509} style={{ borderRadius: '10px', overflow: 'hidden' }} />
                                 </div>
                             </div>
                         </div>
@@ -82,7 +83,7 @@ const Testimonial2 = () => {
                                                 <div className="author-item">
                                                     <div className="author-info">
                                                         <h4>{item.title}</h4>
-                                                        <h5>{item.subtitle}</h5>
+                                                        <h5 dangerouslySetInnerHTML={{ __html: item.subtitle }}></h5>
                                                     </div>
                                                 </div>
                                                 <div className="quote">
