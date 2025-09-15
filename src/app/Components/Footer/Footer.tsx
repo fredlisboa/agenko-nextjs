@@ -15,20 +15,20 @@ const Footer = () => {
                             <div className="row">
                                 <div className="col-lg-4 col-md-6 col-sm-6">
                                     
-                                    <div className="footer-widget footer-about-widget mb-40 pf_fadeup">
+                                    <div className="footer-widget footer-about-widget mb-0 pf_fadeup">
                                         <div className="footer-content">
                                             <div className="footer-logo">
                                                  
-                                                <a href="#"> <Image src="/assets/images/creative-agency/logo/logo-main.png" alt="img" width={151} height={40}   /></a>
+                                                <a href="#"> <Image src="/assets/images/digital-agency/footer/Marca Studio Dental - 1020 LETRA BRANCA.svg" alt="img" width={500} height={105.166}   /></a>
                                             </div>
-                                            <p>Agenko creative digital agency delivering innovate web Development marketing.</p>
-                                            <form>
+                                            {/* <p>Realçando sua beleza, respeitando sua <span>identidade.</span></p> */}
+                                            {/* <form>
                                                 <div className="form-group">
                                                     <input type="email" className="form_control" placeholder="Email Address" name="email" required />
                                                     <label><i className="far fa-envelope"></i></label>
                                                     <button className="theme-btn style-two">Subscribe</button>
                                                 </div>
-                                            </form>
+                                            </form> */}
                                         </div>
                                     </div>
                                 </div>

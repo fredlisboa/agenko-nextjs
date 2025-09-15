@@ -36,7 +36,7 @@ const Team2 = () => {
                         <div key={i} className="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
                             <div className="agenko-team-item style-two mb-40 pf_fadeup">
                                 <div className="member-image" style={{ borderRadius: '24px', overflow: 'hidden' }}>
-                                    <Image src={item.img} alt={item.name} width={426} height={499} />
+                                    <Image src={item.img} alt={item.name} width={426} height={499} style={{ height: 'auto' }} />
                                     <div className="hover-content">
                                         <ul className="social-link">
                                             {/* <li><a href={item.facebook}><i className="bi bi-facebook"></i></a></li>

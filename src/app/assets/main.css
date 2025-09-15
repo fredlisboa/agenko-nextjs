@@ -4576,9 +4576,9 @@ Version: 1.0
   .footer-widget .footer-content .footer-logo {
     padding: 5px;
     display: inline-block;
-    border-radius: 40px;
+    /* border-radius: 40px;
     border: 1px solid var(--Stock-Color, #313131);
-    background-color: #0E0F11;
+    background-color: #0E0F11; */
     margin-bottom: 20px;
   }
   .footer-widget .footer-content ul li:not(:last-child) {
