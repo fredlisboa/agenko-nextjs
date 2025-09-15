@@ -36,7 +36,7 @@ const Faq1 = () => {
       }, [firstItemOpen]);
 
     return (
-<section className="agk-faq gray-dark pt-80 pb-80">
+<section className="agk-faq gray-dark pt-80 pb-50">
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7">

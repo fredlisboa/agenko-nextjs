@@ -4,7 +4,7 @@ import React from 'react';
 
 const About1 = () => {
     return (
-        <section id="about" className="agk-about pt-80 pb-80">
+        <section id="about" className="agk-about pt-80 pb-50">
         <div className="container">
             <div className="row">
                 <div className="col-xl-7">

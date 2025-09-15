@@ -569,7 +569,7 @@ const WhoWeAre = ()=>{
     const videoUrl = "https://iframe.mediadelivery.net/embed/149294/".concat(videoId, "?autoplay=true&muted=true&loop=true&controls=false&background=1");
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         id: "who-we-are",
-        className: "agk-who-we pt-80 pb-70",
+        className: "agk-who-we pt-80 pb-50",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "container",
@@ -816,8 +816,16 @@ const WhoWeAre = ()=>{
                         className: "big-text text-center mt-80 pt-70",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                             className: "text-anm-two",
-                            children: "HARMONONIZAÇÃO OROFACIAL"
-                        }, void 0, false, {
+                            children: [
+                                "HARMONONIZAÇÃO OROFACIAL ",
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                    fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
+                                    lineNumber: 75,
+                                    columnNumber: 79
+                                }, ("TURBOPACK compile-time value", void 0)),
+                                "GOIÂNIA-GO"
+                            ]
+                        }, void 0, true, {
                             fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
                             lineNumber: 75,
                             columnNumber: 25
@@ -916,7 +924,7 @@ const Testimonial2 = ()=>{
         }
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "agk-testimonial pt-80 pb-80",
+        className: "agk-testimonial pt-80 pb-50",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "container",
             children: [
@@ -1283,7 +1291,7 @@ const Faq1 = ()=>{
         firstItemOpen
     ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "agk-faq gray-dark pt-80 pb-80",
+        className: "agk-faq gray-dark pt-80 pb-50",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "container",
             children: [
@@ -1553,7 +1561,7 @@ const Blog2 = ()=>{
     }["Blog2.useEffect"], []);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         id: "blog",
-        className: "agk-blogs gray-dark pt-80 pb-90",
+        className: "agk-blogs gray-dark pt-80 pb-30",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "container",
             children: [

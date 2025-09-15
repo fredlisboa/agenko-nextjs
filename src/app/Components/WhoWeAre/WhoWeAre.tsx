@@ -7,7 +7,7 @@ const WhoWeAre = () => {
     const videoUrl = `https://iframe.mediadelivery.net/embed/149294/${videoId}?autoplay=true&muted=true&loop=true&controls=false&background=1`;
 
     return (
-        <section id="who-we-are" className="agk-who-we pt-80 pb-70">
+        <section id="who-we-are" className="agk-who-we pt-80 pb-50">
             <div className="container">
                 <div className="row">
                     <div className="col-xl-5">
@@ -72,7 +72,7 @@ const WhoWeAre = () => {
             <div className="row">
                 <div className="col-lg-12">
                     <div className="big-text text-center mt-80 pt-70">
-                        <h2 className="text-anm-two">HARMONONIZAÇÃO OROFACIAL</h2>
+                        <h2 className="text-anm-two">HARMONONIZAÇÃO OROFACIAL <br/>GOIÂNIA-GO</h2>
                     </div>
                 </div>
             </div>

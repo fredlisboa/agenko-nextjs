@@ -5176,7 +5176,7 @@ label {
 .hero-wrapper-two {
   z-index: 1;
   background-color: #000;
-  padding: 180px 0 130px;
+  padding: 180px 0 50px;
   position: relative;
   overflow: hidden;
 }
