@@ -1,4 +1,5 @@
-.carousel-section .agk-image-box {
-    margin-bottom: 30px;
-    margin-top: -80px;
+@media (max-width: 991.98px) {
+    .agk-image-box {
+        margin-top: 0px;
+    }
 }

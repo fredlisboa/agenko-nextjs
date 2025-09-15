@@ -27,24 +27,26 @@ const ImageCarousel = () => {
   }, [images.length]);
 
   return (
-    <div className="image-carousel-container">
-      <AnimatePresence>
-        <motion.div
-          key={currentImageIndex}
-          initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: -100 }}
-          transition={{ duration: 0.5, ease: "easeInOut" }}
-          style={{ position: 'absolute', width: '100%', height: '100%' }}
-        >
-          <Image
-            src={images[currentImageIndex]}
-            alt="Carousel Image"
-            fill
-            style={{ objectFit: "contain" }}
-          />
-        </motion.div>
-      </AnimatePresence>
+    <div className="image-carousel-container" style={{ position: 'relative', width: '100%', maxWidth: '555px', margin: '30px auto 0' }}>
+      <div style={{ position: 'relative', width: '100%', paddingBottom: '100%', borderRadius: '10px', overflow: 'hidden' }}>
+        <AnimatePresence>
+          <motion.div
+            key={currentImageIndex}
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -100 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+          >
+            <Image
+              src={images[currentImageIndex]}
+              alt="Carousel Image"
+              fill
+              style={{ objectFit: "contain" }}
+            />
+          </motion.div>
+        </AnimatePresence>
+      </div>
     </div>
   );
 };
