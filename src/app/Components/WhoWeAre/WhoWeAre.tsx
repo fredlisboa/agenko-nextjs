@@ -7,14 +7,14 @@ const WhoWeAre = () => {
     const videoUrl = `https://iframe.mediadelivery.net/embed/149294/${videoId}?autoplay=true&muted=true&loop=true&controls=false&background=1`;
 
     return (
-        <section className="agk-who-we gray-dark pt-130 pb-70">
+        <section className="agk-who-we pt-80 pb-70">
             <div className="container">
                 <div className="row">
                     <div className="col-xl-5">
                         <div className="agk-content-box mb-50 pf_fadeup">
                             <div className="section-title mb-30">
                                 <span className="sub-title">Nosso Compromisso</span>
-                                <h2>Sua Especialista em Beleza Natural e Resultados de Excelência;</h2>
+                                <h2>Sua Especialista em Beleza Natural e Resultados de Excelência</h2>
                             </div>
                             <ul className="check-list style-one mb-40">
                                 <li><i className="bi bi-check2-circle"></i>Planejamento Individualizado que Respeita Sua Identidade;</li>

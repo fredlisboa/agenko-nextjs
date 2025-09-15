@@ -14,8 +14,8 @@ const About1 = () => {
                             <span className="sub-title">Sobre</span>
                             <h2>Te Ajudo a Transformar Sua Beleza e Autoestima</h2>
                         </div>
-                        <p style={{textAlign: 'justify'}}>Acredito que a verdadeira beleza está em realçar quem você já é. Como especialista em harmonização orofacial em Goiânia, minha missão é ir além dos procedimentos: eu busco o equilíbrio perfeito entre estética e função para revelar a sua melhor versão. Vamos juntas encontrar a harmonia que seu rosto e sorriso merecem?</p>
-                        <p style={{textAlign: 'justify'}}>Com mais de 15 anos de experiência e mais de 1000 faces transformadas, desenvolvi um olhar clínico apurado para criar resultados que respeitam sua identidade. Aqui, cada detalhe é planejado para proporcionar uma beleza natural, sem exageros, elevando não apenas seus traços, mas principalmente sua autoestima e confiança.</p>
+                        <p style={{textAlign: 'justify'}}>Acredito que a verdadeira beleza está em realçar quem você já é. Como especialista em <b>Harmonização Orofacial</b> em Goiânia, minha missão é ir além dos procedimentos: eu busco o equilíbrio perfeito entre estética e função para revelar a sua melhor versão. Vamos juntas encontrar a harmonia que seu rosto e sorriso merecem?</p>
+                        <p style={{textAlign: 'justify'}}>Com mais de 15 anos de experiência e mais de 1000 faces transformadas, desenvolvi um olhar clínico apurado para criar resultados que respeitam sua identidade. Aqui, cada <b>detalhe</b> é planejado para proporcionar uma beleza natural, sem exageros, elevando não apenas seus traços, mas principalmente sua <b>autoestima</b> e confiança.</p>
                     <div className="agk-button mb-30">
                         <Link href="/about" className="theme-btn style-one">
                             <span className="text-flip">
@@ -24,12 +24,21 @@ const About1 = () => {
                             </span>
                         </Link>
                     </div>
-                    <ul>
-                        <li>
+                    <ul className="d-flex flex-wrap align-items-center">
+                        <li className="pe-3">
                             <div className="agenko-counter-box style-one">
                                 <div className="content">
                                     <h2 className="mb-10"><span className="count">1000</span>+</h2>
                                     <p>Faces Transformadas</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li className="ps-3 border-start">
+                            <div className="agenko-counter-box style-one">
+                                <div className="content">
+                                    <h2 className="mb-10"><span className="count">5</span></h2>
+                                    <p>Estrelas no Google</p>
                                 </div>
                             </div>
                         </li>

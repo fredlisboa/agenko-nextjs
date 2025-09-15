@@ -3664,7 +3664,7 @@ label {
 }
 
 .agenko-counter-box.style-one .content h2 {
-  color: #ebffdc;
+  color: rgba(228, 150, 212, .925);
 }
 
 .agenko-counter-box.style-two .content h2 {
@@ -7810,6 +7810,10 @@ label {
 
 .agenko-accordion-item.active .accordion-content {
   display: block;
+}
+
+.border-start {
+  border-color: #0e0f11 !important;
 }
 
 /*# sourceMappingURL=src_app_assets_main_css_bad6b30c._.single.css.map*/
