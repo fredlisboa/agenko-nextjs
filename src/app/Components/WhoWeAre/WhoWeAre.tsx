@@ -7,7 +7,7 @@ const WhoWeAre = () => {
     const videoUrl = `https://iframe.mediadelivery.net/embed/149294/${videoId}?autoplay=true&muted=true&loop=true&controls=false&background=1`;
 
     return (
-        <section id="who-we-are" className="agk-who-we pt-80 pb-50">
+        <section id="who-we-are" className="agk-who-we gray-dark pt-80 pb-50">
             <div className="container">
                 <div className="row">
                     <div className="col-xl-5">
