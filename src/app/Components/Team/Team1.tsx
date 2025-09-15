@@ -38,7 +38,7 @@ const Team1 = () => {
                         <div key={i} className="col-lg-3 col-md-6 col-sm-12">
                             <div className="agenko-team-item style-one mb-40 pf_fadeup">
                                 <div className="member-image">
-                                <Image src={item.img} alt="img" width={305} height={355}   />
+                                <Image src={item.img} alt="img" width={305} height={355} style={{ width: '100%', height: 'auto' }}   />
                                     <div className="icon-btn"><Link href="/team/team-details"><i className="bi bi-plus-lg"></i></Link></div>
                                 </div>
                                 <div className="member-info">

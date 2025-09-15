@@ -95,7 +95,7 @@ const Testimonial2 = () => {
                             
                             <div className="agk-image-box mb-50 pf_fadeup">
                                 <div className="agk-image">
-                                <Image src="/assets/images/digital-agency/testimonial/bocao.webp" className="animated-image" alt="img" width={524} height={509} style={{ borderRadius: '10px', overflow: 'hidden' }} />
+                                <Image src="/assets/images/digital-agency/testimonial/bocao.webp" className="animated-image" alt="img" width={524} height={509} style={{ borderRadius: '10px', overflow: 'hidden', width: '100%', height: 'auto' }} />
                                 </div>
                             </div>
                         </div>

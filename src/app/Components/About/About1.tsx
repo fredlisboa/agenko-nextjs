@@ -50,7 +50,7 @@ const About1 = () => {
                     
                     <div className="agk-image-box style-one mb-50 pf_fadeup">
                         <div className="agk-image">
-                        <Image src="/assets/images/digital-agency/about/fiel-beleza.webp" alt="img" width={440} height={532}   />
+                        <Image src="/assets/images/digital-agency/about/fiel-beleza.webp" alt="img" width={440} height={532} style={{ width: '100%', height: 'auto' }}   />
                         </div>
                         <div className="agenko-experince-box style-one">
                             <h2><span>15</span>+</h2>

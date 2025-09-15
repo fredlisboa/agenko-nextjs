@@ -313,7 +313,11 @@ const About1 = ()=>{
                                         src: "/assets/images/digital-agency/about/fiel-beleza.webp",
                                         alt: "img",
                                         width: 440,
-                                        height: 532
+                                        height: 532,
+                                        style: {
+                                            width: '100%',
+                                            height: 'auto'
+                                        }
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Components/About/About1.tsx",
                                         lineNumber: 53,
