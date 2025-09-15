@@ -4,7 +4,7 @@ import React from 'react';
 
 const HeroBanner2 = () => {
     return (
-        <section className="agk-hero">
+        <section id="hero" className="agk-hero">
         <div className="hero-wrapper-two">
             <div className="shape shape-one"><span><Image className="rotate360" src="/assets/images/digital-agency/hero/shape/shape1.png" alt="img" width={50} height={50}   /></span></div>
             <div className="shape shape-two"><span><Image className="animate-float-bob-y" src="/assets/images/digital-agency/hero/shape/shape2.png" alt="img" width={40} height={80}   /></span></div>

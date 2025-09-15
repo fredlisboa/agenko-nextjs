@@ -2,10 +2,20 @@ import Link from 'next/link';
 import DropDown from './DropDown';
 
 export default function Nav({ setMobileToggle }) {
+  const handleScroll = (e) => {
+    e.preventDefault();
+    const href = e.currentTarget.getAttribute('href');
+    const targetId = href.substring(1);
+    const elem = document.getElementById(targetId);
+    elem?.scrollIntoView({
+      behavior: "smooth",
+    });
+    setMobileToggle(false)
+  };
   return (
     <ul className="cs_nav_list fw-medium">
       <li>
-        <Link href="#" onClick={() => setMobileToggle(false)}>Início</Link>
+        <Link href="#hero" onClick={handleScroll}>Início</Link>
       </li>
       <li>
         <Link href="/contact" onClick={() => setMobileToggle(false)}>
