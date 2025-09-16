@@ -5,7 +5,7 @@ import React from 'react';
 const Footer = () => {
     return (
             <footer className="agenko-footer gray-dark pt-130 primary-black-bg">
-                    <div className="shape shape-one"><span><img className="rotate360" src="/assets/images/creative-agency/footer/element1.png" alt="Shape" /></span></div>
+                    <div className="shape shape-one"><span><img className="rotate360" src="/assets/images/creative-agency/footer/ciranda.webp" alt="Shape" /></span></div>
                     <div className="shape shape-two"><span><img className="rotate360" src="/assets/images/creative-agency/footer/element2.png" alt="Shape" /></span></div>
                     <div className="shape shape-blur_one"><span></span></div>
                     <div className="shape shape-blur_two"><span></span></div>
@@ -19,7 +19,7 @@ const Footer = () => {
                                         <div className="footer-content">
                                             <div className="footer-logo">
                                                  
-                                                <a href="#"> <Image src="/assets/images/digital-agency/footer/Marca Studio Dental - 1020 LETRA BRANCA.svg" alt="img" width={500} height={105.166}   /></a>
+                                                <a href="#"> <Image src="/assets/images/digital-agency/footer/marca-sd-qd.svg" alt="img" width={300} height={200}   /></a>
                                             </div>
                                             {/* <p>Realçando sua beleza, respeitando sua <span>identidade.</span></p> */}
                                             {/* <form>
@@ -36,13 +36,20 @@ const Footer = () => {
                                     
                                     <div className="footer-widget footer-contact-info-widget mb-40 pf_fadeup">
                                         <div className="footer-content mb-25">
-                                            <h4 className="widget-title">Main Address</h4>
-                                            <p>6801 Hollywood Blvd, Los Angeles, CA 90028</p>
+                                            <h4 className="widget-title">Endereço</h4>
+                                            <p><a href="https://share.google/pcuCYJHPmM1pRPwpc" target="_blank" rel="noopener noreferrer"><b>Rua 5, 691, Térreo<br />Ed. The Prime Tam. Office<br />Praça Tamandaré<br />Setor Oeste, Goiânia-GO</b></a></p>
                                         </div>
                                         <div className="footer-content mb-25">
+                                            <h4 className="widget-title">Responsável Técnico</h4>
+                                            <p>STUDIO DENTAL COMERCIO DE HIGIENE ORAL LTDA<br  />
+                                            CNPJ 46.125.234/0001-66<br  />
+                                            EPAO CRO/GO 3906 <br  />
+                                            R.T: KRONER MACHADO COSTA | CRO/GO 15656</p>
+                                        </div>
+                                        {/* <div className="footer-content mb-25">
                                             <h4 className="widget-title">Sub-Address</h4>
                                             <p>200 Santa Monica Pier, Santa Monica, CA 90401</p>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                                 <div className="col-lg-5 col-md-12 col-sm-12">
@@ -51,22 +58,34 @@ const Footer = () => {
                                             
                                             <div className="footer-widget footer-nav-widget mb-40 pf_fadeup">
                                                 <div className="footer-content mb-35">
-                                                    <h4 className="widget-title">Our Link</h4>
+                                                    <h4 className="widget-title">Links Úteis</h4>
                                                     <ul className="footer-nav">
                                                         <li>
-                                                            <Link href="/about">About us</Link>
+                                                            <Link href="#about">Sobre</Link>
                                                         </li>
                                                         <li>
-                                                            <Link href="/service">Services</Link>
+                                                            <Link href="#who-we-are">Compromisso</Link>
                                                         </li>
                                                         <li>
-                                                            <Link href="/project">Our Project</Link>
+                                                            <Link href="#services">Especialidades</Link>
                                                         </li>
                                                         <li>
-                                                            <Link href="/faq">FAQ</Link>
+                                                            <Link href="#process">Jornada</Link>
                                                         </li>
                                                         <li>
-                                                            <Link href="/contact">Contact us</Link>
+                                                            <Link href="#testimonials">Depoimentos</Link>
+                                                        </li>
+                                                        <li>
+                                                            <Link href="#cases">Casos</Link>
+                                                        </li>
+                                                        <li>
+                                                            <Link href="#faq">FAQ</Link>
+                                                        </li>
+                                                        <li>
+                                                            <Link href="redes-sociais">Redes Sociais</Link>
+                                                        </li>
+                                                        <li>
+                                                            <Link href="/contact">Contato</Link>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -76,14 +95,14 @@ const Footer = () => {
                                            
                                             <div className="footer-widget footer-contact-widget mb-40 pf_fadeup">
                                                 <div className="footer-content">
-                                                    <h4 className="widget-title">Contact</h4>
+                                                    <h4 className="widget-title">Contato</h4>
                                                     <div className="agenko-iconic-box style-three mb-30">
                                                         <div className="icon">
                                                         <i className="bi bi-envelope"></i>
                                                         </div>
                                                         <div className="content">
                                                             <h6>Email</h6>
-                                                            <p><a href="mailto:info@agenko.com">info@agenko.com</a></p>
+                                                            <p><a href="contato@studiodental.dental">contato@studiodental.dental</a></p>
                                                         </div>
                                                     </div>
                                                     <div className="agenko-iconic-box style-three">
@@ -91,9 +110,10 @@ const Footer = () => {
                                                         <i className="bi bi-telephone"></i>
                                                         </div>
                                                         <div className="content">
-                                                            <h6>Phone</h6>
-                                                            <p><a href="tel:+555-7659-9854">+555-7659-9854</a></p>
+                                                            <h6>Telefone/WhatsApp</h6>
+                                                            <p><a href="/contact">+55 62 9 8243-3773</a></p>
                                                         </div>
+                                                        
                                                     </div>
                                                 </div>
                                             </div>
@@ -110,16 +130,16 @@ const Footer = () => {
                                 <div className="col-md-6">
                                    
                                     <div className="copyright-text">
-                                        <p>&copy; 2025 <span>Agenko</span> - All Rights Reserved.</p>
+                                        <p>&copy; 2025 <span>StudioDental</span> ©</p>
                                     </div>
                                 </div>
                                 <div className="col-md-6">
                                     
                                     <div className="copyright-nav">
                                         <ul>
-                                            <li><a href="#">Terms & Condition</a></li>
-                                            <li><a href="#">Privacy Policy</a></li>
-                                            <li><a href="#">Contact</a></li>
+                                            <li><a href="#">Termos de Uso</a></li>
+                                            <li><a href="#">Política de Privacidade</a></li>
+                                            <li><a href="/contact">Contato</a></li>
                                         </ul>
                                     </div>
                                 </div>

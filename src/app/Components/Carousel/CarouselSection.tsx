@@ -3,7 +3,7 @@ import ImageCarousel from './ImageCarousel';
 
 const CarouselSection = () => {
     return (
-        <section className="gray-dark pt-80 pb-50 carousel-section">
+        <section id="cases" className="gray-dark pt-80 pb-50 carousel-section">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12">

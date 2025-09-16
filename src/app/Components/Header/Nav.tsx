@@ -29,28 +29,53 @@ export default function Nav({ setMobileToggle }) {
       </li>
       <li className='menu-item-has-children'>
         <Link href="#" >
-        Nossa
+        A Clínica
         </Link>
           <DropDown>
             <ul>
               <li>
                 <Link href="#services" onClick={() => setMobileToggle(false)}>
-                Especialidade
+                Nossas Especialidades
                 </Link>
               </li>
               <li>
                 <Link href="#process" onClick={() => setMobileToggle(false)}>
-                Jornada
+                Nossa Jornada
                 </Link>
-              </li>            
+              </li>
+              <li>
+                <Link href="#testimonials" onClick={() => setMobileToggle(false)}>
+                Depoimentos
+                </Link>
+              </li>
+              <li>
+                <Link href="#cases" onClick={() => setMobileToggle(false)}>
+                Casos
+                </Link>
+              </li>
+              <li>
+                <Link href="#faq" onClick={() => setMobileToggle(false)}>
+                Perguntas & Respostas
+                </Link>
+              </li>
+              <li>
+                <Link href="#redes-sociais" onClick={() => setMobileToggle(false)}>
+                Redes Sociais
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" onClick={() => setMobileToggle(false)}>
+                Contato
+                </Link>
+              </li>                   
             </ul>
           </DropDown>
       </li>   
-      <li>
+      {/* <li>
         <Link href="#blog" onClick={() => setMobileToggle(false)}>
           Blog
         </Link>
-      </li>
+      </li> */}
       <li>
         <Link href="/contact" onClick={() => setMobileToggle(false)}>
           Contato

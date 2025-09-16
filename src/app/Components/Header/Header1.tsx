@@ -47,6 +47,14 @@ export default function Header1({ variant }: any) {
               </div>
               <div className="cs_main_header_center">
                 <div className="cs_nav cs_primary_font fw-medium">
+                <div className="main-button mobile-cta-btn">
+                    <Link href="/contact" className="theme-btn style-one">
+                        <span className="text-flip">
+                            <span className="text">AGENDAR AVALIAÇÃO GRATUITA</span>
+                            <span className="text">AGENDAR AVALIAÇÃO GRATUITA</span>
+                        </span>
+                    </Link>                  
+                  </div>
                   <span
                     className={
                       mobileToggle
@@ -63,7 +71,7 @@ export default function Header1({ variant }: any) {
             <div className="cs_main_header_right">
               <div className="header-btn d-flex align-items-center">
 
-                <div className="main-button">
+                <div className="main-button desktop-cta-btn">
                 <Link href="/contact" className="theme-btn style-one">
                     <span className="text-flip">
                         <span className="text">AGENDAR AVALIAÇÃO GRATUITA</span>
