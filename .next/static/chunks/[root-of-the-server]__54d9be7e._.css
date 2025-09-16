@@ -22230,6 +22230,23 @@ label {
   flex: 0 43%;
 }
 
+.map-container {
+  position: relative;
+}
+
+.map-overlay {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.map-overlay.is-hidden {
+  pointer-events: none;
+}
+
 .bw-map {
   -webkit-filter: grayscale();
   transition: filter .4s ease-in-out;
@@ -22239,28 +22256,14 @@ label {
   -webkit-filter: grayscale(0%);
 }
 
-.map-container {
-  position: relative;
-}
-
-.map-overlay {
-  z-index: 1;
-  cursor: pointer;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.map-overlay.is-hidden {
-  display: none;
-}
-
 @media (min-width: 1024px) {
   .map-overlay {
     pointer-events: none;
   }
+}
+
+#hero, #about, #who-we-are, #services, #process, #testimonials, #cases, #faq, #redes-sociais {
+  scroll-margin-top: 40px;
 }
 
 /* [project]/src/app/assets/carousel.css [app-client] (css) */

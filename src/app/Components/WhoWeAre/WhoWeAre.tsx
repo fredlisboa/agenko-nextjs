@@ -24,7 +24,7 @@ const WhoWeAre = () => {
                                 <li><i className="bi bi-check2-circle"></i>Acompanhamento Pós-Procedimento para Sua Tranquilidade.</li>
                             </ul>
                             <div className="agk-button">
-                                <Link href="/pricing" className="theme-btn style-one">
+                                <Link href="/contact" className="theme-btn style-one">
                                     <span className="text-flip">
                                         <span className="text">SAIBA MAIS</span>
                                         <span className="text">SAIBA MAIS</span>

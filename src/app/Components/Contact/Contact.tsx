@@ -20,87 +20,145 @@ interface FormData {
     email: string;
 }
 
-type FormStatus = 'idle' | 'loading' | 'success' | 'error' | 'client-error';
+// Added a specific status for the WhatsApp validation error
+type FormStatus = 'idle' | 'loading' | 'success' | 'error' | 'client-error' | 'client-error-whatsapp';
 
 interface FormMessage {
     type: FormStatus;
-    text: string;
+    text: string; // text can be used as a fallback
 }
 
+// --- WhatsApp Button Component with Advanced Styling ---
+const WhatsAppButton = () => (
+    <>
+        <style jsx>{`
+            .whatsapp-button-special {
+                display: inline-block;
+                padding: 15px 30px;
+                margin-top: 15px;
+                border-radius: 50px;
+                font-size: 18px;
+                font-weight: bold;
+                text-decoration: none !important;
+                color: white !important;
+                background: linear-gradient(45deg, #25d366, #128c7e, #25d366);
+                background-size: 200% auto;
+                border: 2px solid #ffffff;
+                box-shadow: 0 4px 15px 0 rgba(49, 196, 95, 0.75);
+                transition: all 0.4s ease-in-out;
+                position: relative;
+                overflow: hidden;
+                z-index: 1;
+                animation: whatsappPulse 2s infinite;
+            }
+
+            .whatsapp-button-special:hover {
+                background: white;
+                color: #128c7e !important;
+                transform: translateY(-3px) scale(1.05);
+                box-shadow: 0 10px 20px rgba(255, 255, 255, 0.4);
+                animation: none; /* Stop pulsing on hover */
+            }
+            
+            .whatsapp-button-special::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+                transition: all 0.7s;
+                z-index: -1;
+            }
+
+            .whatsapp-button-special:hover::before {
+                left: 100%;
+            }
+
+            @keyframes whatsappPulse {
+                0% {
+                    transform: scale(0.98);
+                    box-shadow: 0 0 0 0 rgba(49, 196, 95, 0.7);
+                }
+                70% {
+                    transform: scale(1.02);
+                    box-shadow: 0 0 0 15px rgba(49, 196, 95, 0);
+                }
+                100% {
+                    transform: scale(0.98);
+                    box-shadow: 0 0 0 0 rgba(49, 196, 95, 0);
+                }
+            }
+
+            .whatsapp-button-special span {
+                margin-right: 10px;
+            }
+        `}</style>
+        <a
+            href="https://wa.me/5562982433773?text=Ol%C3%A1!%20Vim%20pelo%20site%20HOF%20Studio%20Dental%20Dra%20Gabriella%20Lisboa%20e%20acabei%20de%20preencher%20o%20formul%C3%A1rio.%20Gostaria%20de%20continuar%20meu%20atendimento."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="whatsapp-button-special"
+        >
+            <span>📱</span> Abrir WhatsApp Agora
+        </a>
+    </>
+);
+
+
 const Contact = () => {
-    // --- Refs for the map interaction ---
+    // --- Refs and State ---
     const mapContainerRef = useRef<HTMLDivElement>(null);
     const overlayRef = useRef<HTMLDivElement>(null);
-    
-    // --- State for the contact form ---
-    const [formData, setFormData] = useState<FormData>({
-        nome: '',
-        whatsapp: '',
-        email: '',
-    });
+    const [formData, setFormData] = useState<FormData>({ nome: '', whatsapp: '', email: '' });
     const [formStatus, setFormStatus] = useState<FormStatus>('idle');
     const [formMessage, setFormMessage] = useState<FormMessage | null>(null);
 
-    // --- Form input change handler ---
+    // --- Handlers and Logic ---
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;
-        
         if (name === 'whatsapp') {
             const numericValue = value.replace(/\D/g, '').slice(0, 11);
-            setFormData((prevData) => ({ ...prevData, [name]: numericValue }));
+            setFormData((prev) => ({ ...prev, [name]: numericValue }));
         } else {
-            setFormData((prevData) => ({ ...prevData, [name]: value }));
+            setFormData((prev) => ({ ...prev, [name]: value }));
         }
     };
 
-    // --- Client-side form validation ---
     const validateForm = (): boolean => {
         const { nome, whatsapp, email } = formData;
-
         if (!nome || nome.trim().length < 2) {
             setFormMessage({ type: 'client-error', text: '❌ Por favor, digite seu nome completo.' });
             return false;
         }
-
         if (!email || !email.includes('@') || !email.includes('.')) {
             setFormMessage({ type: 'client-error', text: '❌ Por favor, digite um email válido.' });
             return false;
         }
-
-        if (!whatsapp || whatsapp.trim().length < 10) {
-            setFormMessage({ type: 'client-error', text: '❌ Por favor, digite um WhatsApp válido (mín. 10 dígitos).' });
+        if (!whatsapp || whatsapp.trim().length < 11) {
+            setFormMessage({ type: 'client-error-whatsapp', text: '' }); 
             return false;
         }
-
         return true;
     };
 
-    // --- Form submission handler ---
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setFormMessage(null);
-
-        if (!validateForm()) {
-            return;
-        }
+        if (!validateForm()) return;
 
         setFormStatus('loading');
-
         try {
             const response = await fetch('/api/contact', {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
+                headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData),
             });
-
             const result = await response.json();
-
             if (response.ok) {
                 setFormStatus('success');
                 setFormMessage({ type: 'success', text: result.message });
-                
                 try {
                     window.dataLayer = window.dataLayer || [];
                     window.dataLayer.push({
@@ -109,37 +167,25 @@ const Contact = () => {
                         lead_email: formData.email,
                         lead_whatsapp: formData.whatsapp,
                         form_source: 'nextjs_contact_form_v1',
-                        page_url: window.location.href
+                        page_url: window.location.href,
                     });
-                    console.log('📊 DataLayer push successful.');
-
-                    if (window.KTracking && typeof window.KTracking.reportConversion === 'function') {
+                    if (window.KTracking?.reportConversion) {
                         window.KTracking.reportConversion();
-                        console.log('✅ Keitaro conversion reported.');
                     }
                 } catch (trackingError) {
                     console.warn('⚠️ Error during tracking:', trackingError);
                 }
-
-                setTimeout(() => {
-                        setFormData({
-                            nome: '',
-                            whatsapp: '',
-                            email: '',
-                        });
-                }, 500);
-
+                setTimeout(() => setFormData({ nome: '', whatsapp: '', email: '' }), 500);
             } else {
                 setFormStatus('error');
-                setFormMessage({ type: 'error', text: result.message || '⚠️ Houve um problema temporário. Tente novamente.' });
+                setFormMessage({ type: 'error', text: result.message || '⚠️ Houve um problema temporário.' });
             }
         } catch (error) {
             setFormStatus('error');
-            setFormMessage({ type: 'error', text: '⚠️ Houve um problema temporário. Tente novamente em alguns segundos.' });
+            setFormMessage({ type: 'error', text: '⚠️ Houve um problema temporário. Tente novamente.' });
         }
     };
 
-    // --- Map Interaction Logic ---
     useEffect(() => {
         const container = mapContainerRef.current;
         const overlay = overlayRef.current;
@@ -150,8 +196,6 @@ const Contact = () => {
                 if (iframe) {
                     iframe.classList.add('is-active');
                 }
-                
-                // Physically remove the overlay from the DOM to allow map interaction
                 overlay.remove(); 
             }
         };
@@ -160,45 +204,50 @@ const Contact = () => {
             overlay.addEventListener('touchstart', handleFirstTouch, { passive: true });
         }
 
-        // Cleanup function for when the component unmounts
         return () => {
-            // The overlay might already be removed, so a simple check is enough
+            // Cleanup handled by element removal
         };
     }, []);
 
-    // --- Helper function to render form messages ---
     const renderFormMessage = () => {
         if (!formMessage) return null;
 
-        if (formStatus === 'success') {
+        if (formMessage.type === 'client-error-whatsapp') {
+            return (
+                <div className="message error" style={{ textAlign: 'center', lineHeight: 1.6 }}>
+                    <p>❌ Por favor, digite um WhatsApp válido (mín. 11 dígitos).</p>
+                    <p>
+                        <strong>Ou continue sua jornada:</strong> Clique abaixo para falar diretamente conosco!
+                    </p>
+                    <WhatsAppButton />
+                </div>
+            );
+        }
+
+        if (formMessage.type === 'success') {
             return (
                 <div className="message success" style={{ textAlign: 'center', lineHeight: 1.6 }}>
                     <p style={{ fontSize: '1.2em', marginBottom: '15px' }}>
                         <strong>✅ Tudo certo! Recebemos seu contato.</strong>
                     </p>
-                    <p style={{ marginBottom: '15px' }}>
-                        Nossa equipe entrará em contato com você em breve.
-                    </p>
-                    <p style={{ marginBottom: '15px' }}>
+                    <p>Nossa equipe entrará em contato com você em breve.</p>
+                    <p>
                         <strong>Continue sua jornada:</strong> Clique abaixo para falar diretamente conosco!
                     </p>
-                    <a 
-                        href="https://wa.me/5562982433773?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20acabei%20de%20preencher%20o%20formul%C3%A1rio.%20Gostaria%20de%20continuar%20meu%20atendimento." 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="whatsapp-button"
-                    >
-                        <span>📱</span> Abrir WhatsApp Agora
-                    </a>
+                    <WhatsAppButton />
                 </div>
             );
         }
 
-        return (
-            <div className={`message ${formMessage.type === 'client-error' ? 'error' : 'server-error'}`}>
-                {formMessage.text}
-            </div>
-        );
+        if (formMessage.text) {
+             return (
+                <div className={`message ${formMessage.type.includes('error') ? 'error' : 'server-error'}`}>
+                    {formMessage.text}
+                </div>
+            );
+        }
+
+        return null;
     };
     
     const requiredMark = <span style={{ color: 'red', fontWeight: 'bold' }}>*</span>;
@@ -213,7 +262,7 @@ const Contact = () => {
                                   <div className="shape"><span><Image src="/assets/images/pages/shape/world.png" alt="img" width={306} height={647} /></span></div>
                                   <ul>
                                       <li>
-                                          <div className="phone"><a href="https://wa.me/5562982433773?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20acabei%20de%20preencher%20o%20formul%C3%A1rio.%20Gostaria%20de%20continuar%20meu%20atendimento." target="_blank" rel="noopener noreferrer">+55 (62) 9 8243-3773</a></div>
+                                          <div className="phone"><a href="https://wa.me/5562982433773?text=Ol%C3%A1!%20Vim%20pelo%20site%20HOF%20Studio%20Dental%20Dra%20Gabriella%20Lisboa%20e%20acabei%20de%20preencher%20o%20formul%C3%A1rio.%20Gostaria%20de%20continuar%20meu%20atendimento." target="_blank" rel="noopener noreferrer">+55 (62) 9 8243-3773</a></div>
                                       </li>
                                       <li>
                                           <div className="agenko-info-box">
@@ -244,7 +293,7 @@ const Contact = () => {
                                                       <i className="bi bi-instagram"></i></a>
                                                       <a href="https://share.google/pcuCYJHPmM1pRPwpc" target="_blank" rel="noopener noreferrer"><i className="bi bi-google"></i></a>
                                                       <a href="https://tiktok.com/@studiodental.dental" target="_blank" rel="noopener noreferrer"><i className="bi bi-tiktok"></i></a>
-                                                      <a href="https://wa.me/5562982433773?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20acabei%20de%20preencher%20o%20formul%C3%A1rio.%20Gostaria%20de%20continuar%20meu%20atendimento." target="_blank" rel="noopener noreferrer"><i className="bi bi-whatsapp"></i></a>
+                                                      <a href="https://wa.me/5562982433773?text=Ol%C3%A1!%20Vim%20pelo%20site%20HOF%20Studio%20Dental%20Dra%20Gabriella%20Lisboa%20e%20acabei%20de%20preencher%20o%20formul%C3%A1rio.%20Gostaria%20de%20continuar%20meu%20atendimento." target="_blank" rel="noopener noreferrer"><i className="bi bi-whatsapp"></i></a>
                                                   </div>
                                               </div>
                                           </div>
@@ -260,41 +309,41 @@ const Contact = () => {
                                    </div>
                                    <p className="mb-20" style={{textAlign: 'justify', hyphens: 'auto'}}>Preencha o formulário para agendar sua avaliação gratuita. Nossa equipe de gestão de pacientes entrará em contato em breve para confirmar o <b>melhor horário</b> para você.</p>
                                    
-                               {formStatus !== 'success' ? (
-                                   <form className="agenko-contact-form style-one" id="contact-form" onSubmit={handleSubmit} noValidate>
-                                       <div className="row">
-                                           <div className="col-md-6">
-                                               <div className="form-group">
-                                                   <label htmlFor="nome" className="form-label">Nome Completo {requiredMark}</label>
-                                                   <input id="nome" type="text" className="form_control" placeholder="Digite seu nome" name="nome" required value={formData.nome} onChange={handleInputChange} />
-                                               </div>
+                                   {formStatus !== 'success' && (
+                                       <form className="agenko-contact-form style-one" id="contact-form" onSubmit={handleSubmit} noValidate>
+                                           <div className="row">
+                                                <div className="col-md-6">
+                                                    <div className="form-group">
+                                                        <label htmlFor="nome" className="form-label">Nome Completo {requiredMark}</label>
+                                                        <input id="nome" type="text" className="form_control" placeholder="Digite seu nome" name="nome" required value={formData.nome} onChange={handleInputChange} />
+                                                    </div>
+                                                </div>
+                                                <div className="col-md-6">
+                                                    <div className="form-group">
+                                                        <label htmlFor="whatsapp" className="form-label">WhatsApp {requiredMark}</label>
+                                                        <input id="whatsapp" type="tel" className="form_control" placeholder="Apenas números com DDD" name="whatsapp" required value={formData.whatsapp} onChange={handleInputChange} inputMode="numeric" />
+                                                    </div>
+                                                </div>
+                                                <div className="col-md-12">
+                                                    <div className="form-group">
+                                                        <label htmlFor="email" className="form-label">Email {requiredMark}</label>
+                                                        <input id="email" type="email" className="form_control" placeholder="seumelhor@email.com" name="email" required value={formData.email} onChange={handleInputChange} />
+                                                    </div>
+                                                </div>
+                                                <div className="col-lg-12">
+                                                    <div className="form-group">
+                                                        <button type="submit" className="theme-btn" disabled={formStatus === 'loading'}>
+                                                            {formStatus === 'loading' ? 'ENVIANDO...' : 'Agendar Avaliação Gratuita'}
+                                                        </button>
+                                                    </div>
+                                                </div>
                                            </div>
-                                           <div className="col-md-6">
-                                               <div className="form-group">
-                                                   <label htmlFor="whatsapp" className="form-label">WhatsApp {requiredMark}</label>
-                                                   <input id="whatsapp" type="tel" className="form_control" placeholder="Apenas números com DDD" name="whatsapp" required value={formData.whatsapp} onChange={handleInputChange} inputMode="numeric" />
-                                               </div>
-                                           </div>
-                                           <div className="col-md-12">
-                                               <div className="form-group">
-                                                   <label htmlFor="email" className="form-label">Email {requiredMark}</label>
-                                                   <input id="email" type="email" className="form_control" placeholder="seumelhor@email.com" name="email" required value={formData.email} onChange={handleInputChange} />
-                                               </div>
-                                           </div>
-                                           <div className="col-lg-12">
-                                               <div className="form-group">
-                                                   <button type="submit" className="theme-btn" disabled={formStatus === 'loading'}>
-                                                       {formStatus === 'loading' ? 'ENVIANDO...' : 'Agendar Avaliação Gratuita'}
-                                                   </button>
-                                               </div>
-                                           </div>
-                                       </div>
-                                   </form>
-                                 ) : null}
+                                       </form>
+                                   )}
 
-                               <div className="col-lg-12">
-                                   {renderFormMessage()}
-                               </div>
+                                   <div className="col-lg-12">
+                                       {renderFormMessage()}
+                                   </div>
                               </div>
                           </div>
                       </div>

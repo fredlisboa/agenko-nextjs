@@ -111,7 +111,7 @@ const Footer = () => {
                                                         </div>
                                                         <div className="content">
                                                             <h6>WhatsApp</h6>
-                                                            <p><a href="https://wa.me/5562982433773?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20acabei%20de%20preencher%20o%20formul%C3%A1rio.%20Gostaria%20de%20continuar%20meu%20atendimento." target="_blank" rel="noopener noreferrer">+55 62 9 8243-3773</a></p>
+                                                            <p><a href="https://wa.me/5562982433773?text=Ol%C3%A1!%20Vim%20pelo%20site%20HOF%20Studio%20Dental%20Dra%20Gabriella%20Lisboa%20e%20acabei%20de%20preencher%20o%20formul%C3%A1rio.%20Gostaria%20de%20continuar%20meu%20atendimento." target="_blank" rel="noopener noreferrer">+55 62 9 8243-3773</a></p>
                                                         </div>
                                                         
                                                     </div>

@@ -7467,3 +7467,17 @@ color: #222;
     pointer-events: none;
   }
 }
+
+/* In your global CSS file (e.g., globals.css or a dedicated layout.css) */
+
+#hero,
+#about,
+#who-we-are,
+#services,
+#process,
+#testimonials,
+#cases,
+#faq,
+#redes-sociais {
+  scroll-margin-top: 40px; /* IMPORTANT: Adjust this value to the exact height of your fixed header */
+}

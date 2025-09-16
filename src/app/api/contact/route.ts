@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 
 // The URL for your n8n webhook
-const WEBHOOK_URL = 'https://webhooks-n8n.studiodental.digital/webhook/2acbe97c-2784-4283-9e76-72ae7051e1e0';
+const WEBHOOK_URL = 'https://webhooks-n8n.studiodental.digital/webhook/40d61430-5bf1-4a5e-a931-8ef0fe643769';
 
 export async function POST(request: Request) {
   try {
