@@ -7820,4 +7820,25 @@ label {
   border-color: #313235 !important;
 }
 
+.termos-de-uso-container, .termos-de-uso-container h1, .termos-de-uso-container h2, .termos-de-uso-container h3, .termos-de-uso-container p, .termos-de-uso-container ul, .termos-de-uso-container ol, .termos-de-uso-container li, .termos-de-uso-container strong {
+  color: #fff;
+}
+
+.termos-de-uso-container a {
+  color: #add8e6;
+}
+
+.termos-de-uso-container {
+  color: #333;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.termos-de-uso-container h2, .termos-de-uso-container h3 {
+  color: #222;
+}
+
 /*# sourceMappingURL=src_app_assets_main_css_bad6b30c._.single.css.map*/

@@ -675,7 +675,7 @@ const WhoWeAre = ()=>{
                                                         lineNumber: 24,
                                                         columnNumber: 37
                                                     }, ("TURBOPACK compile-time value", void 0)),
-                                                    "Acompanhamento Pós-Procedimento para Sua Tranquilidade;"
+                                                    "Acompanhamento Pós-Procedimento para Sua Tranquilidade."
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
@@ -1279,6 +1279,7 @@ const ImageCarousel = ()=>{
                         src: images[currentImageIndex],
                         alt: "Carousel Image",
                         fill: true,
+                        sizes: "(max-width: 555px) 100vw, 555px",
                         style: {
                             objectFit: "contain"
                         }

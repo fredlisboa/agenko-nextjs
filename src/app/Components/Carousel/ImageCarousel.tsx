@@ -42,6 +42,7 @@ const ImageCarousel = () => {
               src={images[currentImageIndex]}
               alt="Carousel Image"
               fill
+              sizes="(max-width: 555px) 100vw, 555px"
               style={{ objectFit: "contain" }}
             />
           </motion.div>

@@ -19,7 +19,7 @@ const BreadCumb = ({Title,content} : any ) => {
                                 
                                 <div className="text-box d-flex align-items-center">
                                     <div className="icon">
-                                    <Image className="rotate360" src="/assets/images/pages/shape/star1.png" alt="img" width={84} height={90}   />
+                                    <Image className="rotate360" src="/assets/images/pages/shape/star12.webp" alt="img" width={84} height={90}   />
                                     </div>
                                     <div className="text">
                                         <p>{content}</p>
@@ -29,7 +29,7 @@ const BreadCumb = ({Title,content} : any ) => {
                             <div className="col-xl-4">
                                 
                                 <ul className="breadcrumb-link">
-                                    <li><Link href="/">Home</Link></li>
+                                    <li><Link href="/">Início</Link></li>
                                     <li className="active">{Title}</li>
                                 </ul>
                             </div>
@@ -39,7 +39,7 @@ const BreadCumb = ({Title,content} : any ) => {
                 <div className="col-lg-3">
                     
                     <div className="circle-box float-xl-end text-center text-xl-end">
-                        <Image className="rotate360" src="/assets/images/pages/shape/circle-shape1.png" alt="img" width={135} height={135}   />
+                        <Image className="rotate360" src="/assets/images/creative-agency/footer/ciranda.webp" alt="img" width={135} height={135}   />
                     </div>
                 </div>
             </div>

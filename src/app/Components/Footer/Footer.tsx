@@ -37,7 +37,7 @@ const Footer = () => {
                                     <div className="footer-widget footer-contact-info-widget mb-40 pf_fadeup">
                                         <div className="footer-content mb-25">
                                             <h4 className="widget-title">Endereço</h4>
-                                            <p><a href="https://share.google/pcuCYJHPmM1pRPwpc" target="_blank" rel="noopener noreferrer"><b>Rua 5, 691, Térreo<br />Ed. The Prime Tam. Office<br />Praça Tamandaré<br />Setor Oeste, Goiânia-GO</b></a></p>
+                                            <p><a href="https://share.google/pcuCYJHPmM1pRPwpc" target="_blank" rel="noopener noreferrer">Rua 5, 691, Térreo<br />Ed. The Prime Tam. Office<br />Praça Tamandaré<br />Setor Oeste, Goiânia-GO</a></p>
                                         </div>
                                         <div className="footer-content mb-25">
                                             <h4 className="widget-title">Responsável Técnico</h4>
@@ -130,15 +130,15 @@ const Footer = () => {
                                 <div className="col-md-6">
                                    
                                     <div className="copyright-text">
-                                        <p>&copy; 2025 <span>StudioDental</span> ©</p>
+                                        <p>&copy; 2025 <span>StudioDental</span></p>
                                     </div>
                                 </div>
                                 <div className="col-md-6">
                                     
                                     <div className="copyright-nav">
                                         <ul>
-                                            <li><a href="#">Termos de Uso</a></li>
-                                            <li><a href="#">Política de Privacidade</a></li>
+                                            <li><a href="/termos-de-uso" target="_blank" rel="noopener noreferrer">Termos de Uso</a></li>
+                                            <li><a href="/politica-privacidade" target="_blank" rel="noopener noreferrer">Política de Privacidade</a></li>
                                             <li><a href="/contact">Contato</a></li>
                                         </ul>
                                     </div>

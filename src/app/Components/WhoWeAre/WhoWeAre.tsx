@@ -21,7 +21,7 @@ const WhoWeAre = () => {
                                 <li><i className="bi bi-check2-circle"></i>Técnicas Avançadas para Resultados Elegantes e Naturais;</li>
                                 <li><i className="bi bi-check2-circle"></i>Atendimento Exclusivo e Focado em Sua Segurança;</li>
                                 <li><i className="bi bi-check2-circle"></i>Produtos Premium para Maior Durabilidade e Confiança;</li>
-                                <li><i className="bi bi-check2-circle"></i>Acompanhamento Pós-Procedimento para Sua Tranquilidade;</li>
+                                <li><i className="bi bi-check2-circle"></i>Acompanhamento Pós-Procedimento para Sua Tranquilidade.</li>
                             </ul>
                             <div className="agk-button">
                                 <Link href="/pricing" className="theme-btn style-one">

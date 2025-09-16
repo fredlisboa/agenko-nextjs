@@ -196,34 +196,28 @@ const Footer = ()=>{
                                                         href: "https://share.google/pcuCYJHPmM1pRPwpc",
                                                         target: "_blank",
                                                         rel: "noopener noreferrer",
-                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
-                                                            children: [
-                                                                "Rua 5, 691, Térreo",
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
-                                                                    fileName: "[project]/src/app/Components/Footer/Footer.tsx",
-                                                                    lineNumber: 40,
-                                                                    columnNumber: 160
-                                                                }, ("TURBOPACK compile-time value", void 0)),
-                                                                "Ed. The Prime Tam. Office",
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
-                                                                    fileName: "[project]/src/app/Components/Footer/Footer.tsx",
-                                                                    lineNumber: 40,
-                                                                    columnNumber: 191
-                                                                }, ("TURBOPACK compile-time value", void 0)),
-                                                                "Praça Tamandaré",
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
-                                                                    fileName: "[project]/src/app/Components/Footer/Footer.tsx",
-                                                                    lineNumber: 40,
-                                                                    columnNumber: 212
-                                                                }, ("TURBOPACK compile-time value", void 0)),
-                                                                "Setor Oeste, Goiânia-GO"
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "[project]/src/app/Components/Footer/Footer.tsx",
-                                                            lineNumber: 40,
-                                                            columnNumber: 139
-                                                        }, ("TURBOPACK compile-time value", void 0))
-                                                    }, void 0, false, {
+                                                        children: [
+                                                            "Rua 5, 691, Térreo",
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                                fileName: "[project]/src/app/Components/Footer/Footer.tsx",
+                                                                lineNumber: 40,
+                                                                columnNumber: 157
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            "Ed. The Prime Tam. Office",
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                                fileName: "[project]/src/app/Components/Footer/Footer.tsx",
+                                                                lineNumber: 40,
+                                                                columnNumber: 188
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            "Praça Tamandaré",
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                                fileName: "[project]/src/app/Components/Footer/Footer.tsx",
+                                                                lineNumber: 40,
+                                                                columnNumber: 209
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            "Setor Oeste, Goiânia-GO"
+                                                        ]
+                                                    }, void 0, true, {
                                                         fileName: "[project]/src/app/Components/Footer/Footer.tsx",
                                                         lineNumber: 40,
                                                         columnNumber: 48
@@ -649,8 +643,7 @@ const Footer = ()=>{
                                                 fileName: "[project]/src/app/Components/Footer/Footer.tsx",
                                                 lineNumber: 133,
                                                 columnNumber: 56
-                                            }, ("TURBOPACK compile-time value", void 0)),
-                                            " ©"
+                                            }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/Components/Footer/Footer.tsx",
@@ -675,7 +668,9 @@ const Footer = ()=>{
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                    href: "#",
+                                                    href: "/termos-de-uso",
+                                                    target: "_blank",
+                                                    rel: "noopener noreferrer",
                                                     children: "Termos de Uso"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Footer/Footer.tsx",
@@ -689,7 +684,9 @@ const Footer = ()=>{
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                    href: "#",
+                                                    href: "/politica-privacidade",
+                                                    target: "_blank",
+                                                    rel: "noopener noreferrer",
                                                     children: "Política de Privacidade"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Footer/Footer.tsx",
