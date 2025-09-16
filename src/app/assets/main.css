@@ -7412,17 +7412,18 @@ color: #222;
   flex: 0 1 43%;
 }
 
-.bw-map {
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%); /* For older Safari browser compatibility */
-}
+/* =================================================================== */
+/* Google Map Grayscale Effect (Works on Mobile and Desktop)
+/* =================================================================== */
 
+/* Applies the black and white filter to the iframe */
 .bw-map {
   filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
+  -webkit-filter: grayscale(100%); /* For older browser compatibility */
   transition: filter 0.3s ease-in-out; /* Adds a smooth transition effect */
 }
 
+/* Removes the filter when the user hovers over the map */
 .bw-map:hover {
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
