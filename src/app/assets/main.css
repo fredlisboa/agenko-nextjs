@@ -7407,4 +7407,7 @@ color: #222;
     z-index: 10;
     color: #fff;
   }
+}/* Fix for service card text overflow by restricting title column width */
+.agenko-card-item.style-one .card-title {
+  flex: 0 1 43%;
 }

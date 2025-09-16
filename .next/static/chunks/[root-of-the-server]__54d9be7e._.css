@@ -22212,6 +22212,10 @@ label {
   }
 }
 
+.agenko-card-item.style-one .card-title {
+  flex: 0 43%;
+}
+
 /* [project]/src/app/assets/carousel.css [app-client] (css) */
 @media (max-width: 991.98px) {
   .agk-image-box {

@@ -7886,4 +7886,8 @@ label {
   }
 }
 
+.agenko-card-item.style-one .card-title {
+  flex: 0 43%;
+}
+
 /*# sourceMappingURL=src_app_assets_main_css_bad6b30c._.single.css.map*/
