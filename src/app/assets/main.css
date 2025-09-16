@@ -7435,9 +7435,9 @@ color: #222;
   z-index: 1;
 }
 
-/* Hides the overlay after it has been touched once on mobile */
+/* This is the NEW rule that allows gestures to work */
 .map-overlay.is-hidden {
-  display: none;
+  pointer-events: none;
 }
 
 /* The default black and white style for the map iframe */
