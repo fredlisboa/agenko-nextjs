@@ -5,8 +5,8 @@ import React from 'react';
 const Footer = () => {
     return (
             <footer className="agenko-footer gray-dark pt-130 primary-black-bg">
-                    <div className="shape shape-one"><span><img className="rotate360" src="/assets/images/creative-agency/footer/ciranda.webp" alt="Shape" /></span></div>
-                    <div className="shape shape-two"><span><img className="rotate360" src="/assets/images/creative-agency/footer/element2.png" alt="Shape" /></span></div>
+                    <div className="shape shape-one"><span><Image className="rotate360" src="/assets/images/creative-agency/footer/ciranda.webp" alt="Shape" width={50} height={50} /></span></div>
+                    <div className="shape shape-two"><span><Image className="rotate360" src="/assets/images/creative-agency/footer/element2.png" alt="Shape" width={50} height={50} /></span></div>
                     <div className="shape shape-blur_one"><span></span></div>
                     <div className="shape shape-blur_two"><span></span></div>
                     
