@@ -82,7 +82,7 @@ const Footer = () => {
                                                             <Link href="#faq">FAQ</Link>
                                                         </li>
                                                         <li>
-                                                            <Link href="redes-sociais">Redes Sociais</Link>
+                                                            <Link href="#redes-sociais">Redes Sociais</Link>
                                                         </li>
                                                         <li>
                                                             <Link href="/contact">Contato</Link>
