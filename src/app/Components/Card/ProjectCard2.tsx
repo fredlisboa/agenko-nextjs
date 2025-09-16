@@ -1,11 +1,12 @@
 import Link from 'next/link';
 import React from 'react';
+import Image from 'next/image';
 
 const ProjectCard2 = ({addClass,img,cat1,cat2,cat3,title,content} : any ) => {
     return (
         <div className={addClass}>
         <div className="thumbnail">
-            <img src={img} alt="Project Image" />
+            <Image src={img} alt="Project Image" width={500} height={300} /> {/* Adjust width and height as needed */}
             <div className="hover-content">
                 <div className="project-categories">
                     <a href="#">{cat1}</a>

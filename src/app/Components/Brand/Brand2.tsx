@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const Brand2 = () => {
 
@@ -36,7 +37,7 @@ const Brand2 = () => {
                                     <li key={i}>
                                         <div className="agenko-client-item style-one">
                                             <div className="client-image">
-                                                <img src={item.img} alt="client img" />
+                                                <Image src={item.img} alt="client img" width={100} height={50} />
                                             </div>
                                         </div>
                                     </li>

@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const Brand4 = () => {
 
@@ -29,7 +30,7 @@ const Brand4 = () => {
                         {brandContent.map((item, i) => (
                             <div key={i} className="agenko-client-item style-two mb-40 pf_fadeup">
                                 <div className="client-image">
-                                    <img src={item.img} alt="Client Image" />
+                                    <Image src={item.img} alt="Client Image" width={100} height={50} /> {/* Adjust width and height as needed */}
                                 </div>
                             </div>
                             ))}

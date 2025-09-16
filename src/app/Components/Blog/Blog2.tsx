@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import loadBackgroudImages from '../Common/loadBackgroudImages';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Blog2 = () => {
 
@@ -55,7 +56,7 @@ const Blog2 = () => {
                         <div className="post-inner-wrap">
                             <div className="author-item">
                                 <div className="author-thumb">
-                                    <img src={item.authorImg} alt="Author Image" />
+                                    <Image src={item.authorImg} alt="Author Image" width={50} height={50} />
                                 </div>
                                 <div className="author-info">
                                     <span>Posted By</span>

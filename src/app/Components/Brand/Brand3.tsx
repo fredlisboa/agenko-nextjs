@@ -1,6 +1,7 @@
 "use client"
 import React from 'react';
 import Slider from 'react-slick';
+import Image from 'next/image';
 
 const Brand3 = () => {
 
@@ -64,7 +65,7 @@ const Brand3 = () => {
                                         {brandContent.map((item, i) => (
                                             <div key={i} className="company-item">
                                                 <div className="agk-image">
-                                                    <img src={item.img} alt="Company" />
+                                                    <Image src={item.img} alt="Company" width={100} height={50} />
                                                 </div>
                                             </div>
                                             ))}
