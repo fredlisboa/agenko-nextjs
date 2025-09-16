@@ -7429,3 +7429,23 @@ color: #222;
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
 }
+
+/* Add this to your stylesheet */
+.map-container {
+  position: relative; /* This is needed for the overlay to be positioned correctly */
+}
+
+.map-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Sits on top of the iframe */
+  cursor: pointer; /* Optional: shows a pointer on desktop */
+}
+
+/* This class will be added by JS to hide the overlay after the first touch */
+.map-overlay.is-hidden {
+  display: none;
+}
