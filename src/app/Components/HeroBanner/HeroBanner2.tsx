@@ -49,7 +49,12 @@ const HeroBanner2 = () => {
                         <ul className="service-list pf_fadeup">
                             <li>
                                 
-                                <Link href="#lipo-de-papada" onClick={handleScroll} className="agenko-iconic-box style-one">
+                                <Link
+                                    href="#lipo-de-papada"
+                                    onClick={handleScroll}
+                                    // Add the new global class here
+                                    className="agenko-iconic-box style-one service-button-glow"
+                                >
                                     <div className="icon">
                                         <Image src="/assets/images/icons/lipo-papada.svg" alt="Lipo de Papada Icon" width={40} height={40} />
                                     </div>
@@ -60,7 +65,11 @@ const HeroBanner2 = () => {
                             </li>
                             <li>
                                 
-                                <Link href="#rinomodelacao" onClick={handleScroll} className="agenko-iconic-box style-one">
+                                <Link
+                                    href="#rinomodelacao"
+                                    onClick={handleScroll}
+                                    className="agenko-iconic-box style-one service-button-glow"
+                                >
                                     <div className="icon">
                                         <Image src="/assets/images/icons/rinomodelacao.svg" alt="Rinomodelação Icon" width={40} height={40} />
                                     </div>
@@ -71,7 +80,11 @@ const HeroBanner2 = () => {
                             </li>
                             <li>
                                 
-                                <Link href="#lifting-facial" onClick={handleScroll} className="agenko-iconic-box style-one">
+                                <Link
+                                    href="#lifting-facial"
+                                    onClick={handleScroll}
+                                    className="agenko-iconic-box style-one service-button-glow"
+                                >
                                     <div className="icon">
                                         <Image src="/assets/images/icons/soft-lift.svg" alt="Lifting Facial Não Cirúrgico Icon" width={40} height={40} />
                                     </div>
@@ -82,7 +95,11 @@ const HeroBanner2 = () => {
                             </li>
                             <li>
                                
-                                <Link href="#preenchimento-facial" onClick={handleScroll} className="agenko-iconic-box style-one">
+                                <Link
+                                    href="#preenchimento-facial"
+                                    onClick={handleScroll}
+                                    className="agenko-iconic-box style-one service-button-glow"
+                                >
                                     <div className="icon">
                                         <Image src="/assets/images/icons/preenchimento-facial.svg" alt="Prenchimento Facial Icon" width={40} height={40} />
                                     </div>
@@ -93,7 +110,11 @@ const HeroBanner2 = () => {
                             </li>
                             <li>
                                
-                               <Link href="#fios-de-sustentacao" onClick={handleScroll} className="agenko-iconic-box style-one">
+                               <Link
+                                   href="#fios-de-sustentacao"
+                                   onClick={handleScroll}
+                                   className="agenko-iconic-box style-one service-button-glow"
+                               >
                                    <div className="icon">
                                        <Image src="/assets/images/icons/fios-pdo.svg" alt="Fios de Sustentação Icon" width={60} height={60} />
                                    </div>

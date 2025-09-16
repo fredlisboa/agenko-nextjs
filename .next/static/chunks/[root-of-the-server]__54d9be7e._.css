@@ -22266,6 +22266,30 @@ label {
   scroll-margin-top: 40px;
 }
 
+.service-button-glow {
+  transition: box-shadow .4s ease-in-out;
+  animation: 3s ease-in-out infinite alternate subtleGlow;
+  box-shadow: 0 0 3px rgba(255, 168, 238, .2);
+}
+
+.service-button-glow:hover {
+  box-shadow: 0 0 20px 5px rgba(255, 168, 238, .9);
+}
+
+@keyframes subtleGlow {
+  0% {
+    box-shadow: 0 0 3px rgba(255, 168, 238, .2);
+  }
+
+  50% {
+    box-shadow: 0 0 7px 2px rgba(255, 168, 238, .4);
+  }
+
+  100% {
+    box-shadow: 0 0 3px rgba(255, 168, 238, .2);
+  }
+}
+
 /* [project]/src/app/assets/carousel.css [app-client] (css) */
 @media (max-width: 991.98px) {
   .agk-image-box {
