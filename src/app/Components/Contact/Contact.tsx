@@ -3,34 +3,36 @@
 import Image from 'next/image';
 import React, { useEffect, useRef, useState } from 'react';
 
-// --- FIX for TypeScript Error ---
-// Extend the global Window interface to include properties added by external scripts like GTM.
+// --- Extend the global Window interface for tracking scripts ---
 declare global {
   interface Window {
     dataLayer: any[];
-    KTracking?: { // Make KTracking optional as it might not always be present
+    KTracking?: { 
       reportConversion: () => void;
     };
   }
 }
 
-// Define the type for our form data
+// --- Define types for the form ---
 interface FormData {
     nome: string;
     whatsapp: string;
     email: string;
 }
 
-// Define the type for our component's state
 type FormStatus = 'idle' | 'loading' | 'success' | 'error' | 'client-error';
+
 interface FormMessage {
     type: FormStatus;
     text: string;
 }
 
 const Contact = () => {
+    // --- Refs for the map interaction ---
     const mapContainerRef = useRef<HTMLDivElement>(null);
     const overlayRef = useRef<HTMLDivElement>(null);
+    
+    // --- State for the contact form ---
     const [formData, setFormData] = useState<FormData>({
         nome: '',
         whatsapp: '',
@@ -39,6 +41,7 @@ const Contact = () => {
     const [formStatus, setFormStatus] = useState<FormStatus>('idle');
     const [formMessage, setFormMessage] = useState<FormMessage | null>(null);
 
+    // --- Form input change handler ---
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;
         
@@ -50,6 +53,7 @@ const Contact = () => {
         }
     };
 
+    // --- Client-side form validation ---
     const validateForm = (): boolean => {
         const { nome, whatsapp, email } = formData;
 
@@ -71,6 +75,7 @@ const Contact = () => {
         return true;
     };
 
+    // --- Form submission handler ---
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setFormMessage(null);
@@ -117,11 +122,11 @@ const Contact = () => {
                 }
 
                 setTimeout(() => {
-                     setFormData({
-                        nome: '',
-                        whatsapp: '',
-                        email: '',
-                    });
+                        setFormData({
+                            nome: '',
+                            whatsapp: '',
+                            email: '',
+                        });
                 }, 500);
 
             } else {
@@ -134,10 +139,34 @@ const Contact = () => {
         }
     };
 
+    // --- Map Interaction Logic ---
     useEffect(() => {
-        // ... (map interaction logic remains the same)
+        const container = mapContainerRef.current;
+        const overlay = overlayRef.current;
+
+        const handleFirstTouch = () => {
+            if (container && overlay) {
+                const iframe = container.querySelector('.bw-map');
+                if (iframe) {
+                    iframe.classList.add('is-active');
+                }
+                
+                // Physically remove the overlay from the DOM to allow map interaction
+                overlay.remove(); 
+            }
+        };
+
+        if (overlay) {
+            overlay.addEventListener('touchstart', handleFirstTouch, { passive: true });
+        }
+
+        // Cleanup function for when the component unmounts
+        return () => {
+            // The overlay might already be removed, so a simple check is enough
+        };
     }, []);
 
+    // --- Helper function to render form messages ---
     const renderFormMessage = () => {
         if (!formMessage) return null;
 
@@ -172,124 +201,120 @@ const Contact = () => {
         );
     };
     
-    // Helper for the red asterisk
     const requiredMark = <span style={{ color: 'red', fontWeight: 'bold' }}>*</span>;
 
     return (
         <div>
             <section className="agenko-contact pt-80 pb-30">
                  <div className="container">
-                     <div className="row">
-                        <div className="col-lg-5">
-                            <div className="contact-info-wrapper mb-50 pf_fadeup">
-                                <div className="shape"><span><Image src="/assets/images/pages/shape/world.png" alt="img" width={306} height={647} /></span></div>
-                                <ul>
-                                    <li>
-                                        <div className="phone"><a href="https://wa.me/5562982433773?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20acabei%20de%20preencher%20o%20formul%C3%A1rio.%20Gostaria%20de%20continuar%20meu%20atendimento." target="_blank" rel="noopener noreferrer">+55 (62) 9 8243-3773</a></div>
-                                    </li>
-                                    <li>
-                                        <div className="agenko-info-box">
-                                            <div className="content">
-                                                <h3>Endereço</h3>
-                                                <p>Rua 5, 691, Térreo</p>
-                                                <p>Ed. The Prime Tam. Office</p> 
-                                                <p>Praça Tamandaré, Setor Oeste</p>
-                                                <p>Goiânia-GO, Brasil</p>
-                                                <p>CEP 74.115-060</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="agenko-info-box">
-                                            <div className="content">
-                                                <h3>Email</h3>
-                                                <p><a href="mailto:contato@studiodental.dental">contato@studiodental.dental</a></p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="agenko-info-box">
-                                            <div className="content">
-                                                <h3>Siga-nos</h3>
-                                                <div className="social-link">
-                                                    <a href="https://www.instagram.com/dragabriellalisboa/" target="_blank" rel="noopener noreferrer">
-                                                    <i className="bi bi-instagram"></i></a>
-                                                    <a href="https://share.google/pcuCYJHPmM1pRPwpc" target="_blank" rel="noopener noreferrer"><i className="bi bi-google"></i></a>
-                                                    <a href="https://tiktok.com/@studiodental.dental" target="_blank" rel="noopener noreferrer"><i className="bi bi-tiktok"></i></a>
-                                                    <a href="https://wa.me/5562982433773?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20acabei%20de%20preencher%20o%20formul%C3%A1rio.%20Gostaria%20de%20continuar%20meu%20atendimento." target="_blank" rel="noopener noreferrer"><i className="bi bi-whatsapp"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                         <div className="col-lg-7">
-                             <div className="agenko-content-box mb-50 pf_fadeup">
-                                 <div className="section-title mb-20">
-                                     <span className="sub-title">Agende Sua Avaliação</span>
-                                     <h2>Seu sorriso ideal começa com um plano.</h2>
-                                 </div>
-                                 <p className="mb-20" style={{textAlign: 'justify', hyphens: 'auto'}}>Preencha o formulário para agendar sua avaliação gratuita. Nossa equipe de gestão de pacientes entrará em contato em breve para confirmar o <b>melhor horário</b> para você.</p>
-                                 
-                                {formStatus !== 'success' ? (
-                                    <form className="agenko-contact-form style-one" id="contact-form" onSubmit={handleSubmit} noValidate>
-                                        <div className="row">
-                                            <div className="col-md-6">
-                                                <div className="form-group">
-                                                    <label htmlFor="nome" className="form-label">Nome Completo {requiredMark}</label>
-                                                    <input id="nome" type="text" className="form_control" placeholder="Digite seu nome" name="nome" required value={formData.nome} onChange={handleInputChange} />
-                                                </div>
-                                            </div>
-                                            <div className="col-md-6">
-                                                <div className="form-group">
-                                                    <label htmlFor="whatsapp" className="form-label">WhatsApp {requiredMark}</label>
-                                                    <input id="whatsapp" type="tel" className="form_control" placeholder="Apenas números com DDD" name="whatsapp" required value={formData.whatsapp} onChange={handleInputChange} inputMode="numeric" />
-                                                </div>
-                                            </div>
-                                            <div className="col-md-12">
-                                                <div className="form-group">
-                                                    <label htmlFor="email" className="form-label">Email {requiredMark}</label>
-                                                    <input id="email" type="email" className="form_control" placeholder="seumelhor@email.com" name="email" required value={formData.email} onChange={handleInputChange} />
-                                                </div>
-                                            </div>
-                                            <div className="col-lg-12">
-                                                <div className="form-group">
-                                                    <button type="submit" className="theme-btn" disabled={formStatus === 'loading'}>
-                                                        {formStatus === 'loading' ? 'ENVIANDO...' : 'Agendar Avaliação Gratuita'}
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
+                      <div className="row">
+                          <div className="col-lg-5">
+                              <div className="contact-info-wrapper mb-50 pf_fadeup">
+                                  <div className="shape"><span><Image src="/assets/images/pages/shape/world.png" alt="img" width={306} height={647} /></span></div>
+                                  <ul>
+                                      <li>
+                                          <div className="phone"><a href="https://wa.me/5562982433773?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20acabei%20de%20preencher%20o%20formul%C3%A1rio.%20Gostaria%20de%20continuar%20meu%20atendimento." target="_blank" rel="noopener noreferrer">+55 (62) 9 8243-3773</a></div>
+                                      </li>
+                                      <li>
+                                          <div className="agenko-info-box">
+                                              <div className="content">
+                                                  <h3>Endereço</h3>
+                                                  <p>Rua 5, 691, Térreo</p>
+                                                  <p>Ed. The Prime Tam. Office</p> 
+                                                  <p>Praça Tamandaré, Setor Oeste</p>
+                                                  <p>Goiânia-GO, Brasil</p>
+                                                  <p>CEP 74.115-060</p>
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <div className="agenko-info-box">
+                                              <div className="content">
+                                                  <h3>Email</h3>
+                                                  <p><a href="mailto:contato@studiodental.dental">contato@studiodental.dental</a></p>
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <div className="agenko-info-box">
+                                              <div className="content">
+                                                  <h3>Siga-nos</h3>
+                                                  <div className="social-link">
+                                                      <a href="https://www.instagram.com/dragabriellalisboa/" target="_blank" rel="noopener noreferrer">
+                                                      <i className="bi bi-instagram"></i></a>
+                                                      <a href="https://share.google/pcuCYJHPmM1pRPwpc" target="_blank" rel="noopener noreferrer"><i className="bi bi-google"></i></a>
+                                                      <a href="https://tiktok.com/@studiodental.dental" target="_blank" rel="noopener noreferrer"><i className="bi bi-tiktok"></i></a>
+                                                      <a href="https://wa.me/5562982433773?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20acabei%20de%20preencher%20o%20formul%C3%A1rio.%20Gostaria%20de%20continuar%20meu%20atendimento." target="_blank" rel="noopener noreferrer"><i className="bi bi-whatsapp"></i></a>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                           <div className="col-lg-7">
+                               <div className="agenko-content-box mb-50 pf_fadeup">
+                                   <div className="section-title mb-20">
+                                       <span className="sub-title">Agende Sua Avaliação</span>
+                                       <h2>Seu sorriso ideal começa com um plano.</h2>
+                                   </div>
+                                   <p className="mb-20" style={{textAlign: 'justify', hyphens: 'auto'}}>Preencha o formulário para agendar sua avaliação gratuita. Nossa equipe de gestão de pacientes entrará em contato em breve para confirmar o <b>melhor horário</b> para você.</p>
+                                   
+                               {formStatus !== 'success' ? (
+                                   <form className="agenko-contact-form style-one" id="contact-form" onSubmit={handleSubmit} noValidate>
+                                       <div className="row">
+                                           <div className="col-md-6">
+                                               <div className="form-group">
+                                                   <label htmlFor="nome" className="form-label">Nome Completo {requiredMark}</label>
+                                                   <input id="nome" type="text" className="form_control" placeholder="Digite seu nome" name="nome" required value={formData.nome} onChange={handleInputChange} />
+                                               </div>
+                                           </div>
+                                           <div className="col-md-6">
+                                               <div className="form-group">
+                                                   <label htmlFor="whatsapp" className="form-label">WhatsApp {requiredMark}</label>
+                                                   <input id="whatsapp" type="tel" className="form_control" placeholder="Apenas números com DDD" name="whatsapp" required value={formData.whatsapp} onChange={handleInputChange} inputMode="numeric" />
+                                               </div>
+                                           </div>
+                                           <div className="col-md-12">
+                                               <div className="form-group">
+                                                   <label htmlFor="email" className="form-label">Email {requiredMark}</label>
+                                                   <input id="email" type="email" className="form_control" placeholder="seumelhor@email.com" name="email" required value={formData.email} onChange={handleInputChange} />
+                                               </div>
+                                           </div>
+                                           <div className="col-lg-12">
+                                               <div className="form-group">
+                                                   <button type="submit" className="theme-btn" disabled={formStatus === 'loading'}>
+                                                       {formStatus === 'loading' ? 'ENVIANDO...' : 'Agendar Avaliação Gratuita'}
+                                                   </button>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </form>
                                  ) : null}
 
-                                <div className="col-lg-12">
-                                    {renderFormMessage()}
-                                </div>
-                             </div>
-                         </div>
-                     </div>
+                               <div className="col-lg-12">
+                                   {renderFormMessage()}
+                               </div>
+                              </div>
+                          </div>
+                      </div>
                  </div>
             </section>
             
             <section className="agenko-map">
-                {/* 1. We wrap the iframe in a container div and attach a ref */}
                 <div 
                     ref={mapContainerRef} 
                     className="map-container map-box" 
                     data-aos="fade-up" 
                     data-aos-duration="1300"
                 >
-                    {/* 2. This is the new invisible overlay */}
                     <div ref={overlayRef} className="map-overlay"></div>
-
                     <iframe 
                         className="bw-map"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.866536930782!2d-49.26699702430002!3d-16.683560784088584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef103169657dd%3A0x36fe497b6a5c894f!2sStudio%20Dental%20Odontologia!5e0!3m2!1sen!2sbr!4v1758061894641!5m2!1sen!2sbr"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.899805988117!2d-49.26127262417757!3d-16.68172744040439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef19313a51669%3A0x2f32b8a73543864d!2sStudio%20Dental%20Odontologia!5e0!3m2!1sen!2sbr!4v1726510769351!5m2!1sen!2sbr"
                         width="100%"
                         height="450" 
-                        style={{ border: 0, position: 'relative', zIndex: 0 }} // Added position and z-index
+                        style={{ border: 0, position: 'relative', zIndex: 0 }}
                         allowFullScreen={true}
                         loading="lazy" 
                         referrerPolicy="no-referrer-when-downgrade">
