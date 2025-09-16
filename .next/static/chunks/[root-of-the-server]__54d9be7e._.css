@@ -22231,7 +22231,7 @@ label {
   transition: filter .4s ease-in-out;
 }
 
-.bw-map.is-active, .bw-map:hover {
+.bw-map.is-active, .map-container:hover .bw-map {
   -webkit-filter: grayscale(0%);
 }
 
@@ -22251,6 +22251,12 @@ label {
 
 .map-overlay.is-hidden {
   display: none;
+}
+
+@media (min-width: 1024px) {
+  .map-overlay {
+    pointer-events: none;
+  }
 }
 
 /* [project]/src/app/assets/carousel.css [app-client] (css) */

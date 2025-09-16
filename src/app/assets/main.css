@@ -7423,9 +7423,9 @@ color: #222;
   transition: filter 0.4s ease-in-out; /* A slightly slower transition is nice */
 }
 
-/* Active state for mobile (added by JS on touch) AND hover state for desktop */
+/* This is the NEW, correct rule for hover */
 .bw-map.is-active,
-.bw-map:hover {
+.map-container:hover .bw-map {
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
 }
@@ -7448,4 +7448,12 @@ color: #222;
 /* This class will be added by JS to hide the overlay after the first touch */
 .map-overlay.is-hidden {
   display: none;
+}
+
+/* This is the NEW and FINAL addition to fix desktop clicks */
+@media (min-width: 1024px) {
+  /* On screens wider than 1024px (desktops), make the overlay invisible to the mouse. */
+  .map-overlay {
+    pointer-events: none;
+  }
 }

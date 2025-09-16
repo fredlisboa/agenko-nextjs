@@ -7895,7 +7895,7 @@ label {
   transition: filter .4s ease-in-out;
 }
 
-.bw-map.is-active, .bw-map:hover {
+.bw-map.is-active, .map-container:hover .bw-map {
   -webkit-filter: grayscale(0%);
 }
 
@@ -7915,6 +7915,12 @@ label {
 
 .map-overlay.is-hidden {
   display: none;
+}
+
+@media (min-width: 1024px) {
+  .map-overlay {
+    pointer-events: none;
+  }
 }
 
 /*# sourceMappingURL=src_app_assets_main_css_bad6b30c._.single.css.map*/
