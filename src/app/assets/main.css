@@ -7340,57 +7340,63 @@ color: #333;
 color: #222;
 }
 
-/* === FINAL DEFINITIVE SOLUTION for Mobile Header === */
+/* FIX FOR FAQ ICON */
+.agenko-accordion-item .accordion-header .accordion-title::after {
+  content: none !important;
+}
+
+/* === FINAL DEFINITIVE FIX for Mobile Header Centering === */
+/* This works with the ORIGINAL Header1.tsx file */
 
 @media (max-width: 991px) {
 
-  /* --- 1. Header Layout --- */
+  /* --- 1. Layout Balancing & Centering --- */
 
-  /* Use flexbox to align the three new sections (left, center, right) */
+  /* Set the main header as the positioning context */
   .cs_main_header_in {
-    display: flex;
-    justify-content: space-between; /* Pushes logo to left, hamburger to right */
-    align-items: center;
+    position: relative;
     width: 100%;
+    display: flex;
+    justify-content: space-between; /* Ensures left/right alignment */
   }
 
-  /* Ensure the left and right sections don't take up too much space */
-  .cs_main_header_left,
-  .cs_main_header_right {
-    flex-shrink: 0;
-  }
-  
-  /* Allow the center section (with the CTA) to take up the remaining space */
+  /* Force the right-side container (holding the hamburger) to have the
+     same width as the logo container (85px). This creates symmetry. */
   .cs_main_header_center {
-    flex-grow: 1;
-    text-align: center; /* This will center the CTA button */
+    flex: 0 0 85px;
+    height: 100%;
   }
 
-  /* Make sure the hamburger menu is visible and correctly positioned */
+  /* Position the mobile CTA button absolutely in the true center of the header.
+     Because the left and right containers are now the same width, this will
+     also be the visual center. */
+  .mobile-cta-btn {
+    position: absolute;
+    left: 57%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+
+  /* Adjust the hamburger icon's position within its new, fixed-width container */
   .cs-munu_toggle {
-    position: static; /* Let flexbox handle positioning */
-    transform: none;
-    top: auto;
-    right: auto;
+    right: 15px; /* Give it some space from the edge */
   }
 
-  /* --- 2. CTA Button Sizing --- */
+  /* --- 2. Button Sizing --- */
 
   .theme-btn.style-one.mobile-cta {
     padding: 8px 12px;
-    font-size: 12px; /* Slightly smaller for better fit */
+    font-size: 12px;
     white-space: nowrap;
-    display: inline-block;
   }
-  
+
   .theme-btn.style-one.mobile-cta .text-flip .text {
     font-size: 12px;
   }
 
   /* --- 3. Submenu Dropdown Fix --- */
 
-  /* This rule ensures the little '+' icons for submenus are always clickable.
-     It seems your theme might be hiding them on mobile. */
   .cs_nav .cs_nav_list .cs-munu_dropdown_toggle {
     display: block !important;
     position: absolute;
@@ -7401,8 +7407,4 @@ color: #222;
     z-index: 10;
     color: #fff;
   }
-}
-/* FIX FOR FAQ ICON */
-.agenko-accordion-item .accordion-header .accordion-title::after {
-  content: none !important;
 }

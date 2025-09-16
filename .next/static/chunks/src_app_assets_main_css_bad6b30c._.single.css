@@ -7835,35 +7835,39 @@ label {
   color: #222;
 }
 
+.agenko-accordion-item .accordion-header .accordion-title:after {
+  content: none !important;
+}
+
 @media (max-width: 991px) {
   .cs_main_header_in {
     justify-content: space-between;
-    align-items: center;
     width: 100%;
     display: flex;
-  }
-
-  .cs_main_header_left, .cs_main_header_right {
-    flex-shrink: 0;
+    position: relative;
   }
 
   .cs_main_header_center {
-    text-align: center;
-    flex-grow: 1;
+    flex: 0 0 85px;
+    height: 100%;
+  }
+
+  .mobile-cta-btn {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 57%;
+    transform: translate(-50%, -50%);
   }
 
   .cs-munu_toggle {
-    position: static;
-    top: auto;
-    right: auto;
-    transform: none;
+    right: 15px;
   }
 
   .theme-btn.style-one.mobile-cta {
     white-space: nowrap;
     padding: 8px 12px;
     font-size: 12px;
-    display: inline-block;
   }
 
   .theme-btn.style-one.mobile-cta .text-flip .text {
@@ -7880,10 +7884,6 @@ label {
     right: 20px;
     display: block !important;
   }
-}
-
-.agenko-accordion-item .accordion-header .accordion-title:after {
-  content: none !important;
 }
 
 /*# sourceMappingURL=src_app_assets_main_css_bad6b30c._.single.css.map*/
