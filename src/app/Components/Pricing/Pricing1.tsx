@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import Image from 'next/image';
 
 const Pricing1 = () => {
     return (
@@ -9,7 +10,7 @@ const Pricing1 = () => {
                         <div className="col-lg-6">
                             
                             <div className="agenko-pricing-item style-one mb-20 pf_fadeup">
-                                <div className="shape shape-one"><span><img src="/assets/images/pages/shape/shape1.png" alt="shape" /></span></div>
+                                <div className="shape shape-one"><span><Image src="/assets/images/pages/shape/shape1.png" alt="shape" width={50} height={50} /></span></div>
                                 <div className="pricing-head">
                                     <span className="sub-title">Business</span>
                                     <h2>Invest in Your Success</h2>

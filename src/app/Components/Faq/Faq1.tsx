@@ -57,8 +57,8 @@ const Faq1 = () => {
                                         <div className="agk-accordion" id="accordionOne">
                                         {faqContent.map((item, index) => (
                                             <div key={index} className={`agenko-accordion-item mb-20 pf_fadeup ${index === openItemIndex ? "active" : "" }`} >
-                                                <div onClick={() => handleItemClick(index)} className="accordion-header">
-                                                    <h6  className="accordion-title" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true">
+                                                <div onClick={() => handleItemClick(index)} className="accordion-header" role="button" tabIndex={0} onKeyDown={() => handleItemClick(index)} aria-expanded={index === openItemIndex}>
+                                                    <h6  className="accordion-title" data-bs-toggle="collapse" data-bs-target="#collapse1">
                                                     {item.title}
                                                     </h6>
                                                 </div>

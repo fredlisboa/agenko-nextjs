@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import Image from 'next/image';
 
 const Project2 = () => {
 
@@ -38,7 +39,7 @@ const Project2 = () => {
                 <div key={i} className="col-lg-6">
                     <div className="agenko-project-item style-one mb-45 pf_fadeup">
                         <div className="thumbnail">
-                            <img src={item.img} alt="Project Image" />
+                            <Image src={item.img} alt="Project Image" width={500} height={300} />
                             <div className="project-button">
                                 <Link href="/project/project-details"><i className="bi bi-plus-lg"></i></Link>
                             </div>

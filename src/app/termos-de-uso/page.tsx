@@ -50,8 +50,8 @@ const TermosDeUso = () => {
           </li>
           <li>
             <strong>CONTEÚDO:</strong> Refere-se a todos os textos, imagens,
-            vídeos, logotipos, ícones, imagens, marcas ("Studio
-            Dental") e programas de computador, é de propriedade exclusiva da
+            vídeos, logotipos, ícones, imagens, marcas (&quot;Studio
+            Dental&quot;) e programas de computador, é de propriedade exclusiva da
             CLÍNICA ou de terceiros que licitamente autorizaram seu uso, e é
             protegido pelas leis de direitos autorais e propriedade intelectual.
           </li>

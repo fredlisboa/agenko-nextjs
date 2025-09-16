@@ -88,7 +88,7 @@ const PoliticaDePrivacidade = () => {
 
         <h3 style={{ color: "#FFF" }}>7. ALTERAÇÕES NESTA POLÍTICA</h3>
         <p>
-          Reservamo-nos o direito de alterar esta Política de Privacidade a qualquer momento. A data da "Última atualização" no topo da página será sempre modificada. Recomendamos que você revise esta página periodicamente para se manter informado.
+          Reservamo-nos o direito de alterar esta Política de Privacidade a qualquer momento. A data da &quot;Última atualização&quot; no topo da página será sempre modificada. Recomendamos que você revise esta página periodicamente para se manter informado.
         </p>
 
         <div className="info-clinica">

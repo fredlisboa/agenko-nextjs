@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const WhyChoose1 = () => {
     return (
@@ -50,7 +51,7 @@ const WhyChoose1 = () => {
                             
                             <div className="agenko-image-box text-xl-end mb-50 pf_fadeup">
                                 <div className="agenko-image">
-                                    <img src="/assets/images/pages/service/service-1.jpg" alt="Service Image" />
+                                    <Image src="/assets/images/pages/service/service-1.jpg" alt="Service Image" width={500} height={400} />
                                 </div>
                             </div>
                         </div>
