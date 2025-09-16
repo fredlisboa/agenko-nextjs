@@ -180,9 +180,50 @@ const Contact = () => {
             <section className="agenko-contact pt-80 pb-30">
                  <div className="container">
                      <div className="row">
-                         <div className="col-lg-5">
-                            {/* ... Your existing contact info wrapper ... */}
-                         </div>
+                        <div className="col-lg-5">
+                            <div className="contact-info-wrapper mb-50 pf_fadeup">
+                                <div className="shape"><span><Image src="/assets/images/pages/shape/world.png" alt="img" width={306} height={647} /></span></div>
+                                <ul>
+                                    <li>
+                                        <div className="phone"><a href="https://wa.me/5562982433773?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20acabei%20de%20preencher%20o%20formul%C3%A1rio.%20Gostaria%20de%20continuar%20meu%20atendimento." target="_blank" rel="noopener noreferrer">+55 (62) 9 8243-3773</a></div>
+                                    </li>
+                                    <li>
+                                        <div className="agenko-info-box">
+                                            <div className="content">
+                                                <h3>Endereço</h3>
+                                                <p>Rua 5, 691, Térreo</p>
+                                                <p>Ed. The Prime Tam. Office</p> 
+                                                <p>Praça Tamandaré, Setor Oeste</p>
+                                                <p>Goiânia-GO, Brasil</p>
+                                                <p>CEP 74.115-060</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div className="agenko-info-box">
+                                            <div className="content">
+                                                <h3>Email</h3>
+                                                <p><a href="mailto:contato@studiodental.dental">contato@studiodental.dental</a></p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div className="agenko-info-box">
+                                            <div className="content">
+                                                <h3>Siga-nos</h3>
+                                                <div className="social-link">
+                                                    <a href="https://www.instagram.com/dragabriellalisboa/" target="_blank" rel="noopener noreferrer">
+                                                    <i className="bi bi-instagram"></i></a>
+                                                    <a href="https://share.google/pcuCYJHPmM1pRPwpc" target="_blank" rel="noopener noreferrer"><i className="bi bi-google"></i></a>
+                                                    <a href="https://tiktok.com/@studiodental.dental" target="_blank" rel="noopener noreferrer"><i className="bi bi-tiktok"></i></a>
+                                                    <a href="https://wa.me/5562982433773?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20acabei%20de%20preencher%20o%20formul%C3%A1rio.%20Gostaria%20de%20continuar%20meu%20atendimento." target="_blank" rel="noopener noreferrer"><i className="bi bi-whatsapp"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                          <div className="col-lg-7">
                              <div className="agenko-content-box mb-50 pf_fadeup">
                                  <div className="section-title mb-20">
