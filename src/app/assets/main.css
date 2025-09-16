@@ -6214,17 +6214,17 @@ label {
   border-bottom: none;
 }
 .contact-info-wrapper ul li .phone {
-  font: 700 40px var(--heading-font);
+  font: 700 36px var(--heading-font);
   color: var(--primary-color);
 }
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .contact-info-wrapper ul li .phone {
-    font-size: 27px;
+    font-size: 30px;
   }
 }
 @media screen and (max-width: 991px) {
   .contact-info-wrapper ul li .phone {
-    font-size: 27px;
+    font-size: 30px;
   }
 }
 

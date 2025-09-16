@@ -13,17 +13,18 @@ const Contact = () => {
                                 <div className="shape"><span><Image src="/assets/images/pages/shape/world.png" alt="img" width={306} height={647}   /></span></div>
                                 <ul>
                                     <li>
-                                        <div className="phone"><a href="tel:+1(555)123-4567">+1 (555) 123-4567</a></div>
+                                        <div className="phone"><a href="tel:+5562982433773">+55 (62) 9 8243-3773</a></div>
                                     </li>
                                     <li>
                                         
                                         <div className="agenko-info-box">
                                             <div className="content">
-                                                <h3>Address</h3>
-                                                <p>6801 Hollywood Blvd, Los Angeles, 
-                                                    CA 90028</p>
-                                                <p>6801 Hollywood Blvd, Los Angeles, 
-                                                        CA 90028</p>
+                                                <h3>Endereço</h3>
+                                                <p>Rua 5, 691, Térreo</p>
+                                                <p>Ed. The Prime Tam. Office</p> 
+                                                <p>Praça Tamandaré, Setor Oeste</p>
+                                                <p>Goiânia-GO, Brasil</p>
+                                                <p>CEP 74.115-060</p>
                                             </div>
                                         </div>
                                     </li>
@@ -32,8 +33,7 @@ const Contact = () => {
                                         <div className="agenko-info-box">
                                             <div className="content">
                                                 <h3>Email</h3>
-                                                <p><a href="mailto:Info@agenko45.com">Info@agenko45.Com</a></p>
-                                                <p><a href="mailto:Info@agenko45.com">Info@agenko45.Com</a></p>
+                                                <p><a href="mailto:contato@studiodental.dental">contato@studiodental.dental</a></p>
                                             </div>
                                         </div>
                                     </li>
@@ -41,7 +41,7 @@ const Contact = () => {
                                         
                                         <div className="agenko-info-box">
                                             <div className="content">
-                                                <h3>Follow</h3>
+                                                <h3>Siga-nos</h3>
                                                 <div className="social-link">
                                                     <a href="#"><i className="bi bi-facebook"></i></a>
                                                     <a href="#"><i className="bi bi-instagram"></i></a>
@@ -58,16 +58,16 @@ const Contact = () => {
                             
                             <div className="agenko-content-box mb-50 pf_fadeup">
                                 <div className="section-title mb-20">
-                                    <span className="sub-title">Get In Touch</span>
+                                    <span className="sub-title">Agende Sua Avaliação</span>
                                     <h2>Seu sorriso ideal começa com um plano.
                                     </h2>
                                 </div>
-                                <p className="mb-20">Start today to unlock opportunities and drive your business toward success.</p>
+                                <p className="mb-20">Preencha o formulário para agendar sua avaliação gratuita. Nossa equipe de gestão de pacientes entrará em contato em breve para confirmar o <b>melhor horário</b> para você.</p>
                                 <form className="agenko-contact-form style-one" id="contact-form" action="contact.php" method="POST">
                                     <div className="row">
                                         <div className="col-md-6">
                                             <div className="form-group">
-                                                <input type="text" className="form_control" placeholder="Name" name="name" required />
+                                                <input type="text" className="form_control" placeholder="Nome" name="nome" required />
                                             </div>
                                         </div>
                                         <div className="col-md-6">
@@ -77,15 +77,15 @@ const Contact = () => {
                                         </div>
                                         <div className="col-md-12">
                                             <div className="form-group">
-                                                <input type="text" className="form_control" placeholder="Subject" name="subject" required />
+                                                <input type="text" className="form_control" placeholder="Assunto" name="assunto" required />
                                             </div>
                                         </div>
                                         <div className="col-lg-12">
-                                            <textarea className="form_control" rows={5} placeholder="Message" name="message"></textarea>
+                                            <textarea className="form_control" rows={5} placeholder="Mensagem" name="mensagem"></textarea>
                                         </div>
                                         <div className="col-lg-12">
                                             <div className="form-group">
-                                                <button className="theme-btn">Send Message</button>
+                                                <button className="theme-btn">Enviar Mensagem</button>
                                             </div>
                                         </div>
                                         <div className="col-lg-12">

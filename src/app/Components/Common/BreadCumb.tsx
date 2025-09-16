@@ -22,7 +22,7 @@ const BreadCumb = ({Title,content} : any ) => {
                                     <Image className="rotate360" src="/assets/images/pages/shape/star12.webp" alt="img" width={84} height={90}   />
                                     </div>
                                     <div className="text">
-                                        <p style={{textAlign: 'justify', hyphens: 'auto'}} dangerouslySetInnerHTML={{ __html: content }}></p>
+                                        <p style={{textAlign: 'justify', hyphens: 'auto'}} dangerouslySetInnerHTML={{ __html: content || '' }}></p>
                                     </div>
                                 </div>
                             </div>
