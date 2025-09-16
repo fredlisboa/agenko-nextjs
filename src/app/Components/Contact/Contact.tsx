@@ -43,10 +43,10 @@ const Contact = () => {
                                             <div className="content">
                                                 <h3>Siga-nos</h3>
                                                 <div className="social-link">
-                                                    <a href="#"><i className="bi bi-facebook"></i></a>
-                                                    <a href="#"><i className="bi bi-instagram"></i></a>
-                                                    <a href="#"><i className="bi bi-linkedin"></i></a>
-                                                    <a href="#"><i className="bi bi-twitter-x"></i></a>
+                                                    <a href="https://www.instagram.com/dragabriellalisboa/" target="_blank" rel="noopener noreferrer">
+                                                    <i className="bi bi-instagram"></i></a>
+                                                    <a href="https://share.google/pcuCYJHPmM1pRPwpc" target="_blank" rel="noopener noreferrer"><i className="bi bi-google"></i></a>
+                                                    <a href="https://tiktok.com/@studiodental.dental" target="_blank" rel="noopener noreferrer"><i className="bi bi-tiktok"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -99,11 +99,21 @@ const Contact = () => {
                 </div>
             </section>
             <section className="agenko-map">
-                
                 <div className="map-box" data-aos="fade-up" data-aos-duration="1300">
-                    <iframe src="https://maps.google.com/maps?q=new%20york&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"></iframe>
+                    <iframe 
+                        src="http://googleusercontent.com/maps/google.com/10" 
+                        width="100%"
+                        height="450" 
+                        style={{ 
+                            border: 0,
+                            filter: 'grayscale(1)' // <-- ADD THIS LINE
+                        }} 
+                        allowFullScreen={true}
+                        loading="lazy" 
+                        referrerPolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
-            </section>            
+            </section>           
         </div>
     );
 };
