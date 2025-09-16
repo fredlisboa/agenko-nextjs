@@ -3790,11 +3790,7 @@ label {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.agenko-accordion-item .accordion-header .accordion-title[aria-expanded=true]:after {
-  border-color: #26272B;
-  content: "\f64d";
-  font-family: bootstrap-icons !important;
-}
+
 .agenko-accordion-item .accordion-content p {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -7344,48 +7340,69 @@ color: #333;
 color: #222;
 }
 
-/* === CORRECTED CSS Fix for Mobile Header Overflow === */
-/* Add this code at the end of your main.css file */
+/* === FINAL DEFINITIVE SOLUTION for Mobile Header === */
 
 @media (max-width: 991px) {
-  /* --- 1. Layout Fix: Center CTA and correctly position Hamburger --- */
 
-  /* Ensure the header's inner container can serve as a positioning context. */
+  /* --- 1. Header Layout --- */
+
+  /* Use flexbox to align the three new sections (left, center, right) */
   .cs_main_header_in {
-    position: relative;
+    display: flex;
+    justify-content: space-between; /* Pushes logo to left, hamburger to right */
+    align-items: center;
     width: 100%;
   }
 
-  /* Make the center container (which holds the CTA and hamburger)
-     expand to fill all available space between the logo and the screen edge. */
+  /* Ensure the left and right sections don't take up too much space */
+  .cs_main_header_left,
+  .cs_main_header_right {
+    flex-shrink: 0;
+  }
+  
+  /* Allow the center section (with the CTA) to take up the remaining space */
   .cs_main_header_center {
     flex-grow: 1;
-    position: static; /* This container should not create a new positioning context. */
+    text-align: center; /* This will center the CTA button */
   }
 
-  /* Take the mobile CTA button out of the normal layout flow and center it perfectly.
-     It will be centered relative to the .cs_main_header_in container. */
-  .mobile-cta-btn {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2; /* Ensures it's on top */
+  /* Make sure the hamburger menu is visible and correctly positioned */
+  .cs-munu_toggle {
+    position: static; /* Let flexbox handle positioning */
+    transform: none;
+    top: auto;
+    right: auto;
   }
 
-  /* The theme's default absolute positioning for the hamburger menu (.cs-munu_toggle)
-     will now work as intended, as its parent containers are correctly sized.
-     We no longer need to override its position. */
-  
-  /* --- 2. Style Fix: Make the Mobile CTA Button Smaller --- */
-  
+  /* --- 2. CTA Button Sizing --- */
+
   .theme-btn.style-one.mobile-cta {
-    padding: 8px 14px; /* Adjust padding to make button smaller */
-    font-size: 13px;   /* Adjust font size */
-    white-space: nowrap; /* Prevent the text from wrapping to a new line */
+    padding: 8px 12px;
+    font-size: 12px; /* Slightly smaller for better fit */
+    white-space: nowrap;
+    display: inline-block;
+  }
+  
+  .theme-btn.style-one.mobile-cta .text-flip .text {
+    font-size: 12px;
   }
 
-  .theme-btn.style-one.mobile-cta .text-flip .text {
-    font-size: 13px;
+  /* --- 3. Submenu Dropdown Fix --- */
+
+  /* This rule ensures the little '+' icons for submenus are always clickable.
+     It seems your theme might be hiding them on mobile. */
+  .cs_nav .cs_nav_list .cs-munu_dropdown_toggle {
+    display: block !important;
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    z-index: 10;
+    color: #fff;
   }
+}
+/* FIX FOR FAQ ICON */
+.agenko-accordion-item .accordion-header .accordion-title::after {
+  content: none !important;
 }

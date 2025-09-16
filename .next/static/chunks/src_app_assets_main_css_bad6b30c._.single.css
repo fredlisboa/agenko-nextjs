@@ -4002,12 +4002,6 @@ label {
   display: inline-flex;
 }
 
-.agenko-accordion-item .accordion-header .accordion-title[aria-expanded="true"]:after {
-  content: "";
-  border-color: #26272b;
-  font-family: bootstrap-icons !important;
-}
-
 .agenko-accordion-item .accordion-content p {
   letter-spacing: .48px;
   padding-top: 10px;
@@ -7843,32 +7837,53 @@ label {
 
 @media (max-width: 991px) {
   .cs_main_header_in {
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    position: relative;
+    display: flex;
+  }
+
+  .cs_main_header_left, .cs_main_header_right {
+    flex-shrink: 0;
   }
 
   .cs_main_header_center {
+    text-align: center;
     flex-grow: 1;
-    position: static;
   }
 
-  .mobile-cta-btn {
-    z-index: 2;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  .cs-munu_toggle {
+    position: static;
+    top: auto;
+    right: auto;
+    transform: none;
   }
 
   .theme-btn.style-one.mobile-cta {
     white-space: nowrap;
-    padding: 8px 14px;
-    font-size: 13px;
+    padding: 8px 12px;
+    font-size: 12px;
+    display: inline-block;
   }
 
   .theme-btn.style-one.mobile-cta .text-flip .text {
-    font-size: 13px;
+    font-size: 12px;
   }
+
+  .cs_nav .cs_nav_list .cs-munu_dropdown_toggle {
+    z-index: 10;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    display: block !important;
+  }
+}
+
+.agenko-accordion-item .accordion-header .accordion-title:after {
+  content: none !important;
 }
 
 /*# sourceMappingURL=src_app_assets_main_css_bad6b30c._.single.css.map*/

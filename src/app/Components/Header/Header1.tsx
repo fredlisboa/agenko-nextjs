@@ -39,52 +39,58 @@ export default function Header1({ variant }: any) {
     >
       <div className="cs_main_header">
         <div className="container">
-          <div className="cs_main_header_in">
-            <div className="cs_main_header_left">
+        <div className="cs_main_header_in">
+          {/* -- START: Left Side (Logo) -- */}
+          <div className="cs_main_header_left">
             <Link className="cs_site_branding" href="/">
-            <Image src="/assets/images/creative-agency/logo/sd-curto.svg" alt="img" width={85} height={85}   />
+              <Image src="/assets/images/creative-agency/logo/sd-curto.svg" alt="img" width={85} height={85} />
+            </Link>
+          </div>
+          {/* -- END: Left Side (Logo) -- */}
+
+          {/* -- START: Center (Mobile CTA Button) -- */}
+          <div className="cs_main_header_center">
+            {/* Mobile CTA Button - visible on mobile, hidden on desktop */}
+            <div className="main-button mobile-cta-btn d-lg-none">
+              <Link href="/contact" className="theme-btn style-one mobile-cta">
+                <span className="text-flip">
+                    <span className="text">AVALIAÇÃO GRATUITA</span>
+                    <span className="text">AVALIAÇÃO GRATUITA</span>
+                </span>
               </Link>
-              </div>
-              <div className="cs_main_header_center">
-                <div className="cs_nav cs_primary_font fw-medium">
-                  {/* Mobile CTA Button - visible on mobile, hidden on desktop */}
-                  <div className="main-button mobile-cta-btn d-lg-none">
-                    <Link href="/contact" className="theme-btn style-one mobile-cta">
-                      <span className="text-flip">
-                          <span className="text">AVALIAÇÃO GRATUITA</span>
-                          <span className="text">AVALIAÇÃO GRATUITA</span>
-                      </span>
-                    </Link>
-                  </div>
-                  <span
-                    className={
-                      mobileToggle
-                        ? 'cs-munu_toggle cs_teggle_active'
-                        : 'cs-munu_toggle'
-                    }
-                    onClick={() => setMobileToggle(!mobileToggle)}
-                  >
-                    <span></span>
-                  </span>
-                  <Nav setMobileToggle={setMobileToggle} />
-                </div>
-            </div>
-            <div className="cs_main_header_right">
-              <div className="header-btn d-flex align-items-center">
-
-                <div className="main-button desktop-cta-btn d-none d-lg-block">
-                <Link href="/contact" className="theme-btn style-one">
-                    <span className="text-flip">
-                        <span className="text">AGENDAR AVALIAÇÃO GRATUITA</span>
-                        <span className="text">AGENDAR AVALIAÇÃO GRATUITA</span>
-                    </span>
-                </Link>                  
-
-                  </div>
-
-              </div>
             </div>
           </div>
+          {/* -- END: Center (Mobile CTA Button) -- */}
+
+          {/* -- START: Right Side (Desktop CTA and Mobile Hamburger) -- */}
+          <div className="cs_main_header_right">
+            {/* Desktop CTA */}
+            <div className="header-btn d-none d-lg-block">
+              <Link href="/contact" className="theme-btn style-one">
+                  <span className="text-flip">
+                      <span className="text">AGENDAR AVALIAÇÃO GRATUITA</span>
+                      <span className="text">AGENDAR AVALIAÇÃO GRATUITA</span>
+                  </span>
+              </Link>                  
+            </div>
+            
+            {/* Mobile Hamburger Menu Container */}
+            <div className="cs_nav cs_primary_font fw-medium">
+              <span
+                className={
+                  mobileToggle
+                    ? 'cs-munu_toggle cs_teggle_active'
+                    : 'cs-munu_toggle'
+                }
+                onClick={() => setMobileToggle(!mobileToggle)}
+              >
+                <span></span>
+              </span>
+              <Nav setMobileToggle={setMobileToggle} />
+            </div>
+          </div>
+          {/* -- END: Right Side (Desktop CTA and Mobile Hamburger) -- */}
+        </div>
         </div>
       </div>
     </header>
