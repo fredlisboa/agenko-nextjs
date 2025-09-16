@@ -274,7 +274,27 @@ const Contact = () => {
             </section>
             
             <section className="agenko-map">
-                 {/* ... (map section remains the same) ... */}
+                {/* 1. We wrap the iframe in a container div and attach a ref */}
+                <div 
+                    ref={mapContainerRef} 
+                    className="map-container map-box" 
+                    data-aos="fade-up" 
+                    data-aos-duration="1300"
+                >
+                    {/* 2. This is the new invisible overlay */}
+                    <div ref={overlayRef} className="map-overlay"></div>
+
+                    <iframe 
+                        className="bw-map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.8665369307814!2d-49.26699702421499!3d-16.683560784088595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef103169657dd%3A0x36fe497b6a5c894f!2sStudio%20Dental%20Odontologia!5e0!3m2!1sen!2sbr!4v1758043960796!5m2!1sen!2sbr"
+                        width="100%"
+                        height="450" 
+                        style={{ border: 0, position: 'relative', zIndex: 0 }} // Added position and z-index
+                        allowFullScreen={true}
+                        loading="lazy" 
+                        referrerPolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
             </section>        
         </div>
     );

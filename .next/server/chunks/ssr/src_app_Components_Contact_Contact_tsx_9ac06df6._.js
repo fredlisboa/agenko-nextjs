@@ -777,7 +777,45 @@ const Contact = ()=>{
                 columnNumber: 13
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "agenko-map"
+                className: "agenko-map",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    ref: mapContainerRef,
+                    className: "map-container map-box",
+                    "data-aos": "fade-up",
+                    "data-aos-duration": "1300",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            ref: overlayRef,
+                            className: "map-overlay"
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/Components/Contact/Contact.tsx",
+                            lineNumber: 285,
+                            columnNumber: 21
+                        }, ("TURBOPACK compile-time value", void 0)),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("iframe", {
+                            className: "bw-map",
+                            src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.8665369307814!2d-49.26699702421499!3d-16.683560784088595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef103169657dd%3A0x36fe497b6a5c894f!2sStudio%20Dental%20Odontologia!5e0!3m2!1sen!2sbr!4v1758043960796!5m2!1sen!2sbr",
+                            width: "100%",
+                            height: "450",
+                            style: {
+                                border: 0,
+                                position: 'relative',
+                                zIndex: 0
+                            },
+                            allowFullScreen: true,
+                            loading: "lazy",
+                            referrerPolicy: "no-referrer-when-downgrade"
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/Components/Contact/Contact.tsx",
+                            lineNumber: 287,
+                            columnNumber: 21
+                        }, ("TURBOPACK compile-time value", void 0))
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/app/Components/Contact/Contact.tsx",
+                    lineNumber: 278,
+                    columnNumber: 17
+                }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/src/app/Components/Contact/Contact.tsx",
                 lineNumber: 276,
