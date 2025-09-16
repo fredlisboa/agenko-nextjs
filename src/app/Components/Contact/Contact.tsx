@@ -1,12 +1,15 @@
+// 1. Add this directive at the very top of the file
+"use client";
+
 import Image from 'next/image';
-// 1. Import useEffect and useRef from React
+// Import useEffect and useRef from React
 import React, { useEffect, useRef } from 'react';
 
 const Contact = () => {
-    // 2. Create a ref to attach to the iframe element
+    // Create a ref to attach to the iframe element
     const mapRef = useRef<HTMLIFrameElement>(null);
 
-    // 3. Use useEffect to add an event listener after the component mounts
+    // Use useEffect to add an event listener after the component mounts
     useEffect(() => {
         const mapIframe = mapRef.current;
 
@@ -122,9 +125,8 @@ const Contact = () => {
             <section className="agenko-map">
                 <div className="map-box" data-aos="fade-up" data-aos-duration="1300">
                     <iframe 
-                        ref={mapRef} // 4. Attach the ref to the iframe
+                        ref={mapRef}
                         className="bw-map"
-                        // 5. Updated to the final, correct, permanent HTTPS embed URL
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.899805988117!2d-49.26127262417757!3d-16.68172744040439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef19313a51669%3A0x2f32b8a73543864d!2sStudio%20Dental%20Odontologia!5e0!3m2!1sen!2sbr!4v1726510769351!5m2!1sen!2sbr"
                         width="100%"
                         height="450" 
