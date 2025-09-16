@@ -7417,46 +7417,52 @@ color: #222;
 }
 
 /* =================================================================== */
-/* Google Map Grayscale Effect (for Mobile and Desktop)
+/* Google Map Grayscale Effect (FINAL - Works on Mobile and Desktop)
 /* =================================================================== */
 
-/* Default state: black and white */
-.bw-map {
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  transition: filter 0.4s ease-in-out; /* A slightly slower transition is nice */
-}
-
-/* This is the NEW, correct rule for hover */
-.bw-map.is-active,
-.map-container:hover .bw-map {
-  filter: grayscale(0%);
-  -webkit-filter: grayscale(0%);
-}
-
-/* Add this to your stylesheet */
+/* The container for the map and the overlay */
 .map-container {
-  position: relative; /* This is needed for the overlay to be positioned correctly */
+  position: relative;
 }
 
+/* The invisible overlay for capturing the first mobile touch */
 .map-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1; /* Sits on top of the iframe */
-  cursor: pointer; /* Optional: shows a pointer on desktop */
+  z-index: 1;
 }
 
-/* This class will be added by JS to hide the overlay after the first touch */
+/* Hides the overlay after it has been touched once on mobile */
 .map-overlay.is-hidden {
   display: none;
 }
 
-/* This is the NEW and FINAL addition to fix desktop clicks */
+/* The default black and white style for the map iframe */
+.bw-map {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: filter 0.4s ease-in-out;
+}
+
+/*
+  - The map becomes color if it has the .is-active class (for mobile touch).
+  - OR if the user's mouse hovers over the PARENT .map-container (for desktop).
+*/
+.bw-map.is-active,
+.map-container:hover .bw-map {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+}
+
+/*
+  ** THE FIX FOR DESKTOP CLICKS **
+  On screens wider than 1024px (desktops), this makes the overlay
+  completely transparent to mouse events like clicks, drags, and scrolls.
+*/
 @media (min-width: 1024px) {
-  /* On screens wider than 1024px (desktops), make the overlay invisible to the mouse. */
   .map-overlay {
     pointer-events: none;
   }
