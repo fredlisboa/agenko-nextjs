@@ -7389,10 +7389,14 @@ color: #222;
     padding: 8px 12px;
     font-size: 12px;
     white-space: nowrap;
+    font-weight: 900;
+    text-shadow: 0 0 0.75px currentColor;
   }
 
   .theme-btn.style-one.mobile-cta .text-flip .text {
     font-size: 12px;
+    font-weight: 900;
+    text-shadow: 0 0 0.75px currentColor;
   }
 
   /* --- 3. Submenu Dropdown Fix --- */

@@ -40,7 +40,7 @@ const Contact = () => {
 
     return (
         <div>
-            <section className="agenko-contact pt-80 pb-50">
+            <section className="agenko-contact pt-80 pb-30">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-5">
@@ -48,7 +48,7 @@ const Contact = () => {
                                 <div className="shape"><span><Image src="/assets/images/pages/shape/world.png" alt="img" width={306} height={647} /></span></div>
                                 <ul>
                                     <li>
-                                        <div className="phone"><a href="tel:+5562982433773">+55 (62) 9 8243-3773</a></div>
+                                        <div className="phone"><a href="https://wa.me/5562982433773?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20acabei%20de%20preencher%20o%20formul%C3%A1rio.%20Gostaria%20de%20continuar%20meu%20atendimento." target="_blank" rel="noopener noreferrer">+55 (62) 9 8243-3773</a></div>
                                     </li>
                                     <li>
                                         <div className="agenko-info-box">
@@ -79,6 +79,7 @@ const Contact = () => {
                                                     <i className="bi bi-instagram"></i></a>
                                                     <a href="https://share.google/pcuCYJHPmM1pRPwpc" target="_blank" rel="noopener noreferrer"><i className="bi bi-google"></i></a>
                                                     <a href="https://tiktok.com/@studiodental.dental" target="_blank" rel="noopener noreferrer"><i className="bi bi-tiktok"></i></a>
+                                                    <a href="https://wa.me/5562982433773?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20acabei%20de%20preencher%20o%20formul%C3%A1rio.%20Gostaria%20de%20continuar%20meu%20atendimento." target="_blank" rel="noopener noreferrer"><i className="bi bi-whatsapp"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -98,25 +99,30 @@ const Contact = () => {
                                     <div className="row">
                                         <div className="col-md-6">
                                             <div className="form-group">
-                                                <input type="text" className="form_control" placeholder="Nome" name="nome" required />
+                                                <input type="text" className="form_control" placeholder="Nome*" name="nome" required />
                                             </div>
                                         </div>
                                         <div className="col-md-6">
                                             <div className="form-group">
-                                                <input type="text" className="form_control" placeholder="Email" name="email" required />
+                                                <input type="text" className="form_control" placeholder="WhatsApp*" name="whatsapp" required />
                                             </div>
                                         </div>
-                                        <div className="col-md-12">
+                                        <div className="col-md-6">
+                                            <div className="form-group">
+                                                <input type="text" className="form_control" placeholder="Email*" name="email" required />
+                                            </div>
+                                        </div>
+                                        {/* <div className="col-md-12">
                                             <div className="form-group">
                                                 <input type="text" className="form_control" placeholder="Assunto" name="assunto" required />
                                             </div>
-                                        </div>
-                                        <div className="col-lg-12">
+                                        </div> */}
+                                        {/* <div className="col-lg-12">
                                             <textarea className="form_control" rows={5} placeholder="Mensagem" name="mensagem"></textarea>
-                                        </div>
+                                        </div> */}
                                         <div className="col-lg-12">
                                             <div className="form-group">
-                                                <button className="theme-btn">Enviar Mensagem</button>
+                                                <button className="theme-btn">Agendar Avaliação Gratuita</button>
                                             </div>
                                         </div>
                                         <div className="col-lg-12">

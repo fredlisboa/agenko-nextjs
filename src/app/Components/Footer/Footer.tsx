@@ -107,11 +107,11 @@ const Footer = () => {
                                                     </div>
                                                     <div className="agenko-iconic-box style-three">
                                                         <div className="icon">
-                                                        <i className="bi bi-telephone"></i>
+                                                        <i className="bi bi-whatsapp"></i>
                                                         </div>
                                                         <div className="content">
-                                                            <h6>Telefone/WhatsApp</h6>
-                                                            <p><a href="/contact">+55 62 9 8243-3773</a></p>
+                                                            <h6>WhatsApp</h6>
+                                                            <p><a href="https://wa.me/5562982433773?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20acabei%20de%20preencher%20o%20formul%C3%A1rio.%20Gostaria%20de%20continuar%20meu%20atendimento." target="_blank" rel="noopener noreferrer">+55 62 9 8243-3773</a></p>
                                                         </div>
                                                         
                                                     </div>

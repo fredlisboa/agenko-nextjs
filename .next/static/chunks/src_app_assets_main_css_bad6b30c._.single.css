@@ -7866,12 +7866,16 @@ label {
 
   .theme-btn.style-one.mobile-cta {
     white-space: nowrap;
+    text-shadow: 0 0 .75px;
     padding: 8px 12px;
     font-size: 12px;
+    font-weight: 900;
   }
 
   .theme-btn.style-one.mobile-cta .text-flip .text {
+    text-shadow: 0 0 .75px;
     font-size: 12px;
+    font-weight: 900;
   }
 
   .cs_nav .cs_nav_list .cs-munu_dropdown_toggle {
