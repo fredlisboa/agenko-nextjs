@@ -7892,10 +7892,10 @@ label {
 
 .bw-map {
   -webkit-filter: grayscale();
-  transition: filter .3s ease-in-out;
+  transition: filter .4s ease-in-out;
 }
 
-.bw-map:hover {
+.bw-map.is-active, .bw-map:hover {
   -webkit-filter: grayscale(0%);
 }
 
