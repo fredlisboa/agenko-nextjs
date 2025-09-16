@@ -1,6 +1,7 @@
 {
   "/(defaultLayout)/contact/page": "app/(defaultLayout)/contact/page.js",
   "/(defaultLayout)/page": "app/(defaultLayout)/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/politica-privacidade/page": "app/politica-privacidade/page.js",
   "/termos-de-uso/page": "app/termos-de-uso/page.js"
 }

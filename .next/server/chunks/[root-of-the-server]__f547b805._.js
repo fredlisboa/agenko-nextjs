@@ -1,0 +1,81 @@
+module.exports = [
+"[project]/.next-internal/server/app/favicon.ico/route/actions.js [app-rsc] (server actions loader, ecmascript)", ((__turbopack_context__, module, exports) => {
+
+}),
+"[externals]/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js [external] (next/dist/compiled/next-server/app-route-turbo.runtime.dev.js, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("next/dist/compiled/next-server/app-route-turbo.runtime.dev.js", () => require("next/dist/compiled/next-server/app-route-turbo.runtime.dev.js"));
+
+module.exports = mod;
+}),
+"[externals]/next/dist/compiled/@opentelemetry/api [external] (next/dist/compiled/@opentelemetry/api, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("next/dist/compiled/@opentelemetry/api", () => require("next/dist/compiled/@opentelemetry/api"));
+
+module.exports = mod;
+}),
+"[externals]/next/dist/compiled/next-server/app-page-turbo.runtime.dev.js [external] (next/dist/compiled/next-server/app-page-turbo.runtime.dev.js, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("next/dist/compiled/next-server/app-page-turbo.runtime.dev.js", () => require("next/dist/compiled/next-server/app-page-turbo.runtime.dev.js"));
+
+module.exports = mod;
+}),
+"[externals]/next/dist/server/app-render/work-unit-async-storage.external.js [external] (next/dist/server/app-render/work-unit-async-storage.external.js, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("next/dist/server/app-render/work-unit-async-storage.external.js", () => require("next/dist/server/app-render/work-unit-async-storage.external.js"));
+
+module.exports = mod;
+}),
+"[externals]/next/dist/server/app-render/work-async-storage.external.js [external] (next/dist/server/app-render/work-async-storage.external.js, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("next/dist/server/app-render/work-async-storage.external.js", () => require("next/dist/server/app-render/work-async-storage.external.js"));
+
+module.exports = mod;
+}),
+"[externals]/next/dist/shared/lib/no-fallback-error.external.js [external] (next/dist/shared/lib/no-fallback-error.external.js, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("next/dist/shared/lib/no-fallback-error.external.js", () => require("next/dist/shared/lib/no-fallback-error.external.js"));
+
+module.exports = mod;
+}),
+"[externals]/next/dist/server/app-render/after-task-async-storage.external.js [external] (next/dist/server/app-render/after-task-async-storage.external.js, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("next/dist/server/app-render/after-task-async-storage.external.js", () => require("next/dist/server/app-render/after-task-async-storage.external.js"));
+
+module.exports = mod;
+}),
+"[externals]/next/dist/server/app-render/action-async-storage.external.js [external] (next/dist/server/app-render/action-async-storage.external.js, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("next/dist/server/app-render/action-async-storage.external.js", () => require("next/dist/server/app-render/action-async-storage.external.js"));
+
+module.exports = mod;
+}),
+"[project]/src/app/favicon--route-entry.js [app-rsc] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "GET",
+    ()=>GET,
+    "dynamic",
+    ()=>dynamic
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/server.js [app-rsc] (ecmascript)");
+;
+const contentType = "image/x-icon";
+const cacheControl = "public, max-age=0, must-revalidate";
+const buffer = Buffer.from("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", 'base64');
+if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+;
+function GET() {
+    return new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["NextResponse"](buffer, {
+        headers: {
+            'Content-Type': contentType,
+            'Cache-Control': cacheControl
+        }
+    });
+}
+const dynamic = 'force-static';
+}),
+];
+
+//# sourceMappingURL=%5Broot-of-the-server%5D__f547b805._.js.map

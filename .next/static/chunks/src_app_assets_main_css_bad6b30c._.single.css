@@ -7841,4 +7841,34 @@ label {
   color: #222;
 }
 
+@media (max-width: 991px) {
+  .cs_main_header_in {
+    width: 100%;
+    position: relative;
+  }
+
+  .cs_main_header_center {
+    flex-grow: 1;
+    position: static;
+  }
+
+  .mobile-cta-btn {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .theme-btn.style-one.mobile-cta {
+    white-space: nowrap;
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+
+  .theme-btn.style-one.mobile-cta .text-flip .text {
+    font-size: 13px;
+  }
+}
+
 /*# sourceMappingURL=src_app_assets_main_css_bad6b30c._.single.css.map*/
