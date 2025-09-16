@@ -3,7 +3,6 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Source_Sans_3, Roboto } from "next/font/google";
 import Script from 'next/script'; // Importe o componente Script
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap-icons/font/bootstrap-icons.css';
 import "slick-carousel/slick/slick.css";
 import "./assets/main.css";
 import "./assets/carousel.css";
@@ -112,6 +111,7 @@ export default function RootLayout({ children } : any ) {
       <head>
         <meta name="author" content="Dra. Gabriella Lisboa | Studio Dental" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
         {/* NOVO: Injetando o Schema JSON-LD no <head> */}
         <Script
           id="json-ld-schema"

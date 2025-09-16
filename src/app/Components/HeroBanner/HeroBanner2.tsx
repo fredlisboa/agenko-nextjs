@@ -107,7 +107,7 @@ const HeroBanner2 = () => {
                     <div className="col-lg-8">
                         
                         <div className="hero-image style-one pf_fadeup">
-                            <Image src="/assets/images/digital-agency/hero/hero-img1.webp" alt="Hero Image" width={700} height={500} />{/* Adjust width and height as needed */}
+                            <Image src="/assets/images/digital-agency/hero/hero-img1.webp" alt="Hero Image" width={900} height={1080} style={{ width: '100%', height: 'auto' }} />
                         </div>
                     </div>
                 </div>
