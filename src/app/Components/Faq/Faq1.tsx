@@ -63,7 +63,7 @@ const Faq1 = () => {
                                                 </div>
                                                 <div ref={accordionContentRef}  id={`collapse-${index}`} className={`accordion-collapse accordion-content ${index === openItemIndex ? 'show' : ''}`} data-bs-parent="#accordionOne">
                                                     <div className="accordion-content">
-                                                        <p style={{textAlign: 'justify'}} dangerouslySetInnerHTML={{ __html: item.content }}></p>
+                                                        <p style={{textAlign: 'justify', hyphens: 'auto'}} dangerouslySetInnerHTML={{ __html: item.content }}></p>
                                                     </div>
                                                 </div>
                                             </div>

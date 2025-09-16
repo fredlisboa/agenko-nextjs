@@ -6,8 +6,8 @@ const page = () => {
   return (
     <div>
             <BreadCumb
-                Title="Contact"
-                content="Agenko empowers businesses with innovative strategies & creative agency solutions"
+                Title="Contato"
+                content="Agende sua avaliação personalizada e gratuita para a <b>Harmonização Orofacial</b> e receba um diagnóstico completo de nossas especialistas. Este é o primeiro passo para sua jornada de transformação, onde criaremos um plano <b>exclusivo</b> para você, totalmente <b>sem compromisso</b>."
             ></BreadCumb>   
             <Contact></Contact>       
     </div>

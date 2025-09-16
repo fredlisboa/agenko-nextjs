@@ -103,7 +103,8 @@ const About1 = ()=>{
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     style: {
-                                        textAlign: 'justify'
+                                        textAlign: 'justify',
+                                        hyphens: 'auto'
                                     },
                                     children: [
                                         "Acredito que a verdadeira beleza está em realçar quem você já é. Como especialista em ",
@@ -112,7 +113,7 @@ const About1 = ()=>{
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/Components/About/About1.tsx",
                                             lineNumber: 17,
-                                            columnNumber: 145
+                                            columnNumber: 162
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         ", minha missão é ir além dos procedimentos: eu busco o equilíbrio perfeito entre estética e função para revelar a sua melhor versão. Vamos juntas encontrar a harmonia que seu rosto e sorriso merecem?"
                                     ]
@@ -123,7 +124,8 @@ const About1 = ()=>{
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     style: {
-                                        textAlign: 'justify'
+                                        textAlign: 'justify',
+                                        hyphens: 'auto'
                                     },
                                     children: [
                                         "Com mais de 15 anos de experiência e mais de 1000 faces transformadas, desenvolvi um olhar clínico apurado para criar resultados que respeitam sua identidade. Aqui, cada ",
@@ -132,7 +134,7 @@ const About1 = ()=>{
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/Components/About/About1.tsx",
                                             lineNumber: 18,
-                                            columnNumber: 229
+                                            columnNumber: 246
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         " é planejado para proporcionar uma beleza natural, sem exageros, elevando não apenas seus traços, mas principalmente sua ",
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
@@ -140,7 +142,7 @@ const About1 = ()=>{
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/Components/About/About1.tsx",
                                             lineNumber: 18,
-                                            columnNumber: 364
+                                            columnNumber: 381
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         " e confiança."
                                     ]
@@ -484,7 +486,8 @@ const Services2 = ()=>{
                                 className: "text-box mb-60 pf_fadeup",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     style: {
-                                        textAlign: 'justify'
+                                        textAlign: 'justify',
+                                        hyphens: 'auto'
                                     },
                                     children: "Cada rosto é único. Por isso, nossas especialidades em Harmonização Orofacial são planejadas para realçar sua beleza natural, respeitando seus traços e elevando sua autoestima com a máxima segurança e precisão."
                                 }, void 0, false, {
@@ -546,7 +549,8 @@ const Services2 = ()=>{
                                         className: "content",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             style: {
-                                                textAlign: 'justify'
+                                                textAlign: 'justify',
+                                                hyphens: 'auto'
                                             },
                                             children: [
                                                 "Para um resultado ",
@@ -555,7 +559,7 @@ const Services2 = ()=>{
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Services/Services2.tsx",
                                                     lineNumber: 31,
-                                                    columnNumber: 93
+                                                    columnNumber: 110
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 " na eliminação do queixo duplo, realizamos a lipoaspiração cervical. Este procedimento minimamente invasivo remove de forma ",
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -563,7 +567,7 @@ const Services2 = ()=>{
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Services/Services2.tsx",
                                                     lineNumber: 31,
-                                                    columnNumber: 240
+                                                    columnNumber: 257
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 " o excesso de gordura, revelando um contorno facial mais definido, elegante e rejuvenescido."
                                             ]
@@ -663,7 +667,8 @@ const Services2 = ()=>{
                                         className: "content",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             style: {
-                                                textAlign: 'justify'
+                                                textAlign: 'justify',
+                                                hyphens: 'auto'
                                             },
                                             children: [
                                                 "Conquiste um perfil mais ",
@@ -672,7 +677,7 @@ const Services2 = ()=>{
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Services/Services2.tsx",
                                                     lineNumber: 51,
-                                                    columnNumber: 100
+                                                    columnNumber: 117
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 " e elegante sem cirurgia. Com a aplicação precisa de ácido hialurônico, corrigimos pequenas imperfeições, empinamos a ponta e alinhamos o dorso do nariz com naturalidade. "
                                             ]
@@ -772,7 +777,8 @@ const Services2 = ()=>{
                                         className: "content",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             style: {
-                                                textAlign: 'justify'
+                                                textAlign: 'justify',
+                                                hyphens: 'auto'
                                             },
                                             children: [
                                                 "Rejuvenesça e combata a flacidez com o poder dos ",
@@ -781,7 +787,7 @@ const Services2 = ()=>{
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Services/Services2.tsx",
                                                     lineNumber: 71,
-                                                    columnNumber: 124
+                                                    columnNumber: 141
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 ". Este procedimento estimula a produção natural de colágeno, promovendo um efeito lifting imediato e duradouro para uma pele mais firme e jovem."
                                             ]
@@ -881,7 +887,8 @@ const Services2 = ()=>{
                                         className: "content",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             style: {
-                                                textAlign: 'justify'
+                                                textAlign: 'justify',
+                                                hyphens: 'auto'
                                             },
                                             children: [
                                                 "Realce seus pontos fortes e devolva o ",
@@ -890,7 +897,7 @@ const Services2 = ()=>{
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Services/Services2.tsx",
                                                     lineNumber: 91,
-                                                    columnNumber: 112
+                                                    columnNumber: 129
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 " perdido com o tempo. Seja para lábios mais definidos, maçãs do rosto marcadas ou para suavizar olheiras, utilizamos o ácido hialurônico para esculpir e rejuvenescer com sutileza."
                                             ]
@@ -990,7 +997,8 @@ const Services2 = ()=>{
                                         className: "content",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             style: {
-                                                textAlign: 'justify'
+                                                textAlign: 'justify',
+                                                hyphens: 'auto'
                                             },
                                             children: [
                                                 "O tratamento definitivo para a firmeza e qualidade da pele. Os ",
@@ -999,7 +1007,7 @@ const Services2 = ()=>{
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Services/Services2.tsx",
                                                     lineNumber: 111,
-                                                    columnNumber: 137
+                                                    columnNumber: 154
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 " agem profundamente, incentivando seu próprio corpo a produzir mais colágeno, resultando em uma pele visivelmente mais densa, elástica e com menos ",
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1007,7 +1015,7 @@ const Services2 = ()=>{
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Services/Services2.tsx",
                                                     lineNumber: 111,
-                                                    columnNumber: 313
+                                                    columnNumber: 330
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
@@ -1147,7 +1155,8 @@ const Process2 = ()=>{
                                 className: "text-box mb-55 pf_fadeup",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     style: {
-                                        textAlign: 'justify'
+                                        textAlign: 'justify',
+                                        hyphens: 'auto'
                                     },
                                     children: [
                                         "Da primeira conversa ao resultado final, nosso processo é desenhado para garantir sua ",
@@ -1156,7 +1165,7 @@ const Process2 = ()=>{
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/Components/Process/Process2.tsx",
                                             lineNumber: 18,
-                                            columnNumber: 157
+                                            columnNumber: 174
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         ", conforto e, acima de tudo, um resultado que celebre sua beleza natural."
                                     ]
@@ -1216,7 +1225,8 @@ const Process2 = ()=>{
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 style: {
-                                                    textAlign: 'justify'
+                                                    textAlign: 'justify',
+                                                    hyphens: 'auto'
                                                 },
                                                 children: [
                                                     "Tudo começa com uma conversa. Nesta etapa, entendemos seus desejos, avaliamos seus traços e criamos um plano de tratamento ",
@@ -1225,7 +1235,7 @@ const Process2 = ()=>{
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/Process/Process2.tsx",
                                                         lineNumber: 31,
-                                                        columnNumber: 202
+                                                        columnNumber: 219
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
@@ -1296,7 +1306,8 @@ const Process2 = ()=>{
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 style: {
-                                                    textAlign: 'justify'
+                                                    textAlign: 'justify',
+                                                    hyphens: 'auto'
                                                 },
                                                 children: [
                                                     "Utilizando tecnologia de ponta, planejamos cada detalhe do procedimento. Apresentamos uma prévia dos resultados para garantir que o plano esteja perfeitamente alinhado com suas ",
@@ -1305,7 +1316,7 @@ const Process2 = ()=>{
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/Process/Process2.tsx",
                                                         lineNumber: 44,
-                                                        columnNumber: 256
+                                                        columnNumber: 273
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
@@ -1376,7 +1387,8 @@ const Process2 = ()=>{
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 style: {
-                                                    textAlign: 'justify'
+                                                    textAlign: 'justify',
+                                                    hyphens: 'auto'
                                                 },
                                                 children: [
                                                     "Com técnica apurada e os melhores produtos do mercado, realizamos o procedimento de forma segura e ",
@@ -1385,7 +1397,7 @@ const Process2 = ()=>{
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/Process/Process2.tsx",
                                                         lineNumber: 57,
-                                                        columnNumber: 178
+                                                        columnNumber: 195
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     ", sempre priorizando seu conforto e bem-estar durante todo o processo."
                                                 ]
@@ -1457,7 +1469,8 @@ const Process2 = ()=>{
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 style: {
-                                                    textAlign: 'justify'
+                                                    textAlign: 'justify',
+                                                    hyphens: 'auto'
                                                 },
                                                 children: [
                                                     "Sua jornada não termina aqui. Realizamos o acompanhamento pós-procedimento para garantir uma ",
@@ -1466,7 +1479,7 @@ const Process2 = ()=>{
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/Process/Process2.tsx",
                                                         lineNumber: 70,
-                                                        columnNumber: 172
+                                                        columnNumber: 189
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     " e a durabilidade dos seus resultados, celebrando juntas sua nova fase de autoestima."
                                                 ]

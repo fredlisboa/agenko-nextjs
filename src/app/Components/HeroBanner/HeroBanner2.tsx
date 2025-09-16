@@ -34,7 +34,7 @@ const HeroBanner2 = () => {
                     </div>
                 </div>
                 <div className="text-box pf_fadeup" style={{marginTop: '-50px', marginBottom: '50px'}}>
-                <p style={{textAlign: 'justify'}}><span>Dra Gabriella Lisboa</span> é especialista em equilibrar a relação estética e funcional da face e sorriso, realçar traços naturais — sem cirurgia, gerenciar o envelhecimento e corrigir assimetrias.</p>
+                <p style={{textAlign: 'justify', hyphens: 'auto'}}><span>Dra Gabriella Lisboa</span> é especialista em equilibrar a relação estética e funcional da face e sorriso, realçar traços naturais — sem cirurgia, gerenciar o envelhecimento e corrigir assimetrias.</p>
                     <div className="hero-button" style={{marginTop: '25px'}}>
                         <Link href="/contact" className="theme-btn style-one">
                             <span className="text-flip">

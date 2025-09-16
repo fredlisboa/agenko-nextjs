@@ -15,7 +15,7 @@ const Services2 = () => {
                                 </div>
                                 <div className="col-lg-5">
                                     <div className="text-box mb-60 pf_fadeup">
-                                    <p style={{textAlign: 'justify'}}>Cada rosto é único. Por isso, nossas especialidades em Harmonização Orofacial são planejadas para realçar sua beleza natural, respeitando seus traços e elevando sua autoestima com a máxima segurança e precisão.</p>
+                                    <p style={{textAlign: 'justify', hyphens: 'auto'}}>Cada rosto é único. Por isso, nossas especialidades em Harmonização Orofacial são planejadas para realçar sua beleza natural, respeitando seus traços e elevando sua autoestima com a máxima segurança e precisão.</p>
                                     </div>
                                 </div>
                             </div>
@@ -28,7 +28,7 @@ const Services2 = () => {
                                             <h3 className="title">Lipo de Papada</h3>
                                         </div>
                                         <div className="content">
-                                        <p style={{textAlign: 'justify'}}>Para um resultado <span>definitivo</span> na eliminação do queixo duplo, realizamos a lipoaspiração cervical. Este procedimento minimamente invasivo remove de forma <span>precisa</span> o excesso de gordura, revelando um contorno facial mais definido, elegante e rejuvenescido.</p>
+                                        <p style={{textAlign: 'justify', hyphens: 'auto'}}>Para um resultado <span>definitivo</span> na eliminação do queixo duplo, realizamos a lipoaspiração cervical. Este procedimento minimamente invasivo remove de forma <span>precisa</span> o excesso de gordura, revelando um contorno facial mais definido, elegante e rejuvenescido.</p>
                                         </div>
                                         <div className="card-button">
                                             <Link href="/contact" className="theme-btn style-one">
@@ -48,7 +48,7 @@ const Services2 = () => {
                                             <h3 className="title">Rinomodelação</h3>
                                         </div>
                                         <div className="content">
-                                        <p style={{textAlign: 'justify'}}>Conquiste um perfil mais <span>harmônico</span> e elegante sem cirurgia. Com a aplicação precisa de ácido hialurônico, corrigimos pequenas imperfeições, empinamos a ponta e alinhamos o dorso do nariz com naturalidade. </p>
+                                        <p style={{textAlign: 'justify', hyphens: 'auto'}}>Conquiste um perfil mais <span>harmônico</span> e elegante sem cirurgia. Com a aplicação precisa de ácido hialurônico, corrigimos pequenas imperfeições, empinamos a ponta e alinhamos o dorso do nariz com naturalidade. </p>
                                         </div>
                                         <div className="card-button">
                                             <Link href="/contact" className="theme-btn style-one">
@@ -68,7 +68,7 @@ const Services2 = () => {
                                             <h3 className="title">Lifting Facial Não Cirúrgico (com Fios de PDO)</h3>
                                         </div>
                                         <div className="content">
-                                        <p style={{textAlign: 'justify'}}>Rejuvenesça e combata a flacidez com o poder dos <span>Fios de Sustentação</span>. Este procedimento estimula a produção natural de colágeno, promovendo um efeito lifting imediato e duradouro para uma pele mais firme e jovem.</p>
+                                        <p style={{textAlign: 'justify', hyphens: 'auto'}}>Rejuvenesça e combata a flacidez com o poder dos <span>Fios de Sustentação</span>. Este procedimento estimula a produção natural de colágeno, promovendo um efeito lifting imediato e duradouro para uma pele mais firme e jovem.</p>
                                         </div>
                                         <div className="card-button">
                                             <Link href="/contact" className="theme-btn style-one">
@@ -88,7 +88,7 @@ const Services2 = () => {
                                            <h3 className="title">Preenchimento Facial (Labial, Malar, Olheiras)</h3>
                                        </div>
                                        <div className="content">
-                                       <p style={{textAlign: 'justify'}}>Realce seus pontos fortes e devolva o <span>volume</span> perdido com o tempo. Seja para lábios mais definidos, maçãs do rosto marcadas ou para suavizar olheiras, utilizamos o ácido hialurônico para esculpir e rejuvenescer com sutileza.</p>
+                                       <p style={{textAlign: 'justify', hyphens: 'auto'}}>Realce seus pontos fortes e devolva o <span>volume</span> perdido com o tempo. Seja para lábios mais definidos, maçãs do rosto marcadas ou para suavizar olheiras, utilizamos o ácido hialurônico para esculpir e rejuvenescer com sutileza.</p>
                                        </div>
                                        <div className="card-button">
                                            <Link href="/contact" className="theme-btn style-one">
@@ -108,7 +108,7 @@ const Services2 = () => {
                                            <h3 className="title">Bioestimuladores de Colágeno</h3>
                                        </div>
                                        <div className="content">
-                                       <p style={{textAlign: 'justify'}}>O tratamento definitivo para a firmeza e qualidade da pele. Os <span>bioestimuladores</span> agem profundamente, incentivando seu próprio corpo a produzir mais colágeno, resultando em uma pele visivelmente mais densa, elástica e com menos <span>flacidez.</span></p>
+                                       <p style={{textAlign: 'justify', hyphens: 'auto'}}>O tratamento definitivo para a firmeza e qualidade da pele. Os <span>bioestimuladores</span> agem profundamente, incentivando seu próprio corpo a produzir mais colágeno, resultando em uma pele visivelmente mais densa, elástica e com menos <span>flacidez.</span></p>
                                        </div>
                                        <div className="card-button">
                                            <Link href="/contact" className="theme-btn style-one">

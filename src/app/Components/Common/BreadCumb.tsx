@@ -22,7 +22,7 @@ const BreadCumb = ({Title,content} : any ) => {
                                     <Image className="rotate360" src="/assets/images/pages/shape/star12.webp" alt="img" width={84} height={90}   />
                                     </div>
                                     <div className="text">
-                                        <p>{content}</p>
+                                        <p style={{textAlign: 'justify', hyphens: 'auto'}} dangerouslySetInnerHTML={{ __html: content }}></p>
                                     </div>
                                 </div>
                             </div>
@@ -39,7 +39,7 @@ const BreadCumb = ({Title,content} : any ) => {
                 <div className="col-lg-3">
                     
                     <div className="circle-box float-xl-end text-center text-xl-end">
-                        <Image className="rotate360" src="/assets/images/creative-agency/footer/ciranda.webp" alt="img" width={135} height={135}   />
+                        <Image className="rotate360" src="/assets/images/creative-agency/footer/ciranda.webp" alt="img" width={180} height={180}   />
                     </div>
                 </div>
             </div>
