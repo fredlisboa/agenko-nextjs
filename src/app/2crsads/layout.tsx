@@ -1,4 +1,7 @@
+import React from 'react';
 import Script from "next/script";
+import Header1 from '../Components/Header/Header1';
+import Footer from '../Components/Footer/Footer';
 
 export default function RootLayout({
   children,
@@ -6,7 +9,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <>
+    <div className='main-page-area bg-color2'>
       <Script id="2crsads-script" strategy="beforeInteractive">
         {`
           (function() {
@@ -19,7 +22,7 @@ export default function RootLayout({
               }
 
               if (Object.keys(paramsData).length > 0) {
-                  const webhookUrl = 'https://webhooks-n8n.studiodental.digital/webhook/48c68fe4-754c-4f78-b13d-7bf4c53ccd82';
+                  const webhookUrl = 'https://webhooks-n8n.studiodental.digital/webhook/23c5b654-0402-4685-aed5-bdc375e577ce';
 
                   fetch(webhookUrl, {
                       method: 'POST',
@@ -42,7 +45,9 @@ export default function RootLayout({
           })();
         `}
       </Script>
+      <Header1></Header1>
       {children}
-    </>
+      <Footer></Footer>
+    </div>
   );
 }
