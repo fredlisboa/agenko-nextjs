@@ -193,10 +193,10 @@ export async function POST(request: NextRequest) {
       url_parameters_x_requested_with: queryParams.x_requested_with || null,
       url_parameters_sub_id_2_adposition: queryParams.sub_id_2_adposition || null,
       // Add other UTM parameters if needed
-      url_param_utm_source: queryParams.utm_source || null,
-      url_param_utm_medium: queryParams.utm_medium || null,
-      url_param_utm_campaign: queryParams.utm_campaign || null,
-      url_param_utm_content: queryParams.utm_content || null,
+      'url_param_utm_source': queryParams.utm_source || null,
+      'url_param_utm_medium': queryParams.utm_medium || null,
+      'url_param_utm_campaign': queryParams.utm_campaign || null, // Ensure this exact string matches your Supabase column
+      'url_param_utm_content': queryParams.utm_content || null,
     };
 
     // --- INSERT DATA INTO SUPABASE ---
