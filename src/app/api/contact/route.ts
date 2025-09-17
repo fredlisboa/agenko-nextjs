@@ -151,51 +151,52 @@ export async function POST(request: NextRequest) {
 
     // --- PREPARE DATA FOR SUPABASE INSERT ---
     const supabasePayload = {
-      form_name: 'leads-form-hof-sd-gabriellalisboa', // Assuming a static form name for this table
-      nome: nome.trim(),
-      email: email.trim(),
-      whatsapp_field_facebook: whatsappFieldFacebook,
-      date_time_utc: dateTimeUtc,
-      'date_time_america_sao-paulo': dateTimeAmericaSaoPaulo,
-      date_time_timestamp: urlProcessedAtTimestamp, // Using urlProcessedAtTimestamp for date_time_timestamp column
-      remote_ip: remoteIp,
-      webhookUrl: WEBHOOK_URL,
-      'user-agent': userAgent, // Column name is 'user-agent' in Supabase (needs to be quoted if it contains hyphens)
+      'form_name': 'leads-form-hof-sd-gabriellalisboa', // Quoted for consistency, though 'form_name' is fine unquoted
+      'nome': nome.trim(),
+      'email': email.trim(),
+      'whatsapp_field_facebook': whatsappFieldFacebook,
+      'date_time_utc': dateTimeUtc,
+      'date_time_america_sao-paulo': dateTimeAmericaSaoPaulo, // Corrected with hyphen and quoted
+      'date_time_timestamp': urlProcessedAtTimestamp,
+      'remote_ip': remoteIp,
+      'webhookUrl': WEBHOOK_URL,
+      'user-agent': userAgent, // Correctly quoted due to hyphen
 
-      // Mapping URL parameters to specific Supabase columns
-      url_param_keyword: queryParams.keyword || queryParams.utm_term || null,
-      url_param_cost: queryParams.cost || null,
-      url_param_fbclid: queryParams.fbclid || null,
-      url_param_gclid: queryParams.gclid || null,
-      url_param_ttclid: queryParams.ttclid || null,
-      url_param_ad_id: queryParams.ad_id || null,
-      url_param_ad_campaign_id: queryParams.ad_campaign_id || null,
-      url_parameters_subid: queryParams.subid || null,
-      url_parameters_ktr_campaign_id: queryParams.ktr_campaign_id || null,
-      url_parameters_cost: queryParams.cost || null, // Assuming cost can also be here
-      url_processed_at_timestamp: urlProcessedAtTimestamp,
-      url_parameters_ktr_landing_id: queryParams.ktr_landing_id || null,
-      url_parameters_ktr_stream_id: queryParams.ktr_stream_id || null,
-      url_parameters_source: queryParams.utm_source || queryParams.source || null,
-      url_parameters_search_engine: queryParams.search_engine || null,
-      url_parameters_ktr_keyword: queryParams.ktr_keyword || null,
-      url_parameters_sub_id_1_placement: queryParams.sub_id_1_placement || null,
-      url_parameters_sub_id_10_advanced_booking_window: queryParams.sub_id_10_advanced_booking_window || null,
-      url_parameters_sub_id_11_matchtype: queryParams.sub_id_11_matchtype || null,
-      url_parameters_sub_id_12_targetid: queryParams.sub_id_12_targetid || null,
-      url_parameters_sub_id_13_extension_id: queryParams.sub_id_13_extension_id || null,
-      url_parameters_sub_id_14_device: queryParams.sub_id_14_device || null,
-      url_parameters_sub_id_3_adgroupid: queryParams.sub_id_3_adgroupid || null,
-      url_parameters_sub_id_4_creative: queryParams.sub_id_4_creative || null,
-      url_parameters_sub_id_5_keyword: queryParams.sub_id_5_keyword || null,
-      url_parameters_sub_id_6_network: queryParams.sub_id_6_network || null,
-      url_parameters_traffic_source_name: queryParams.traffic_source_name || null,
-      url_parameters_x_requested_with: queryParams.x_requested_with || null,
-      url_parameters_sub_id_2_adposition: queryParams.sub_id_2_adposition || null,
-      // Add other UTM parameters if needed
+      // Mapping URL parameters to specific Supabase columns - all quoted for safety
+      'url_param_keyword': queryParams.keyword || queryParams.utm_term || null,
+      'url_param_cost': queryParams.cost || null,
+      'url_param_fbclid': queryParams.fbclid || null,
+      'url_param_gclid': queryParams.gclid || null,
+      'url_param_ttclid': queryParams.ttclid || null,
+      'url_param_ad_id': queryParams.ad_id || null,
+      'url_param_ad_campaign_id': queryParams.ad_campaign_id || null,
+      'url_parameters_subid': queryParams.subid || null,
+      'url_parameters_ktr_campaign_id': queryParams.ktr_campaign_id || null,
+      'url_parameters_cost': queryParams.cost || null,
+      'url_processed_at_timestamp': urlProcessedAtTimestamp,
+      'url_parameters_ktr_landing_id': queryParams.ktr_landing_id || null,
+      'url_parameters_ktr_stream_id': queryParams.ktr_stream_id || null,
+      'url_parameters_source': queryParams.utm_source || queryParams.source || null,
+      'url_parameters_search_engine': queryParams.search_engine || null,
+      'url_parameters_ktr_keyword': queryParams.ktr_keyword || null,
+      'url_parameters_sub_id_1_placement': queryParams.sub_id_1_placement || null,
+      // This column has a space and underscore in your schema, absolutely needs quotes
+      'url_parameters_sub_id_10_advanced_booking _window': queryParams.sub_id_10_advanced_booking_window || null,
+      'url_parameters_sub_id_11_matchtype': queryParams.sub_id_11_matchtype || null,
+      'url_parameters_sub_id_12_targetid': queryParams.sub_id_12_targetid || null,
+      'url_parameters_sub_id_13_extension_id': queryParams.sub_id_13_extension_id || null,
+      'url_parameters_sub_id_14_device': queryParams.sub_id_14_device || null,
+      'url_parameters_sub_id_3_adgroupid': queryParams.sub_id_3_adgroupid || null,
+      'url_parameters_sub_id_4_creative': queryParams.sub_id_4_creative || null,
+      'url_parameters_sub_id_5_keyword': queryParams.sub_id_5_keyword || null,
+      'url_parameters_sub_id_6_network': queryParams.sub_id_6_network || null,
+      'url_parameters_traffic_source_name': queryParams.traffic_source_name || null,
+      'url_parameters_x_requested_with': queryParams.x_requested_with || null,
+      'url_parameters_sub_id_2_adposition': queryParams.sub_id_2_adposition || null,
+      // UTM parameters - already quoted, maintaining that
       'url_param_utm_source': queryParams.utm_source || null,
       'url_param_utm_medium': queryParams.utm_medium || null,
-      'url_param_utm_campaign': queryParams.utm_campaign || null, // Ensure this exact string matches your Supabase column
+      'url_param_utm_campaign': queryParams.utm_campaign || null,
       'url_param_utm_content': queryParams.utm_content || null,
     };
 
