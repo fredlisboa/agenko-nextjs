@@ -360,7 +360,7 @@ const Contact = () => {
                     <div ref={overlayRef} className="map-overlay"></div>
                     <iframe 
                         className="bw-map"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.899805988117!2d-49.26127262417757!3d-16.68172744040439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef19313a51669%3A0x2f32b8a73543864d!2sStudio%20Dental%20Odontologia!5e0!3m2!1sen!2sbr!4v1726510769351!5m2!1sen!2sbr"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.866536930782!2d-49.26699702430002!3d-16.683560784088584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef103169657dd%3A0x36fe497b6a5c894f!2sStudio%20Dental%20Odontologia!5e0!3m2!1sen!2sbr!4v1758061894641!5m2!1sen!2sbr"
                         width="100%"
                         height="450" 
                         style={{ border: 0, position: 'relative', zIndex: 0 }}
