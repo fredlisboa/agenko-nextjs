@@ -981,7 +981,7 @@ const Services2 = ()=>{
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                 className: "title",
-                                                children: "Bioestimuladores de Colágeno"
+                                                children: "Fios de Sustentação PDO"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/Services/Services2.tsx",
                                                 lineNumber: 108,
@@ -1001,22 +1001,23 @@ const Services2 = ()=>{
                                                 hyphens: 'auto'
                                             },
                                             children: [
-                                                "O tratamento definitivo para a firmeza e qualidade da pele. Os ",
+                                                "Combata a flacidez e conquiste um efeito ",
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    children: "bioestimuladores"
+                                                    children: "lifting"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Services/Services2.tsx",
                                                     lineNumber: 111,
-                                                    columnNumber: 154
+                                                    columnNumber: 132
                                                 }, ("TURBOPACK compile-time value", void 0)),
-                                                " agem profundamente, incentivando seu próprio corpo a produzir mais colágeno, resultando em uma pele visivelmente mais densa, elástica e com menos ",
+                                                " sem cirurgia. Os Fios de Sustentação PDO são biocompatíveis e estimulam a produção natural de colágeno, reposicionando os tecidos e promovendo uma pele visivelmente mais ",
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    children: "flacidez."
+                                                    children: "firme"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Services/Services2.tsx",
                                                     lineNumber: 111,
-                                                    columnNumber: 330
-                                                }, ("TURBOPACK compile-time value", void 0))
+                                                    columnNumber: 323
+                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                ", jovem e com contornos bem definidos."
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/Components/Services/Services2.tsx",
