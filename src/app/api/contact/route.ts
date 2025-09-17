@@ -205,7 +205,11 @@ export async function POST(request: NextRequest) {
       .insert([supabasePayload]);
 
     if (supabaseError) {
-      console.error('Supabase insertion error:', supabaseError.message);
+      console.error('Supabase insertion error:', supabaseError); // Log the full error object
+      console.error('Supabase error message:', supabaseError.message);
+      console.error('Supabase error details:', supabaseError.details);
+      console.error('Supabase error hint:', supabaseError.hint);
+      console.error('Payload attempted to insert:', supabasePayload); // Log the payload you tried to send
       return NextResponse.json({ message: 'Erro ao salvar no banco de dados.' }, { status: 500 });
     }
 

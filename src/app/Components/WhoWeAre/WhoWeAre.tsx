@@ -17,11 +17,11 @@ const WhoWeAre = () => {
                                 <h2>Sua Especialista em Beleza Natural e Resultados de Excelência</h2>
                             </div>
                             <ul className="check-list style-one mb-40">
-                                <li><i className="bi bi-check2-circle"></i>Planejamento Individualizado que Respeita Sua Identidade;</li>
-                                <li><i className="bi bi-check2-circle"></i>Técnicas Avançadas para Resultados Elegantes e Naturais;</li>
-                                <li><i className="bi bi-check2-circle"></i>Atendimento Exclusivo e Focado em Sua Segurança;</li>
-                                <li><i className="bi bi-check2-circle"></i>Produtos Premium para Maior Durabilidade e Confiança;</li>
-                                <li><i className="bi bi-check2-circle"></i>Acompanhamento Pós-Procedimento para Sua Tranquilidade.</li>
+                                <li><i className="bi bi-check2-circle" style={{textAlign: 'justify', hyphens: 'auto'}}></i>Planejamento Individualizado que Respeita Sua Identidade;</li>
+                                <li><i className="bi bi-check2-circle" style={{textAlign: 'justify', hyphens: 'auto'}}></i>Técnicas Avançadas para Resultados Elegantes e Naturais;</li>
+                                <li><i className="bi bi-check2-circle" style={{textAlign: 'justify', hyphens: 'auto'}}></i>Atendimento Exclusivo e Focado em Sua Segurança;</li>
+                                <li><i className="bi bi-check2-circle" style={{textAlign: 'justify', hyphens: 'auto'}}></i>Produtos Premium para Maior Durabilidade e Confiança;</li>
+                                <li><i className="bi bi-check2-circle" style={{textAlign: 'justify', hyphens: 'auto'}}></i>Acompanhamento Pós-Procedimento para Sua Tranquilidade.</li>
                             </ul>
                             <div className="agk-button">
                                 <Link href="/contact" className="theme-btn style-one">

@@ -619,7 +619,11 @@ const WhoWeAre = ()=>{
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                        className: "bi bi-check2-circle"
+                                                        className: "bi bi-check2-circle",
+                                                        style: {
+                                                            textAlign: 'justify',
+                                                            hyphens: 'auto'
+                                                        }
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
                                                         lineNumber: 20,
@@ -635,7 +639,11 @@ const WhoWeAre = ()=>{
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                        className: "bi bi-check2-circle"
+                                                        className: "bi bi-check2-circle",
+                                                        style: {
+                                                            textAlign: 'justify',
+                                                            hyphens: 'auto'
+                                                        }
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
                                                         lineNumber: 21,
@@ -651,7 +659,11 @@ const WhoWeAre = ()=>{
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                        className: "bi bi-check2-circle"
+                                                        className: "bi bi-check2-circle",
+                                                        style: {
+                                                            textAlign: 'justify',
+                                                            hyphens: 'auto'
+                                                        }
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
                                                         lineNumber: 22,
@@ -667,7 +679,11 @@ const WhoWeAre = ()=>{
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                        className: "bi bi-check2-circle"
+                                                        className: "bi bi-check2-circle",
+                                                        style: {
+                                                            textAlign: 'justify',
+                                                            hyphens: 'auto'
+                                                        }
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
                                                         lineNumber: 23,
@@ -683,7 +699,11 @@ const WhoWeAre = ()=>{
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                        className: "bi bi-check2-circle"
+                                                        className: "bi bi-check2-circle",
+                                                        style: {
+                                                            textAlign: 'justify',
+                                                            hyphens: 'auto'
+                                                        }
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
                                                         lineNumber: 24,
