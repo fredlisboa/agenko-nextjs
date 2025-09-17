@@ -109,9 +109,24 @@ export default function RootLayout({ children } : any ) {
   return (
     <html lang="pt-BR">
       <head>
+          {/* Keitaro tracking script */}
+          <Script id="keitaro-tracking-script" strategy="afterInteractive" dangerouslySetInnerHTML={{ __html: `
+          if (!window.KTracking){window.KTracking={collectNonUniqueClicks: false, multiDomain: false, R_PATH: 'https://hof1.studiodental.dental/HMpJBwrp', P_PATH:'https://hof1.studiodental.dental/28509f0/postback', listeners: [], reportConversion: function(){this.queued = arguments;}, getSubId: function(fn) {this.listeners.push(fn);}, ready: function(fn) {this.listeners.push(fn);} };}(function(){var a=document.createElement('script');a.type='application/javascript';a.async=true;a.src='https://hof1.studiodental.dental/js/k.min.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(a,s)})();
+        ` }} />
+        <noscript dangerouslySetInnerHTML={{ __html: `<img height='0' width='0' alt='' src='https://hof1.studiodental.dental/zR1jFW7b'/>` }} />
+        {/* End Keitaro tracking script */}
+        
+        {/* Google Tag Manager */}
+        <Script id="google-tag-manager" strategy="afterInteractive" dangerouslySetInnerHTML={{ __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MGLJVNRZ');` }} />
+        {/* End Google Tag Manager */}
         <meta name="author" content="Dra. Gabriella Lisboa | Studio Dental" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
         {/* NOVO: Injetando o Schema JSON-LD no <head> */}
         <Script
           id="json-ld-schema"
@@ -120,6 +135,10 @@ export default function RootLayout({ children } : any ) {
         />
       </head>
       <body className={`${source_sans.variable} ${roboto.variable}`}>
+        {/* Google Tag Manager (noscript) */}
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MGLJVNRZ"
+        height="0" width="0" style={{display:"none",visibility:"hidden"}}></iframe></noscript>
+        {/* End Google Tag Manager (noscript) */}
         {children}
         <SpeedInsights />
         <Analytics />
