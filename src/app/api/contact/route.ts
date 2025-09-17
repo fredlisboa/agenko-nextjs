@@ -156,7 +156,7 @@ export async function POST(request: NextRequest) {
       email: email.trim(),
       whatsapp_field_facebook: whatsappFieldFacebook,
       date_time_utc: dateTimeUtc,
-      date_time_america_sao_paulo: dateTimeAmericaSaoPaulo,
+      'date_time_america_sao-paulo': dateTimeAmericaSaoPaulo,
       date_time_timestamp: urlProcessedAtTimestamp, // Using urlProcessedAtTimestamp for date_time_timestamp column
       remote_ip: remoteIp,
       webhookUrl: WEBHOOK_URL,
