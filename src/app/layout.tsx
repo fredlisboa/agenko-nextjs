@@ -123,16 +123,29 @@ export default function RootLayout({ children } : any ) {
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-MGLJVNRZ');` }} />
         {/* End Google Tag Manager */}
-        <meta name="author" content="Dra. Gabriella Lisboa | Studio Dental" />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+        {/* Begin Google Tag GTAG */}
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-0BXKYQERWH"></Script>
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
+            gtag('config', 'G-0BXKYQERWH');
+          `}
+        </Script>
+        {/* End Google Tag GTAG */}
         {/* NOVO: Injetando o Schema JSON-LD no <head> */}
-        <Script
+          <Script
           id="json-ld-schema"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <meta name="author" content="Dra. Gabriella Lisboa | Studio Dental" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+
       </head>
       <body className={`${source_sans.variable} ${roboto.variable}`}>
         {/* Google Tag Manager (noscript) */}
