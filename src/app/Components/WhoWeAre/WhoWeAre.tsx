@@ -17,11 +17,11 @@ const WhoWeAre = () => {
                                 <h2>Sua Especialista em Beleza Natural e Resultados de Excelência</h2>
                             </div>
                             <ul className="check-list style-one mb-40">
-                                <li><i className="bi bi-check2-circle"></i><span style={{textAlign: 'justify', hyphens: 'auto'}}>Planejamento Individualizado que Respeita Sua Identidade;</span></li>
-                                <li><i className="bi bi-check2-circle"></i><span style={{textAlign: 'justify', hyphens: 'auto'}}>Técnicas Avançadas para Resultados Elegantes e Naturais;</span></li>
-                                <li><i className="bi bi-check2-circle"></i><span style={{textAlign: 'justify', hyphens: 'auto'}}>Atendimento Exclusivo e Focado em Sua Segurança;</span></li>
-                                <li><i className="bi bi-check2-circle"></i><span style={{textAlign: 'justify', hyphens: 'auto'}}>Produtos Premium para Maior Durabilidade e Confiança;</span></li>
-                                <li><i className="bi bi-check2-circle"></i><span style={{textAlign: 'justify', hyphens: 'auto'}}>Acompanhamento Pós-Procedimento para Sua Tranquilidade.</span></li>
+                                <li><i className="bi bi-check2-circle"></i><span style={{textAlign: 'justify', hyphens: 'auto', wordBreak: 'break-word'}}>Planejamento Individualizado que Respeita Sua Identidade;</span></li>
+                                <li><i className="bi bi-check2-circle"></i><span style={{textAlign: 'justify', hyphens: 'auto', wordBreak: 'break-word'}}>Técnicas Avançadas para Resultados Elegantes e Naturais;</span></li>
+                                <li><i className="bi bi-check2-circle"></i><span style={{textAlign: 'justify', hyphens: 'auto', wordBreak: 'break-word'}}>Atendimento Exclusivo e Focado em Sua Segurança;</span></li>
+                                <li><i className="bi bi-check2-circle"></i><span style={{textAlign: 'justify', hyphens: 'auto', wordBreak: 'break-word'}}>Produtos Premium para Maior Durabilidade e Confiança;</span></li>
+                                <li><i className="bi bi-check2-circle"></i><span style={{textAlign: 'justify', hyphens: 'auto', wordBreak: 'break-word'}}>Acompanhamento Pós-Procedimento para Sua Tranquilidade.</span></li>
                             </ul>
                             <div className="agk-button">
                                 <Link href="/contact" className="theme-btn style-one">
