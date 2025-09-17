@@ -304,7 +304,7 @@ const Contact = () => {
                            <div className="col-lg-7">
                                <div className="agenko-content-box mb-50 pf_fadeup">
                                    <div className="section-title mb-20">
-                                       <span className="sub-title">Agende Sua Avaliação</span>
+                                       <span className="sub-title">Agende Sua Avaliação Gratuita</span>
                                        <h2>Seu sorriso ideal começa com um plano.</h2>
                                    </div>
                                    <p className="mb-20" style={{textAlign: 'justify', hyphens: 'auto'}}>Preencha o formulário para agendar sua avaliação gratuita. Nossa equipe de gestão de pacientes entrará em contato em breve para confirmar o <b>melhor horário</b> para você.</p>
