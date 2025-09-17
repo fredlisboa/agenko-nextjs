@@ -151,7 +151,7 @@ export async function POST(request: NextRequest) {
 
     // --- PREPARE DATA FOR SUPABASE INSERT ---
     const supabasePayload = {
-      'form_name': 'leads-form-hof-sd-gabriellalisboa', // Quoted for consistency, though 'form_name' is fine unquoted
+      'form_name': 'leads-form-hof-sd-gabriellalisboa', // Quoted for consistency
       'nome': nome.trim(),
       'email': email.trim(),
       'whatsapp_field_facebook': whatsappFieldFacebook,
@@ -176,12 +176,11 @@ export async function POST(request: NextRequest) {
       'url_processed_at_timestamp': urlProcessedAtTimestamp,
       'url_parameters_ktr_landing_id': queryParams.ktr_landing_id || null,
       'url_parameters_ktr_stream_id': queryParams.ktr_stream_id || null,
-      'url_parameters_source': queryParams.utm_source || queryParams.source || null,
+      'url_parameters_source': queryParams.utm_source || queryParams.source || null, // Keeping this, as it exists and maps to utm_source
       'url_parameters_search_engine': queryParams.search_engine || null,
       'url_parameters_ktr_keyword': queryParams.ktr_keyword || null,
       'url_parameters_sub_id_1_placement': queryParams.sub_id_1_placement || null,
-      // This column has a space and underscore in your schema, absolutely needs quotes
-      'url_parameters_sub_id_10_advanced_booking _window': queryParams.sub_id_10_advanced_booking_window || null,
+      'url_parameters_sub_id_10_advanced_booking _window': queryParams.sub_id_10_advanced_booking_window || null, // Correctly quoted with space
       'url_parameters_sub_id_11_matchtype': queryParams.sub_id_11_matchtype || null,
       'url_parameters_sub_id_12_targetid': queryParams.sub_id_12_targetid || null,
       'url_parameters_sub_id_13_extension_id': queryParams.sub_id_13_extension_id || null,
@@ -193,11 +192,9 @@ export async function POST(request: NextRequest) {
       'url_parameters_traffic_source_name': queryParams.traffic_source_name || null,
       'url_parameters_x_requested_with': queryParams.x_requested_with || null,
       'url_parameters_sub_id_2_adposition': queryParams.sub_id_2_adposition || null,
-      // UTM parameters - already quoted, maintaining that
-      'url_param_utm_source': queryParams.utm_source || null,
-      'url_param_utm_medium': queryParams.utm_medium || null,
-      'url_param_utm_campaign': queryParams.utm_campaign || null,
-      'url_param_utm_content': queryParams.utm_content || null,
+      // Removed the non-existent 'url_param_utm_source', 'url_param_utm_medium',
+      // 'url_param_utm_campaign', and 'url_param_utm_content' columns.
+      // If you need to store these, you must first add them as new columns to your Supabase table.
     };
 
     // --- INSERT DATA INTO SUPABASE ---
