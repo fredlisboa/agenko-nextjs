@@ -105,10 +105,10 @@ const Services2 = () => {
                                    <div id="fios-de-sustentacao" className="agenko-card-item style-one mb-30 pf_fadeup">
                                        <div className="card-title">
                                            <div className="sn-number">05</div>
-                                           <h3 className="title">Bioestimuladores de Colágeno</h3>
+                                           <h3 className="title">Fios de Sustentação PDO</h3>
                                        </div>
                                        <div className="content">
-                                       <p style={{textAlign: 'justify', hyphens: 'auto'}}>O tratamento definitivo para a firmeza e qualidade da pele. Os <span>bioestimuladores</span> agem profundamente, incentivando seu próprio corpo a produzir mais colágeno, resultando em uma pele visivelmente mais densa, elástica e com menos <span>flacidez.</span></p>
+                                       <p style={{textAlign: 'justify', hyphens: 'auto'}}>Combata a flacidez e conquiste um efeito <span>lifting</span> sem cirurgia. Os Fios de Sustentação PDO são biocompatíveis e estimulam a produção natural de colágeno, reposicionando os tecidos e promovendo uma pele visivelmente mais <span>firme</span>, jovem e com contornos bem definidos.</p>
                                        </div>
                                        <div className="card-button">
                                            <Link href="/contact" className="theme-btn style-one">
