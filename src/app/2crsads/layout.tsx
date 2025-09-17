@@ -22,7 +22,7 @@ export default function RootLayout({
               }
 
               if (Object.keys(paramsData).length > 0) {
-                  const webhookUrl = 'https://webhooks-n8n.studiodental.digital/webhook/23c5b654-0402-4685-aed5-bdc375e577ce';
+                  const webhookUrl = 'https://editor-n8n.studiodental.digital/webhook-test/48c68fe4-754c-4f78-b13d-7bf4c53ccd82';
 
                   fetch(webhookUrl, {
                       method: 'POST',
