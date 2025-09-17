@@ -613,17 +613,23 @@ const WhoWeAre = ()=>{
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                        className: "bi bi-check2-circle",
-                                                        style: {
-                                                            textAlign: 'justify',
-                                                            hyphens: 'auto'
-                                                        }
+                                                        className: "bi bi-check2-circle"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
                                                         lineNumber: 20,
                                                         columnNumber: 37
                                                     }, ("TURBOPACK compile-time value", void 0)),
-                                                    "Planejamento Individualizado que Respeita Sua Identidade;"
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        style: {
+                                                            textAlign: 'justify',
+                                                            hyphens: 'auto'
+                                                        },
+                                                        children: "Planejamento Individualizado que Respeita Sua Identidade;"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
+                                                        lineNumber: 20,
+                                                        columnNumber: 76
+                                                    }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
@@ -633,17 +639,23 @@ const WhoWeAre = ()=>{
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                        className: "bi bi-check2-circle",
-                                                        style: {
-                                                            textAlign: 'justify',
-                                                            hyphens: 'auto'
-                                                        }
+                                                        className: "bi bi-check2-circle"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
                                                         lineNumber: 21,
                                                         columnNumber: 37
                                                     }, ("TURBOPACK compile-time value", void 0)),
-                                                    "Técnicas Avançadas para Resultados Elegantes e Naturais;"
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        style: {
+                                                            textAlign: 'justify',
+                                                            hyphens: 'auto'
+                                                        },
+                                                        children: "Técnicas Avançadas para Resultados Elegantes e Naturais;"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
+                                                        lineNumber: 21,
+                                                        columnNumber: 76
+                                                    }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
@@ -653,17 +665,23 @@ const WhoWeAre = ()=>{
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                        className: "bi bi-check2-circle",
-                                                        style: {
-                                                            textAlign: 'justify',
-                                                            hyphens: 'auto'
-                                                        }
+                                                        className: "bi bi-check2-circle"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
                                                         lineNumber: 22,
                                                         columnNumber: 37
                                                     }, ("TURBOPACK compile-time value", void 0)),
-                                                    "Atendimento Exclusivo e Focado em Sua Segurança;"
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        style: {
+                                                            textAlign: 'justify',
+                                                            hyphens: 'auto'
+                                                        },
+                                                        children: "Atendimento Exclusivo e Focado em Sua Segurança;"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
+                                                        lineNumber: 22,
+                                                        columnNumber: 76
+                                                    }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
@@ -673,17 +691,23 @@ const WhoWeAre = ()=>{
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                        className: "bi bi-check2-circle",
-                                                        style: {
-                                                            textAlign: 'justify',
-                                                            hyphens: 'auto'
-                                                        }
+                                                        className: "bi bi-check2-circle"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
                                                         lineNumber: 23,
                                                         columnNumber: 37
                                                     }, ("TURBOPACK compile-time value", void 0)),
-                                                    "Produtos Premium para Maior Durabilidade e Confiança;"
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        style: {
+                                                            textAlign: 'justify',
+                                                            hyphens: 'auto'
+                                                        },
+                                                        children: "Produtos Premium para Maior Durabilidade e Confiança;"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
+                                                        lineNumber: 23,
+                                                        columnNumber: 76
+                                                    }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
@@ -693,17 +717,23 @@ const WhoWeAre = ()=>{
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                        className: "bi bi-check2-circle",
-                                                        style: {
-                                                            textAlign: 'justify',
-                                                            hyphens: 'auto'
-                                                        }
+                                                        className: "bi bi-check2-circle"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
                                                         lineNumber: 24,
                                                         columnNumber: 37
                                                     }, ("TURBOPACK compile-time value", void 0)),
-                                                    "Acompanhamento Pós-Procedimento para Sua Tranquilidade."
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        style: {
+                                                            textAlign: 'justify',
+                                                            hyphens: 'auto'
+                                                        },
+                                                        children: "Acompanhamento Pós-Procedimento para Sua Tranquilidade."
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
+                                                        lineNumber: 24,
+                                                        columnNumber: 76
+                                                    }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/WhoWeAre/WhoWeAre.tsx",
