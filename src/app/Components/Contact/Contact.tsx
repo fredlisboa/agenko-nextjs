@@ -96,7 +96,7 @@ const WhatsAppButton = () => (
             }
         `}</style>
         <a
-            href="https://wa.me/5562982433773?text=Ol%C3%A1!%20Vim%20pelo%20site%20HOF%20Studio%20Dental%20Dra%20Gabriella%20Lisboa%20e%20acabei%20de%20preencher%20o%20formul%C3%A1rio.%20Gostaria%20de%20continuar%20meu%20atendimento."
+            href="https://wa.me/5562982433773?text=Olá!%20Vim%20pelo%20site%20HOF%20Studio%20Dental%20Dra%20Gabriella%20Lisboa%20e%20acabei%20de%20preencher%20o%20formulário.%20Gostaria%20de%20continuar%20meu%20atendimento."
             target="_blank"
             rel="noopener noreferrer"
             className="whatsapp-button-special"
@@ -254,6 +254,38 @@ const Contact = () => {
 
     return (
         <div>
+            <style jsx>{`
+                @keyframes scalePulse {
+                    0% { transform: scale(1); }
+                    50% { transform: scale(1.02); }
+                    100% { transform: scale(1); }
+                }
+
+                @keyframes hoverGrow {
+                    from { transform: scale(1); }
+                    to { transform: scale(1.05); }
+                }
+
+                .theme-btn {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px; /* Space between icon and text */
+                    animation: scalePulse 2s infinite ease-in-out;
+                    transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
+                }
+
+                .theme-btn:hover {
+                    animation: hoverGrow 0.3s forwards ease-in-out;
+                    transform: scale(1.05);
+                }
+
+                .calendar-icon {
+                    /* You might want to use an actual icon font or SVG here */
+                    font-size: 1.2em; /* Adjust size as needed */
+                    vertical-align: middle;
+                }
+            `}</style>
             <section className="agenko-contact pt-80 pb-30">
                  <div className="container">
                       <div className="row">
@@ -262,7 +294,7 @@ const Contact = () => {
                                   <div className="shape"><span><Image src="/assets/images/pages/shape/world.png" alt="img" width={306} height={647} /></span></div>
                                   <ul>
                                       <li>
-                                          <div className="phone"><a href="https://wa.me/5562982433773?text=Ol%C3%A1!%20Vim%20pelo%20site%20HOF%20Studio%20Dental%20Dra%20Gabriella%20Lisboa.%20Gostaria%20de%20continuar%20meu%20atendimento." target="_blank" rel="noopener noreferrer">+55 (62) 9 8243-3773</a></div>
+                                          <div className="phone"><a href="https://wa.me/5562982433773?text=Olá!%20Vim%20pelo%20site%20HOF%20Studio%20Dental%20Dra%20Gabriella%20Lisboa.%20Gostaria%20de%20continuar%20meu%20atendimento." target="_blank" rel="noopener noreferrer">+55 (62) 9 8243-3773</a></div>
                                       </li>
                                       <li>
                                           <div className="agenko-info-box">
@@ -293,7 +325,7 @@ const Contact = () => {
                                                       <i className="bi bi-instagram"></i></a>
                                                       <a href="https://share.google/pcuCYJHPmM1pRPwpc" target="_blank" rel="noopener noreferrer"><i className="bi bi-google"></i></a>
                                                       <a href="https://tiktok.com/@studiodental.dental" target="_blank" rel="noopener noreferrer"><i className="bi bi-tiktok"></i></a>
-                                                      <a href="https://wa.me/5562982433773?text=Ol%C3%A1!%20Vim%20pelo%20site%20HOF%20Studio%20Dental%20Dra%20Gabriella%20Lisboa.%20Gostaria%20de%20continuar%20meu%20atendimento." target="_blank" rel="noopener noreferrer"><i className="bi bi-whatsapp"></i></a>
+                                                      <a href="https://wa.me/5562982433773?text=Olá!%20Vim%20pelo%20site%20HOF%20Studio%20Dental%20Dra%20Gabriella%20Lisboa.%20Gostaria%20de%20continuar%20meu%20atendimento." target="_blank" rel="noopener noreferrer"><i className="bi bi-whatsapp"></i></a>
                                                   </div>
                                               </div>
                                           </div>
@@ -333,7 +365,15 @@ const Contact = () => {
                                                 <div className="col-lg-12">
                                                     <div className="form-group">
                                                         <button type="submit" className="theme-btn" disabled={formStatus === 'loading'}>
-                                                            {formStatus === 'loading' ? 'ENVIANDO...' : 'Agendar Avaliação Gratuita'}
+                                                            {formStatus === 'loading' ? (
+                                                                <>
+                                                                    <span className="calendar-icon">🗓️</span> ENVIANDO...
+                                                                </>
+                                                            ) : (
+                                                                <>
+                                                                    <span className="calendar-icon">🗓️</span> Agendar Avaliação Gratuita
+                                                                </>
+                                                            )}
                                                         </button>
                                                     </div>
                                                 </div>

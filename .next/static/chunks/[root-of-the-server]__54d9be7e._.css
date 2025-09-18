@@ -22277,27 +22277,12 @@ label {
 }
 
 .service-button-glow {
-  transition: box-shadow .4s ease-in-out;
-  animation: 3s ease-in-out infinite alternate subtleGlow;
+  transition: box-shadow .3s ease-in-out;
   box-shadow: 0 0 3px rgba(255, 168, 238, .2);
 }
 
 .service-button-glow:hover {
-  box-shadow: 0 0 20px 5px rgba(255, 168, 238, .9);
-}
-
-@keyframes subtleGlow {
-  0% {
-    box-shadow: 0 0 3px rgba(255, 168, 238, .2);
-  }
-
-  50% {
-    box-shadow: 0 0 7px 2px rgba(255, 168, 238, .4);
-  }
-
-  100% {
-    box-shadow: 0 0 3px rgba(255, 168, 238, .2);
-  }
+  box-shadow: 0 0 15px 3px rgba(255, 168, 238, .7);
 }
 
 @media (min-width: 992px) {
