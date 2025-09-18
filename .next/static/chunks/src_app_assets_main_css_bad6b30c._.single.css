@@ -7954,4 +7954,10 @@ label {
   }
 }
 
+@media (min-width: 992px) {
+  .mt-desktop-195 {
+    margin-top: 195px;
+  }
+}
+
 /*# sourceMappingURL=src_app_assets_main_css_bad6b30c._.single.css.map*/

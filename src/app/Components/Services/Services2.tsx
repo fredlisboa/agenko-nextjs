@@ -120,6 +120,86 @@ const Services2 = () => {
                                        </div>
                                    </div>
                                </div>
+                               <div className="col-lg-12">
+                                   
+                                   <div id="platismoplastia" className="agenko-card-item style-one mb-30 pf_fadeup">
+                                       <div className="card-title">
+                                           <div className="sn-number">06</div>
+                                           <h3 className="title">Platismoplastia</h3>
+                                       </div>
+                                       <div className="content">
+                                       <p style={{textAlign: 'justify', hyphens: 'auto'}}>O tratamento definitivo para a flacidez e as bandas verticais do pescoço. Este procedimento cirúrgico reposiciona a musculatura, remove o excesso de pele e restaura um contorno <span>definido</span> e jovem para a região cervical e mandibular, eliminando o aspecto de “pescoço de peru” de forma <span>duradoura</span>.</p>
+                                       </div>
+                                       <div className="card-button">
+                                           <Link href="/contact" className="theme-btn style-one">
+                                               <span className="text-flip">
+                                                   <span className="text">SAIBA MAIS</span>
+                                                   <span className="text">SAIBA MAIS</span>
+                                               </span>
+                                           </Link>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div className="col-lg-12">
+                                   
+                                   <div id="slim-lift" className="agenko-card-item style-one mb-30 pf_fadeup">
+                                       <div className="card-title">
+                                           <div className="sn-number">07</div>
+                                           <h3 className="title">Slim Lift</h3>
+                                       </div>
+                                       <div className="content">
+                                       <p style={{textAlign: 'justify', hyphens: 'auto'}}>Para quem busca um rejuvenescimento facial com recuperação rápida, o Slim Lift é a solução ideal. Este procedimento <span>minimamente invasivo</span> reposiciona os tecidos da face através de incisões discretas, tratando a flacidez inicial e redefinindo a mandíbula. O resultado é uma aparência mais <span>descansada</span> e jovem, com total naturalidade.</p>
+                                       </div>
+                                       <div className="card-button">
+                                           <Link href="/contact" className="theme-btn style-one">
+                                               <span className="text-flip">
+                                                   <span className="text">SAIBA MAIS</span>
+                                                   <span className="text">SAIBA MAIS</span>
+                                               </span>
+                                           </Link>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div className="col-lg-12">
+                                   
+                                   <div id="toxina-botulinica" className="agenko-card-item style-one mb-30 pf_fadeup">
+                                       <div className="card-title">
+                                           <div className="sn-number">08</div>
+                                           <h3 className="title">Toxina Botulínica</h3>
+                                       </div>
+                                       <div className="content">
+                                       <p style={{textAlign: 'justify', hyphens: 'auto'}}>Suavize rugas de expressão e conquiste uma aparência mais descansada e rejuvenescida. A aplicação da toxina botulínica relaxa a musculatura de forma <span>precisa</span>, tratando pés de galinha, linhas na testa e entre as sobrancelhas, com resultados <span>naturais</span> que preservam sua expressividade.</p>
+                                       </div>
+                                       <div className="card-button">
+                                           <Link href="/contact" className="theme-btn style-one">
+                                               <span className="text-flip">
+                                                   <span className="text">SAIBA MAIS</span>
+                                                   <span className="text">SAIBA MAIS</span>
+                                               </span>
+                                           </Link>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div className="col-lg-12">
+                                   
+                                   <div id="bioestimuladores" className="agenko-card-item style-one mb-30 pf_fadeup">
+                                       <div className="card-title">
+                                           <div className="sn-number">09</div>
+                                           <h3 className="title">Bioestimuladores de Colágeno</h3>
+                                       </div>
+                                       <div className="content">
+                                       <p style={{textAlign: 'justify', hyphens: 'auto'}}>O tratamento definitivo para a <span>firmeza</span> e qualidade da pele. Os bioestimuladores agem profundamente, <span>incentivando</span> seu próprio corpo a produzir mais colágeno. O resultado é uma pele visivelmente mais densa, elástica e com uma redução significativa da flacidez.</p>
+                                       </div>
+                                       <div className="card-button">
+                                           <Link href="/contact" className="theme-btn style-one">
+                                               <span className="text-flip">
+                                                   <span className="text">SAIBA MAIS</span>
+                                                   <span className="text">SAIBA MAIS</span>
+                                               </span>
+                                           </Link>
+                                       </div>
+                                   </div>
+                               </div>
                             </div>
                         </div>
                     </section>

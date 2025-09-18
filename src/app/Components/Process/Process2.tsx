@@ -40,7 +40,7 @@ const Process2 = () => {
                                         <i className="bi bi-camera2"></i>
                                         </div>
                                         <div className="content">
-                                            <h4 className="title">Planejamento Digital e Alinhamento</h4>
+                                            <h4 className="title">Planejamento e Alinhamento</h4>
                                             <p style={{textAlign: 'justify', hyphens: 'auto'}}>Utilizando tecnologia de ponta, planejamos cada detalhe do procedimento. Apresentamos uma prévia dos resultados para garantir que o plano esteja perfeitamente alinhado com suas <span>expectativas.</span></p>
                                             <div className="step"><b>Passo-02</b></div>
                                         </div>

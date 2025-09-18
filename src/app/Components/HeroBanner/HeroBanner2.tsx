@@ -34,7 +34,7 @@ const HeroBanner2 = () => {
                     </div>
                 </div>
                 <div className="text-box pf_fadeup" style={{marginTop: '-50px', marginBottom: '50px'}}>
-                <p style={{textAlign: 'justify', hyphens: 'auto'}}><span>Dra Gabriella Lisboa</span> é especialista em equilibrar a relação estética e funcional da face e sorriso, realçar traços naturais — sem cirurgia, gerenciar o envelhecimento e corrigir assimetrias.</p>
+                <p style={{textAlign: 'justify', hyphens: 'auto'}}><span>Dra Gabriella Lisboa</span> é especialista em equilibrar a relação estética e funcional da face e sorriso, realçar traços naturais — com técnicas cirúrgicas e não cirúrgicas, gerenciar o envelhecimento e corrigir assimetrias.</p>
                     <div className="hero-button" style={{marginTop: '25px'}}>
                         <Link href="/contact" className="theme-btn style-one">
                             <span className="text-flip">
@@ -123,12 +123,72 @@ const HeroBanner2 = () => {
                                    </div>
                                </Link>
                            </li>
+                           <li>
+                               
+                               <Link
+                                   href="#platismoplastia"
+                                   onClick={handleScroll}
+                                   className="agenko-iconic-box style-one service-button-glow"
+                               >
+                                   <div className="icon">
+                                       <Image src="/assets/images/icons/plastimo.svg" alt="Platismoplastia Icon" width={60} height={60} />
+                                   </div>
+                                   <div className="content">
+                                       <h4 className="title">Platismoplastia</h4>
+                                   </div>
+                               </Link>
+                           </li>
+                           <li>
+                               
+                               <Link
+                                   href="#slim-lift"
+                                   onClick={handleScroll}
+                                   className="agenko-iconic-box style-one service-button-glow"
+                               >
+                                   <div className="icon">
+                                       <Image src="/assets/images/icons/slim-fit3.svg" alt="Slim Lift Icon" width={60} height={60} />
+                                   </div>
+                                   <div className="content">
+                                       <h4 className="title">Slim Lift</h4>
+                                   </div>
+                               </Link>
+                           </li>
+                           <li>
+                               
+                               <Link
+                                   href="#toxina-botulinica"
+                                   onClick={handleScroll}
+                                   className="agenko-iconic-box style-one service-button-glow"
+                               >
+                                   <div className="icon">
+                                       <Image src="/assets/images/icons/toxina-botulinica.svg" alt="Slim Lift Icon" width={60} height={60} />
+                                   </div>
+                                   <div className="content">
+                                       <h4 className="title">Toxina Botulínica</h4>
+                                   </div>
+                               </Link>
+                           </li>
+                           <li>
+                               
+                               <Link
+                                   href="#bioestimuladores"
+                                   onClick={handleScroll}
+                                   className="agenko-iconic-box style-one service-button-glow"
+                               >
+                                   <div className="icon">
+                                       <Image src="/assets/images/icons/natura-labs.svg" alt="Slim Lift Icon" width={50} height={50} />
+                                   </div>
+                                   <div className="content">
+                                       <h4 className="title">Bioestimuladores de Colágeno</h4>
+                                   </div>
+                               </Link>
+                           </li>
                         </ul>
                     </div>
                     <div className="col-lg-8">
                         
                         <div className="hero-image style-one pf_fadeup">
-                            <Image src="/assets/images/digital-agency/hero/hero-img1.webp" alt="Hero Image" width={900} height={1080} style={{ width: '100%', height: 'auto' }} />
+                            <Image src="/assets/images/digital-agency/hero/gabi-estrela2.png" alt="Hero Image" width={848} height={1060} style={{ width: '100%', height: 'auto' }} />
                         </div>
                     </div>
                 </div>

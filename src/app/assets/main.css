@@ -7511,3 +7511,9 @@ color: #222;
     box-shadow: 0 0 3px 0px rgba(255, 168, 238, 0.2); /* Return to original low contrast */
   }
 }
+
+@media (min-width: 992px) {
+  .mt-desktop-195 {
+    margin-top: 195px;
+  }
+}
