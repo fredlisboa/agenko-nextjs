@@ -4891,17 +4891,25 @@ label {
   z-index: -1;
 }
 .hero-wrapper-two .shape.shape-one {
-  top: 17%;
+  top: 8%;
   left: 10%;
 }
 @media screen and (max-width: 991px) {
   .hero-wrapper-two .shape.shape-one {
-    top: 8%;
+    top: 5%;
+    left: 5%;
   }
 }
 .hero-wrapper-two .shape.shape-two {
-  top: 33%;
-  right: 10%;
+  top: 26%;
+  right: 25%;
+}
+
+@media screen and (max-width: 991px) {
+  .hero-wrapper-two .shape.shape-two {
+    top: 25%;
+    right: 10%;
+  }
 }
 .hero-wrapper-two .shape.circle-one {
   top: -20%;
@@ -7517,3 +7525,4 @@ color: #222;
     margin-top: 195px;
   }
 }
+
