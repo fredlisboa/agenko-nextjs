@@ -20113,6 +20113,8 @@ label {
 @media (max-width: 767px) {
   .agk-who-we .big-text h2 {
     font-size: 30px;
+    font-size: 40px !important;
+    line-height: 1.2 !important;
   }
 }
 

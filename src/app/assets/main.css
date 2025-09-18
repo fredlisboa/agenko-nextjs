@@ -5423,6 +5423,13 @@ label {
   }
 }
 
+@media (max-width: 767px) {
+  .agk-who-we .big-text h2 {
+    font-size: 40px !important; /* Increased from 30px */
+    line-height: 1.2 !important; /* Adjusted for better spacing */
+  }
+}
+
 .agk-play-image-box .agk-image {
   position: relative;
 }
