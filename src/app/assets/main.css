@@ -7499,32 +7499,16 @@ color: #222;
 
 /* Styling for service buttons with subtle glow and hover effect */
 .service-button-glow {
-  /* Initial subtle blur effect */
-  box-shadow: 0 0 3px 0px rgba(255, 168, 238, 0.2); /* Small blur, no spread, low opacity */
+  /* Initial subtle glow (can be kept static) */
+  box-shadow: 0 0 3px 0px rgba(255, 168, 238, 0.2); 
   
   /* Smooth transition for hover effect */
-  transition: box-shadow 0.4s ease-in-out;
-  
-  /* Always-on subtle movement animation */
-  animation: subtleGlow 3s infinite alternate ease-in-out; /* 3s duration, infinite, alternates, smooth easing */
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 /* Hover effect: intensify the glow */
 .service-button-glow:hover {
-  box-shadow: 0 0 20px 5px rgba(255, 168, 238, 0.9); /* Larger blur, larger spread, higher opacity */
-}
-
-/* Keyframes for the subtle pulsating animation */
-@keyframes subtleGlow {
-  0% {
-    box-shadow: 0 0 3px 0px rgba(255, 168, 238, 0.2); /* Start with very low contrast */
-  }
-  50% {
-    box-shadow: 0 0 7px 2px rgba(255, 168, 238, 0.4); /* Slightly more intense at the midpoint */
-  }
-  100% {
-    box-shadow: 0 0 3px 0px rgba(255, 168, 238, 0.2); /* Return to original low contrast */
-  }
+  box-shadow: 0 0 15px 3px rgba(255, 168, 238, 0.7); /* Slightly reduced intensity compared to previous hover */
 }
 
 @media (min-width: 992px) {
