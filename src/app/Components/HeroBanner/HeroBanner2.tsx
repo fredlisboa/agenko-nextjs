@@ -10,7 +10,7 @@ const HeroBanner2 = () => {
         const targetId = href.substring(1);
         const elem = document.getElementById(targetId);
         elem?.scrollIntoView({
-          behavior: "smooth",
+          behavior: "auto", // Changed from "smooth" to "auto" for potential performance improvement
         });
       };
 
