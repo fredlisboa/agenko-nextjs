@@ -6,9 +6,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "slick-carousel/slick/slick.css";
 import "./assets/main.css";
 import "./assets/carousel.css";
-import { UtmLinkUpdater } from "@/components/UtmLinkUpdater";
-import { Suspense } from 'react';
-import { UTMProvider } from "@/components/UTMProvider"; // <-- Add this import
+import { MarketingAttribution } from "@/components/MarketingAttribution"; // <-- Add this new import
+
+
 
 const source_sans = Source_Sans_3({
   subsets: ['latin'],
@@ -151,7 +151,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
       </head>
       <body className={`${source_sans.variable} ${roboto.variable}`}>
-        <UTMProvider> {/* <-- Wrap your children with the provider */}
         {/* Google Tag Manager (noscript) */}
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MGLJVNRZ"
         height="0" width="0" style={{display:"none",visibility:"hidden"}}></iframe></noscript>
@@ -159,8 +158,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {children}
         <SpeedInsights />
         <Analytics />
-        <UtmLinkUpdater />
-        </UTMProvider>
+        <MarketingAttribution />
       </body>
     </html>
   );
