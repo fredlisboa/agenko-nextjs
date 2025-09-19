@@ -6,6 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "slick-carousel/slick/slick.css";
 import "./assets/main.css";
 import "./assets/carousel.css";
+import { UtmLinkUpdater } from "@/components/UtmLinkUpdater";
+import { Suspense } from 'react';
 
 const source_sans = Source_Sans_3({
   subsets: ['latin'],
@@ -105,7 +107,7 @@ const jsonLd = {
 };
 
 
-export default function RootLayout({ children } : any ) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-BR">
       <head>
@@ -155,6 +157,9 @@ export default function RootLayout({ children } : any ) {
         {children}
         <SpeedInsights />
         <Analytics />
+        <Suspense>
+          <UtmLinkUpdater />
+        </Suspense>
       </body>
     </html>
   );
