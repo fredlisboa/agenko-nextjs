@@ -20,42 +20,59 @@ function UtmLinkUpdater() {
     const searchParams = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSearchParams"])();
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "UtmLinkUpdater.useEffect": ()=>{
+            console.log("%c[UTM Updater] Effect triggered for path: ".concat(pathname), 'color: blue; font-weight: bold;');
             const currentQueryString = searchParams.toString();
+            console.log('[UTM Updater] Current URL query string: "'.concat(currentQueryString, '"'));
             // 1. If the current URL has any 'utm_' parameter, save the entire query string.
             if (currentQueryString.includes('utm_')) {
                 sessionStorage.setItem(SESSION_STORAGE_KEY, currentQueryString);
+                console.log('%c[UTM Updater] Found UTMs! SAVED to session storage: "'.concat(currentQueryString, '"'), 'color: green;');
+            } else {
+                console.log('[UTM Updater] No new UTMs found in URL.');
             }
             // 2. Get the stored UTM parameters.
             const storedUtmParams = sessionStorage.getItem(SESSION_STORAGE_KEY);
             // 3. If there are no stored params, do nothing.
             if (!storedUtmParams) {
+                console.log('%c[UTM Updater] No stored UTMs found. Exiting.', 'color: red;');
                 return;
             }
+            console.log('[UTM Updater] Using stored UTMs: "'.concat(storedUtmParams, '"'));
             // 4. Update all <a> tags on the page.
             const allLinks = document.getElementsByTagName('a');
+            console.log("[UTM Updater] Found ".concat(allLinks.length, " <a> tags to process."));
             for(let i = 0; i < allLinks.length; i++){
                 const link = allLinks[i];
                 const originalHref = link.getAttribute('href');
-                // Ensure we have a valid link and it's not a mail/tel link.
-                if (originalHref && !originalHref.startsWith('mailto:') && !originalHref.startsWith('tel:')) {
-                    // Check if the parameters are already in the link to prevent duplicates.
-                    if (link.href.includes(storedUtmParams)) {
-                        continue;
+                if (!originalHref || originalHref.startsWith('#') || originalHref.startsWith('mailto:') || originalHref.startsWith('tel:')) {
+                    continue;
+                }
+                // Use URL constructor for robust checking
+                try {
+                    const url = new URL(link.href, window.location.origin);
+                    if (url.search.includes(storedUtmParams)) {
+                        continue; // Skip if params are already present
                     }
-                    // Append the UTM parameters.
-                    if (originalHref.includes('?')) {
-                        link.href = "".concat(originalHref, "&").concat(storedUtmParams);
-                    } else {
-                        link.href = "".concat(originalHref, "?").concat(storedUtmParams);
-                    }
+                    // Append stored UTMs
+                    const storedParams = new URLSearchParams(storedUtmParams);
+                    storedParams.forEach({
+                        "UtmLinkUpdater.useEffect": (value, key)=>{
+                            url.searchParams.set(key, value);
+                        }
+                    }["UtmLinkUpdater.useEffect"]);
+                    console.log("%c[UTM Updater] Updating link: ".concat(originalHref, " -> ").concat(url.toString()), 'color: orange;');
+                    link.href = url.toString();
+                } catch (e) {
+                    console.error("[UTM Updater] Could not parse URL for link: ".concat(originalHref), e);
                 }
             }
+            console.log('%c[UTM Updater] Finished processing links.', 'color: blue; font-weight: bold;');
         }
     }["UtmLinkUpdater.useEffect"], [
         pathname,
         searchParams
-    ]); // Re-run on every navigation
-    return null; // This component renders nothing.
+    ]);
+    return null;
 }
 _s(UtmLinkUpdater, "h6p6PpCFmP4Mu5bIMduBzSZThBE=", false, function() {
     return [
