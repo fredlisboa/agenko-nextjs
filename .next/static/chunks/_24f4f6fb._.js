@@ -13,48 +13,93 @@ var _s = __turbopack_context__.k.signature();
 'use client';
 ;
 ;
+const SESSION_STORAGE_KEY = 'utm_params_session';
 function UtmLinkUpdater() {
     _s();
     const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usePathname"])();
     const searchParams = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSearchParams"])();
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "UtmLinkUpdater.useEffect": ()=>{
-            // Get the current query string (e.g., "utm_source=google&utm_medium=cpc")
-            const utmParamQueryString = searchParams.toString();
-            // Only run the logic if there are any query parameters
-            if (utmParamQueryString) {
-                const allLinks = document.getElementsByTagName('a');
-                for(let i = 0; i < allLinks.length; i++){
-                    const link = allLinks[i];
-                    const originalHref = link.getAttribute('href');
-                    // Only modify links that have an href and don't already include these params
-                    if (originalHref && !originalHref.includes(utmParamQueryString)) {
-                        try {
-                            const url = new URL(link.href);
-                            // Append each parameter from the current URL to the link's URL
-                            searchParams.forEach({
-                                "UtmLinkUpdater.useEffect": (value, key)=>{
-                                    url.searchParams.set(key, value);
+            // 1. Check for new UTM parameters in the current URL
+            const currentParams = new URLSearchParams(searchParams.toString());
+            const utmKeys = [
+                'utm_source',
+                'utm_medium',
+                'utm_campaign',
+                'utm_term',
+                'utm_content'
+            ];
+            let newUtmParams = new URLSearchParams();
+            let hasNewUtms = false;
+            utmKeys.forEach({
+                "UtmLinkUpdater.useEffect": (key)=>{
+                    if (currentParams.has(key)) {
+                        newUtmParams.set(key, currentParams.get(key));
+                        hasNewUtms = true;
+                    }
+                }
+            }["UtmLinkUpdater.useEffect"]);
+            // 2. If new UTMs are found, store them in session storage.
+            // This overwrites any old ones.
+            if (hasNewUtms) {
+                sessionStorage.setItem(SESSION_STORAGE_KEY, newUtmParams.toString());
+            }
+            // 3. Get the definitive UTMs to use (either newly found or from storage).
+            const storedUtmParams = sessionStorage.getItem(SESSION_STORAGE_KEY);
+            if (!storedUtmParams) {
+                return; // No UTMs to apply
+            }
+            // 4. Find all links and append the stored UTMs.
+            // This runs on every page change to catch new links that are rendered.
+            const allLinks = document.getElementsByTagName('a');
+            for(let i = 0; i < allLinks.length; i++){
+                const link = allLinks[i];
+                const originalHref = link.getAttribute('href');
+                if (originalHref) {
+                    // Skip mailto, tel, and anchor links on the same page
+                    if (originalHref.startsWith('mailto:') || originalHref.startsWith('tel:') || originalHref.startsWith('#')) {
+                        continue;
+                    }
+                    try {
+                        // Use URL constructor for robust parameter handling
+                        const url = new URL(link.href);
+                        // Avoid double-appending
+                        const storedParams = new URLSearchParams(storedUtmParams);
+                        let alreadyHasAllParams = true;
+                        storedParams.forEach({
+                            "UtmLinkUpdater.useEffect": (value, key)=>{
+                                if (url.searchParams.get(key) !== value) {
+                                    alreadyHasAllParams = false;
                                 }
-                            }["UtmLinkUpdater.useEffect"]);
-                            link.href = url.toString();
-                        } catch (error) {
-                            // This handles relative links like "/about" gracefully
+                            }
+                        }["UtmLinkUpdater.useEffect"]);
+                        if (alreadyHasAllParams) {
+                            continue;
+                        }
+                        // Append stored UTMs
+                        storedParams.forEach({
+                            "UtmLinkUpdater.useEffect": (value, key)=>{
+                                url.searchParams.set(key, value);
+                            }
+                        }["UtmLinkUpdater.useEffect"]);
+                        link.href = url.toString();
+                    } catch (error) {
+                        // Fallback for relative paths like "/contato"
+                        if (!originalHref.includes(storedUtmParams)) {
                             if (originalHref.includes('?')) {
-                                link.href = "".concat(originalHref, "&").concat(utmParamQueryString);
+                                link.href = "".concat(originalHref, "&").concat(storedUtmParams);
                             } else {
-                                link.href = "".concat(originalHref, "?").concat(utmParamQueryString);
+                                link.href = "".concat(originalHref, "?").concat(storedUtmParams);
                             }
                         }
                     }
                 }
             }
-        // This effect should re-run on every page navigation
         }
     }["UtmLinkUpdater.useEffect"], [
         pathname,
         searchParams
-    ]);
+    ]); // Effect runs on path or param change
     return null; // This component does not render anything
 }
 _s(UtmLinkUpdater, "h6p6PpCFmP4Mu5bIMduBzSZThBE=", false, function() {
