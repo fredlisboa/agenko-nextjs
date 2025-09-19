@@ -1,4 +1,4 @@
-// src/components/UtmLinkUpdater.tsx
+/// src/components/UtmLinkUpdater.tsx
 'use client';
 
 import { useEffect } from 'react';
