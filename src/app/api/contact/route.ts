@@ -89,7 +89,7 @@ function parseQueryString(url: string): { queryParams: { [key: string]: string |
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { nome, whatsapp, email } = body;
+    const { nome, whatsapp, email, marketing_params } = body;
 
     // --- SERVER-SIDE VALIDATION ---
     if (!nome || typeof nome !== 'string' || nome.trim().length < 2) {
@@ -192,9 +192,7 @@ export async function POST(request: NextRequest) {
       'url_parameters_traffic_source_name': queryParams.traffic_source_name || null,
       'url_parameters_x_requested_with': queryParams.x_requested_with || null,
       'url_parameters_sub_id_2_adposition': queryParams.sub_id_2_adposition || null,
-      // Removed the non-existent 'url_param_utm_source', 'url_param_utm_medium',
-      // 'url_param_utm_campaign', and 'url_param_utm_content' columns.
-      // If you need to store these, you must first add them as new columns to your Supabase table.
+      'marketing_params_raw': marketing_params || null,
     };
 
     // --- INSERT DATA INTO SUPABASE ---
@@ -224,7 +222,8 @@ export async function POST(request: NextRequest) {
       page_url: pageUrl, // Send original page_url to n8n for its parsing
       timestamp: dateTimeUtc, // Use the generated UTC timestamp
       source: 'nextjs_contact_form_v1',
-      user_agent: userAgent
+      user_agent: userAgent,
+      marketing_params: marketing_params
     };
 
     console.log('Forwarding to webhook:', webhookPayload);

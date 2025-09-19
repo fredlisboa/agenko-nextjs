@@ -147,14 +147,21 @@ const Contact = () => {
         e.preventDefault();
         setFormMessage(null);
         if (!validateForm()) return;
-
+    
         setFormStatus('loading');
         try {
+            // --- CHANGE IS HERE ---
+            // 1. Get the marketing_params value from sessionStorage *before* the fetch call.
+            const marketingParams = sessionStorage.getItem('marketing_params') || 'not_set';
+    
             const response = await fetch('/api/contact', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(formData),
+                // 2. Add marketingParams to the request body.
+                body: JSON.stringify({ ...formData, marketing_params: marketingParams }),
             });
+            // --- END OF CHANGE ---
+            
             const result = await response.json();
             if (response.ok) {
                 setFormStatus('success');
@@ -168,7 +175,10 @@ const Contact = () => {
                         lead_whatsapp: formData.whatsapp,
                         form_source: 'nextjs_contact_form_v1',
                         page_url: window.location.href,
+                        // We already have marketingParams, so we can use it here too.
+                        marketing_params: marketingParams,
                     });
+                    
                     if (window.KTracking?.reportConversion) {
                         window.KTracking.reportConversion();
                     }
