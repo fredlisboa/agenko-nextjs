@@ -20,78 +20,33 @@ function UtmLinkUpdater() {
     const searchParams = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSearchParams"])();
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "UtmLinkUpdater.useEffect": ()=>{
-            // 1. Check for new UTM parameters in the current URL
-            const currentParams = new URLSearchParams(searchParams.toString());
-            const utmKeys = [
-                'utm_source',
-                'utm_medium',
-                'utm_campaign',
-                'utm_term',
-                'utm_content'
-            ];
-            let newUtmParams = new URLSearchParams();
-            let hasNewUtms = false;
-            utmKeys.forEach({
-                "UtmLinkUpdater.useEffect": (key)=>{
-                    if (currentParams.has(key)) {
-                        newUtmParams.set(key, currentParams.get(key));
-                        hasNewUtms = true;
-                    }
-                }
-            }["UtmLinkUpdater.useEffect"]);
-            // 2. If new UTMs are found, store them in session storage.
-            // This overwrites any old ones.
-            if (hasNewUtms) {
-                sessionStorage.setItem(SESSION_STORAGE_KEY, newUtmParams.toString());
+            const currentQueryString = searchParams.toString();
+            // 1. If the current URL has any 'utm_' parameter, save the entire query string.
+            if (currentQueryString.includes('utm_')) {
+                sessionStorage.setItem(SESSION_STORAGE_KEY, currentQueryString);
             }
-            // 3. Get the definitive UTMs to use (either newly found or from storage).
+            // 2. Get the stored UTM parameters.
             const storedUtmParams = sessionStorage.getItem(SESSION_STORAGE_KEY);
+            // 3. If there are no stored params, do nothing.
             if (!storedUtmParams) {
-                return; // No UTMs to apply
+                return;
             }
-            // 4. Find all links and append the stored UTMs.
-            // This runs on every page change to catch new links that are rendered.
+            // 4. Update all <a> tags on the page.
             const allLinks = document.getElementsByTagName('a');
             for(let i = 0; i < allLinks.length; i++){
                 const link = allLinks[i];
                 const originalHref = link.getAttribute('href');
-                if (originalHref) {
-                    // Skip mailto, tel, and anchor links on the same page
-                    if (originalHref.startsWith('mailto:') || originalHref.startsWith('tel:') || originalHref.startsWith('#')) {
+                // Ensure we have a valid link and it's not a mail/tel link.
+                if (originalHref && !originalHref.startsWith('mailto:') && !originalHref.startsWith('tel:')) {
+                    // Check if the parameters are already in the link to prevent duplicates.
+                    if (link.href.includes(storedUtmParams)) {
                         continue;
                     }
-                    try {
-                        // Use URL constructor for robust parameter handling
-                        const url = new URL(link.href);
-                        // Avoid double-appending
-                        const storedParams = new URLSearchParams(storedUtmParams);
-                        let alreadyHasAllParams = true;
-                        storedParams.forEach({
-                            "UtmLinkUpdater.useEffect": (value, key)=>{
-                                if (url.searchParams.get(key) !== value) {
-                                    alreadyHasAllParams = false;
-                                }
-                            }
-                        }["UtmLinkUpdater.useEffect"]);
-                        if (alreadyHasAllParams) {
-                            continue;
-                        }
-                        // Append stored UTMs
-                        storedParams.forEach({
-                            "UtmLinkUpdater.useEffect": (value, key)=>{
-                                url.searchParams.set(key, value);
-                            }
-                        }["UtmLinkUpdater.useEffect"]);
-                        link.href = url.toString();
-                    } catch (error) {
-                        // Fallback for relative paths like "/contato"
-                        if (!originalHref.includes(storedUtmParams)) {
-                            if (originalHref.includes('?')) {
-                                link.href = "".concat(originalHref, "&").concat(storedUtmParams);
-                            } else {
-                                link.href = "".concat(originalHref, "?").concat(storedUtmParams);
-                            }
-                        }
+                    // Append the UTM parameters.
+                    if (originalHref.includes('?')) {
+                        link.href = "".concat(originalHref, "&").concat(storedUtmParams);
+                    } else {
+                        link.href = "".concat(originalHref, "?").concat(storedUtmParams);
                     }
                 }
             }
@@ -99,8 +54,8 @@ function UtmLinkUpdater() {
     }["UtmLinkUpdater.useEffect"], [
         pathname,
         searchParams
-    ]); // Effect runs on path or param change
-    return null; // This component does not render anything
+    ]); // Re-run on every navigation
+    return null; // This component renders nothing.
 }
 _s(UtmLinkUpdater, "h6p6PpCFmP4Mu5bIMduBzSZThBE=", false, function() {
     return [
