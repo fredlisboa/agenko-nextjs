@@ -6,7 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "slick-carousel/slick/slick.css";
 import "./assets/main.css";
 import "./assets/carousel.css";
-import { MarketingAttribution } from "@/components/MarketingAttribution"; // <-- Add this new import
+import { UTMProvider } from "@/components/UTMProvider";
+import { UtmLinkUpdater } from "@/components/UtmLinkUpdater";
 
 
 
@@ -151,14 +152,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
       </head>
       <body className={`${source_sans.variable} ${roboto.variable}`}>
-        {/* Google Tag Manager (noscript) */}
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MGLJVNRZ"
-        height="0" width="0" style={{display:"none",visibility:"hidden"}}></iframe></noscript>
-        {/* End Google Tag Manager (noscript) */}
-        {children}
-        <SpeedInsights />
-        <Analytics />
-        <MarketingAttribution />
+        <UTMProvider>
+          {/* Google Tag Manager (noscript) */}
+          <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MGLJVNRZ"
+          height="0" width="0" style={{display:"none",visibility:"hidden"}}></iframe></noscript>
+          {/* End Google Tag Manager (noscript) */}
+          {children}
+          <SpeedInsights />
+          <Analytics />
+          <UtmLinkUpdater />
+        </UTMProvider>  
       </body>
     </html>
   );
