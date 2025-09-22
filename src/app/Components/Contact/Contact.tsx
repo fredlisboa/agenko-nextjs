@@ -192,9 +192,6 @@ const Contact = () => {
         }
         if (!whatsapp || whatsapp.trim().length < 11) {
             setFormMessage({ type: 'client-error-whatsapp', text: '' }); 
-            // In this specific case, we want the WhatsApp button to be direct,
-            // so we don't call scrollToFormAndGlow here for the WhatsApp button itself.
-            // The main form will still scroll due to displaying the error message.
             return false;
         }
         return true;
@@ -207,13 +204,11 @@ const Contact = () => {
     
         setFormStatus('loading');
         try {
-            // 1. Get the marketing_params value from sessionStorage *before* the fetch call.
             const marketingParams = sessionStorage.getItem('marketing_params') || 'not_set';
     
             const response = await fetch('/api/contact', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                // 2. Add marketingParams to the request body.
                 body: JSON.stringify({ ...formData, marketing_params: marketingParams }),
             });
             
@@ -243,12 +238,12 @@ const Contact = () => {
             } else {
                 setFormStatus('error');
                 setFormMessage({ type: 'error', text: result.message || '⚠️ Houve um problema temporário.' });
-                scrollToFormAndGlow(); // Scroll and glow on server error
+                scrollToFormAndGlow();
             }
         } catch (error) {
             setFormStatus('error');
             setFormMessage({ type: 'error', text: '⚠️ Houve um problema temporário. Tente novamente.' });
-            scrollToFormAndGlow(); // Scroll and glow on fetch error
+            scrollToFormAndGlow();
         }
     };
 
@@ -270,21 +265,32 @@ const Contact = () => {
             overlay.addEventListener('touchstart', handleFirstTouch, { passive: true });
         }
 
-        return () => {
-            // Cleanup handled by element removal
-        };
+        return () => {};
     }, []);
 
-    // --- MODIFICATION: ADDED THIS USEEFFECT TO HANDLE PAGE LOAD ---
+    // Effect for initial page load with hash
     useEffect(() => {
-        // Check if the URL hash matches our target section's ID
         if (window.location.hash === '#form-section') {
-            // Use a small timeout to ensure the page has rendered before scrolling
             setTimeout(() => {
                 scrollToFormAndGlow();
             }, 100);
         }
-    }, []); // Empty dependency array ensures this runs only once when the component mounts
+    }, []);
+
+    // --- NEW: Effect for handling hash changes while on the page ---
+    useEffect(() => {
+        const handleHashChange = () => {
+            if (window.location.hash === '#form-section') {
+                scrollToFormAndGlow();
+            }
+        };
+
+        window.addEventListener('hashchange', handleHashChange);
+
+        return () => {
+            window.removeEventListener('hashchange', handleHashChange);
+        };
+    }, []); // This effect also runs once to set up and clean up the listener
 
 
     const renderFormMessage = () => {
@@ -297,7 +303,6 @@ const Contact = () => {
                     <p>
                         <strong>Ou continue sua jornada:</strong> Preencha o formulário acima para prosseguir ou clique abaixo para falar conosco.
                     </p>
-                    {/* For 'client-error-whatsapp', provide the direct WhatsApp link */}
                     <WhatsAppButton directHref={directWhatsAppLink} />
                 </div>
             );
@@ -313,8 +318,6 @@ const Contact = () => {
                     <p>
                         <strong>Continue sua jornada:</strong> Para falar diretamente conosco, preencha o formulário novamente.
                     </p>
-                    {/* For success, we still want to encourage filling the form again,
-                        so trigger the scroll/glow if they click this button */}
                     <WhatsAppButton onWhatsAppClick={scrollToFormAndGlow} />
                 </div>
             );
@@ -351,9 +354,9 @@ const Contact = () => {
                     display: inline-flex;
                     align-items: center;
                     justify-content: center;
-                    gap: 10px; /* Space between icon and text */
+                    gap: 10px;
                     animation: scalePulse 2s infinite ease-in-out;
-                    transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
+                    transition: all 0.3s ease-in-out;
                 }
 
                 .theme-btn:hover {
@@ -362,15 +365,13 @@ const Contact = () => {
                 }
 
                 .calendar-icon {
-                    /* You might want to use an actual icon font or SVG here */
-                    font-size: 1.2em; /* Adjust size as needed */
+                    font-size: 1.2em;
                     vertical-align: middle;
                 }
 
-                /* New styles for form glow effect */
                 .form-highlight-section {
                     transition: box-shadow 0.3s ease-in-out;
-                    border-radius: 20px; /* Added border-radius for the form section */
+                    border-radius: 20px;
                 }
 
                 .form-highlight-section.glow-pulse {
@@ -382,10 +383,10 @@ const Contact = () => {
                         box-shadow: 0 0 5px 2px rgba(255, 168, 238, 0.3);
                     }
                     50% {
-                        box-shadow: 0 0 25px 8px rgba(255, 168, 238, 0.9); /* Brighter pulse */
+                        box-shadow: 0 0 25px 8px rgba(255, 168, 238, 0.9);
                     }
                     100% {
-                        box-shadow: 0 0 5px 2px rgba(255, 168, 238, 0.3); /* Returns to subtle */
+                        box-shadow: 0 0 5px 2px rgba(255, 168, 238, 0.3);
                     }
                 }
             `}</style>
@@ -399,8 +400,8 @@ const Contact = () => {
                                       <li>
                                           <div className="phone">
                                               <a 
-                                                  href="#" // Modified: prevents direct navigation
-                                                  onClick={scrollToFormAndGlow} // Calls the scroll and glow function
+                                                  href="#"
+                                                  onClick={scrollToFormAndGlow}
                                                   rel="noopener noreferrer"
                                               >
                                                   +55 (62) 9 8243-3773
@@ -437,8 +438,8 @@ const Contact = () => {
                                                       <a href="https://share.google/pcuCYJHPmM1pRPwpc" target="_blank" rel="noopener noreferrer"><i className="bi bi-google"></i></a>
                                                       <a href="https://tiktok.com/@studiodental.dental" target="_blank" rel="noopener noreferrer"><i className="bi bi-tiktok"></i></a>
                                                       <a 
-                                                          href="#" // Modified: prevents direct navigation
-                                                          onClick={scrollToFormAndGlow} // Calls the scroll and glow function
+                                                          href="#"
+                                                          onClick={scrollToFormAndGlow}
                                                           rel="noopener noreferrer"
                                                       >
                                                           <i className="bi bi-whatsapp"></i>
@@ -452,9 +453,8 @@ const Contact = () => {
                           </div>
                            <div className="col-lg-7">
                                <div 
-                                   // --- MODIFICATION: ADDED ID FOR ANCHOR LINKING ---
                                    id="form-section"
-                                   ref={formSectionRef} // Attach the ref to the form container
+                                   ref={formSectionRef}
                                    className={`agenko-content-box mb-50 pf_fadeup form-highlight-section ${isFormGlowing ? 'glow-pulse' : ''}`}
                                >
                                    <div className="section-title mb-20">

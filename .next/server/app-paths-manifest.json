@@ -1,3 +1,24 @@
 {
-  "/(defaultLayout)/page": "app/(defaultLayout)/page.js"
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/contact/route": "app/api/contact/route.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/politica-privacidade/page": "app/politica-privacidade/page.js",
+  "/termos-de-uso/page": "app/termos-de-uso/page.js",
+  "/(defaultLayout)/blog-sidebar/page": "app/(defaultLayout)/blog-sidebar/page.js",
+  "/(defaultLayout)/blog/page": "app/(defaultLayout)/blog/page.js",
+  "/(defaultLayout)/faq/page": "app/(defaultLayout)/faq/page.js",
+  "/(defaultLayout)/pricing/page": "app/(defaultLayout)/pricing/page.js",
+  "/(defaultLayout)/page": "app/(defaultLayout)/page.js",
+  "/(defaultLayout)/contact/page": "app/(defaultLayout)/contact/page.js",
+  "/(defaultLayout)/project/project-details/page": "app/(defaultLayout)/project/project-details/page.js",
+  "/(defaultLayout)/service/service-details/page": "app/(defaultLayout)/service/service-details/page.js",
+  "/(defaultLayout)/service/page": "app/(defaultLayout)/service/page.js",
+  "/(defaultLayout)/team/page": "app/(defaultLayout)/team/page.js",
+  "/(defaultLayout)/team/team-details/page": "app/(defaultLayout)/team/team-details/page.js",
+  "/(defaultLayout)/project/page": "app/(defaultLayout)/project/page.js",
+  "/(defaultLayout)/about/page": "app/(defaultLayout)/about/page.js",
+  "/(defaultLayout)/blog/blog-details/page": "app/(defaultLayout)/blog/blog-details/page.js",
+  "/home2/page": "app/home2/page.js",
+  "/home3/page": "app/home3/page.js",
+  "/2crsads/page": "app/2crsads/page.js"
 }

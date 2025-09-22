@@ -10,9 +10,9 @@ const Footer = () => {
         const href = e.currentTarget.getAttribute('href');
         
         // Check if it's a hash link for the current page
-        if (href && href.startsWith('/#')) { // Modified to check for /#
+        if (href && href.startsWith('/#')) {
             e.preventDefault(); // Prevent default anchor jump
-            const targetId = href.substring(2); // Modified to remove /#
+            const targetId = href.substring(2);
             const elem = document.getElementById(targetId);
             
             // Scroll smoothly to the element
@@ -41,14 +41,6 @@ const Footer = () => {
                                          
                                         <Link href="/"> <Image src="/assets/images/digital-agency/footer/marca-sd-qd.svg" alt="img" width={300} height={200} /></Link>
                                     </div>
-                                    {/* <p>Realçando sua beleza, respeitando sua <span>identidade.</span></p> */}
-                                    {/* <form>
-                                        <div className="form-group">
-                                            <input type="email" className="form_control" placeholder="Email Address" name="email" required />
-                                            <label><i className="far fa-envelope"></i></label>
-                                            <button className="theme-btn style-two">Subscribe</button>
-                                        </div>
-                                    </form> */}
                                 </div>
                             </div>
                         </div>
@@ -66,10 +58,6 @@ const Footer = () => {
                                     EPAO CRO/GO 3906 <br  />
                                     R.T: KRONER MACHADO COSTA | CRO/GO 15656</p>
                                 </div>
-                                {/* <div className="footer-content mb-25">
-                                    <h4 className="widget-title">Sub-Address</h4>
-                                    <p>200 Santa Monica Pier, Santa Monica, CA 90401</p>
-                                </div> */}
                             </div>
                         </div>
                         <div className="col-lg-5 col-md-12 col-sm-12">
@@ -131,7 +119,6 @@ const Footer = () => {
                                                 </div>
                                                 <div className="content">
                                                     <h6>WhatsApp</h6>
-                                                    {/* --- THIS LINK IS MODIFIED --- */}
                                                     <p><a href="/contact#form-section">+55 62 9 8243-3773</a></p>
                                                 </div>
                                             </div>
@@ -157,8 +144,10 @@ const Footer = () => {
                             
                             <div className="copyright-nav">
                                 <ul>
-                                    <li><Link href="/termos-de-uso" target="_blank" rel="noopener noreferrer">Termos de Uso</Link></li>
-                                    <li><Link href="/politica-privacidade" target="_blank" rel="noopener noreferrer">Política de Privacidade</Link></li>
+                                    {/* --- MODIFICATION IS HERE --- */}
+                                    {/* Using <a> for new tabs, <Link> for in-app navigation */}
+                                    <li><a href="/termos-de-uso" target="_blank" rel="noopener noreferrer">Termos de Uso</a></li>
+                                    <li><a href="/politica-privacidade" target="_blank" rel="noopener noreferrer">Política de Privacidade</a></li>
                                     <li><Link href="/contact">Contato</Link></li>
                                 </ul>
                             </div>
