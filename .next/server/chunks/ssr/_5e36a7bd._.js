@@ -15,40 +15,68 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 ;
 ;
-// --- WhatsApp Button Component with Advanced Styling ---
-const WhatsAppButton = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+const WhatsAppButton = ({ onWhatsAppClick, directHref })=>{
+    // Determine if it should be a direct link or trigger the scroll/glow
+    const isDirectLink = !!directHref;
+    const commonProps = {
+        className: "whatsapp-button-special",
+        rel: "noopener noreferrer"
+    };
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                id: "1949d3f8a1eb8578",
-                children: '.whatsapp-button-special.jsx-1949d3f8a1eb8578{z-index:1;background:linear-gradient(45deg,#25d366,#128c7e,#25d366) 0 0/200%;border:2px solid #fff;border-radius:50px;margin-top:15px;padding:15px 30px;font-size:18px;font-weight:700;transition:all .4s ease-in-out;animation:2s infinite whatsappPulse;display:inline-block;position:relative;overflow:hidden;box-shadow:0 4px 15px #31c45fbf;color:#fff!important;text-decoration:none!important}.whatsapp-button-special.jsx-1949d3f8a1eb8578:hover{background:#fff;animation:none;transform:translateY(-3px)scale(1.05);box-shadow:0 10px 20px #fff6;color:#128c7e!important}.whatsapp-button-special.jsx-1949d3f8a1eb8578:before{content:"";z-index:-1;background:linear-gradient(120deg,#0000,#fff9,#0000);width:100%;height:100%;transition:all .7s;position:absolute;top:0;left:-100%}.whatsapp-button-special.jsx-1949d3f8a1eb8578:hover:before{left:100%}@keyframes whatsappPulse{0%{transform:scale(.98);box-shadow:0 0 #31c45fb3}70%{transform:scale(1.02);box-shadow:0 0 0 15px #31c45f00}to{transform:scale(.98);box-shadow:0 0 #31c45f00}}.whatsapp-button-special.jsx-1949d3f8a1eb8578 span.jsx-1949d3f8a1eb8578{margin-right:10px}'
+                id: "c596feb998cdf2",
+                children: '.whatsapp-button-special.jsx-c596feb998cdf2{z-index:1;cursor:pointer;background:linear-gradient(45deg,#25d366,#128c7e,#25d366) 0 0/200%;border:2px solid #fff;border-radius:50px;margin-top:15px;padding:15px 30px;font-size:18px;font-weight:700;transition:all .4s ease-in-out;animation:2s infinite whatsappPulse;display:inline-block;position:relative;overflow:hidden;box-shadow:0 4px 15px #31c45fbf;color:#fff!important;text-decoration:none!important}.whatsapp-button-special.jsx-c596feb998cdf2:hover{background:#fff;animation:none;transform:translateY(-3px)scale(1.05);box-shadow:0 10px 20px #fff6;color:#128c7e!important}.whatsapp-button-special.jsx-c596feb998cdf2:before{content:"";z-index:-1;background:linear-gradient(120deg,#0000,#fff9,#0000);width:100%;height:100%;transition:all .7s;position:absolute;top:0;left:-100%}.whatsapp-button-special.jsx-c596feb998cdf2:hover:before{left:100%}@keyframes whatsappPulse{0%{transform:scale(.98);box-shadow:0 0 #31c45fb3}70%{transform:scale(1.02);box-shadow:0 0 0 15px #31c45f00}to{transform:scale(.98);box-shadow:0 0 #31c45f00}}.whatsapp-button-special.jsx-c596feb998cdf2 span.jsx-c596feb998cdf2{margin-right:10px}'
             }, void 0, false, void 0, ("TURBOPACK compile-time value", void 0)),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                href: "https://wa.me/5562982433773?text=Olá!%20Vim%20pelo%20site%20HOF%20Studio%20Dental%20Dra%20Gabriella%20Lisboa%20e%20acabei%20de%20preencher%20o%20formulário.%20Gostaria%20de%20continuar%20meu%20atendimento.",
+            isDirectLink ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                href: directHref,
                 target: "_blank",
-                rel: "noopener noreferrer",
-                className: "jsx-1949d3f8a1eb8578" + " " + "whatsapp-button-special",
+                ...commonProps,
+                className: "jsx-c596feb998cdf2" + " " + (commonProps && commonProps.className != null && commonProps.className || ""),
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: "jsx-1949d3f8a1eb8578",
+                        className: "jsx-c596feb998cdf2",
                         children: "📱"
                     }, void 0, false, {
                         fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                        lineNumber: 104,
-                        columnNumber: 13
+                        lineNumber: 120,
+                        columnNumber: 21
                     }, ("TURBOPACK compile-time value", void 0)),
                     " Abrir WhatsApp Agora"
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                lineNumber: 98,
-                columnNumber: 9
+                lineNumber: 115,
+                columnNumber: 17
+            }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                type: "button",
+                onClick: onWhatsAppClick,
+                ...commonProps,
+                className: "jsx-c596feb998cdf2" + " " + (commonProps && commonProps.className != null && commonProps.className || ""),
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        className: "jsx-c596feb998cdf2",
+                        children: "📱"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/Components/Contact/Contact.tsx",
+                        lineNumber: 128,
+                        columnNumber: 21
+                    }, ("TURBOPACK compile-time value", void 0)),
+                    " Abrir WhatsApp Agora"
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/app/Components/Contact/Contact.tsx",
+                lineNumber: 123,
+                columnNumber: 17
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true);
+};
 const Contact = ()=>{
     // --- Refs and State ---
     const mapContainerRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
     const overlayRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const formSectionRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null); // Ref for the form section
     const [formData, setFormData] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])({
         nome: '',
         whatsapp: '',
@@ -56,6 +84,9 @@ const Contact = ()=>{
     });
     const [formStatus, setFormStatus] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])('idle');
     const [formMessage, setFormMessage] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [isFormGlowing, setIsFormGlowing] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false); // State for form glow effect
+    // --- Original WhatsApp direct link ---
+    const directWhatsAppLink = "https://wa.me/5562982433773?text=Olá!%20Vim%20pelo%20site%20HOF%20Studio%20Dental%20Dra%20Gabriella%20Lisboa%20e%20acabei%20de%20preencher%20o%20formulário.%20Gostaria%20de%20continuar%20meu%20atendimento.";
     // --- Handlers and Logic ---
     const handleInputChange = (e)=>{
         const { name, value } = e.target;
@@ -72,6 +103,25 @@ const Contact = ()=>{
                 }));
         }
     };
+    // Function to scroll to the form and apply a glow effect
+    const scrollToFormAndGlow = (e)=>{
+        if (e && typeof e.preventDefault === 'function') {
+            e.preventDefault(); // Prevent default link/button behavior
+        }
+        if (formSectionRef.current) {
+            formSectionRef.current.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+            // Trigger glow animation
+            setIsFormGlowing(true);
+            // Remove the animation class after it finishes
+            const animationDuration = 1500; // Matches CSS animation duration
+            setTimeout(()=>{
+                setIsFormGlowing(false);
+            }, animationDuration);
+        }
+    };
     const validateForm = ()=>{
         const { nome, whatsapp, email } = formData;
         if (!nome || nome.trim().length < 2) {
@@ -79,6 +129,7 @@ const Contact = ()=>{
                 type: 'client-error',
                 text: '❌ Por favor, digite seu nome completo.'
             });
+            scrollToFormAndGlow(); // Scroll and glow on validation error
             return false;
         }
         if (!email || !email.includes('@') || !email.includes('.')) {
@@ -86,6 +137,7 @@ const Contact = ()=>{
                 type: 'client-error',
                 text: '❌ Por favor, digite um email válido.'
             });
+            scrollToFormAndGlow(); // Scroll and glow on validation error
             return false;
         }
         if (!whatsapp || whatsapp.trim().length < 11) {
@@ -93,6 +145,9 @@ const Contact = ()=>{
                 type: 'client-error-whatsapp',
                 text: ''
             });
+            // In this specific case, we want the WhatsApp button to be direct,
+            // so we don't call scrollToFormAndGlow here for the WhatsApp button itself.
+            // The main form will still scroll due to displaying the error message.
             return false;
         }
         return true;
@@ -103,12 +158,18 @@ const Contact = ()=>{
         if (!validateForm()) return;
         setFormStatus('loading');
         try {
+            // 1. Get the marketing_params value from sessionStorage *before* the fetch call.
+            const marketingParams = sessionStorage.getItem('marketing_params') || 'not_set';
             const response = await fetch('/api/contact', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify(formData)
+                // 2. Add marketingParams to the request body.
+                body: JSON.stringify({
+                    ...formData,
+                    marketing_params: marketingParams
+                })
             });
             const result = await response.json();
             if (response.ok) {
@@ -125,7 +186,8 @@ const Contact = ()=>{
                         lead_email: formData.email,
                         lead_whatsapp: formData.whatsapp,
                         form_source: 'nextjs_contact_form_v1',
-                        page_url: window.location.href
+                        page_url: window.location.href,
+                        marketing_params: marketingParams
                     });
                     if (window.KTracking?.reportConversion) {
                         window.KTracking.reportConversion();
@@ -144,6 +206,7 @@ const Contact = ()=>{
                     type: 'error',
                     text: result.message || '⚠️ Houve um problema temporário.'
                 });
+                scrollToFormAndGlow(); // Scroll and glow on server error
             }
         } catch (error) {
             setFormStatus('error');
@@ -151,6 +214,7 @@ const Contact = ()=>{
                 type: 'error',
                 text: '⚠️ Houve um problema temporário. Tente novamente.'
             });
+            scrollToFormAndGlow(); // Scroll and glow on fetch error
         }
     };
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
@@ -174,6 +238,16 @@ const Contact = ()=>{
         // Cleanup handled by element removal
         };
     }, []);
+    // --- MODIFICATION: ADDED THIS USEEFFECT TO HANDLE PAGE LOAD ---
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        // Check if the URL hash matches our target section's ID
+        if (window.location.hash === '#form-section') {
+            // Use a small timeout to ensure the page has rendered before scrolling
+            setTimeout(()=>{
+                scrollToFormAndGlow();
+            }, 100);
+        }
+    }, []); // Empty dependency array ensures this runs only once when the component mounts
     const renderFormMessage = ()=>{
         if (!formMessage) return null;
         if (formMessage.type === 'client-error-whatsapp') {
@@ -188,7 +262,7 @@ const Contact = ()=>{
                         children: "❌ Por favor, digite um WhatsApp válido (mín. 11 dígitos)."
                     }, void 0, false, {
                         fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                        lineNumber: 218,
+                        lineNumber: 296,
                         columnNumber: 21
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -197,25 +271,27 @@ const Contact = ()=>{
                                 children: "Ou continue sua jornada:"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                lineNumber: 220,
+                                lineNumber: 298,
                                 columnNumber: 25
                             }, ("TURBOPACK compile-time value", void 0)),
-                            " Clique abaixo para falar diretamente conosco!"
+                            " Preencha o formulário acima para prosseguir ou clique abaixo para falar conosco."
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                        lineNumber: 219,
+                        lineNumber: 297,
                         columnNumber: 21
                     }, ("TURBOPACK compile-time value", void 0)),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(WhatsAppButton, {}, void 0, false, {
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(WhatsAppButton, {
+                        directHref: directWhatsAppLink
+                    }, void 0, false, {
                         fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                        lineNumber: 222,
+                        lineNumber: 301,
                         columnNumber: 21
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                lineNumber: 217,
+                lineNumber: 295,
                 columnNumber: 17
             }, ("TURBOPACK compile-time value", void 0));
         }
@@ -236,19 +312,19 @@ const Contact = ()=>{
                             children: "✅ Tudo certo! Recebemos seu contato."
                         }, void 0, false, {
                             fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                            lineNumber: 231,
+                            lineNumber: 310,
                             columnNumber: 25
                         }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                        lineNumber: 230,
+                        lineNumber: 309,
                         columnNumber: 21
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         children: "Nossa equipe entrará em contato com você em breve."
                     }, void 0, false, {
                         fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                        lineNumber: 233,
+                        lineNumber: 312,
                         columnNumber: 21
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -257,25 +333,27 @@ const Contact = ()=>{
                                 children: "Continue sua jornada:"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                lineNumber: 235,
+                                lineNumber: 314,
                                 columnNumber: 25
                             }, ("TURBOPACK compile-time value", void 0)),
-                            " Clique abaixo para falar diretamente conosco!"
+                            " Para falar diretamente conosco, preencha o formulário novamente."
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                        lineNumber: 234,
+                        lineNumber: 313,
                         columnNumber: 21
                     }, ("TURBOPACK compile-time value", void 0)),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(WhatsAppButton, {}, void 0, false, {
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(WhatsAppButton, {
+                        onWhatsAppClick: scrollToFormAndGlow
+                    }, void 0, false, {
                         fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                        lineNumber: 237,
+                        lineNumber: 318,
                         columnNumber: 21
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                lineNumber: 229,
+                lineNumber: 308,
                 columnNumber: 17
             }, ("TURBOPACK compile-time value", void 0));
         }
@@ -285,7 +363,7 @@ const Contact = ()=>{
                 children: formMessage.text
             }, void 0, false, {
                 fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                lineNumber: 244,
+                lineNumber: 325,
                 columnNumber: 17
             }, ("TURBOPACK compile-time value", void 0));
         }
@@ -299,32 +377,32 @@ const Contact = ()=>{
         children: "*"
     }, void 0, false, {
         fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-        lineNumber: 253,
+        lineNumber: 334,
         columnNumber: 26
     }, ("TURBOPACK compile-time value", void 0));
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "jsx-a8ad4ebf01d1e0b0",
+        className: "jsx-5c940eac56730a90",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                id: "a8ad4ebf01d1e0b0",
-                children: "@keyframes scalePulse{0%{transform:scale(1)}50%{transform:scale(1.02)}to{transform:scale(1)}}@keyframes hoverGrow{0%{transform:scale(1)}to{transform:scale(1.05)}}.theme-btn.jsx-a8ad4ebf01d1e0b0{justify-content:center;align-items:center;gap:10px;transition:all .3s ease-in-out;animation:2s ease-in-out infinite scalePulse;display:inline-flex}.theme-btn.jsx-a8ad4ebf01d1e0b0:hover{animation:.3s ease-in-out forwards hoverGrow;transform:scale(1.05)}.calendar-icon.jsx-a8ad4ebf01d1e0b0{vertical-align:middle;font-size:1.2em}"
+                id: "5c940eac56730a90",
+                children: "@keyframes scalePulse{0%{transform:scale(1)}50%{transform:scale(1.02)}to{transform:scale(1)}}@keyframes hoverGrow{0%{transform:scale(1)}to{transform:scale(1.05)}}.theme-btn.jsx-5c940eac56730a90{justify-content:center;align-items:center;gap:10px;transition:all .3s ease-in-out;animation:2s ease-in-out infinite scalePulse;display:inline-flex}.theme-btn.jsx-5c940eac56730a90:hover{animation:.3s ease-in-out forwards hoverGrow;transform:scale(1.05)}.calendar-icon.jsx-5c940eac56730a90{vertical-align:middle;font-size:1.2em}.form-highlight-section.jsx-5c940eac56730a90{border-radius:20px;transition:box-shadow .3s ease-in-out}.form-highlight-section.glow-pulse.jsx-5c940eac56730a90{animation:1.5s ease-out glowPulse}@keyframes glowPulse{0%{box-shadow:0 0 5px 2px #ffa8ee4d}50%{box-shadow:0 0 25px 8px #ffa8eee6}to{box-shadow:0 0 5px 2px #ffa8ee4d}}"
             }, void 0, false, void 0, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "jsx-a8ad4ebf01d1e0b0" + " " + "agenko-contact pt-80 pb-30",
+                className: "jsx-5c940eac56730a90" + " " + "agenko-contact pt-80 pb-30",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "jsx-a8ad4ebf01d1e0b0" + " " + "container",
+                    className: "jsx-5c940eac56730a90" + " " + "container",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "jsx-a8ad4ebf01d1e0b0" + " " + "row",
+                        className: "jsx-5c940eac56730a90" + " " + "row",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "jsx-a8ad4ebf01d1e0b0" + " " + "col-lg-5",
+                                className: "jsx-5c940eac56730a90" + " " + "col-lg-5",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "jsx-a8ad4ebf01d1e0b0" + " " + "contact-info-wrapper mb-50 pf_fadeup",
+                                    className: "jsx-5c940eac56730a90" + " " + "contact-info-wrapper mb-50 pf_fadeup",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "jsx-a8ad4ebf01d1e0b0" + " " + "shape",
+                                            className: "jsx-5c940eac56730a90" + " " + "shape",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "jsx-a8ad4ebf01d1e0b0",
+                                                className: "jsx-5c940eac56730a90",
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                     src: "/assets/images/pages/shape/world.png",
                                                     alt: "img",
@@ -332,318 +410,321 @@ const Contact = ()=>{
                                                     height: 647
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                    lineNumber: 294,
+                                                    lineNumber: 397,
                                                     columnNumber: 64
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                lineNumber: 294,
+                                                lineNumber: 397,
                                                 columnNumber: 58
                                             }, ("TURBOPACK compile-time value", void 0))
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                            lineNumber: 294,
+                                            lineNumber: 397,
                                             columnNumber: 35
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                            className: "jsx-a8ad4ebf01d1e0b0",
+                                            className: "jsx-5c940eac56730a90",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                    className: "jsx-a8ad4ebf01d1e0b0",
+                                                    className: "jsx-5c940eac56730a90",
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "jsx-a8ad4ebf01d1e0b0" + " " + "phone",
+                                                        className: "jsx-5c940eac56730a90" + " " + "phone",
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                            href: "https://wa.me/5562982433773?text=Olá!%20Vim%20pelo%20site%20HOF%20Studio%20Dental%20Dra%20Gabriella%20Lisboa.%20Gostaria%20de%20continuar%20meu%20atendimento.",
-                                                            target: "_blank",
+                                                            href: "#",
+                                                            onClick: scrollToFormAndGlow,
                                                             rel: "noopener noreferrer",
-                                                            className: "jsx-a8ad4ebf01d1e0b0",
+                                                            className: "jsx-5c940eac56730a90",
                                                             children: "+55 (62) 9 8243-3773"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                            lineNumber: 297,
-                                                            columnNumber: 66
+                                                            lineNumber: 401,
+                                                            columnNumber: 47
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                        lineNumber: 297,
+                                                        lineNumber: 400,
                                                         columnNumber: 43
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                    lineNumber: 296,
+                                                    lineNumber: 399,
                                                     columnNumber: 39
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                    className: "jsx-a8ad4ebf01d1e0b0",
+                                                    className: "jsx-5c940eac56730a90",
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "jsx-a8ad4ebf01d1e0b0" + " " + "agenko-info-box",
+                                                        className: "jsx-5c940eac56730a90" + " " + "agenko-info-box",
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "jsx-a8ad4ebf01d1e0b0" + " " + "content",
+                                                            className: "jsx-5c940eac56730a90" + " " + "content",
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                                    className: "jsx-a8ad4ebf01d1e0b0",
+                                                                    className: "jsx-5c940eac56730a90",
                                                                     children: "Endereço"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                                    lineNumber: 302,
+                                                                    lineNumber: 413,
                                                                     columnNumber: 51
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                    className: "jsx-a8ad4ebf01d1e0b0",
+                                                                    className: "jsx-5c940eac56730a90",
                                                                     children: "Rua 5, 691, Térreo"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                                    lineNumber: 303,
+                                                                    lineNumber: 414,
                                                                     columnNumber: 51
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                    className: "jsx-a8ad4ebf01d1e0b0",
+                                                                    className: "jsx-5c940eac56730a90",
                                                                     children: "Ed. The Prime Tam. Office"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                                    lineNumber: 304,
+                                                                    lineNumber: 415,
                                                                     columnNumber: 51
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                    className: "jsx-a8ad4ebf01d1e0b0",
+                                                                    className: "jsx-5c940eac56730a90",
                                                                     children: "Praça Tamandaré, Setor Oeste"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                                    lineNumber: 305,
+                                                                    lineNumber: 416,
                                                                     columnNumber: 51
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                    className: "jsx-a8ad4ebf01d1e0b0",
+                                                                    className: "jsx-5c940eac56730a90",
                                                                     children: "Goiânia-GO, Brasil"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                                    lineNumber: 306,
+                                                                    lineNumber: 417,
                                                                     columnNumber: 51
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                    className: "jsx-a8ad4ebf01d1e0b0",
+                                                                    className: "jsx-5c940eac56730a90",
                                                                     children: "CEP 74.115-060"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                                    lineNumber: 307,
+                                                                    lineNumber: 418,
                                                                     columnNumber: 51
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                            lineNumber: 301,
+                                                            lineNumber: 412,
                                                             columnNumber: 47
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                        lineNumber: 300,
+                                                        lineNumber: 411,
                                                         columnNumber: 43
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                    lineNumber: 299,
+                                                    lineNumber: 410,
                                                     columnNumber: 39
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                    className: "jsx-a8ad4ebf01d1e0b0",
+                                                    className: "jsx-5c940eac56730a90",
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "jsx-a8ad4ebf01d1e0b0" + " " + "agenko-info-box",
+                                                        className: "jsx-5c940eac56730a90" + " " + "agenko-info-box",
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "jsx-a8ad4ebf01d1e0b0" + " " + "content",
+                                                            className: "jsx-5c940eac56730a90" + " " + "content",
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                                    className: "jsx-a8ad4ebf01d1e0b0",
+                                                                    className: "jsx-5c940eac56730a90",
                                                                     children: "Email"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                                    lineNumber: 314,
+                                                                    lineNumber: 425,
                                                                     columnNumber: 51
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                    className: "jsx-a8ad4ebf01d1e0b0",
+                                                                    className: "jsx-5c940eac56730a90",
                                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                                                         href: "mailto:contato@studiodental.dental",
-                                                                        className: "jsx-a8ad4ebf01d1e0b0",
+                                                                        className: "jsx-5c940eac56730a90",
                                                                         children: "contato@studiodental.dental"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                                        lineNumber: 315,
+                                                                        lineNumber: 426,
                                                                         columnNumber: 54
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                                    lineNumber: 315,
+                                                                    lineNumber: 426,
                                                                     columnNumber: 51
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                            lineNumber: 313,
+                                                            lineNumber: 424,
                                                             columnNumber: 47
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                        lineNumber: 312,
+                                                        lineNumber: 423,
                                                         columnNumber: 43
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                    lineNumber: 311,
+                                                    lineNumber: 422,
                                                     columnNumber: 39
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                    className: "jsx-a8ad4ebf01d1e0b0",
+                                                    className: "jsx-5c940eac56730a90",
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "jsx-a8ad4ebf01d1e0b0" + " " + "agenko-info-box",
+                                                        className: "jsx-5c940eac56730a90" + " " + "agenko-info-box",
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "jsx-a8ad4ebf01d1e0b0" + " " + "content",
+                                                            className: "jsx-5c940eac56730a90" + " " + "content",
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                                    className: "jsx-a8ad4ebf01d1e0b0",
+                                                                    className: "jsx-5c940eac56730a90",
                                                                     children: "Siga-nos"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                                    lineNumber: 322,
+                                                                    lineNumber: 433,
                                                                     columnNumber: 51
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    className: "jsx-a8ad4ebf01d1e0b0" + " " + "social-link",
+                                                                    className: "jsx-5c940eac56730a90" + " " + "social-link",
                                                                     children: [
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                                                             href: "https://www.instagram.com/dragabriellalisboa/",
                                                                             target: "_blank",
                                                                             rel: "noopener noreferrer",
-                                                                            className: "jsx-a8ad4ebf01d1e0b0",
+                                                                            className: "jsx-5c940eac56730a90",
                                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                                                className: "jsx-a8ad4ebf01d1e0b0" + " " + "bi bi-instagram"
+                                                                                className: "jsx-5c940eac56730a90" + " " + "bi bi-instagram"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                                                lineNumber: 325,
+                                                                                lineNumber: 436,
                                                                                 columnNumber: 55
                                                                             }, ("TURBOPACK compile-time value", void 0))
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                                            lineNumber: 324,
+                                                                            lineNumber: 435,
                                                                             columnNumber: 55
                                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                                                             href: "https://share.google/pcuCYJHPmM1pRPwpc",
                                                                             target: "_blank",
                                                                             rel: "noopener noreferrer",
-                                                                            className: "jsx-a8ad4ebf01d1e0b0",
+                                                                            className: "jsx-5c940eac56730a90",
                                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                                                className: "jsx-a8ad4ebf01d1e0b0" + " " + "bi bi-google"
+                                                                                className: "jsx-5c940eac56730a90" + " " + "bi bi-google"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                                                lineNumber: 326,
+                                                                                lineNumber: 437,
                                                                                 columnNumber: 146
                                                                             }, ("TURBOPACK compile-time value", void 0))
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                                            lineNumber: 326,
+                                                                            lineNumber: 437,
                                                                             columnNumber: 55
                                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                                                             href: "https://tiktok.com/@studiodental.dental",
                                                                             target: "_blank",
                                                                             rel: "noopener noreferrer",
-                                                                            className: "jsx-a8ad4ebf01d1e0b0",
+                                                                            className: "jsx-5c940eac56730a90",
                                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                                                className: "jsx-a8ad4ebf01d1e0b0" + " " + "bi bi-tiktok"
+                                                                                className: "jsx-5c940eac56730a90" + " " + "bi bi-tiktok"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                                                lineNumber: 327,
+                                                                                lineNumber: 438,
                                                                                 columnNumber: 147
                                                                             }, ("TURBOPACK compile-time value", void 0))
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                                            lineNumber: 327,
+                                                                            lineNumber: 438,
                                                                             columnNumber: 55
                                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                                            href: "https://wa.me/5562982433773?text=Olá!%20Vim%20pelo%20site%20HOF%20Studio%20Dental%20Dra%20Gabriella%20Lisboa.%20Gostaria%20de%20continuar%20meu%20atendimento.",
-                                                                            target: "_blank",
+                                                                            href: "#",
+                                                                            onClick: scrollToFormAndGlow,
                                                                             rel: "noopener noreferrer",
-                                                                            className: "jsx-a8ad4ebf01d1e0b0",
+                                                                            className: "jsx-5c940eac56730a90",
                                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                                                                className: "jsx-a8ad4ebf01d1e0b0" + " " + "bi bi-whatsapp"
+                                                                                className: "jsx-5c940eac56730a90" + " " + "bi bi-whatsapp"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                                                lineNumber: 328,
-                                                                                columnNumber: 266
+                                                                                lineNumber: 444,
+                                                                                columnNumber: 59
                                                                             }, ("TURBOPACK compile-time value", void 0))
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                                            lineNumber: 328,
+                                                                            lineNumber: 439,
                                                                             columnNumber: 55
                                                                         }, ("TURBOPACK compile-time value", void 0))
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                                    lineNumber: 323,
+                                                                    lineNumber: 434,
                                                                     columnNumber: 51
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                            lineNumber: 321,
+                                                            lineNumber: 432,
                                                             columnNumber: 47
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                        lineNumber: 320,
+                                                        lineNumber: 431,
                                                         columnNumber: 43
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                    lineNumber: 319,
+                                                    lineNumber: 430,
                                                     columnNumber: 39
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                            lineNumber: 295,
+                                            lineNumber: 398,
                                             columnNumber: 35
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                    lineNumber: 293,
+                                    lineNumber: 396,
                                     columnNumber: 31
                                 }, ("TURBOPACK compile-time value", void 0))
                             }, void 0, false, {
                                 fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                lineNumber: 292,
+                                lineNumber: 395,
                                 columnNumber: 27
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "jsx-a8ad4ebf01d1e0b0" + " " + "col-lg-7",
+                                className: "jsx-5c940eac56730a90" + " " + "col-lg-7",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "jsx-a8ad4ebf01d1e0b0" + " " + "agenko-content-box mb-50 pf_fadeup",
+                                    // --- MODIFICATION: ADDED ID FOR ANCHOR LINKING ---
+                                    id: "form-section",
+                                    ref: formSectionRef,
+                                    className: "jsx-5c940eac56730a90" + " " + `agenko-content-box mb-50 pf_fadeup form-highlight-section ${isFormGlowing ? 'glow-pulse' : ''}`,
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "jsx-a8ad4ebf01d1e0b0" + " " + "section-title mb-20",
+                                            className: "jsx-5c940eac56730a90" + " " + "section-title mb-20",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "jsx-a8ad4ebf01d1e0b0" + " " + "sub-title",
+                                                    className: "jsx-5c940eac56730a90" + " " + "sub-title",
                                                     children: "Agende Sua Avaliação Gratuita"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                    lineNumber: 339,
+                                                    lineNumber: 461,
                                                     columnNumber: 40
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                                    className: "jsx-a8ad4ebf01d1e0b0",
+                                                    className: "jsx-5c940eac56730a90",
                                                     children: "Seu sorriso ideal começa com um plano."
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                    lineNumber: 340,
+                                                    lineNumber: 462,
                                                     columnNumber: 40
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                            lineNumber: 338,
+                                            lineNumber: 460,
                                             columnNumber: 36
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -651,47 +732,47 @@ const Contact = ()=>{
                                                 textAlign: 'justify',
                                                 hyphens: 'auto'
                                             },
-                                            className: "jsx-a8ad4ebf01d1e0b0" + " " + "mb-20",
+                                            className: "jsx-5c940eac56730a90" + " " + "mb-20",
                                             children: [
                                                 "Preencha o formulário para agendar sua avaliação gratuita. Nossa equipe de gestão de pacientes entrará em contato em breve para confirmar o ",
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
-                                                    className: "jsx-a8ad4ebf01d1e0b0",
+                                                    className: "jsx-5c940eac56730a90",
                                                     children: "melhor horário"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                    lineNumber: 342,
+                                                    lineNumber: 464,
                                                     columnNumber: 245
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 " para você."
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                            lineNumber: 342,
+                                            lineNumber: 464,
                                             columnNumber: 36
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         formStatus !== 'success' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
                                             id: "contact-form",
                                             onSubmit: handleSubmit,
                                             noValidate: true,
-                                            className: "jsx-a8ad4ebf01d1e0b0" + " " + "agenko-contact-form style-one",
+                                            className: "jsx-5c940eac56730a90" + " " + "agenko-contact-form style-one",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "jsx-a8ad4ebf01d1e0b0" + " " + "row",
+                                                className: "jsx-5c940eac56730a90" + " " + "row",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "jsx-a8ad4ebf01d1e0b0" + " " + "col-md-6",
+                                                        className: "jsx-5c940eac56730a90" + " " + "col-md-6",
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "jsx-a8ad4ebf01d1e0b0" + " " + "form-group",
+                                                            className: "jsx-5c940eac56730a90" + " " + "form-group",
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                                                     htmlFor: "nome",
-                                                                    className: "jsx-a8ad4ebf01d1e0b0" + " " + "form-label",
+                                                                    className: "jsx-5c940eac56730a90" + " " + "form-label",
                                                                     children: [
                                                                         "Nome Completo ",
                                                                         requiredMark
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                                    lineNumber: 349,
+                                                                    lineNumber: 471,
                                                                     columnNumber: 57
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -702,38 +783,38 @@ const Contact = ()=>{
                                                                     required: true,
                                                                     value: formData.nome,
                                                                     onChange: handleInputChange,
-                                                                    className: "jsx-a8ad4ebf01d1e0b0" + " " + "form_control"
+                                                                    className: "jsx-5c940eac56730a90" + " " + "form_control"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                                    lineNumber: 350,
+                                                                    lineNumber: 472,
                                                                     columnNumber: 57
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                            lineNumber: 348,
+                                                            lineNumber: 470,
                                                             columnNumber: 53
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                        lineNumber: 347,
+                                                        lineNumber: 469,
                                                         columnNumber: 49
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "jsx-a8ad4ebf01d1e0b0" + " " + "col-md-6",
+                                                        className: "jsx-5c940eac56730a90" + " " + "col-md-6",
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "jsx-a8ad4ebf01d1e0b0" + " " + "form-group",
+                                                            className: "jsx-5c940eac56730a90" + " " + "form-group",
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                                                     htmlFor: "whatsapp",
-                                                                    className: "jsx-a8ad4ebf01d1e0b0" + " " + "form-label",
+                                                                    className: "jsx-5c940eac56730a90" + " " + "form-label",
                                                                     children: [
                                                                         "WhatsApp ",
                                                                         requiredMark
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                                    lineNumber: 355,
+                                                                    lineNumber: 477,
                                                                     columnNumber: 57
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -745,38 +826,38 @@ const Contact = ()=>{
                                                                     value: formData.whatsapp,
                                                                     onChange: handleInputChange,
                                                                     inputMode: "numeric",
-                                                                    className: "jsx-a8ad4ebf01d1e0b0" + " " + "form_control"
+                                                                    className: "jsx-5c940eac56730a90" + " " + "form_control"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                                    lineNumber: 356,
+                                                                    lineNumber: 478,
                                                                     columnNumber: 57
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                            lineNumber: 354,
+                                                            lineNumber: 476,
                                                             columnNumber: 53
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                        lineNumber: 353,
+                                                        lineNumber: 475,
                                                         columnNumber: 49
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "jsx-a8ad4ebf01d1e0b0" + " " + "col-md-12",
+                                                        className: "jsx-5c940eac56730a90" + " " + "col-md-12",
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "jsx-a8ad4ebf01d1e0b0" + " " + "form-group",
+                                                            className: "jsx-5c940eac56730a90" + " " + "form-group",
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                                                     htmlFor: "email",
-                                                                    className: "jsx-a8ad4ebf01d1e0b0" + " " + "form-label",
+                                                                    className: "jsx-5c940eac56730a90" + " " + "form-label",
                                                                     children: [
                                                                         "Email ",
                                                                         requiredMark
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                                    lineNumber: 361,
+                                                                    lineNumber: 483,
                                                                     columnNumber: 57
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -787,39 +868,39 @@ const Contact = ()=>{
                                                                     required: true,
                                                                     value: formData.email,
                                                                     onChange: handleInputChange,
-                                                                    className: "jsx-a8ad4ebf01d1e0b0" + " " + "form_control"
+                                                                    className: "jsx-5c940eac56730a90" + " " + "form_control"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                                    lineNumber: 362,
+                                                                    lineNumber: 484,
                                                                     columnNumber: 57
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                            lineNumber: 360,
+                                                            lineNumber: 482,
                                                             columnNumber: 53
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                        lineNumber: 359,
+                                                        lineNumber: 481,
                                                         columnNumber: 49
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "jsx-a8ad4ebf01d1e0b0" + " " + "col-lg-12",
+                                                        className: "jsx-5c940eac56730a90" + " " + "col-lg-12",
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "jsx-a8ad4ebf01d1e0b0" + " " + "form-group",
+                                                            className: "jsx-5c940eac56730a90" + " " + "form-group",
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                                 type: "submit",
                                                                 disabled: formStatus === 'loading',
-                                                                className: "jsx-a8ad4ebf01d1e0b0" + " " + "theme-btn",
+                                                                className: "jsx-5c940eac56730a90" + " " + "theme-btn",
                                                                 children: formStatus === 'loading' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
                                                                     children: [
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                            className: "jsx-a8ad4ebf01d1e0b0" + " " + "calendar-icon",
+                                                                            className: "jsx-5c940eac56730a90" + " " + "calendar-icon",
                                                                             children: "🗓️"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                                            lineNumber: 370,
+                                                                            lineNumber: 492,
                                                                             columnNumber: 69
                                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                                         " ENVIANDO..."
@@ -827,11 +908,11 @@ const Contact = ()=>{
                                                                 }, void 0, true) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
                                                                     children: [
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                            className: "jsx-a8ad4ebf01d1e0b0" + " " + "calendar-icon",
+                                                                            className: "jsx-5c940eac56730a90" + " " + "calendar-icon",
                                                                             children: "🗓️"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                                            lineNumber: 374,
+                                                                            lineNumber: 496,
                                                                             columnNumber: 69
                                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                                         " Agendar Avaliação Gratuita"
@@ -839,79 +920,79 @@ const Contact = ()=>{
                                                                 }, void 0, true)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                                lineNumber: 367,
+                                                                lineNumber: 489,
                                                                 columnNumber: 57
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                            lineNumber: 366,
+                                                            lineNumber: 488,
                                                             columnNumber: 53
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                        lineNumber: 365,
+                                                        lineNumber: 487,
                                                         columnNumber: 49
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                                lineNumber: 346,
+                                                lineNumber: 468,
                                                 columnNumber: 44
                                             }, ("TURBOPACK compile-time value", void 0))
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                            lineNumber: 345,
+                                            lineNumber: 467,
                                             columnNumber: 40
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "jsx-a8ad4ebf01d1e0b0" + " " + "col-lg-12",
+                                            className: "jsx-5c940eac56730a90" + " " + "col-lg-12",
                                             children: renderFormMessage()
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                            lineNumber: 384,
+                                            lineNumber: 506,
                                             columnNumber: 36
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                    lineNumber: 337,
+                                    lineNumber: 454,
                                     columnNumber: 32
                                 }, ("TURBOPACK compile-time value", void 0))
                             }, void 0, false, {
                                 fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                                lineNumber: 336,
+                                lineNumber: 453,
                                 columnNumber: 28
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                        lineNumber: 291,
+                        lineNumber: 394,
                         columnNumber: 23
                     }, ("TURBOPACK compile-time value", void 0))
                 }, void 0, false, {
                     fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                    lineNumber: 290,
+                    lineNumber: 393,
                     columnNumber: 18
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                lineNumber: 289,
+                lineNumber: 392,
                 columnNumber: 13
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "jsx-a8ad4ebf01d1e0b0" + " " + "agenko-map",
+                className: "jsx-5c940eac56730a90" + " " + "agenko-map",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     ref: mapContainerRef,
                     "data-aos": "fade-up",
                     "data-aos-duration": "1300",
-                    className: "jsx-a8ad4ebf01d1e0b0" + " " + "map-container map-box",
+                    className: "jsx-5c940eac56730a90" + " " + "map-container map-box",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             ref: overlayRef,
-                            className: "jsx-a8ad4ebf01d1e0b0" + " " + "map-overlay"
+                            className: "jsx-5c940eac56730a90" + " " + "map-overlay"
                         }, void 0, false, {
                             fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                            lineNumber: 400,
+                            lineNumber: 522,
                             columnNumber: 21
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("iframe", {
@@ -926,27 +1007,27 @@ const Contact = ()=>{
                             allowFullScreen: true,
                             loading: "lazy",
                             referrerPolicy: "no-referrer-when-downgrade",
-                            className: "jsx-a8ad4ebf01d1e0b0" + " " + "bw-map"
+                            className: "jsx-5c940eac56730a90" + " " + "bw-map"
                         }, void 0, false, {
                             fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                            lineNumber: 401,
+                            lineNumber: 523,
                             columnNumber: 21
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                    lineNumber: 394,
+                    lineNumber: 516,
                     columnNumber: 17
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-                lineNumber: 393,
+                lineNumber: 515,
                 columnNumber: 13
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/Components/Contact/Contact.tsx",
-        lineNumber: 256,
+        lineNumber: 337,
         columnNumber: 9
     }, ("TURBOPACK compile-time value", void 0));
 };

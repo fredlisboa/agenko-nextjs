@@ -29,91 +29,123 @@ interface FormMessage {
 }
 
 // --- WhatsApp Button Component with Advanced Styling ---
-const WhatsAppButton = () => (
-    <>
-        <style jsx>{`
-            .whatsapp-button-special {
-                display: inline-block;
-                padding: 15px 30px;
-                margin-top: 15px;
-                border-radius: 50px;
-                font-size: 18px;
-                font-weight: bold;
-                text-decoration: none !important;
-                color: white !important;
-                background: linear-gradient(45deg, #25d366, #128c7e, #25d366);
-                background-size: 200% auto;
-                border: 2px solid #ffffff;
-                box-shadow: 0 4px 15px 0 rgba(49, 196, 95, 0.75);
-                transition: all 0.4s ease-in-out;
-                position: relative;
-                overflow: hidden;
-                z-index: 1;
-                animation: whatsappPulse 2s infinite;
-            }
+// Modified to accept an optional directHref prop
+interface WhatsAppButtonProps {
+    onWhatsAppClick?: (e: React.MouseEvent<HTMLButtonElement>) => void; // Made optional
+    directHref?: string; // New optional prop for direct link
+}
 
-            .whatsapp-button-special:hover {
-                background: white;
-                color: #128c7e !important;
-                transform: translateY(-3px) scale(1.05);
-                box-shadow: 0 10px 20px rgba(255, 255, 255, 0.4);
-                animation: none; /* Stop pulsing on hover */
-            }
-            
-            .whatsapp-button-special::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: -100%;
-                width: 100%;
-                height: 100%;
-                background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.6), transparent);
-                transition: all 0.7s;
-                z-index: -1;
-            }
+const WhatsAppButton = ({ onWhatsAppClick, directHref }: WhatsAppButtonProps) => {
+    // Determine if it should be a direct link or trigger the scroll/glow
+    const isDirectLink = !!directHref;
+    const commonProps = {
+        className: "whatsapp-button-special",
+        rel: "noopener noreferrer",
+        // The common style for the button/link
+    };
 
-            .whatsapp-button-special:hover::before {
-                left: 100%;
-            }
-
-            @keyframes whatsappPulse {
-                0% {
-                    transform: scale(0.98);
-                    box-shadow: 0 0 0 0 rgba(49, 196, 95, 0.7);
+    return (
+        <>
+            <style jsx>{`
+                .whatsapp-button-special {
+                    display: inline-block;
+                    padding: 15px 30px;
+                    margin-top: 15px;
+                    border-radius: 50px;
+                    font-size: 18px;
+                    font-weight: bold;
+                    text-decoration: none !important;
+                    color: white !important;
+                    background: linear-gradient(45deg, #25d366, #128c7e, #25d366);
+                    background-size: 200% auto;
+                    border: 2px solid #ffffff;
+                    box-shadow: 0 4px 15px 0 rgba(49, 196, 95, 0.75);
+                    transition: all 0.4s ease-in-out;
+                    position: relative;
+                    overflow: hidden;
+                    z-index: 1;
+                    animation: whatsappPulse 2s infinite;
+                    cursor: pointer; /* Indicate it's clickable */
                 }
-                70% {
-                    transform: scale(1.02);
-                    box-shadow: 0 0 0 15px rgba(49, 196, 95, 0);
-                }
-                100% {
-                    transform: scale(0.98);
-                    box-shadow: 0 0 0 0 rgba(49, 196, 95, 0);
-                }
-            }
 
-            .whatsapp-button-special span {
-                margin-right: 10px;
-            }
-        `}</style>
-        <a
-            href="https://wa.me/5562982433773?text=Olá!%20Vim%20pelo%20site%20HOF%20Studio%20Dental%20Dra%20Gabriella%20Lisboa%20e%20acabei%20de%20preencher%20o%20formulário.%20Gostaria%20de%20continuar%20meu%20atendimento."
-            target="_blank"
-            rel="noopener noreferrer"
-            className="whatsapp-button-special"
-        >
-            <span>📱</span> Abrir WhatsApp Agora
-        </a>
-    </>
-);
+                .whatsapp-button-special:hover {
+                    background: white;
+                    color: #128c7e !important;
+                    transform: translateY(-3px) scale(1.05);
+                    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.4);
+                    animation: none; /* Stop pulsing on hover */
+                }
+                
+                .whatsapp-button-special::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: -100%;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+                    transition: all 0.7s;
+                    z-index: -1;
+                }
+
+                .whatsapp-button-special:hover::before {
+                    left: 100%;
+                }
+
+                @keyframes whatsappPulse {
+                    0% {
+                        transform: scale(0.98);
+                        box-shadow: 0 0 0 0 rgba(49, 196, 95, 0.7);
+                    }
+                    70% {
+                        transform: scale(1.02);
+                        box-shadow: 0 0 0 15px rgba(49, 196, 95, 0);
+                    }
+                    100% {
+                        transform: scale(0.98);
+                        box-shadow: 0 0 0 0 rgba(49, 196, 95, 0);
+                    }
+                }
+
+                .whatsapp-button-special span {
+                    margin-right: 10px;
+                }
+            `}</style>
+            {isDirectLink ? (
+                <a
+                    href={directHref}
+                    target="_blank"
+                    {...commonProps}
+                >
+                    <span>📱</span> Abrir WhatsApp Agora
+                </a>
+            ) : (
+                <button
+                    type="button" // Prevent form submission if this button is accidentally inside a form
+                    onClick={onWhatsAppClick}
+                    {...commonProps}
+                >
+                    <span>📱</span> Abrir WhatsApp Agora
+                </button>
+            )}
+        </>
+    );
+};
 
 
 const Contact = () => {
     // --- Refs and State ---
     const mapContainerRef = useRef<HTMLDivElement>(null);
     const overlayRef = useRef<HTMLDivElement>(null);
+    const formSectionRef = useRef<HTMLDivElement>(null); // Ref for the form section
     const [formData, setFormData] = useState<FormData>({ nome: '', whatsapp: '', email: '' });
     const [formStatus, setFormStatus] = useState<FormStatus>('idle');
     const [formMessage, setFormMessage] = useState<FormMessage | null>(null);
+    const [isFormGlowing, setIsFormGlowing] = useState(false); // State for form glow effect
+
+    // --- Original WhatsApp direct link ---
+    const directWhatsAppLink = "https://wa.me/5562982433773?text=Olá!%20Vim%20pelo%20site%20HOF%20Studio%20Dental%20Dra%20Gabriella%20Lisboa%20e%20acabei%20de%20preencher%20o%20formulário.%20Gostaria%20de%20continuar%20meu%20atendimento.";
+
 
     // --- Handlers and Logic ---
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -126,18 +158,43 @@ const Contact = () => {
         }
     };
 
+    // Function to scroll to the form and apply a glow effect
+    const scrollToFormAndGlow = (e?: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement> | React.FormEvent) => {
+        if (e && typeof e.preventDefault === 'function') {
+            e.preventDefault(); // Prevent default link/button behavior
+        }
+
+        if (formSectionRef.current) {
+            formSectionRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            
+            // Trigger glow animation
+            setIsFormGlowing(true);
+            
+            // Remove the animation class after it finishes
+            const animationDuration = 1500; // Matches CSS animation duration
+            setTimeout(() => {
+                setIsFormGlowing(false);
+            }, animationDuration);
+        }
+    };
+
     const validateForm = (): boolean => {
         const { nome, whatsapp, email } = formData;
         if (!nome || nome.trim().length < 2) {
             setFormMessage({ type: 'client-error', text: '❌ Por favor, digite seu nome completo.' });
+            scrollToFormAndGlow(); // Scroll and glow on validation error
             return false;
         }
         if (!email || !email.includes('@') || !email.includes('.')) {
             setFormMessage({ type: 'client-error', text: '❌ Por favor, digite um email válido.' });
+            scrollToFormAndGlow(); // Scroll and glow on validation error
             return false;
         }
         if (!whatsapp || whatsapp.trim().length < 11) {
             setFormMessage({ type: 'client-error-whatsapp', text: '' }); 
+            // In this specific case, we want the WhatsApp button to be direct,
+            // so we don't call scrollToFormAndGlow here for the WhatsApp button itself.
+            // The main form will still scroll due to displaying the error message.
             return false;
         }
         return true;
@@ -150,7 +207,6 @@ const Contact = () => {
     
         setFormStatus('loading');
         try {
-            // --- CHANGE IS HERE ---
             // 1. Get the marketing_params value from sessionStorage *before* the fetch call.
             const marketingParams = sessionStorage.getItem('marketing_params') || 'not_set';
     
@@ -160,7 +216,6 @@ const Contact = () => {
                 // 2. Add marketingParams to the request body.
                 body: JSON.stringify({ ...formData, marketing_params: marketingParams }),
             });
-            // --- END OF CHANGE ---
             
             const result = await response.json();
             if (response.ok) {
@@ -175,7 +230,6 @@ const Contact = () => {
                         lead_whatsapp: formData.whatsapp,
                         form_source: 'nextjs_contact_form_v1',
                         page_url: window.location.href,
-                        // We already have marketingParams, so we can use it here too.
                         marketing_params: marketingParams,
                     });
                     
@@ -189,10 +243,12 @@ const Contact = () => {
             } else {
                 setFormStatus('error');
                 setFormMessage({ type: 'error', text: result.message || '⚠️ Houve um problema temporário.' });
+                scrollToFormAndGlow(); // Scroll and glow on server error
             }
         } catch (error) {
             setFormStatus('error');
             setFormMessage({ type: 'error', text: '⚠️ Houve um problema temporário. Tente novamente.' });
+            scrollToFormAndGlow(); // Scroll and glow on fetch error
         }
     };
 
@@ -219,6 +275,18 @@ const Contact = () => {
         };
     }, []);
 
+    // --- MODIFICATION: ADDED THIS USEEFFECT TO HANDLE PAGE LOAD ---
+    useEffect(() => {
+        // Check if the URL hash matches our target section's ID
+        if (window.location.hash === '#form-section') {
+            // Use a small timeout to ensure the page has rendered before scrolling
+            setTimeout(() => {
+                scrollToFormAndGlow();
+            }, 100);
+        }
+    }, []); // Empty dependency array ensures this runs only once when the component mounts
+
+
     const renderFormMessage = () => {
         if (!formMessage) return null;
 
@@ -227,9 +295,10 @@ const Contact = () => {
                 <div className="message error" style={{ textAlign: 'center', lineHeight: 1.6 }}>
                     <p>❌ Por favor, digite um WhatsApp válido (mín. 11 dígitos).</p>
                     <p>
-                        <strong>Ou continue sua jornada:</strong> Clique abaixo para falar diretamente conosco!
+                        <strong>Ou continue sua jornada:</strong> Preencha o formulário acima para prosseguir ou clique abaixo para falar conosco.
                     </p>
-                    <WhatsAppButton />
+                    {/* For 'client-error-whatsapp', provide the direct WhatsApp link */}
+                    <WhatsAppButton directHref={directWhatsAppLink} />
                 </div>
             );
         }
@@ -242,9 +311,11 @@ const Contact = () => {
                     </p>
                     <p>Nossa equipe entrará em contato com você em breve.</p>
                     <p>
-                        <strong>Continue sua jornada:</strong> Clique abaixo para falar diretamente conosco!
+                        <strong>Continue sua jornada:</strong> Para falar diretamente conosco, preencha o formulário novamente.
                     </p>
-                    <WhatsAppButton />
+                    {/* For success, we still want to encourage filling the form again,
+                        so trigger the scroll/glow if they click this button */}
+                    <WhatsAppButton onWhatsAppClick={scrollToFormAndGlow} />
                 </div>
             );
         }
@@ -295,6 +366,28 @@ const Contact = () => {
                     font-size: 1.2em; /* Adjust size as needed */
                     vertical-align: middle;
                 }
+
+                /* New styles for form glow effect */
+                .form-highlight-section {
+                    transition: box-shadow 0.3s ease-in-out;
+                    border-radius: 20px; /* Added border-radius for the form section */
+                }
+
+                .form-highlight-section.glow-pulse {
+                    animation: glowPulse 1.5s ease-out;
+                }
+
+                @keyframes glowPulse {
+                    0% {
+                        box-shadow: 0 0 5px 2px rgba(255, 168, 238, 0.3);
+                    }
+                    50% {
+                        box-shadow: 0 0 25px 8px rgba(255, 168, 238, 0.9); /* Brighter pulse */
+                    }
+                    100% {
+                        box-shadow: 0 0 5px 2px rgba(255, 168, 238, 0.3); /* Returns to subtle */
+                    }
+                }
             `}</style>
             <section className="agenko-contact pt-80 pb-30">
                  <div className="container">
@@ -304,7 +397,15 @@ const Contact = () => {
                                   <div className="shape"><span><Image src="/assets/images/pages/shape/world.png" alt="img" width={306} height={647} /></span></div>
                                   <ul>
                                       <li>
-                                          <div className="phone"><a href="https://wa.me/5562982433773?text=Olá!%20Vim%20pelo%20site%20HOF%20Studio%20Dental%20Dra%20Gabriella%20Lisboa.%20Gostaria%20de%20continuar%20meu%20atendimento." target="_blank" rel="noopener noreferrer">+55 (62) 9 8243-3773</a></div>
+                                          <div className="phone">
+                                              <a 
+                                                  href="#" // Modified: prevents direct navigation
+                                                  onClick={scrollToFormAndGlow} // Calls the scroll and glow function
+                                                  rel="noopener noreferrer"
+                                              >
+                                                  +55 (62) 9 8243-3773
+                                              </a>
+                                          </div>
                                       </li>
                                       <li>
                                           <div className="agenko-info-box">
@@ -335,7 +436,13 @@ const Contact = () => {
                                                       <i className="bi bi-instagram"></i></a>
                                                       <a href="https://share.google/pcuCYJHPmM1pRPwpc" target="_blank" rel="noopener noreferrer"><i className="bi bi-google"></i></a>
                                                       <a href="https://tiktok.com/@studiodental.dental" target="_blank" rel="noopener noreferrer"><i className="bi bi-tiktok"></i></a>
-                                                      <a href="https://wa.me/5562982433773?text=Olá!%20Vim%20pelo%20site%20HOF%20Studio%20Dental%20Dra%20Gabriella%20Lisboa.%20Gostaria%20de%20continuar%20meu%20atendimento." target="_blank" rel="noopener noreferrer"><i className="bi bi-whatsapp"></i></a>
+                                                      <a 
+                                                          href="#" // Modified: prevents direct navigation
+                                                          onClick={scrollToFormAndGlow} // Calls the scroll and glow function
+                                                          rel="noopener noreferrer"
+                                                      >
+                                                          <i className="bi bi-whatsapp"></i>
+                                                      </a>
                                                   </div>
                                               </div>
                                           </div>
@@ -344,7 +451,12 @@ const Contact = () => {
                               </div>
                           </div>
                            <div className="col-lg-7">
-                               <div className="agenko-content-box mb-50 pf_fadeup">
+                               <div 
+                                   // --- MODIFICATION: ADDED ID FOR ANCHOR LINKING ---
+                                   id="form-section"
+                                   ref={formSectionRef} // Attach the ref to the form container
+                                   className={`agenko-content-box mb-50 pf_fadeup form-highlight-section ${isFormGlowing ? 'glow-pulse' : ''}`}
+                               >
                                    <div className="section-title mb-20">
                                        <span className="sub-title">Agende Sua Avaliação Gratuita</span>
                                        <h2>Seu sorriso ideal começa com um plano.</h2>

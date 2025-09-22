@@ -176,7 +176,7 @@ const SUPABASE_TABLE_NAME = 'leads-form-hof-sd-gabriellalisboa';
 async function POST(request) {
     try {
         const body = await request.json();
-        const { nome, whatsapp, email } = body;
+        const { nome, whatsapp, email, marketing_params } = body;
         // --- SERVER-SIDE VALIDATION ---
         if (!nome || typeof nome !== 'string' || nome.trim().length < 2) {
             return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
@@ -234,58 +234,58 @@ async function POST(request) {
         const dateTimeAmericaSaoPaulo = `${parts.year}-${parts.month}-${parts.day} ${parts.hour}:${parts.minute}:${parts.second}`;
         // --- PREPARE DATA FOR SUPABASE INSERT ---
         const supabasePayload = {
-            form_name: 'leads-form-hof-sd-gabriellalisboa',
-            nome: nome.trim(),
-            email: email.trim(),
-            whatsapp_field_facebook: whatsappFieldFacebook,
-            date_time_utc: dateTimeUtc,
-            date_time_america_sao_paulo: dateTimeAmericaSaoPaulo,
-            date_time_timestamp: urlProcessedAtTimestamp,
-            remote_ip: remoteIp,
-            webhookUrl: WEBHOOK_URL,
+            'form_name': 'leads-form-hof-sd-gabriellalisboa',
+            'nome': nome.trim(),
+            'email': email.trim(),
+            'whatsapp_field_facebook': whatsappFieldFacebook,
+            'date_time_utc': dateTimeUtc,
+            'date_time_america_sao-paulo': dateTimeAmericaSaoPaulo,
+            'date_time_timestamp': urlProcessedAtTimestamp,
+            'remote_ip': remoteIp,
+            'webhookUrl': WEBHOOK_URL,
             'user-agent': userAgent,
-            // Mapping URL parameters to specific Supabase columns
-            url_param_keyword: queryParams.keyword || queryParams.utm_term || null,
-            url_param_cost: queryParams.cost || null,
-            url_param_fbclid: queryParams.fbclid || null,
-            url_param_gclid: queryParams.gclid || null,
-            url_param_ttclid: queryParams.ttclid || null,
-            url_param_ad_id: queryParams.ad_id || null,
-            url_param_ad_campaign_id: queryParams.ad_campaign_id || null,
-            url_parameters_subid: queryParams.subid || null,
-            url_parameters_ktr_campaign_id: queryParams.ktr_campaign_id || null,
-            url_parameters_cost: queryParams.cost || null,
-            url_processed_at_timestamp: urlProcessedAtTimestamp,
-            url_parameters_ktr_landing_id: queryParams.ktr_landing_id || null,
-            url_parameters_ktr_stream_id: queryParams.ktr_stream_id || null,
-            url_parameters_source: queryParams.utm_source || queryParams.source || null,
-            url_parameters_search_engine: queryParams.search_engine || null,
-            url_parameters_ktr_keyword: queryParams.ktr_keyword || null,
-            url_parameters_sub_id_1_placement: queryParams.sub_id_1_placement || null,
-            url_parameters_sub_id_10_advanced_booking_window: queryParams.sub_id_10_advanced_booking_window || null,
-            url_parameters_sub_id_11_matchtype: queryParams.sub_id_11_matchtype || null,
-            url_parameters_sub_id_12_targetid: queryParams.sub_id_12_targetid || null,
-            url_parameters_sub_id_13_extension_id: queryParams.sub_id_13_extension_id || null,
-            url_parameters_sub_id_14_device: queryParams.sub_id_14_device || null,
-            url_parameters_sub_id_3_adgroupid: queryParams.sub_id_3_adgroupid || null,
-            url_parameters_sub_id_4_creative: queryParams.sub_id_4_creative || null,
-            url_parameters_sub_id_5_keyword: queryParams.sub_id_5_keyword || null,
-            url_parameters_sub_id_6_network: queryParams.sub_id_6_network || null,
-            url_parameters_traffic_source_name: queryParams.traffic_source_name || null,
-            url_parameters_x_requested_with: queryParams.x_requested_with || null,
-            url_parameters_sub_id_2_adposition: queryParams.sub_id_2_adposition || null,
-            // Add other UTM parameters if needed
-            url_param_utm_source: queryParams.utm_source || null,
-            url_param_utm_medium: queryParams.utm_medium || null,
-            url_param_utm_campaign: queryParams.utm_campaign || null,
-            url_param_utm_content: queryParams.utm_content || null
+            // Mapping URL parameters to specific Supabase columns - all quoted for safety
+            'url_param_keyword': queryParams.keyword || queryParams.utm_term || null,
+            'url_param_cost': queryParams.cost || null,
+            'url_param_fbclid': queryParams.fbclid || null,
+            'url_param_gclid': queryParams.gclid || null,
+            'url_param_ttclid': queryParams.ttclid || null,
+            'url_param_ad_id': queryParams.ad_id || null,
+            'url_param_ad_campaign_id': queryParams.ad_campaign_id || null,
+            'url_parameters_subid': queryParams.subid || null,
+            'url_parameters_ktr_campaign_id': queryParams.ktr_campaign_id || null,
+            'url_parameters_cost': queryParams.cost || null,
+            'url_processed_at_timestamp': urlProcessedAtTimestamp,
+            'url_parameters_ktr_landing_id': queryParams.ktr_landing_id || null,
+            'url_parameters_ktr_stream_id': queryParams.ktr_stream_id || null,
+            'url_parameters_source': queryParams.utm_source || queryParams.source || null,
+            'url_parameters_search_engine': queryParams.search_engine || null,
+            'url_parameters_ktr_keyword': queryParams.ktr_keyword || null,
+            'url_parameters_sub_id_1_placement': queryParams.sub_id_1_placement || null,
+            'url_parameters_sub_id_10_advanced_booking _window': queryParams.sub_id_10_advanced_booking_window || null,
+            'url_parameters_sub_id_11_matchtype': queryParams.sub_id_11_matchtype || null,
+            'url_parameters_sub_id_12_targetid': queryParams.sub_id_12_targetid || null,
+            'url_parameters_sub_id_13_extension_id': queryParams.sub_id_13_extension_id || null,
+            'url_parameters_sub_id_14_device': queryParams.sub_id_14_device || null,
+            'url_parameters_sub_id_3_adgroupid': queryParams.sub_id_3_adgroupid || null,
+            'url_parameters_sub_id_4_creative': queryParams.sub_id_4_creative || null,
+            'url_parameters_sub_id_5_keyword': queryParams.sub_id_5_keyword || null,
+            'url_parameters_sub_id_6_network': queryParams.sub_id_6_network || null,
+            'url_parameters_traffic_source_name': queryParams.traffic_source_name || null,
+            'url_parameters_x_requested_with': queryParams.x_requested_with || null,
+            'url_parameters_sub_id_2_adposition': queryParams.sub_id_2_adposition || null,
+            'marketing_params_raw': marketing_params || null
         };
         // --- INSERT DATA INTO SUPABASE ---
         const { data, error: supabaseError } = await supabase.from(SUPABASE_TABLE_NAME).insert([
             supabasePayload
         ]);
         if (supabaseError) {
-            console.error('Supabase insertion error:', supabaseError.message);
+            console.error('Supabase insertion error:', supabaseError); // Log the full error object
+            console.error('Supabase error message:', supabaseError.message);
+            console.error('Supabase error details:', supabaseError.details);
+            console.error('Supabase error hint:', supabaseError.hint);
+            console.error('Payload attempted to insert:', supabasePayload); // Log the payload you tried to send
             return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
                 message: 'Erro ao salvar no banco de dados.'
             }, {
@@ -303,7 +303,8 @@ async function POST(request) {
             page_url: pageUrl,
             timestamp: dateTimeUtc,
             source: 'nextjs_contact_form_v1',
-            user_agent: userAgent
+            user_agent: userAgent,
+            marketing_params: marketing_params
         };
         console.log('Forwarding to webhook:', webhookPayload);
         // --- SEND DATA TO EXTERNAL WEBHOOK ---
