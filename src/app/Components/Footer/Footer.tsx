@@ -10,9 +10,9 @@ const Footer = () => {
         const href = e.currentTarget.getAttribute('href');
         
         // Check if it's a hash link for the current page
-        if (href && href.startsWith('#')) {
+        if (href && href.startsWith('/#')) { // Modified to check for /#
             e.preventDefault(); // Prevent default anchor jump
-            const targetId = href.substring(1);
+            const targetId = href.substring(2); // Modified to remove /#
             const elem = document.getElementById(targetId);
             
             // Scroll smoothly to the element
@@ -39,7 +39,7 @@ const Footer = () => {
                                 <div className="footer-content">
                                     <div className="footer-logo">
                                          
-                                        <a href="#"> <Image src="/assets/images/digital-agency/footer/marca-sd-qd.svg" alt="img" width={300} height={200} /></a>
+                                        <a href="/"> <Image src="/assets/images/digital-agency/footer/marca-sd-qd.svg" alt="img" width={300} height={200} /></a>
                                     </div>
                                     {/* <p>Realçando sua beleza, respeitando sua <span>identidade.</span></p> */}
                                     {/* <form>
@@ -81,28 +81,28 @@ const Footer = () => {
                                             <h4 className="widget-title">Links Úteis</h4>
                                             <ul className="footer-nav">
                                                 <li>
-                                                    <Link href="#about" onClick={handleSmoothScroll}>Sobre</Link>
+                                                    <Link href="/#about" onClick={handleSmoothScroll}>Sobre</Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="#who-we-are" onClick={handleSmoothScroll}>Compromisso</Link>
+                                                    <Link href="/#who-we-are" onClick={handleSmoothScroll}>Compromisso</Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="#services" onClick={handleSmoothScroll}>Especialidades</Link>
+                                                    <Link href="/#services" onClick={handleSmoothScroll}>Especialidades</Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="#process" onClick={handleSmoothScroll}>Jornada</Link>
+                                                    <Link href="/#process" onClick={handleSmoothScroll}>Jornada</Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="#testimonials" onClick={handleSmoothScroll}>Depoimentos</Link>
+                                                    <Link href="/#testimonials" onClick={handleSmoothScroll}>Depoimentos</Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="#cases" onClick={handleSmoothScroll}>Casos</Link>
+                                                    <Link href="/#cases" onClick={handleSmoothScroll}>Casos</Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="#faq" onClick={handleSmoothScroll}>FAQ</Link>
+                                                    <Link href="/#faq" onClick={handleSmoothScroll}>FAQ</Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="#redes-sociais" onClick={handleSmoothScroll}>Redes Sociais</Link>
+                                                    <Link href="/#redes-sociais" onClick={handleSmoothScroll}>Redes Sociais</Link>
                                                 </li>
                                                 <li>
                                                     <Link href="/contact">Contato</Link>
