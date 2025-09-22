@@ -39,7 +39,7 @@ const Footer = () => {
                                 <div className="footer-content">
                                     <div className="footer-logo">
                                          
-                                        <a href="/"> <Image src="/assets/images/digital-agency/footer/marca-sd-qd.svg" alt="img" width={300} height={200} /></a>
+                                        <Link href="/"> <Image src="/assets/images/digital-agency/footer/marca-sd-qd.svg" alt="img" width={300} height={200} /></Link>
                                     </div>
                                     {/* <p>Realçando sua beleza, respeitando sua <span>identidade.</span></p> */}
                                     {/* <form>
@@ -157,9 +157,9 @@ const Footer = () => {
                             
                             <div className="copyright-nav">
                                 <ul>
-                                    <li><a href="/termos-de-uso" target="_blank" rel="noopener noreferrer">Termos de Uso</a></li>
-                                    <li><a href="/politica-privacidade" target="_blank" rel="noopener noreferrer">Política de Privacidade</a></li>
-                                    <li><a href="/contact">Contato</a></li>
+                                    <li><Link href="/termos-de-uso" target="_blank" rel="noopener noreferrer">Termos de Uso</Link></li>
+                                    <li><Link href="/politica-privacidade" target="_blank" rel="noopener noreferrer">Política de Privacidade</Link></li>
+                                    <li><Link href="/contact">Contato</Link></li>
                                 </ul>
                             </div>
                         </div>

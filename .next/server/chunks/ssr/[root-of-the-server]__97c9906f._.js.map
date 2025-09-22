@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 28, "column": 0}, "map": {"version":3,"sources":["file:///home/user/agenko-nextjs/src/app/Components/Common/CssLoader.tsx"],"sourcesContent":["\"use client\";\n\nimport { useEffect } from 'react';\n\nconst CssLoader = () => {\n  useEffect(() => {\n    // Importa os CSS que estavam no layout\n    import(\"slick-carousel/slick/slick.css\");\n    import(\"../../assets/carousel.css\");\n    import(\"bootstrap-icons/font/bootstrap-icons.css\");\n  }, []);\n\n  return null;\n};\n\nexport default CssLoader;\n"],"names":[],"mappings":";;;;AAEA;AAFA;;AAIA,MAAM,YAAY;IAChB,IAAA,kNAAS,EAAC;QACR,uCAAuC;;;;IAIzC,GAAG,EAAE;IAEL,OAAO;AACT;uCAEe","debugId":null}}]
-}

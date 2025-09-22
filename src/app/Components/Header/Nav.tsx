@@ -8,7 +8,7 @@ export default function Nav({ setMobileToggle }) {
   const handleScroll = (e) => {
     const href = e.currentTarget.getAttribute('href');
     
-    // Check if it's an anchor link for the homepage (starts with '/#')
+    // Check if it's an anchor link
     if (href && href.startsWith('/#')) {
       // If on the homepage, prevent default and perform smooth scroll
       if (pathname === '/') {
@@ -18,7 +18,7 @@ export default function Nav({ setMobileToggle }) {
         elem?.scrollIntoView({
           behavior: "smooth",
         });
-      } 
+      }
       // If not on the homepage, allow Next.js Link to handle navigation to the homepage with the hash
     } else if (href && href.startsWith('#')) { // For relative anchors on the same page (e.g., dropdowns)
       e.preventDefault();
