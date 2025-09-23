@@ -11,7 +11,7 @@ const page = () => {
     <div>
             <BreadCumb
                 Title="Sobre"
-                content="Agenko empowers businesses with innovative strategies & creative agency solutions"
+                content="Te Ajudo a Transformar Sua Beleza e Autoestima"
             ></BreadCumb>  
             <About1></About1>
             {/* <WhoWeAre2></WhoWeAre2>     */}
