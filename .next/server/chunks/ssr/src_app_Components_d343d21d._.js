@@ -705,6 +705,7 @@ const HeroBanner2 = ()=>{
                                             alt: "Hero Image",
                                             width: 848,
                                             height: 1060,
+                                            priority: true,
                                             style: {
                                                 width: '100%',
                                                 height: 'auto'

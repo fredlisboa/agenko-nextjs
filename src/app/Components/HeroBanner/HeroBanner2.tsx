@@ -188,7 +188,7 @@ const HeroBanner2 = () => {
                     <div className="col-lg-8">
                         
                         <div className="hero-image style-one pf_fadeup">
-                            <Image src="/assets/images/digital-agency/hero/gabi-estrela2.png" alt="Hero Image" width={848} height={1060} style={{ width: '100%', height: 'auto' }} />
+                            <Image src="/assets/images/digital-agency/hero/gabi-estrela2.png" alt="Hero Image" width={848} height={1060} priority style={{ width: '100%', height: 'auto' }} />
                         </div>
                     </div>
                 </div>
