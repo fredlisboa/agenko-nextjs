@@ -277,7 +277,7 @@ const Contact = () => {
         }
     }, []);
 
-    // --- NEW: Effect for handling hash changes while on the page ---
+    // Effect for handling hash changes while on the page
     useEffect(() => {
         const handleHashChange = () => {
             if (window.location.hash === '#form-section') {
@@ -290,7 +290,7 @@ const Contact = () => {
         return () => {
             window.removeEventListener('hashchange', handleHashChange);
         };
-    }, []); // This effect also runs once to set up and clean up the listener
+    }, []); 
 
 
     const renderFormMessage = () => {
@@ -316,9 +316,11 @@ const Contact = () => {
                     </p>
                     <p>Nossa equipe entrará em contato com você em breve.</p>
                     <p>
-                        <strong>Continue sua jornada:</strong> Para falar diretamente conosco, preencha o formulário novamente.
+                        <strong>Continue sua jornada:</strong> Para falar diretamente conosco, clique no botão abaixo.
                     </p>
-                    <WhatsAppButton onWhatsAppClick={scrollToFormAndGlow} />
+                    {/* --- MODIFICATION IS HERE --- */}
+                    {/* On success, the button becomes a direct link to WhatsApp */}
+                    <WhatsAppButton directHref={directWhatsAppLink} />
                 </div>
             );
         }
@@ -481,7 +483,7 @@ const Contact = () => {
                                                 <div className="col-md-12">
                                                     <div className="form-group">
                                                         <label htmlFor="email" className="form-label">Email {requiredMark}</label>
-                                                        <input id="email" type="email" className="form_control" placeholder="seumelhor@email.com" name="email" required value={formData.email} onChange={handleInputChange} />
+                                                        <input id="email" type="email" className="form_control" placeholder="seumhor@email.com" name="email" required value={formData.email} onChange={handleInputChange} />
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-12">
