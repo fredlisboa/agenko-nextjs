@@ -9,18 +9,22 @@ const Footer = () => {
     const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
         const href = e.currentTarget.getAttribute('href');
         
-        // Check if it's a hash link for the current page
+        // This pattern looks for links that start with '/#'
         if (href && href.startsWith('/#')) {
-            e.preventDefault(); // Prevent default anchor jump
-            const targetId = href.substring(2);
+            const targetId = href.substring(2); // Extracts the ID (e.g., 'faq')
             const elem = document.getElementById(targetId);
             
-            // Scroll smoothly to the element
-            elem?.scrollIntoView({
-              behavior: "smooth",
-            });
+            // If the element exists on the current page, scroll smoothly to it
+            if (elem) {
+                e.preventDefault(); // Stop the link from navigating away
+                elem.scrollIntoView({
+                  behavior: "smooth",
+                });
+            }
+            // If the element does NOT exist, do nothing here.
+            // Let the Next.js <Link> component handle navigation to the home page,
+            // and the browser will automatically jump to the hash after loading.
         }
-        // For other links like "/contact", let Next.js's Link component handle navigation
     };
 
     return (
@@ -144,8 +148,7 @@ const Footer = () => {
                             
                             <div className="copyright-nav">
                                 <ul>
-                                    {/* --- MODIFICATION IS HERE --- */}
-                                    {/* Using <a> for new tabs, <Link> for in-app navigation */}
+                                    {/* --- FIX IS HERE: Using <a> for new tabs, <Link> for in-app pages --- */}
                                     <li><a href="/termos-de-uso" target="_blank" rel="noopener noreferrer">Termos de Uso</a></li>
                                     <li><a href="/politica-privacidade" target="_blank" rel="noopener noreferrer">Política de Privacidade</a></li>
                                     <li><Link href="/contact">Contato</Link></li>

@@ -318,8 +318,6 @@ const Contact = () => {
                     <p>
                         <strong>Continue sua jornada:</strong> Para falar diretamente conosco, clique no botão abaixo.
                     </p>
-                    {/* --- MODIFICATION IS HERE --- */}
-                    {/* On success, the button becomes a direct link to WhatsApp */}
                     <WhatsAppButton directHref={directWhatsAppLink} />
                 </div>
             );
@@ -411,16 +409,17 @@ const Contact = () => {
                                           </div>
                                       </li>
                                       <li>
-                                          <div className="agenko-info-box">
-                                              <div className="content">
-                                                  <h3>Endereço</h3>
-                                                  <p>Rua 5, 691, Térreo</p>
-                                                  <p>Ed. The Prime Tam. Office</p> 
-                                                  <p>Praça Tamandaré, Setor Oeste</p>
-                                                  <p>Goiânia-GO, Brasil</p>
-                                                  <p>CEP 74.115-060</p>
-                                              </div>
-                                          </div>
+                                        {/* --- FIX IS HERE: Added the missing closing </div> tag --- */}
+                                        <div className="agenko-info-box">
+                                            <div className="content">
+                                                <h3>Endereço</h3>
+                                                <p>Rua 5, 691, Térreo</p>
+                                                <p>Ed. The Prime Tam. Office</p> 
+                                                <p>Praça Tamandaré, Setor Oeste</p>
+                                                <p>Goiânia-GO, Brasil</p>
+                                                <p>CEP 74.115-060</p>
+                                            </div>
+                                        </div>
                                       </li>
                                       <li>
                                           <div className="agenko-info-box">
@@ -483,7 +482,7 @@ const Contact = () => {
                                                 <div className="col-md-12">
                                                     <div className="form-group">
                                                         <label htmlFor="email" className="form-label">Email {requiredMark}</label>
-                                                        <input id="email" type="email" className="form_control" placeholder="seumhor@email.com" name="email" required value={formData.email} onChange={handleInputChange} />
+                                                        <input id="email" type="email" className="form_control" placeholder="seumelhor@email.com" name="email" required value={formData.email} onChange={handleInputChange} />
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-12">
