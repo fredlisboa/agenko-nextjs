@@ -9,8 +9,6 @@ import "./assets/carousel.css";
 import { UTMProvider } from "@/components/UTMProvider";
 import { UtmLinkUpdater } from "@/components/UtmLinkUpdater";
 
-
-
 const source_sans = Source_Sans_3({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700', '800'],
@@ -30,12 +28,11 @@ export const metadata = {
   },
   description: 'Especialista em Harmonização Orofacial em Goiânia. Realce sua beleza com Lipo de Papada, Rinomodelação, Fios de PDO e Preenchimento Facial. Agende sua avaliação!',
   keywords: 'harmonização orofacial goiânia, lipo de papada, rinomodelação, fios de pdo, preenchimento facial, lifting facial, dentista goiânia, platismoplastia, slim lift, toxina botulínica, bioestimuladores de colágeno, sculptra, galderma, i-trhead, ultramformer mpt, ultraformer, lavieen, ultra',
-  // NOVO: Adicionando links sociais diretamente nos metadados
   authors: [{ name: 'Dra. Gabriella Lisboa', url: 'https://www.instagram.com/dragabriellalisboa/' }],
   openGraph: {
     title: 'Harmonização Orofacial em Goiânia | Dra. Gabriella Lisboa',
     description: 'Realce sua beleza natural com procedimentos seguros e personalizados. Lipo de Papada, Rinomodelação e mais.',
-    url: 'https://hof.studiodental.dental', // Corrigido o domínio
+    url: 'https://hof.studiodental.dental',
     siteName: 'Dra. Gabriella Lisboa | Harmonização Orofacial',
     images: [
       {
@@ -63,6 +60,10 @@ export const metadata = {
       follow: true,
     },
   },
+  // NOVO: Adicionando a configuração de ícones diretamente nos metadados
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 // NOVO: Estrutura JSON-LD para SEO Avançado
@@ -73,7 +74,7 @@ const jsonLd = {
   "image": "https://hof.studiodental.dental/hof-gabriella-gyn.webp",
   "@id": "https://hof.studiodental.dental",
   "url": "https://hof.studiodental.dental",
-  "telephone": "+5562982433773", // Seu número de contato principal
+  "telephone": "+5562982433773",
   "priceRange": "$$$",
   "address": {
     "@type": "PostalAddress",
@@ -85,8 +86,8 @@ const jsonLd = {
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": -16.6800, // Latitude aproximada para o CEP
-    "longitude": -49.2566 // Longitude aproximada para o CEP
+    "latitude": -16.6800,
+    "longitude": -49.2566
   },
   "openingHoursSpecification": {
     "@type": "OpeningHoursSpecification",
@@ -102,7 +103,7 @@ const jsonLd = {
   },
   "sameAs": [
     "https://www.instagram.com/dragabriellalisboa/",
-    "https://www.google.com/search?sca_esv=adba07b31be7c891&rlz=1C1GCEA_pt-BRBR1165BR1165&cs=1&output=search&kgmid=/g/11h8760pp9&q=Studio+Dental+Odontologia&shndl=30&shem=lcuae,lsptbl1,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=9c6ff277aa151b10&utm_source=lcuae,lsptbl1,uaasie,shrtsdl,sh/x/loc/uni/m1/1" // URL do seu Google My Business
+    "https://www.google.com/search?sca_esv=adba07b31be7c891&rlz=1C1GCEA_pt-BRBR1165BR1165&cs=1&output=search&kgmid=/g/11h8760pp9&q=Studio+Dental+Odontologia&shndl=30&shem=lcuae,lsptbl1,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=9c6ff277aa151b10&utm_source=lcuae,lsptbl1,uaasie,shrtsdl,sh/x/loc/uni/m1/1"
   ],
   "medicalSpecialty": "Dentistry",
   "hasMap": "https://www.google.com/search?sca_esv=adba07b31be7c891&rlz=1C1GCEA_pt-BRBR1165BR1165&cs=1&output=search&kgmid=/g/11h8760pp9&q=Studio+Dental+Odontologia&shndl=30&shem=lcuae,lsptbl1,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=9c6ff277aa151b10&utm_source=lcuae,lsptbl1,uaasie,shrtsdl,sh/x/loc/uni/m1/1"
@@ -113,9 +114,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="pt-BR">
       <head>
-          {/* Keitaro tracking script */}
-          <Script id="keitaro-tracking-script" strategy="afterInteractive" dangerouslySetInnerHTML={{ __html: `
-          if (!window.KTracking){window.KTracking={collectNonUniqueClicks: false, multiDomain: false, R_PATH: 'https://hof1.studiodental.dental/HMpJBwrp', P_PATH:'https://hof1.studiodental.dental/28509f0/postback', listeners: [], reportConversion: function(){this.queued = arguments;}, getSubId: function(fn) {this.listeners.push(fn);}, ready: function(fn) {this.listeners.push(fn);} };}(function(){var a=document.createElement('script');a.type='application/javascript';a.async=true;a.src='https://hof1.studiodental.dental/js/k.min.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(a,s)})();
+        {/* Keitaro tracking script */}
+        <Script id="keitaro-tracking-script" strategy="afterInteractive" dangerouslySetInnerHTML={{ __html: `
+         if (!window.KTracking){window.KTracking={collectNonUniqueClicks: false, multiDomain: false, R_PATH: 'https://hof1.studiodental.dental/HMpJBwrp', P_PATH:'https://hof1.studiodental.dental/28509f0/postback', listeners: [], reportConversion: function(){this.queued = arguments;}, getSubId: function(fn) {this.listeners.push(fn);}, ready: function(fn) {this.listeners.push(fn);} };}(function(){var a=document.createElement('script');a.type='application/javascript';a.async=true;a.src='https://hof1.studiodental.dental/js/k.min.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(a,s)})();
         ` }} />
         <noscript dangerouslySetInnerHTML={{ __html: `<img height='0' width='0' alt='' src='https://hof1.studiodental.dental/zR1jFW7b'/>` }} />
         {/* End Keitaro tracking script */}
@@ -127,6 +128,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-MGLJVNRZ');` }} />
         {/* End Google Tag Manager */}
+
         {/* Begin Google Tag GTAG */}
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-0BXKYQERWH"></Script>
         <Script id="google-analytics">
@@ -139,6 +141,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           `}
         </Script>
         {/* End Google Tag GTAG */}
+
         {/* NOVO: Injetando o Schema JSON-LD no <head> */}
           <Script
           id="json-ld-schema"
@@ -146,10 +149,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         <meta name="author" content="Dra. Gabriella Lisboa | Studio Dental" />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-
-
       </head>
       <body className={`${source_sans.variable} ${roboto.variable}`}>
         <UTMProvider>
