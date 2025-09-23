@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>https://hof.studiodental.dental</loc>
+<lastmod>2025-09-23T20:54:03.561Z</lastmod>
+<changefreq>yearly</changefreq>
+<priority>1</priority>
+</url>
+<url>
+<loc>https://hof.studiodental.dental/about</loc>
+<lastmod>2025-09-23T20:54:03.561Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://hof.studiodental.dental/contact</loc>
+<lastmod>2025-09-23T20:54:03.561Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+<url>
+<loc>https://hof.studiodental.dental/politica-privacidade</loc>
+<lastmod>2025-09-23T20:54:03.561Z</lastmod>
+<changefreq>yearly</changefreq>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://hof.studiodental.dental/termos-de-uso</loc>
+<lastmod>2025-09-23T20:54:03.561Z</lastmod>
+<changefreq>yearly</changefreq>
+<priority>0.3</priority>
+</url>
+</urlset>

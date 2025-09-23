@@ -7517,3 +7517,21 @@ color: #222;
   }
 }
 
+/* Add this to the bottom of src/app/assets/main.css */
+
+.carousel-container {
+  /* You can use either min-height or aspect-ratio */
+  
+  /* Option 1: Minimum Height (Good for carousels with variable content) */
+  min-height: 450px; /* Adjust this value based on the tallest expected carousel height */
+
+  /* Option 2: Aspect Ratio (Best for when all images are the same size) */
+  /* aspect-ratio: 16 / 9; */
+}
+
+/* Optional: Ensure images inside don't overflow */
+.carousel-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
