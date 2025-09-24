@@ -118,6 +118,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* Preconnect hints */}
         <link rel="preconnect" href="https://hof1.studiodental.dental" />
         <link rel="preconnect" href="https://fonts.bunny.net" />
+        <link rel="preconnect" href="https://cdn.jsdelivr.net" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 
         <InlineCriticalCss />
