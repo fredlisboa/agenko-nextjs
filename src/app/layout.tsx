@@ -121,6 +121,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preconnect" href="https://cdn.jsdelivr.net" />
         <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
 
+        {/* Preload fonts */}
+        <link rel="preload" href="https://fonts.bunny.net/fonts/ubuntu-latin-400-normal.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+
         {/* Preload all stylesheets to ensure they are fetched early */}
         <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" as="style" />
         <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" as="style" />
@@ -157,10 +161,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         
         {/* Google Tag Manager */}
         <Script id="google-tag-manager" strategy="afterInteractive" dangerouslySetInnerHTML={{ __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-MGLJVNRZ');` }} />
+        new Date().getTime(),event:\'gtm.js\'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!=\'dataLayer\'?\'&l=\'+l:\'\';j.async=true;j.src=\
+        \'https://www.googletagmanager.com/gtm.js?id=\'+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,\'script\',\'dataLayer\',\'GTM-MGLJVNRZ\');` }} />
         {/* End Google Tag Manager */}
 
         {/* Begin Google Tag GTAG */}
