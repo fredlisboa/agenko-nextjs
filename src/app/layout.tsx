@@ -2,8 +2,9 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Source_Sans_3, Roboto } from "next/font/google";
 import Script from 'next/script';
-import fs from 'fs';
-import path from 'path';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "slick-carousel/slick/slick.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
 import { UTMProvider } from "@/components/UTMProvider";
 import { UtmLinkUpdater } from "@/components/UtmLinkUpdater";
 
@@ -107,34 +108,13 @@ const jsonLd = {
   "hasMap": "https://www.google.com/search?sca_esv=adba07b31be7c891&rlz=1C1GCEA_pt-BRBR1165BR1165&cs=1&output=search&kgmid=/g/11h8760pp9&q=Studio+Dental+Odontologia&shndl=30&shem=lcuae,lsptbl1,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=9c6ff277aa151b10&utm_source=lcuae,lsptbl1,uaasie,shrtsdl,sh/x/loc/uni/m1/1"
 };
 
-// Read critical CSS
-const criticalCssPath = path.join(process.cwd(), 'src', 'app', 'assets', 'critical.css');
-const criticalCss = fs.readFileSync(criticalCssPath, 'utf-8');
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-BR">
       <head>
-        <style dangerouslySetInnerHTML={{ __html: criticalCss }} />
-        <link rel="preload" href="/assets/main.css" as="style" />
-        <link rel="stylesheet" href="/assets/main.css" media="print" onLoad="this.media='all'" />
-        <noscript><link rel="stylesheet" href="/assets/main.css" /></noscript>
-        
-        <link rel="preload" href="/assets/carousel.css" as="style" />
-        <link rel="stylesheet" href="/assets/carousel.css" media="print" onLoad="this.media='all'" />
-        <noscript><link rel="stylesheet" href="/assets/carousel.css" /></noscript>
-
-        <link rel="preload" href="/bootstrap/dist/css/bootstrap.min.css" as="style" />
-        <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css" media="print" onLoad="this.media='all'" />
-        <noscript><link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css" /></noscript>
-        
-        <link rel="preload" href="/slick-carousel/slick/slick.css" as="style" />
-        <link rel="stylesheet" href="/slick-carousel/slick/slick.css" media="print" onLoad="this.media='all'" />
-        <noscript><link rel="stylesheet" href="/slick-carousel/slick/slick.css" /></noscript>
-
-        <link rel="preload" href="/bootstrap-icons/font/bootstrap-icons.css" as="style" />
-        <link rel="stylesheet" href="/bootstrap-icons/font/bootstrap-icons.css" media="print" onLoad="this.media='all'" />
-        <noscript><link rel="stylesheet" href="/bootstrap-icons/font/bootstrap-icons.css" /></noscript>
+        <link rel="stylesheet" href="/assets/main.css" />
+        <link rel="stylesheet" href="/assets/carousel.css" />
 
         {/* Keitaro tracking script */}
         <Script id="keitaro-tracking-script" strategy="afterInteractive" dangerouslySetInnerHTML={{ __html: `
