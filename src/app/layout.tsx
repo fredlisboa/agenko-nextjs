@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "slick-carousel/slick/slick.css";
 import "./assets/main.css";
 import "./assets/carousel.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
 import { UTMProvider } from "@/components/UTMProvider";
 import { UtmLinkUpdater } from "@/components/UtmLinkUpdater";
 
@@ -149,7 +150,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         <meta name="author" content="Dra. Gabriella Lisboa | Studio Dental" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
       </head>
       <body className={`${source_sans.variable} ${roboto.variable}`}>
         <UTMProvider>
