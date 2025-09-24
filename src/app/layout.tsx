@@ -2,9 +2,10 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Source_Sans_3, Roboto } from "next/font/google";
 import Script from 'next/script';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import "slick-carousel/slick/slick.css";
-// import "bootstrap-icons/font/bootstrap-icons.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "slick-carousel/slick/slick.css";
+import 'public/assets/main.css';
+import 'public/assets/carousel.css';
 import { UTMProvider } from "@/components/UTMProvider";
 import { UtmLinkUpdater } from "@/components/UtmLinkUpdater";
 import { InlineCriticalCss } from "@/components/InlineCriticalCss";
@@ -117,15 +118,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* Preconnect hints */}
         <link rel="preconnect" href="https://hof1.studiodental.dental" />
         <link rel="preconnect" href="https://fonts.bunny.net" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 
         <InlineCriticalCss />
-
-        {/* Defer non-critical CSS */}
-        <link rel="preload" href="/assets/main.css" as="style" {...{ onload: "this.onload=null;this.rel='stylesheet'" } as React.HTMLProps<HTMLLinkElement>} />
-        <link rel="preload" href="/assets/carousel.css" as="style" {...{ onload: "this.onload=null;this.rel='stylesheet'" } as React.HTMLProps<HTMLLinkElement>} />
-        <link rel="preload" href="/assets/bootstrap.min.css" as="style" {...{ onload: "this.onload=null;this.rel='stylesheet'" } as React.HTMLProps<HTMLLinkElement>} />
-        <link rel="preload" href="/assets/slick.css" as="style" {...{ onload: "this.onload=null;this.rel='stylesheet'" } as React.HTMLProps<HTMLLinkElement>} />
-        <link rel="preload" href="/assets/bootstrap-icons.css" as="style" {...{ onload: "this.onload=null;this.rel='stylesheet'" } as React.HTMLProps<HTMLLinkElement>} />
 
         {/* Keitaro tracking script */}
         <Script id="keitaro-tracking-script" strategy="afterInteractive" dangerouslySetInnerHTML={{ __html: `

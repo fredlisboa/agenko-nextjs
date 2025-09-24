@@ -34,8 +34,7 @@ const ImageCarousel = () => {
                 width: '100%', 
                 maxWidth: '555px', 
                 margin: '30px auto 0',
-                // This reserves the space for the carousel, preventing layout shift (CLS)
-                aspectRatio: '1 / 1' //  <--  This assumes your images are square. Adjust if needed (e.g., '16 / 9').
+                aspectRatio: '1 / 1'
             }}
         >
             <div style={{ position: 'relative', width: '100%', height: '100%', borderRadius: '10px', overflow: 'hidden' }}>
@@ -54,7 +53,6 @@ const ImageCarousel = () => {
                             fill
                             sizes="(max-width: 555px) 100vw, 555px"
                             style={{ objectFit: "contain" }}
-                            // Prioritize the first image to improve Largest Contentful Paint (LCP)
                             priority={currentImageIndex === 0}
                         />
                     </motion.div>

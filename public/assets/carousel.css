@@ -1,5 +1,7 @@
-@media (max-width: 991.98px) {
-    .agk-image-box {
-        margin-top: 0px;
-    }
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 555px;
+  margin: 30px auto 0;
+  aspect-ratio: 1 / 1;
 }
