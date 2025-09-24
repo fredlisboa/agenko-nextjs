@@ -113,6 +113,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="pt-BR">
       <head>
+        {/* Preconnect hints */}
+        <link rel="preconnect" href="https://hof1.studiodental.dental" />
+        <link rel="preconnect" href="https://fonts.bunny.net" />
+
         <link rel="stylesheet" href="/assets/main.css" />
         <link rel="stylesheet" href="/assets/carousel.css" />
 
