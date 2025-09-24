@@ -119,7 +119,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preconnect" href="https://hof1.studiodental.dental" />
         <link rel="preconnect" href="https://fonts.bunny.net" />
         <link rel="preconnect" href="https://cdn.jsdelivr.net" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" as="style" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" media="print" />
+        <Script id="bootstrap-icons-load-script" strategy="afterInteractive">
+          {`
+            (function(){
+              var link = document.getElementById('bootstrap-icons-stylesheet');
+              if (link) {
+                link.onload = function() {this.media='all'};
+              }
+            })();
+          `}
+        </Script>
 
         <InlineCriticalCss />
 
