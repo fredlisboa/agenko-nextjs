@@ -2,10 +2,11 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Source_Sans_3, Roboto } from "next/font/google";
 import Script from 'next/script';
-import "bootstrap/dist/css/bootstrap.min.css";
-import "slick-carousel/slick/slick.css";
-import 'public/assets/main.css';
-import 'public/assets/carousel.css';
+// The following CSS imports are now handled dynamically in the head for performance.
+// import "bootstrap/dist/css/bootstrap.min.css";
+// import "slick-carousel/slick/slick.css";
+// import 'public/assets/main.css';
+// import 'public/assets/carousel.css';
 import { UTMProvider } from "@/components/UTMProvider";
 import { UtmLinkUpdater } from "@/components/UtmLinkUpdater";
 import { InlineCriticalCss } from "@/components/InlineCriticalCss";
@@ -110,7 +111,6 @@ const jsonLd = {
   "hasMap": "https://www.google.com/search?sca_esv=adba07b31be7c891&rlz=1C1GCEA_pt-BRBR1165BR1165&cs=1&output=search&kgmid=/g/11h8760pp9&q=Studio+Dental+Odontologia&shndl=30&shem=lcuae,lsptbl1,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=9c6ff277aa151b10&utm_source=lcuae,lsptbl1,uaasie,shrtsdl,sh/x/loc/uni/m1/1"
 };
 
-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-BR">
@@ -119,20 +119,31 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preconnect" href="https://hof1.studiodental.dental" />
         <link rel="preconnect" href="https://fonts.bunny.net" />
         <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+
+        {/* Preload all stylesheets to ensure they are fetched early */}
+        <link rel="preload" href="/bootstrap/dist/css/bootstrap.min.css" as="style" />
+        <link rel="preload" href="/slick-carousel/slick/slick.css" as="style" />
+        <link rel="preload" href="/assets/main.css" as="style" />
+        <link rel="preload" href="/assets/carousel.css" as="style" />
         <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" as="style" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" media="print" />
-        <Script id="bootstrap-icons-load-script" strategy="afterInteractive">
-          {`
-            (function(){
-              var link = document.getElementById('bootstrap-icons-stylesheet');
-              if (link) {
-                link.onload = function() {this.media='all'};
-              }
-            })();
-          `}
-        </Script>
 
         <InlineCriticalCss />
+
+        {/* Dynamically load all stylesheets after the critical CSS to avoid render blocking */}
+        <Script id="deferred-css-load-script" strategy="afterInteractive" dangerouslySetInnerHTML={{ __html: `
+          const loadCss = (href) => {
+            const link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = href;
+            document.head.appendChild(link);
+          };
+
+          loadCss('/bootstrap/dist/css/bootstrap.min.css');
+          loadCss('/slick-carousel/slick/slick.css');
+          loadCss('/assets/main.css');
+          loadCss('/assets/carousel.css');
+          loadCss('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css');
+        ` }} />
 
         {/* Keitaro tracking script */}
         <Script id="keitaro-tracking-script" strategy="afterInteractive" dangerouslySetInnerHTML={{ __html: `
