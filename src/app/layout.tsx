@@ -1,12 +1,9 @@
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Source_Sans_3, Roboto } from "next/font/google";
-import Script from 'next/script'; // Importe o componente Script
-import 'bootstrap/dist/css/bootstrap.min.css';
-import "slick-carousel/slick/slick.css";
-import "./assets/main.css";
-import "./assets/carousel.css";
-import "bootstrap-icons/font/bootstrap-icons.css";
+import Script from 'next/script';
+import fs from 'fs';
+import path from 'path';
 import { UTMProvider } from "@/components/UTMProvider";
 import { UtmLinkUpdater } from "@/components/UtmLinkUpdater";
 
@@ -14,14 +11,16 @@ const source_sans = Source_Sans_3({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700', '800'],
   variable: '--heading-font',
+  display: 'swap',
 });
+
 const roboto = Roboto({
   subsets: ['latin'],
   weight: ['400', '500', '700'],
   variable: '--body-font',
+  display: 'swap',
 });
 
-// OTIMIZADO: Metadados focados em SEO local e especialidades
 export const metadata = {
   title: {
     default: 'Harmonização Orofacial em Goiânia | Dra. Gabriella Lisboa',
@@ -61,13 +60,11 @@ export const metadata = {
       follow: true,
     },
   },
-  // NOVO: Adicionando a configuração de ícones diretamente nos metadados
   icons: {
     icon: '/favicon.ico',
   },
 };
 
-// NOVO: Estrutura JSON-LD para SEO Avançado
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "MedicalBusiness",
@@ -110,11 +107,35 @@ const jsonLd = {
   "hasMap": "https://www.google.com/search?sca_esv=adba07b31be7c891&rlz=1C1GCEA_pt-BRBR1165BR1165&cs=1&output=search&kgmid=/g/11h8760pp9&q=Studio+Dental+Odontologia&shndl=30&shem=lcuae,lsptbl1,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=9c6ff277aa151b10&utm_source=lcuae,lsptbl1,uaasie,shrtsdl,sh/x/loc/uni/m1/1"
 };
 
+// Read critical CSS
+const criticalCssPath = path.join(process.cwd(), 'src', 'app', 'assets', 'critical.css');
+const criticalCss = fs.readFileSync(criticalCssPath, 'utf-8');
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-BR">
       <head>
+        <style dangerouslySetInnerHTML={{ __html: criticalCss }} />
+        <link rel="preload" href="/assets/main.css" as="style" />
+        <link rel="stylesheet" href="/assets/main.css" media="print" onLoad="this.media='all'" />
+        <noscript><link rel="stylesheet" href="/assets/main.css" /></noscript>
+        
+        <link rel="preload" href="/assets/carousel.css" as="style" />
+        <link rel="stylesheet" href="/assets/carousel.css" media="print" onLoad="this.media='all'" />
+        <noscript><link rel="stylesheet" href="/assets/carousel.css" /></noscript>
+
+        <link rel="preload" href="/bootstrap/dist/css/bootstrap.min.css" as="style" />
+        <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css" media="print" onLoad="this.media='all'" />
+        <noscript><link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css" /></noscript>
+        
+        <link rel="preload" href="/slick-carousel/slick/slick.css" as="style" />
+        <link rel="stylesheet" href="/slick-carousel/slick/slick.css" media="print" onLoad="this.media='all'" />
+        <noscript><link rel="stylesheet" href="/slick-carousel/slick/slick.css" /></noscript>
+
+        <link rel="preload" href="/bootstrap-icons/font/bootstrap-icons.css" as="style" />
+        <link rel="stylesheet" href="/bootstrap-icons/font/bootstrap-icons.css" media="print" onLoad="this.media='all'" />
+        <noscript><link rel="stylesheet" href="/bootstrap-icons/font/bootstrap-icons.css" /></noscript>
+
         {/* Keitaro tracking script */}
         <Script id="keitaro-tracking-script" strategy="afterInteractive" dangerouslySetInnerHTML={{ __html: `
          if (!window.KTracking){window.KTracking={collectNonUniqueClicks: false, multiDomain: false, R_PATH: 'https://hof1.studiodental.dental/HMpJBwrp', P_PATH:'https://hof1.studiodental.dental/28509f0/postback', listeners: [], reportConversion: function(){this.queued = arguments;}, getSubId: function(fn) {this.listeners.push(fn);}, ready: function(fn) {this.listeners.push(fn);} };}(function(){var a=document.createElement('script');a.type='application/javascript';a.async=true;a.src='https://hof1.studiodental.dental/js/k.min.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(a,s)})();
