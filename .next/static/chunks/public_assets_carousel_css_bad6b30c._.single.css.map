@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/public/assets/carousel.css"],"sourcesContent":[".carousel-container {\n  position: relative;\n  width: 100%;\n  max-width: 555px;\n  margin: 30px auto 0;\n  aspect-ratio: 1 / 1;\n}\n"],"names":[],"mappings":"AAAA"}}]
-}
