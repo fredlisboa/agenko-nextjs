@@ -47,6 +47,15 @@ export default function Header1({ variant }: any) {
               </div>
               <div className="cs_main_header_center">
                 <div className="cs_nav cs_primary_font fw-medium">
+                  {/* Mobile CTA Button - visible on mobile, hidden on desktop */}
+                  <div className="main-button mobile-cta-btn d-lg-none">
+                    <Link href="/contact" className="theme-btn style-one mobile-cta">
+                      <span className="text-flip">
+                          <span className="text">AVALIAÇÃO GRATUITA</span>
+                          <span className="text">AVALIAÇÃO GRATUITA</span>
+                      </span>
+                    </Link>
+                  </div>
                   <span
                     className={
                       mobileToggle
@@ -59,15 +68,6 @@ export default function Header1({ variant }: any) {
                   </span>
                   <Nav setMobileToggle={setMobileToggle} />
                 </div>
-            </div>
-            {/* Mobile CTA Button - visible on mobile, hidden on desktop */}
-            <div className="main-button mobile-cta-btn d-lg-none">
-              <Link href="/contact" className="theme-btn style-one mobile-cta">
-                <span className="text-flip">
-                    <span className="text">AVALIAÇÃO GRATUITA</span>
-                    <span className="text">AVALIAÇÃO GRATUITA</span>
-                </span>
-              </Link>
             </div>
             <div className="cs_main_header_right">
               <div className="header-btn d-flex align-items-center">
